@@ -1,0 +1,65 @@
+namespace = entente_cordiale
+
+#UK Entente Cordiale
+
+country_event = {
+	id = entente_cordiale.1
+	title = "entente_cordiale.n.1"
+	desc = "entente_cordiale.d.1"
+	picture = ENTENTE_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		is_year = 1890
+		exists = FRR
+		exists = UNK
+		FRR = {
+			ai = yes
+		}
+		NOT = {
+			UNK = {
+				alliance_with = FRR
+			}
+		}
+		OR = {
+			tag = UNK
+			tag = FRR
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 32
+	}
+	
+	option = {
+		name = "entente_cordiale.1.a"
+		UNK = {
+			remove_historical_rival = FRR
+			add_trust = {
+				who = FRR
+				value = 50
+				mutual = yes
+			}
+			reverse_add_opinion = {
+				who = UNK
+				modifier = entente_cordiale_opinion
+			}
+			add_opinion = {
+				who = FRR
+				modifier = entente_cordiale_opinion
+			}
+		}
+		
+		FRR = {
+			remove_historical_rival = UNK
+			add_trust = {
+				who = UNK
+				value = 50
+				mutual = yes
+			}
+		}
+	}
+}

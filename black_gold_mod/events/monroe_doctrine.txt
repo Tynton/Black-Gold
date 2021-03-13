@@ -1,0 +1,175 @@
+namespace = monroe_doctrine
+
+#enforcement of doctrine (AFTER A NATION GRANTS CALL TO ARMS)
+
+country_event = {
+	id = monroe_doctrine.1
+	title = "monroe_doctrine.n.1"
+	desc = "monroe_doctrine.d.1"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		tag = USA
+	}
+	
+	option = {
+		name = "monroe_doctrine.1.a"
+		USA = {
+			join_all_defensive_wars_of = FROM
+		}
+	}
+}
+
+
+country_event = {
+	id = monroe_doctrine.2
+	title = "monroe_doctrine.n.2"
+	desc = "monroe_doctrine.d.2"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		ROOT = {
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+			}
+			is_subject = no
+			NOT = {
+				has_country_flag = monroe_doctrine_war
+			}
+		}
+		any_country = {
+			AND = {
+				capital_scope = {
+					NOT = {
+						OR = {
+							continent = north_america
+							continent = south_america
+						}
+						truce_with = USA
+					}
+				}
+				offensive_war_with = ROOT
+			}
+		}
+		NOT = {
+			tag = USA
+		}
+		exists = USA
+		
+		USA = {
+			NOT = {
+				war_with = ROOT
+			}
+		}
+		has_global_flag = usa_monroe_doctrine_enacted
+	}	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "monroe_doctrine.2.a"
+		USA = {
+			country_event = {
+				id = monroe_doctrine.1
+			}
+		}
+		set_country_flag = monroe_doctrine_war
+	}
+}
+
+
+country_event = {
+	id = monroe_doctrine.3
+	title = "monroe_doctrine.n.3"
+	desc = "monroe_doctrine.d.3"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+	
+	mean_time_to_happen = {
+		months = 128
+	}
+
+	trigger = {
+		tag = USA
+		
+		USA = {
+			OR = {
+				total_development = 650
+				prestige = 50
+			}
+		}
+	}
+	
+	option = {
+		name = "monroe_doctrine.3.a"
+		set_global_flag = usa_monroe_doctrine_enacted
+	}
+}
+
+country_event = {
+	id = monroe_doctrine.4
+	title = "monroe_doctrine.n.4"
+	desc = "monroe_doctrine.d.4"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		NOT = {
+			ROOT = {
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+			}
+			is_subject = no
+		}
+		any_country = {
+			AND = {
+				capital_scope = {
+					NOT = {
+						OR = {
+							continent = north_america
+							continent = south_america
+						}
+					}
+				}
+				offensive_war_with = ROOT
+			}
+		}
+		NOT = {
+			tag = USA
+		}
+		exists = USA
+		
+		USA = {
+			NOT = {
+				war_with = ROOT
+			}
+		}
+		has_global_flag = usa_monroe_doctrine_enacted
+		}
+	}
+	
+	option = {
+		name = "monroe_doctrine.4.a"
+		clr_country_flag = monroe_doctrine_war
+	}
+}

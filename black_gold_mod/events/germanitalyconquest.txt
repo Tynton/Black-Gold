@@ -1,0 +1,540 @@
+namespace = germanitalyconquest
+
+province_event = {
+	id = germanitalyconquest.1
+	title = "germanitalyconquest.n.1"
+	desc = "germanitalyconquest.d.1"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {
+			culture = tuscan
+			owner = {
+				culture_group = germanic
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		OR = {
+			owner = {
+				ai = no
+				government_rank = 3
+			}
+		}
+		NOT = {
+			OR = {
+				AND = {
+					local_autonomy = 5
+					unrest = 1
+				}
+				has_province_modifier = nationalism_unrest_bgm
+			}
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "germanitalyconquest.1.a"
+		change_culture = toskanisch
+	}
+}
+
+province_event = {
+	id = germanitalyconquest.2
+	title = "germanitalyconquest.n.2"
+	desc = "germanitalyconquest.d.2"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {
+			culture = lombard
+			owner = {
+				culture_group = germanic
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		OR = {
+			owner = {
+				ai = no
+				government_rank = 3
+			}
+		}
+		NOT = {
+			OR = {
+				AND = {
+					local_autonomy = 5
+					unrest = 1
+				}
+				has_province_modifier = nationalism_unrest_bgm
+			}
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "germanitalyconquest.2.a"
+		change_culture = lombardisch
+	}
+}
+
+province_event = {
+	id = germanitalyconquest.3
+	title = "germanitalyconquest.n.3"
+	desc = "germanitalyconquest.d.3"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {
+			culture = sardinian
+			owner = {
+				culture_group = germanic
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		OR = {
+			owner = {
+				ai = no
+				government_rank = 3
+			}
+		}
+		NOT = {
+			OR = {
+				AND = {
+					local_autonomy = 5
+					unrest = 1
+				}
+				has_province_modifier = nationalism_unrest_bgm
+			}
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "germanitalyconquest.3.a"
+		change_culture = sardinisch
+	}
+}
+
+province_event = {
+	id = germanitalyconquest.4
+	title = "germanitalyconquest.n.4"
+	desc = "germanitalyconquest.d.4"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {
+			culture = romagnan
+			owner = {
+				culture_group = germanic
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		OR = {
+			owner = {
+				ai = no
+				government_rank = 3
+			}
+		}
+		NOT = {
+			OR = {
+				AND = {
+					local_autonomy = 5
+					unrest = 1
+				}
+				has_province_modifier = nationalism_unrest_bgm
+			}
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "germanitalyconquest.4.a"
+		change_culture = romagnanisch
+	}
+}
+
+province_event = {
+	id = germanitalyconquest.5
+	title = "germanitalyconquest.n.5"
+	desc = "germanitalyconquest.d.5"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {
+			culture = ligurian
+			owner = {
+				culture_group = germanic
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		OR = {
+			owner = {
+				ai = no
+				government_rank = 3
+			}
+		}
+		NOT = {
+			OR = {
+				AND = {
+					local_autonomy = 5
+					unrest = 1
+				}
+				has_province_modifier = nationalism_unrest_bgm
+			}
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "germanitalyconquest.5.a"
+		change_culture = ligurier
+	}
+}
+
+province_event = {
+	id = germanitalyconquest.6
+	title = "germanitalyconquest.n.6"
+	desc = "germanitalyconquest.d.6"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {
+			culture = venetian
+			owner = {
+				culture_group = germanic
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		OR = {
+			owner = {
+				ai = no
+				government_rank = 3
+			}
+		}
+		NOT = {
+			OR = {
+				AND = {
+					local_autonomy = 5
+					unrest = 1
+				}
+				has_province_modifier = nationalism_unrest_bgm
+			}
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "germanitalyconquest.6.a"
+		change_culture = venezianisch
+	}
+}
+
+province_event = {
+	id = germanitalyconquest.7
+	title = "germanitalyconquest.n.7"
+	desc = "germanitalyconquest.d.7"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {
+			culture = neapolitan
+			owner = {
+				culture_group = germanic
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		OR = {
+			owner = {
+				ai = no
+				government_rank = 3
+			}
+		}
+		NOT = {
+			OR = {
+				AND = {
+					local_autonomy = 5
+					unrest = 1
+				}
+				has_province_modifier = nationalism_unrest_bgm
+			}
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "germanitalyconquest.7.a"
+		change_culture = neapolitanisch
+	}
+}
+
+province_event = {
+	id = germanitalyconquest.8
+	title = "germanitalyconquest.n.8"
+	desc = "germanitalyconquest.d.8"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {
+			culture = piedmontese
+			owner = {
+				culture_group = germanic
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		OR = {
+			owner = {
+				ai = no
+				government_rank = 3
+			}
+		}
+		NOT = {
+			OR = {
+				AND = {
+					local_autonomy = 5
+					unrest = 1
+				}
+				has_province_modifier = nationalism_unrest_bgm
+			}
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "germanitalyconquest.8.a"
+		change_culture = piemontesisch
+	}
+}
+
+province_event = {
+	id = germanitalyconquest.9
+	title = "germanitalyconquest.n.9"
+	desc = "germanitalyconquest.d.9"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {
+			culture = umbrian
+			owner = {
+				culture_group = germanic
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		OR = {
+			owner = {
+				ai = no
+				government_rank = 3
+			}
+		}
+		NOT = {
+			OR = {
+				AND = {
+					local_autonomy = 5
+					unrest = 1
+				}
+				has_province_modifier = nationalism_unrest_bgm
+			}
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "germanitalyconquest.9.a"
+		change_culture = umbrisch
+	}
+}
+
+province_event = {
+	id = germanitalyconquest.10
+	title = "germanitalyconquest.n.10"
+	desc = "germanitalyconquest.d.10"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {
+			culture = sicilian
+			owner = {
+				culture_group = germanic
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		OR = {
+			owner = {
+				ai = no
+				government_rank = 3
+			}
+		}
+		NOT = {
+			OR = {
+				AND = {
+					local_autonomy = 5
+					unrest = 1
+				}
+				has_province_modifier = nationalism_unrest_bgm
+			}
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "germanitalyconquest.10.a"
+		change_culture = sizilianisch
+	}
+}
+
+province_event = {
+	id = germanitalyconquest.11
+	title = "germanitalyconquest.n.11"
+	desc = "germanitalyconquest.d.11"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {
+			culture = maltese
+			owner = {
+				culture_group = germanic
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		OR = {
+			owner = {
+				ai = no
+				government_rank = 3
+			}
+		}
+		NOT = {
+			OR = {
+				AND = {
+					local_autonomy = 5
+					unrest = 1
+				}
+				has_province_modifier = nationalism_unrest_bgm
+			}
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "spanishitalyconquest.11.a"
+		change_culture = maltesisch
+	}
+}

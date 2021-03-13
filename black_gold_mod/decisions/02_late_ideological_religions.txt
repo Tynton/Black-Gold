@@ -1,0 +1,372 @@
+country_decisions = {
+
+	convert_to_atheism = {
+		major = yes
+		potential = {
+			OR = {
+				has_reform = socialist_mechanic
+				has_reform = fascist_mechanic
+				has_reform = futurist_mechanic
+			}
+			OR = {
+				NOT = {
+					religion = atheism
+				}
+				NOT = {
+					religion = futurism
+				}
+			}
+		}
+		allow = {
+			stability = 1
+			is_at_war = no
+			
+			is_vassal = no
+			is_march = no
+			is_colonial_nation = no
+		}
+		effect = {
+			change_religion = atheism
+			add_stability = -2
+			add_country_modifier = {
+				name = "recent_conversion"
+				duration = 1825
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	convert_to_futurism = {
+		major = yes
+		potential = {
+			has_reform = futurist_mechanic
+			NOT = {
+				OR = {
+					religion = atheism
+					religion = futurism
+				}
+			}
+		}
+		allow = {
+			stability = 1
+			is_at_war = no
+			
+			is_vassal = no
+			is_march = no
+			is_colonial_nation = no
+		}
+		effect = {
+			change_religion = futurism
+			add_stability = -2
+			add_country_modifier = {
+				name = "recent_conversion"
+				duration = 1825
+			}
+		}
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	convert_to_machine_worship = {
+		major = yes
+		potential = {
+			has_reform = futurist_mechanic
+			OR = {
+				NOT = {
+					religion = atheism
+				}
+				NOT = {
+					religion = futurism
+				}
+			}
+			adm_tech = 47
+		}
+		allow = {
+			stability = 1
+			is_at_war = no
+			
+			is_vassal = no
+			is_march = no
+			is_colonial_nation = no
+		}
+		effect = {
+			change_religion = machine_worship
+			add_stability = -2
+			add_country_modifier = {
+				name = "recent_conversion"
+				duration = 1825
+			}
+		}
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	#institute_cult_of_the_supreme_being = {
+	#	potential = {
+	#		has_reform = revolutionary_republic_reform
+	#		NOT = { religion = cult_of_reason }
+	#	}
+	#	allow = {
+	#		stability = 1
+	#		is_at_war = no
+	#		has_reform = revolutionary_republic_reform
+	#	}
+	#	effect = {
+	#		change_religion = cult_of_the_supreme_being
+	#		add_stability = -6
+	#		add_country_modifier = {
+	#			name = "recent_conversion"
+	#			duration = 1825
+	#		}
+	#	}
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#}
+	
+	institute_freedom_of_religion = {
+		major = yes
+		potential = {
+			NOT = { 
+				OR = {
+					religion = secular 
+					government = theocracy
+				}
+			}
+			OR = {
+				AND = {
+					OR = {
+						has_reform = pro_enlightenment_reform
+						has_reform = egalite_reform
+					}
+					full_idea_group = humanist_ideas
+					has_institution = enlightenment
+				}
+				has_reform = merchant_republic
+				has_reform = oligarchy_reform
+				has_reform = democratic_mechanic
+				#is_revolutionary = yes
+				overlord = {
+					religion = secular
+				}
+			}
+		}
+		allow = {
+			stability = 1
+			is_at_war = no
+			OR = {
+				AND = {
+					OR = {
+						has_reform = pro_enlightenment_reform
+						has_reform = egalite_reform
+					}
+					full_idea_group = humanist_ideas
+					has_institution = enlightenment
+				}
+				has_reform = merchant_republic
+				has_reform = democratic_mechanic
+				is_revolutionary = yes
+				overlord = {
+					religion = secular
+				}
+			}
+		}
+		effect = {
+			change_religion = secular
+			add_stability = -2
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	return_to_catholicism = {
+		potential = {
+			OR = {
+				religion = cult_of_reason
+				religion = cult_of_the_supreme_being
+			}
+			dominant_religion = catholic
+		}
+		allow = {
+			stability = 2
+			is_at_war = no
+			dominant_religion = catholic
+		}
+		effect = {
+			change_religion = catholic
+			add_stability = -4
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				OR = { 
+					has_reform = autocracy_reform
+					has_reform = oligarchy_reform
+					has_reform = feudalism_reform
+					has_reform = merchants_reform
+				}
+				factor = 1
+			}
+		}
+	}
+	
+	return_to_protestantism = {
+		potential = {
+			OR = {
+				religion = cult_of_reason
+				religion = cult_of_the_supreme_being
+			}
+			dominant_religion = protestant
+		}
+		allow = {
+			stability = 2
+			is_at_war = no
+			dominant_religion = protestant
+		}
+		effect = {
+			change_religion = protestant
+			add_stability = -4
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				OR = { 
+					has_reform = autocracy_reform
+					has_reform = oligarchy_reform
+					has_reform = feudalism_reform
+					has_reform = merchants_reform
+				}
+					factor = 1
+			}
+		}
+	}
+	
+	return_to_orthodox = {
+		potential = {
+			OR = {
+				religion = cult_of_reason
+				religion = cult_of_the_supreme_being
+			}
+			dominant_religion = orthodox
+		}
+		allow = {
+			stability = 2
+			is_at_war = no
+			dominant_religion = orthodox
+		}
+		effect = {
+			change_religion = orthodox
+			add_stability = -4
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				OR = { 
+					has_reform = autocracy_reform
+					has_reform = oligarchy_reform
+					has_reform = feudalism_reform
+					has_reform = merchants_reform
+				}
+				factor = 1
+			}
+		}
+	}
+	
+	return_to_anglican = {
+		potential = {
+			OR = {
+				religion = cult_of_reason
+				religion = cult_of_the_supreme_being
+			}
+			dominant_religion = anglican
+		}
+		allow = {
+			stability = 2
+			is_at_war = no
+			dominant_religion = anglican
+		}
+		effect = {
+			change_religion = anglican
+			add_stability = -4
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				OR = { 
+					has_reform = autocracy_reform
+					has_reform = oligarchy_reform
+					has_reform = feudalism_reform
+					has_reform = merchants_reform
+				}
+			factor = 1
+			}
+		}
+	}
+	
+	return_to_reformism = {
+		potential = {
+			OR = {
+				religion = cult_of_reason
+				religion = cult_of_the_supreme_being
+			}
+			dominant_religion = reformism
+		}
+		allow = {
+			stability = 2
+			is_at_war = no
+			dominant_religion = reformism
+		}
+		effect = {
+			change_religion = reformism
+			add_stability = -4
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				OR = { 
+					has_reform = autocracy_reform
+					has_reform = oligarchy_reform
+					has_reform = feudalism_reform
+					has_reform = merchants_reform
+				}
+			factor = 1
+			}
+		}
+	}
+	
+	return_to_sunni = {
+		potential = {
+			OR = {
+				religion = cult_of_reason
+				religion = cult_of_the_supreme_being
+			}
+			dominant_religion = sunni
+		}
+		allow = {
+			stability = 2
+			is_at_war = no
+			dominant_religion = sunni
+		}
+		effect = {
+			change_religion = sunni
+			add_stability = -4
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				OR = { 
+					has_reform = autocracy_reform
+					has_reform = oligarchy_reform
+					has_reform = feudalism_reform
+					has_reform = merchants_reform
+				}
+			factor = 1
+			}
+		}
+	}
+}

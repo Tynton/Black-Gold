@@ -1,0 +1,1230 @@
+﻿l_english:
+
+ tooltip_any_friendly_coast_border_province_has_embraced_global_imperialism_same_culture:0 "Friendly border neighboring coastline province embraced Global Imperialism"
+ tooltip_any_friendly_coast_border_province_has_embraced_global_imperialism_diff_culture:0 "Different culture neighboring coastline province embraced Global Imperialism"
+ tooltip_any_friendly_coast_border_province_has_embraced_global_imperialism_same_religion:0 "Same religion neighboring coastline province embraced Global Imperialism"
+ tooltip_any_friendly_coast_border_province_has_embraced_global_imperialism_diff_religion:0 "Different religion neighboring coastline province embraced Global Imperialism"
+ tooltip_any_neighbor_has_embraced_global_imperialism_same_culture:0 "Same culture neighboring nation embraced Global Imperialism"
+ tooltip_any_neighbor_has_embraced_global_imperialism_diff_culture:0 "Different culture neighboring nation embraced Global Imperialism"
+ tooltip_any_neighbor_has_embraced_global_imperialism_same_religion:0 "Same religion neighboring nation embraced Global Imperialism"
+ tooltip_colonial_overlord_global_imperialism:0 "Colonial Overlord embraced Global Imperialism"
+ tooltip_global_imperialism_embraced:0 "Nation embraced Global Imperialism"
+
+ tooltip_has_factories:0 "Province has factories"
+ tooltip_any_friendly_coast_border_province_has_embraced_industrialization_same_culture:0 "Friendly border neighboring coastline province embraced Industrialization"
+ tooltip_any_friendly_coast_border_province_has_embraced_industrialization_diff_culture:0 "Different culture neighboring coastline province embraced Industrialization"
+ tooltip_any_friendly_coast_border_province_has_embraced_industrialization_same_religion:0 "Same religion neighboring coastline province embraced Industrialization"
+ tooltip_any_friendly_coast_border_province_has_embraced_industrialization_diff_religion:0 "Different religion neighboring coastline province embraced Industrialization"
+ tooltip_any_neighbor_has_embraced_industrialization_same_culture:0 "Same culture neighboring nation embraced Industrialization"
+ tooltip_any_neighbor_has_embraced_industrialization_diff_culture:0 "Different culture neighboring nation embraced Industrialization"
+ tooltip_any_neighbor_has_embraced_industrialization_same_religion:0 "Same religion neighboring nation embraced Industrialization"
+ tooltip_any_neighbor_has_embraced_industrialization_diff_religion:0 "Different religion neighboring nation embraced Industrialization"
+ tooltip_colonial_overlord_industrialization:0 "Colonial Overlord embraced Industrialization"
+ tooltip_industrialization_embraced:0 "Nation embraced Industrialization"
+ tooltip_industrialization_same_continent:0 "Industrialization founded on same continent"
+ 
+ tooltip_any_friendly_coast_border_province_has_embraced_nationalism_same_culture:0 "Friendly border neighboring coastline province embraced Nationalism"
+ tooltip_any_friendly_coast_border_province_has_embraced_nationalism_diff_culture:0 "Different culture neighboring coastline province embraced Nationalism"
+ tooltip_any_neighbor_has_embraced_nationalism_same_culture:0 "Same culture neighboring nation embraced Nationalism"
+ tooltip_any_neighbor_has_embraced_nationalism_diff_culture:0 "Different culture neighboring nation embraced Nationalism"
+ tooltip_any_neighbor_has_embraced_nationalism_same_religion:0 "Same religion neighboring nation embraced Nationalism"
+ tooltip_any_neighbor_has_embraced_nationalism_diff_religion:0 "Different religion neighboring nation embraced Nationalism"
+ tooltip_usa:0 "Is the United States"
+ tooltip_colonial_overlord_nationalism:0 "Colonial Overlord embraced Nationalism"
+ tooltip_nationalism_embraced:0 "Nation embraced Nationalism"
+ 
+ province_has_university:0 "Province has University"
+ tooltip_any_friendly_coast_border_province_has_embraced_compulsory_education_same_culture:0 "Friendly border neighboring coastline province embraced Compulsory Education"
+ tooltip_any_friendly_coast_border_province_has_embraced_compulsory_education_diff_culture:0 "Different culture neighboring coastline province embraced Compulsory Education"
+ tooltip_any_friendly_coast_border_province_has_embraced_compulsory_education_same_religion:0 "Same religion neighboring coastline province embraced Compulsory Education"
+ tooltip_any_friendly_coast_border_province_has_embraced_compulsory_education_diff_religion:0 "Different religion neighboring coastline province embraced Compulsory Education"
+ tooltip_any_neighbor_has_embraced_compulsory_education_same_culture:0 "Same culture neighboring nation embraced Compulsory Education"
+ tooltip_any_neighbor_has_embraced_compulsory_education_diff_culture:0 "Different culture neighboring nation embraced Compulsory Education"
+ tooltip_any_neighbor_has_embraced_compulsory_education_same_religion:0 "Same religion neighboring nation embraced Compulsory Education"
+ tooltip_any_neighbor_has_embraced_compulsory_education_diff_religion:0 "Different religion neighboring nation embraced Compulsory Education"
+ tooltip_colonial_overlord_compulsory_education:0 "Colonial Overlord embraced Compulsory Education"
+ tooltip_compulsory_education_embraced:0 "Nation embraced Compulsory Education"
+ 
+ tooltip_any_friendly_coast_border_province_has_embraced_electrification_same_culture:0 "Friendly border neighboring coastline province embraced Electrification"
+ tooltip_any_friendly_coast_border_province_has_embraced_electrification_diff_culture:0 "Different culture neighboring coastline province embraced Electrification"
+ tooltip_any_neighbor_has_embraced_electrification_same_culture:0 "Same culture neighboring nation embraced Electrification"
+ tooltip_any_neighbor_has_embraced_electrification_diff_culture:0 "Different culture neighboring nation embraced Electrification"
+ tooltip_any_neighbor_has_embraced_electrification_same_religion:0 "Same religion neighboring nation embraced Electrification"
+ tooltip_any_neighbor_has_embraced_electrification_diff_religion:0 "Different religion neighboring nation embraced Electrification"
+ tooltip_usa:0 "Is the United States"
+ tooltip_colonial_overlord_electrification:0 "Colonial Overlord embraced Electrification"
+ tooltip_electrification_embraced:0 "Nation embraced Electrification"
+ 
+ tooltip_any_friendly_coast_border_province_has_embraced_mass_media_same_culture:0 "Friendly border neighboring coastline province embraced Mass Media"
+ tooltip_any_friendly_coast_border_province_has_embraced_mass_media_diff_culture:0 "Different culture neighboring coastline province embraced Mass Media"
+ tooltip_any_friendly_coast_border_province_has_embraced_mass_media_same_religion:0 "Same religion neighboring coastline province embraced Mass Media"
+ tooltip_any_friendly_coast_border_province_has_embraced_mass_media_diff_religion:0 "Different religion neighboring coastline province embraced Mass Media"
+ tooltip_any_neighbor_has_embraced_mass_media_same_culture:0 "Same culture neighboring nation embraced Mass Media"
+ tooltip_any_neighbor_has_embraced_mass_media_diff_culture:0 "Different culture neighboring nation embraced Mass Media"
+ tooltip_any_neighbor_has_embraced_mass_media_same_religion:0 "Same religion neighboring nation embraced Mass Media"
+ tooltip_any_neighbor_has_embraced_mass_media_diff_religion:0 "Different religion neighboring nation embraced Mass Media"
+ tooltip_colonial_overlord_mass_media:0 "Colonial Overlord embraced Mass Media"
+ tooltip_mass_media_embraced:0 "Nation embraced Mass Media"
+ 
+ tooltip_mass_media_present:0 "Mass Media Present or Nearby"
+ 
+ tooltip_any_friendly_coast_border_province_has_embraced_information_infrastructure_same_culture:0 "Friendly border neighboring coastline province embraced Mass Media"
+ tooltip_any_friendly_coast_border_province_has_embraced_information_infrastructure_diff_culture:0 "Different culture neighboring coastline province embraced Mass Media"
+ tooltip_any_friendly_coast_border_province_has_embraced_information_infrastructure_same_religion:0 "Same religion neighboring coastline province embraced Mass Media"
+ tooltip_any_friendly_coast_border_province_has_embraced_information_infrastructure_diff_religion:0 "Different religion neighboring coastline province embraced Mass Media"
+ tooltip_any_neighbor_has_embraced_information_infrastructure_same_culture:0 "Same culture neighboring nation embraced Mass Media"
+ tooltip_any_neighbor_has_embraced_information_infrastructure_diff_culture:0 "Different culture neighboring nation embraced Mass Media"
+ tooltip_any_neighbor_has_embraced_information_infrastructure_same_religion:0 "Same religion neighboring nation embraced Mass Media"
+ tooltip_any_neighbor_has_embraced_information_infrastructure_diff_religion:0 "Different religion neighboring nation embraced Mass Media"
+ tooltip_colonial_overlord_information_infrastructure:0 "Colonial Overlord embraced Mass Media"
+ tooltip_information_infrastructure_embraced:0 "Nation embraced Mass Media"
+
+ 
+ REVOLUTIONARY_NAME:0 "$NAME$"
+ REVOLUTIONARY_SHORT_NAME:0 "$NAME$"
+ REV_TURKEY_STRING:0 "Turkey"
+ REV_CHINA_STRING:0 "China"
+ 
+ embraced_revolution:0 "Embraced the Revolution"
+ 
+ pdw_carbine:0 "PDW / Carbine"
+ 
+ dalmatien:0 "Dalmatienne"
+ 
+ form_rdi:0 "Form Inglaterra"
+ form_rdi_desc:0 "Form Inglaterra"
+ 
+ romance_english:0 "Romance English"
+ 
+ space_program:0 "Space Program"
+ launch_satellite_program_title:0 "Launch Satellite Program"
+ launch_satellite_program_desc:0 "Launch Satellite Program"
+ satellite:0 "Satellites"
+ 
+ 
+ cb_world_war:0 "World War"
+ cb_world_war_desc:0 "Defeat the enemy in battle!"
+ 
+ superiority_world_war:0 "World War"
+ 
+ PEACE_po_demobilize:0 "Enforced Demobilization"
+ po_demobilize_desc:0 "$COUNTRY$ will be forced to demobilize to roughly 25% of their former army capacity."
+ 
+ enforced_demobilization:0 "Enforced Demobilization"
+ 
+ cb_futurist_puppet:0 "Enforce Futurist Government"
+ cb_futurist_puppet_desc:0 "Force their regime to be that of ours!"
+ 
+ cb_socialist_puppet:0 "Enforce Collectivist Government"
+ cb_socialist_puppet_desc:0 "Force their regime to be that of ours!"
+ 
+ po_enforce_puppet_socialist:0 "Enforce Collectivist Puppet"
+ po_enforce_puppet_futurist:0 "Enforce Futurist Puppet"
+ 
+ PEACE_po_enforce_democracy:0 "Enforce Regime Change"
+ po_enforce_democracy_desc:0 "Enforce Regime Change"
+ 
+ CB_ALLOWED_po_enforce_democracy:0 "Enforce Regime Change"
+ CB_ALLOWED_po_enforce_democracy_desc:0 "Enforce Regime Change"
+ 
+ po_enforce_puppet_futurist_desc:0 "Enforce Futurist Regime"
+ PEACE_po_enforce_puppet_futurist:0 "Enforce Futurist Regime"
+ 
+ CB_ALLOWED_po_enforce_puppet_futurist_desc:0 "Enforce Futurist Regime"
+ CB_ALLOWED_po_enforce_puppet_futurist:0 "Enforce Futurist Regime"
+ 
+ po_enforce_puppet_socialist_desc:0 "Enforce Collectivist Regime"
+ PEACE_po_enforce_puppet_socialist:0 "Enforce Collectivist Regime"
+ 
+ CB_ALLOWED_po_enforce_puppet_socialist_desc:0 "Enforce Collectivist Regime"
+ CB_ALLOWED_po_enforce_puppet_socialist:0 "Enforce Collectivist Regime"
+ 
+ 
+ funding_to_industry:0 "Subsidize Industrialization"
+ 
+ CB_ALLOWED_po_demobilize:0 "Enforced Demobilization"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ fictitious_futurismus:0 "Futurismus (Alien)"
+ autoritat_futurismus:0 "Futurismus Autoritat"
+ wegbarische_futurismus:0 "Futurismus Wegbarische"
+ 
+ sotd_kobpfarier:0 "Kobpfarier Sotd"
+ nortd_kobpfarier:0 "Kobpfarier Nortd"
+ iest_kobpfarier:0 "Kobpfarier Iest"
+ 
+ empire_china:0 "Chinese Empire"
+ 
+ socialist_revolution:0 "Collectivist Revolution"
+ futurist_revolution:0 "Futurist Revolution"
+ fascist_revolution:0 "Reactionary Revolution"
+ march_on_rome:0 "The March on Rome"
+ soviet_revolution:0 "The Soviet Revolution"
+ 
+ demand_suffrage:0 "Demands for Suffrage Rights"
+ grant_womens_rights_title:0 "Grant rights for Suffragettes"
+ grant_womens_rights_desc:0 "Grant rights for Suffragettes"
+ 
+ expanding_army:0 "Expanding Army"
+ 
+ estate_noblesse:0 "La Noblesse"
+ estate_clerge:0 "Le Clergé"
+ 
+ funding_cultural_assimilation:0 "Funding Cultural Assimilation"
+ demand_union_rights:0 "Demands for Labor Union Rights"
+ 
+ unite_india_title:0 "Unite the Indian Subcontinent"
+ unite_india_desc:0 "Unite the Indian Subcontinent"
+ 
+ form_uk_title:0 "Form the United Kingdom"
+ form_uk_desc:0 "Form the United Kingdom"
+ 
+ industrial_ottoman_instability:0 "Industrial-Age Ottoman Instability"
+ 
+ colonize_china_title:0 "Colonize China!"
+ colonize_china_desc:0 "Colonize China"
+ 
+ colonize_abyssinia_title:0 "Colonize Abyssinia!"
+ colonize_abyssinia_desc:0 "Colonize Abyssinia"
+ 
+ colonize_burma_title:0 "Colonize Burma!"
+ colonize_burma_desc:0 "Colonize Burma"
+ 
+ colonize_indochina_decision_title:0 "Colonize Indochina!"
+ colonize_indochina_decision_desc:0 "Colonize Indochina"
+ 
+ colonize_kongo_title:0 "Colonize The Kongo!"
+ colonize_kongo_desc:0 "Colonize The Kongo"
+ 
+ ECO_BUREAUCRACY:0 "Economic Bureaucracies"
+ 
+ orthodox:0 "Eastern Orthodox"
+ reformed:0 "Reformist"
+ catholic:0 "Roman Catholic"
+ 
+ dominion_independence_title:0 "Hold an Independence Referendum!"
+ dominion_independence_desc:0 "Hold an Independence Referendum!"
+ 
+ establish_monarchy_title:0 "Establish a Monarchist State"
+ establish_monarchy_desc:0 "Establish a Monarchist State"
+ 
+ air_force_tierone:0 "Air Force (Tier One)"
+ air_force_tiertwo:0 "Air Force (Tier Two)"
+ air_force_tierthree:0 "Air Force (Tier Three)"
+ air_force_tierfour:0 "Air Force (Tier Four)"
+ air_force_tierfive:0 "Air Force (Tier Five)"
+ air_force_tiersix:0 "Air Force (Tier Six)"
+ air_force_tierseven:0 "Air Force (Tier Seven)"
+ 
+ grant_minority_offices_title:0 "Grant Minorities access to Political Offices"
+ grant_minority_offices_desc:0 "Grant Minorities access to Political Offices"
+ 
+ minorities_can_hold_office:0 "Minorities can Hold Office"
+ demand_minority_rights:0 "Demands for Minority Rights"
+ 
+ grant_minority_rights_title:0 "Grant Minority Rights"
+ grant_minority_rights_desc:0 "Grant Minority Rights"
+ 
+ 
+ 
+ set_living_standards_title:0 "Set National Living Standards"
+ set_living_standards_desc:0 "Set National Living Standards"
+ 
+ demand_right_adequate_living:0 "Demands for Adequate Living Standards"
+ 
+ naval_industry:0 "Naval Industry"
+ 
+ modern_top_power:0 "Modern Top Power"
+ modern_great_power:0 "Modern Great Power"
+ 
+ building_tax_center:0 "Tax Center"
+ building_railroad:0 "Provincial Railroad"
+ building_early_factory:0 "Early Factory"
+ building_factory_infrastructure:0 "Industrial Factories"
+ building_civil_factory:0 "Civil Factory"
+ building_military_factory:0 "Military Factory"
+ building_coal_plant:0 "Coal Plant"
+ building_nuclear_reactor:0 "Nuclear Reactor"
+ building_uranium_mine:0 "Uranium Mine"
+ building_tungsten_mine:0 "Tungsten Mine"
+ building_oil_drills:0 "Oil Drills"
+ building_military_base:0 "Military Base"
+ building_mil_harbor:0 "Military Harbor"
+ building_aluminium_smelter:0 "Aluminium Smelter"
+ 
+ form_french_republic_title:0 "Form the French Republic"
+ form_french_republic_desc:0 "Form the French Republic"
+ 
+ engelsk:0 "Engelsk"
+ skottsk:0 "Skottsk"
+ 
+ estate_proletarian:0 "Proletarian Estate"
+ 
+ industrial_medicine:0 "Industrial-Age Medicine"
+ industrial_medicine_ii:0 "Industrial-Age Medicine II"
+ industrial_medicine_iii:0 "Industrial-Age Medicine III"
+ industrial_medicine_iv:0 "Industrial-Age Medicine IV"
+ modern_medicine:0 "Modern Medicine I"
+ modern_medicine_ii:0 "Modern Medicine II"
+ modern_medicine_iii:0 "Modern Medicine III"
+ 
+ form_zimbabwe:0 "Form Zimbabwe"
+ form_zaire:0 "Form Zaire"
+ form_abyssinia:0 "Form Abyssinia"
+ 
+ tschechisch:0 "Tschechisch"
+ sorbisch:0 "Sorbisch"
+ schlesisch:0 "Schlesisch"
+ 
+ head_of_LoN:0 "Head Member of the League of Nations"
+ LoN_member:0 "Member of the League of Nations"
+ 
+ MONARCHY:0 "Monarchy"
+ REPUBLIC:0 "Republic"
+ futurist_GOVERNMENT_NAME:0 "futurist State"
+ DICTATORSHIP:0 "Dictatorship"
+ THEOCRACY:0 "Theocracy"
+ 
+ NEGOTIATE_DEMAND:0 "Negotiate Labor Demands"
+ RECRUIT_ECO_MANAGER:0 "Recruit Proletarian Economic Advisor"
+ 
+ LARGE_ARMY:0 "Large Army"
+ LARGER_ARMY:0 "Larger Army"
+ 
+ HIGH_TAX:0 "High Taxes"
+ EST_PRO_LABOR:0 "Labor Demands Negotiated"
+ EST_PRO_ECO_MAN:0 "Recruited Economic Manager"
+ RECRUIT_BANK_CHAIRMAN:0 "Recruit National-Bank Chairman"
+ EST_IND_BANK:0 "Recruited Bank Chairman"
+ EST_MIL_FUND:0 "Increased Military Funding"
+ EST_MIL_DIR:0 "Recruited Director"
+ EST_MIL_REF:0 "Recruited Reformer"
+ 
+ 
+ 
+ estate_industrialist:0 "Industrialist Estate"
+ 
+ estate_industrialist_desc:0 "Industrialist Estate"
+ 
+ estate_military_desc:0 "Military Estate"
+ 
+ estate_proletarian_desc:0 "Proletarian Estate"
+ 
+ LOWER_CORP_TAX:0 "Lower Corporate Taxes"
+ RECRUIT_ECONOMIC_ADVISOR:0 "Recruit Industrialist Economic Advisor"
+ 
+ estate_secret_police:0 "Secret Police Estate"
+ 
+ estate_secret_police_desc:0 "Secret Police Estate"
+ 
+ estate_inner_party:0 "Inner Ruling Party"
+ 
+ estate_inner_party_desc:0 "Inner Party Estate"
+ 
+ estate_military:0 "Military Estate"
+ 
+ space_center:0 "Space Center"
+ 
+ INCREASE_FUNDING:0 "Increase Funding"
+ DEMAND_SUPPORT_MIL:0 "Demand Military Support"
+ RECRUIT_MIL_DIRECTOR:0 "Recruit Military Director"
+ RECRUIT_MILITARY_REFORMER:0 "Recruit Military Reformer"
+ 
+ forced_fascism:0 "Revolutionary Reactionary Government"
+ forced_socialism:0 "Revolutionary Collectivist Government"
+ 
+ form_republic_china_title:0 "Form the Republic of China"
+ form_republic_china_desc:0 "Form the Republic of China"
+ 
+ form_austria_hungary_title:0 "Form Austria-Hungary"
+ form_austria_hungary_desc:0 "Form Austria-Hungary"
+ 
+ cb_regime_change:0 "Regime Change"
+ cb_regime_change_desc:0 "Replace their oppressive regime with a democratic one!"
+ 
+ enforced_labor:0 "Enforced Labor"
+ assassinated_nobility:0 "Assassinated Suspected Nobility"
+ enforce_restriction:0 "Enforced Restrictions"
+ 
+ atheist_group:0 "Materialist"
+ 
+ launch_lunar_orbiter_title:0 "Launch Lunar Orbiter"
+ launch_lunar_orbiter_desc:0 "Launch Lunar Orbiter"
+ 
+ red_planet_modifier:0 "Red Planet"
+ red_planet_overlord:0 "Red Planet"
+ 
+ diff_ideology:0 "Non-Authoritarian Ideology"
+ 
+ authoritarian_opinion:0 "Ideological Adversary"
+ 
+ futurist_federalization:0 "Futurist Federalization"
+ futurist_violence:0 "Futurist Violence"
+ artistic_state:0 "Artistic State"
+ 
+ ger_fascism_title:0 "Establish the Deutsches Reich"
+ ger_fascism_desc:0 "Establish the Deutsches Reich"
+ 
+ socialist_sabotage:0 "Collectivist Subversion"
+ fascist_sabotage:0 "Reactionary Subversion"
+ futurist_sabotage:0 "Futurist Subversion"
+ 
+ fellow_democracy:0 "Fellow Democratic Nation"
+ 
+ is_dominion:0 "Dominion"
+ 
+ war_time:0 "Wartime"
+ 
+ form_soviet_russia_title:0 "Form the Soviet Union"
+ form_soviet_russia_desc:0 "Form the Soviet Union"
+ 
+ uk_fascism_title:0 "Form the British Empire"
+ uk_fascism_desc:0 "Form the British Empire"
+ 
+ uk_communism_title:0 "Form the British Democratic Republic"
+ uk_communism_desc:0 "Form the British Democratic Republic"
+ 
+ form_russian_federation_title:0 "Form the Russian Federation"
+ form_russian_federation_desc:0 "Form the Russian Federation"
+ 
+ form_peoples_republic_china_title:0 "Form the People's Republic of China"
+ form_peoples_republic_china_desc:0 "Form the People's Republic of China"
+ 
+ purge_political_dissidents:0 "Purging Political Dissidents"
+ enforce_loyalty:0 "Enforcing Loyalty"
+ begin_industrialization_quotas:0 "Industrialization Quotas"
+ 
+ establish_communism_title:0 "Establish a Collectivist State"
+ establish_communism_desc:0 "Establish a Collectivist State"
+ 
+ establish_futurism_title:0 "Establish a Futurist State"
+ establish_futurism_desc:0 "Establish a Futurist State"
+ 
+ establish_fascism_title:0 "Establish a Reactionary State"
+ establish_fascism_desc:0 "Establish a Reactionary State"
+ 
+ subsidize_institutional_media_title:0 "Subsidize Institutional Media"
+ subsidize_institutional_media_desc:0 "Subsidize Institutional Media"
+ institutional_media:0 "Institutional Media"
+ 
+ multicontinental_empire:0 "Multi-Continental Empire"
+ multicontinental_empire_decolonization:0 "Multi-Continental Empire - Decolonization"
+ industrial_society:0 "Industrial Society"
+ 
+ nationalism_unrest_bgm:0 "Nationalism Age Unrest"
+ 
+ modern_espionage_ideas_bonus:0 "Full Modern Espionage"
+ modern_administrative_ideas_bonus:0 "Full Modern Administration"
+ 
+ futurist_group:0 "Futurism"
+ futurism:0 "Futurism"
+ machine_worship:0 "Machine Worship"
+ transhumanism:0 "Transhumanism"
+ 
+ commitment_urbanization:0 "Commitment to Urbanization"
+ industrial_area:0 "Industrialized Area"
+ industrial_navy:0 "Industrial-age Navy"
+ ind_colonial_infrastructures:0 "Colonial Infrastructure"
+ 
+ industrialized_economy:0 "Industrialized Economy"
+ national_academia:0 "National Academia"
+ modern_diplomacy_mission:0 "Modern Diplomatic Practices"
+ maintain_faction:0 "Maintaining Diplomatic Faction"
+ 
+ new_tactics:0 "New Military Tactics"
+ industrial_fortification:0 "Industrial Fortifications"
+ military_academy:0 "Military Academies"
+ motorized_wars:0 "Motorized Warfare"
+ 
+ difficulty_colonizing:0 "Difficult Colonization"
+ 
+ waldensian_poverty_aspect:0 "Voluntary Poverty"
+ desc_waldensian_poverty_aspect:0 "Voluntary Poverty"
+ waldensian_biblical_adherence_aspect:0 "Strict Biblical Adherence"
+ desc_waldensian_biblical_adherence_aspect:0 "Strict Biblical Adherence"
+ waldensian_translation_aspect:0 "Translation of the Bible"
+ desc_waldensian_translation_aspect:0 "Translation of the Bible"
+ waldensian_denial_purgatory_aspect:0 "Denial of Purgatory"
+ desc_waldensian_denial_purgatory_aspect:0 "Denial of Purgatory"
+ waldensian_religious_tolerance_aspect:0 "Religious Tolerance"
+ desc_waldensian_religious_tolerance_aspect:0 "Religious Tolerance"
+ waldensian_social_egalitarianism_aspect:0 "Ethos of Social Egalitarianism"
+ desc_waldensian_social_egalitarianism_aspect:0 "Ethos of Social Egalitarianism"
+ 
+ waldensian_religion_desc:0 "The Waldensians are a Protestant precursor movement founded by Peter Waldo in the late 12th century. Initially the Catholic Church only took issue to Waldo and his followers' not having a formal Church license for proselytizing. As time went on the rift between Waldensians and the Catholic Church grew greater until hostilities emerged that would last for centuries. Later, though, the Waldensians were mostly (though not entirely) absorbed into Protestant denominations. They were mostly secretive on the basis of religious persecution."
+ 
+ waldensian_rebels_title:0 "Waldensian"
+ waldensian_rebels_name:0 "$COUNTRY$ Waldensians"
+ waldensian_rebels_desc:0 "Waldensians are followers of Peter Waldo, a merchant turned preacher. They are opposed to Catholic teachings and are willing to create a Waldensian-sympathetic state in their own favor."
+ waldensian_rebels_demand:0 "Enforce Waldensian"
+ waldensian_rebels_demand_desc:0 "Waldensians are followers of Peter Waldo, a merchant turned preacher. They are opposed to Catholic teachings and are willing to create a Waldensian-sympathetic state in their own favor."
+ waldensian_rebels_army:0 "Waldensians Armies"
+ 
+ waldensian_center_of_reformation:0 "Center of Reformation"
+ 
+ fascist_rebels_title:0 "Reactionary"
+ fascist_rebels_name:0 "$COUNTRY$ Reactionaries"
+ fascist_rebels_desc:0 "Reactionaries are very opposed to liberal and collectivist ideologies, and they will establish a government in their own favor."
+ fascist_rebels_demand:0 "Overthrow Current Regime"
+ fascist_rebels_demand_desc:0 "Reactionaries are very opposed to liberal and collectivist ideologies, and they will establish a government in their own favor."
+ fascist_rebels_army:0 "Reactionary Armies"
+ 
+ futurist_rebels_title:0 "Futurist"
+ futurist_rebels_name:0 "$COUNTRY$ Futurists"
+ futurist_rebels_desc:0 "Futurists are very opposed to liberal and collectivist ideologies, and they will establish a government in their own favor."
+ futurist_rebels_demand:0 "Overthrow Current Regime"
+ futurist_rebels_demand_desc:0 "Futurists are very opposed to liberal and collectivist ideologies, and they will establish a government in their own favor."
+ futurist_rebels_army:0 "Futurist Armies"
+ 
+ futurist_government_name:0 "Futurist State"
+ futurist_government_desc:0 "Futurist State"
+ 
+ fascist_government_name:0 "Reactionary State"
+ fascist_government_desc:0 "Reactionary State"
+ 
+ socialist_government_name:0 "Collectivist State"
+ socialist_government_desc:0 "Collectivist State"
+ 
+ socialist_rebels_title:0 "Collectivist"
+ socialist_rebels_name:0 "$COUNTRY$ Collectivists"
+ socialist_rebels_desc:0 "Collectivists are very opposed to liberal and reactionary ideologies, and they will establish a government in their own favor."
+ socialist_rebels_demand:0 "Overthrow Current Regime"
+ socialist_rebels_demand_desc:0 "Collectivists are very opposed to liberal and reactionary ideologies, and they will establish a government in their own favor."
+ socialist_rebels_army:0 "Collectivist Army"
+ 
+ democratic_rebels_title:0 "Liberal"
+ democratic_rebels_name:0 "$COUNTRY$ Liberals"
+ democratic_rebels_desc:0 "Liberals are very opposed to reactionary and collectivist ideologies, and they will establish a government in their own favor."
+ democratic_rebels_demand:0 "Overthrow Current Regime"
+ democratic_rebels_demand_desc:0 "Liberals are very opposed to reactionary and collectivist ideologies, and they will establish a government in their own favor."
+ democratic_rebels_army:0 "Liberal Armies"
+ 
+ pl_social_conservative:0 "Social Conservative Party"
+ pl_social_conservative_influence:0 "Conservative Influence"
+ pl_social_conservative_FACTION_DESC:0 "Social conservatism is the belief that society is built upon a fragile network of relationships which need to be upheld through duty, traditional values and established institutions."
+ pl_social_liberal:0 "Social Liberal Party"
+ pl_social_liberal_influence:0 "Liberal Influence"
+ pl_social_liberal_FACTION_DESC:0 "Social liberalism is a political ideology and a variety of liberalism that endorses a regulated free market economy and the expansion of civil and political rights."
+ 
+ dm_social_conservative:0 "Social Conservatives"
+ dm_social_conservative_influence:0 "Conservative Influence"
+ dm_social_conservative_FACTION_DESC:0 "Social conservatism is the belief that society is built upon a fragile network of relationships which need to be upheld through duty, traditional values and established institutions."
+ dm_social_liberal:0 "Social Liberals"
+ dm_social_liberal_influence:0 "Liberal Influence"
+ dm_social_liberal_FACTION_DESC:0 "Social liberalism is a political ideology and a variety of liberalism that endorses a regulated free market economy and the expansion of civil and political rights."
+ dm_social_democrat:0 "Social Democrats"
+ dm_social_democrat_influence:0 "Social Democratic Influnece"
+ dm_social_democrat_FACTION_DESC:0 "Social democracy is a political, social and economic philosophy that supports economic and social interventions to promote social justice within the framework of a liberal democratic polity and a mixed economy."
+ dm_nationalist:0 "Nationalist Futurists"
+ dm_nationalist_influence:0 "Futurist Influence"
+ dm_nationalist_FACTION_DESC:0 "Futurism is an esoteric ideology whose manifesto was first published in the Le Figaro newspaper for Filippo Tomasso Marinetti. Despite being primarily a sociocultural ideology, Marinetti founded a political party for it in Italy in 1918, defunct 1920. Many futurists became fascists after 1920."
+ dm_fascist:0 "Reactionaries"
+ dm_fascist_influence:0 "Reactionary Influence"
+ dm_fascist_FACTION_DESC:0 "Reactionary ideology is most commonly characterized as opposed to liberal ideology, socialist ideology and communist ideology. The most well known is Fascism, commonly known for dictatorial power structures and suppression of other philosophies."
+ dm_communist:0 "Collectivist"
+ dm_communist_influence:0 "Collectivist Influence"
+ dm_communist_FACTION_DESC:0 "Collectivism is the philosophical, social, political, and economic ideology and movement, which supports a socioeconomic order structured upon the common ownership of the means of production and the absence of social classes, money, and the state."
+ dm_monarchist:0 "Monarchists"
+ dm_monarchist_influence:0 "Monarchist Influence"
+ dm_monarchist_FACTION_DESC:0 "Monarchism is the advocacy of monarchy or monarchical rule. A monarchist is an individual who supports this form of government, independent of any specific monarch."
+ 
+ at_monarchist:0 "Monarchist Faction"
+ at_monarchist_influence:0 "Monarchist Influence"
+ at_monarchist_FACTION_DESC:0 "Monarchism is the advocacy of monarchy or monarchical rule. A monarchist is an individual who supports this form of government, independent of any specific monarch."
+ at_republicanist:0 "Republican Faction"
+ at_republicanist_influence: "Repubican Influence"
+ at_republicanist_FACTION_DESC:0 "Republicanism is a representative form of government organization. It is a political ideology centered on citizenship in a state organized as a republic."
+ at_dictatorial:0 "Dictatorial Faction"
+ at_dictatorial:0 "Dictatorial Influence"
+ at_dictatorial_FACTION_DESC:0 "A dictatorship is an authoritarian form of government, characterized by a single leader or group of leaders and little or no toleration for political pluralism or independent programs or media."
+ 
+ 
+ 
+ fund_cultural_assimilation_title:0 "Expansion Policy: Fund Cultural Assimilation"
+ fund_cultural_assimilation:0 "Funds for Cultural Assimilation"
+ fund_cultural_assimilation_desc:0 "Fund Cultural Assimilation"
+ stop_funding_cultural_assimilation_title:0 "Expansion Policy: Stop Funding Assimilation"
+ stop_funding_cultural_assimilation_desc:0 "Stop Funding Cultural Assimilation"
+ institute_freedom_of_religion_title:0 "Religious Policy: Institute Freedom of Religion"
+ institute_freedom_of_religion_desc:0 "Institute Freedom of Religion"
+ claims_for_italy_title:0 "Expansion Policy: Claims for Italy!"
+ claims_for_italy_desc:0 "Some nationalist factions in our government and country have brought to us the prospect of a united Italy. We should heed their advice and annex the region and proclaim a united country for the Italian speaking people."
+ claims_for_germany_title:0 "Expansion Policy: Claims for Germany!"
+ claims_for_germany_desc:0 "Some nationalist factions in our government and country have brought to us the prospect of a united Germany. We should heed their advice and annex the region and proclaim a united country for the German speaking people."
+ uniting_culture_group:0 "Uniting Culture Group"
+ sovereignty_vatican:0 "Granted Vatican Sovereignty"
+ governmental_development:0 "Governmental Development"
+ expansion_of_government_bureaucracies:0 "Expansion of Government Bureaucracies"
+ modernization_of_tax_administration:0 "Modernization of Tax Administration"
+ industrial_building_sector:0 "Industrial Building Sector"
+ government_one:0 "(Modernization of Government) Tier One"
+ government_two:0 "(Modernization of Government) Tier Two"
+ government_three:0 "(Modernization of Government) Tier Three"
+ artillery_one:0 "(Modernization of Military) Artillery Tier One"
+ artillery_two:0 "(Modernization of Military) Artillery Tier Two"
+ artillery_three:0 "(Modernization of Military) Artillery Tier Three"
+ artillery_four:0 "(Modernization of Military) Artillery Tier Four"
+ artillery_five:0 "(Modernization of Military) Artillery Tier Five"
+ 
+ atheism:0 "Atheism"
+ atheism_religion_desc:0 "Atheism"
+ 
+ northern_french:0 "Anglo-Gallic"
+ occitanian:0 "Anglo-Occitanian"
+ english_gascon:0 "Anglo-Gascon"
+ english_burgundian:0 "Anglo-Burgundian"
+ english_wallonian:0 "Anglo-Wallonian"
+ english_breton:0 "Anglo-Breton"
+ english_norman:0 "Norman-English"
+ gallo_english:0 "Gallo-Anglian"
+ 
+ muslim_spanish:0 "Islamic Spanish"
+ 
+ industrial_empire:0 "Industrial Age Empire"
+ 
+ birthplace_of_nationalism_institution:0 "Birthplace of Modern Nationalism"
+ birthplace_of_global_imperialism:0 "Birthplace of Global Imperialism"
+ birthplace_of_industrialization:0 "Birthplace of Industrialization"
+ birthplace_of_public_education:0 "Birthplace of Compulsory Education"
+ birthplace_of_electrification:0 "Birthplace of Electrification"
+ birthplace_of_mass_media:0 "Birthplace of Mass Media"
+ birthplace_of_electrification:0 "Birthplace of Electrification"
+ 
+ separation_of_powers_tech_modifier:0 "Separation of Powers (Parliamentary)"
+ rights_of_man_tech_modifier:0 "Rights of Man (Parliamentary)"
+ 
+ industrialization_quota_five_years_title:0 "Initiate a Five Year Plan"
+ industrialization_quota_five_years_desc:0 "Initiate a Five Year Plan"
+ 
+ enforce_political_unity_title:0 "Enforce Political Unity"
+ enforce_political_unity_desc:0 "Enforce Political Unity"
+ 
+ remove_political_opposition_title:0 "Remove Political Opposition"
+ remove_political_opposition_desc:0 "Remove Political Opposition"
+ 
+ usa_liberty:0 "American Inspiration"
+ 
+ western_technology:0 "Western Technology"
+ 
+ computing_technology:0 "Computing Technology"
+ 
+ collectivized_farming:0 "Collectivized Farming"
+ gulag_labor:0 "Gulag Labor"
+ 
+ policing_division:0 "State Security Divisions"
+ no_policing_division:0 "No State Security Divisions"
+ 
+ launch_man_in_space_title:0 "Launch an Astronaut into Orbit"
+ launch_man_in_space_desc:0 "Launch an Astronaut into Orbit"
+ 
+ man_in_space:0 "Successful Astronaut Orbital Mission"
+ 
+ meiji_politics:0 "Meiji Restoration Politics"
+ 
+ no_futurism:0 "No Futurist Manifesto"
+ 
+ EST_PROLE_REV:0 "Revolutionary Proletariat"
+ 
+ 
+ 
+ 
+ birthplace_of_computer_infrastructure:0 "Birthplace of Modern Computing"
+ 
+ launch_lunar_mission_title:0 "Launch a Lunar Landing Mission"
+ launch_lunar_mission_desc:0 "Launch a Lunar Landing Mission"
+ 
+ space_station:0 "Space Station"
+ preparing_mission:0 "Preparing Mission"
+ 
+ lunar_landing:0 "Lunar Landing - Historical Impact"
+ 
+ rubber:0 "Rubber"
+ rubberDESC:0 "Rubber"
+ oil:0 "Oil"
+ oilDESC:0 "Oil"
+ aluminium:0 "Aluminium"
+ aluminiumDESC:0 "Aluminium"
+ uranium:0 "Uranium"
+ uraniumDESC:0 "Uranium"
+ tungsten:0 "Tungsten"
+ tungstenDESC:0 "Tungsten"
+ 
+ industrial_equipment:0 "Industrial Equipment"
+ industrial_equipmentDESC:0 "Industrial Equipment"
+ naval_equipment:0 "Modern Naval Equipment"
+ naval_equipmentDESC:0 "Modern Naval Equipment"
+ electronics:0 "Electronics"
+ electronicsDESC:0 "Electronics"
+ automobile:0 "Automobiles"
+ automobileDESC:0 "Automobiles"
+ cinema:0 "Cinema"
+ cinemaDESC:0 "Cinema"
+ 
+ modern_nuke:0 "Modern Nuclear Power"
+ modern_german:0 "German"
+ modern_german_nuke: "German (Nuclear Power)"
+ modern_soviet_nuke: "Soviet Union (Nuclear Power)"
+ modern_soviet: "Soviet Union"
+ 
+ nukes_and_stuff:0 "Begin Nuclear Weapons Development"
+ 
+ developing_nuke:0 "Developing Nuclear Weapons"
+ 
+ nukes_and_stuff_title:0 "Military Policy: Begin Nuclear Program"
+ nukes_and_stuff_desc:0 "Begin Nuclear Program"
+ 
+ import_tech:0 "Importing Technology 1"
+ import_tech_2:0 "Importing Technology 2"
+ import_tech_3:0 "Importing Technology 3"
+ 
+ agrarian_society:0 "Agrarian Society"
+ 
+ dem_at_peace:0 "At Peace"
+ 
+ revolutionary_group:0 "Revolutionary"
+ cult_of_the_supreme_being:0 "Cult of the Supreme Being"
+ 
+ large_empire:0 "Large Empire"
+ large_empire_unstable:0 "Large Empire | Low Stability"
+ large_empire_very_unstable:0 "Large Empire | Very Low Stability"
+ massive_empire:0 "Massive Empire"
+ colossal_empire:0 "Colossal Empire"
+ super_state:0 "Super State"
+ large_super_state:0 "Large Super State"
+ 
+ french_communism_title:0 "Form the French Commune"
+ french_communism_desc:0 "Form the French Commune"
+ 
+ convert_to_atheism_title:0 "Religious Policy: State Atheism"
+ convert_to_atheism_desc:0 "Enforce State Atheist Policies"
+ 
+ convert_to_futurism_title:0 "Embrace The Future in Faith"
+ convert_to_futurism_desc:0 "Embrace The Future in Faith"
+ 
+ convert_to_machine_worship_title:0 "Embrace The Automatons"
+ convert_to_machine_worship_desc:0 "Embrace The Automatons"
+ 
+ abolish_child_labor_title:0 "Liberalization Policy: Abolish Child Labor"
+ abolish_child_labor_desc:0 "Abolish Child Labor"
+ demand_child_labor_abolition:0 "Demands for Child Labor Abolition"
+ demand_health_program:0 "Demands for State Health-care"
+ demand_health_regulation:0 "Demands for Health Regulations"
+ demand_product_regulations:0 "Demands for Product Regulations"
+ revolution_1848:0 "Revolutions of 1848"
+ demand_work_week:0 "Demands for a Regulated Work Week"
+ abolished_child_labor:0 "Child Labor Abolition Policy"
+ establish_welfare_programs_title:0 "Modernization Policy: Establish Welfare Program"
+ establish_welfare_programs_desc:0 "Establish Welfare Program"
+ establish_work_week:0 "Modernization Policy: Establish Work Weeks"
+ establish_work_week_desc:0 "Establish Work Weeks"
+ demand_welfare:0 "Demands for Welfare Policies"
+ social_welfare_program:0 "Welfare Policies Enacted"
+ establish_equipment_safety_requirement_title:0 "Modernization Policy: Equipment Safety"
+ establish_equipment_safety_requirement_desc:0 "Establish Equipment Safety Regulations"
+ establish_product_regulations:0 "Modernization Policy: Product Regulations"
+ establish_product_regulations_desc:0 "Establish Equipment Safety Regulations"
+ establish_labor_union_rights_decision_title:0 "Modernization Policy: Labor Union Rights"
+ establish_labor_union_rights_decision_desc:0 "Establish Labor Union Rights"
+ regulate_work_week_title:0 "Modernization Policy: Regulate Work Week"
+ regulate_work_week_desc:0 "Regulate Work Week"
+ regulate_work_week_title:0 "Modernization Policy: Regulate Work Week"
+ regulate_work_week_desc:0 "Regulate Work Week"
+ establish_state_inquisitions_title:0 "Religious Policy: State Inquisitions"
+ establish_state_inquisitions_desc:0 "State Inquisitions"
+ employment_health_regulation:0 "Modernization Policy: Health Regulations"
+ institute_employment_health_regulation_desc:0 "Employer Health Regulations"
+ establish_health_care_program:0 "Modernization Policy: Health-care Program"
+ establish_health_care_program_desc:0 "Health-care Program"
+ institute_product_regulations_title:0 "Modernization Policy: Product Regulations"
+ institute_product_regulations_desc:0 "Institute Product Regulations"
+ establish_labor_union_rights:0 "Modernization Policy: Establish Union Rights"
+ institute_health_care_program_title:0 "Modernization Policy: Establish Health-care"
+ institute_health_care_program_desc:0 "Establish State Health-care"
+ institute_employment_health_regulation_title:0 "Modernization Policy: Health Regulations"
+ institute_employment_health_regulation_desc:0 "Employment Health Regulations"
+ womens_suffrage_demands_met:0 "Liberalization Policy: Women's Suffrage"
+ minority_rights:0 "Liberalization Policy: Minority Rights"
+ minority_rights_desc:0 "Liberalization Policy: Minority Rights"
+ right_to_adequate_living_standards:0 "Liberalization Policy: Living Standards"
+ right_to_adequate_living_standards_desc:0 "Liberalization Policy: Living Standards"
+ demand_safety_requirement:0 "Demands for Equipment Safety Regulations"
+ equipment_safety_requirement:0 "Equipment Safety Regulations Enacted"
+ humanist_ethos:0 "Humanist Ethos"
+ secular_ethos:0 "Secular Ethos"
+ illiberal_society:0 "Illiberal Society"
+ industrial_monarchist_politics:0 "Industrial-Age Non-Parliamentary Monarchy"
+ liberal_society:0 "Liberal Society"
+ industrial_mil_complexity:0 "Increasing Complexity of Military Technology"
+ industrial_dip_complexity:0 "Increasing Complexity of Diplomatic Technology"
+ industrial_adm_complexity:0 "Increasing Complexity of Administrative Technology"
+ modern_mil_complexity:0 "Modern Military Technology Complexity"
+ modern_dip_complexity:0 "Modern Diplomatic Technology Complexity"
+ modern_adm_complexity:0 "Modern Administrative Technology Complexity"
+ intention_to_unite:0 "Intention to Unite"
+ 
+ expand_the_army_title:0 "Militarization Policy: Expand Army"
+ expand_the_army_desc:0 "Militarization Policy: Expand Army"
+ 
+ form_eurounion_title:0 "Form the European Union"
+ form_eurounion_desc:0 "Form the European Union"
+ 
+ form_belgium_title:0 "Form the Belgian Nation"
+ form_belgium_desc:0 "Form the Belgian Nation"
+ 
+ form_french_empire_title:0 "Form the French Empire"
+ form_french_empire_desc:0 "Form the French Empire"
+ 
+ establish_republic_title:0 "Government Policy: Establish Republic"
+ establish_republic_desc:0 "Establish Republic"
+ 
+ establish_an_air_force_title:0 "Establish a National Air Force"
+ establish_an_air_force_desc:0 "Establish a National Air Force"
+ 
+ disarm_air_force_title:0 "Disarm Air Force"
+ disarm_air_force_desc:0 "Disarm Air Force"
+ 
+ upgrade_tier_two_title:0 "Upgrade Air Force (Tier 2)"
+ upgrade_tier_two_desc:0 "Upgrade Air Force (Tier 2)"
+ 
+ downgrade_tier_two_title:0 "Downgrade Air Force (Tier 2)"
+ downgrade_tier_two_desc:0 "Downgrade Air Force (Tier 2)"
+ 
+ upgrade_tier_three_title:0 "Upgrade Air Force (Tier 3)"
+ upgrade_tier_three_desc:0 "Upgrade Air Force (Tier 3)"
+ 
+ downgrade_tier_three_title:0 "Downgrade Air Force (Tier 3)"
+ downgrade_tier_three_desc:0 "Downgrade Air Force (Tier 3)"
+ 
+ upgrade_tier_four_title:0 "Upgrade Air Force (Tier 4)"
+ upgrade_tier_four_desc:0 "Upgrade Air Force (Tier 4)"
+ 
+ downgrade_tier_four_title:0 "Downgrade Air Force (Tier 4)"
+ downgrade_tier_four_desc:0 "Downgrade Air Force (Tier 4)"
+ 
+ upgrade_tier_five_title:0 "Upgrade Air Force (Tier 5)"
+ upgrade_tier_five_desc:0 "Upgrade Air Force (Tier 5)"
+ 
+ downgrade_tier_five_title:0 "Downgrade Air Force (Tier 5)"
+ downgrade_tier_five_desc:0 "Downgrade Air Force (Tier 5)"
+ 
+ upgrade_tier_six_title:0 "Upgrade Air Force (Tier 6)"
+ upgrade_tier_six_desc:0 "Upgrade Air Force (Tier 6)"
+ 
+ downgrade_tier_six_title:0 "Downgrade Air Force (Tier 6)"
+ downgrade_tier_six_desc:0 "Downgrade Air Force (Tier 6)"
+ 
+ upgrade_tier_seven_title:0 "Upgrade Air Force (Tier 7)"
+ upgrade_tier_seven_desc:0 "Upgrade Air Force (Tier 7)"
+ 
+ downgrade_tier_seven_title:0 "Downgrade Air Force (Tier 7)"
+ downgrade_tier_seven_desc:0 "Downgrade Air Force (Tier 7)"
+ 
+ no_space_others_do:0 "No Space Division in Space Age"
+ allied_air:0 "Allied Air Support"
+ 
+ futurist_government:0 "Futurist Government"
+ socialist_government:0 "Collectivist Government"
+ 
+ victorious_against_revolution:0 "Victorious in Revolution"
+ 
+ soviet_mobilization:0 "Soviet Mobilization"
+ 
+ grant_the_vatican_title:0 "Grant Vatican Autonomy"
+ grant_the_vatican_desc:0 "Grant Vatican Autonomy"
+ 
+ modern_socialist_ideas_bonus:0 "Modern Collectivist Ideas Bonus"
+ 
+ annex_austria_title:0 "Annexation of Austria"
+ annex_austria_desc:0 "Annexation of Austria"
+ 
+ subsidizing_media:0 "Subsidization of the Media Industry"
+ 
+ stop_enforcing_political_unity_title:0 "Stop Enforcing Political Unity"
+ stop_enforcing_political_unity_desc:0 "Stop Enforcing Political Unity"
+ 
+ form_yugoslavia_title:0 "Form the Nation of Yugoslavia"
+ form_yugoslavia_desc:0 "-AWAITING LOCALIZATION-"
+ 
+ form_czechoslovakia_title:0 "Form the Nation of Czechoslovakia"
+ form_czechoslovakia_desc:0 "-AWAITING LOCALIZATION-"
+ 
+ form_czechia_title:0 "Form the Nation of Czechia"
+ form_czechia_desc:0 "-AWAITING LOCALIZATION-"
+ 
+ modern_navy_ideas:0 "Modern Naval Ideas"
+ modern_navy_ideas_bonus:0 "Modern Naval Ideas Bonus"
+ massed_cannons:0 "Massed Cannons"
+ massed_cannons_desc:0 "Massed Cannons"
+ industrial_dockyards:0 "Industrial Dockyards"
+ industrial_dockyards_desc:0 "Industrial Dockyards"
+ submarine_fleets:0 "Submarine Fleets"
+ submarine_fleets_desc:0 "Submarine Fleets"
+ naval_education_academies:0 "Naval Education Academies"
+ naval_education_academies_desc:0 "Naval Education Academies"
+ naval_cryptology:0 "Naval Cryptology"
+ naval_cryptology_desc:0 "Naval Cryptology"
+ wolfpack_tactics:0 "Wolfpack Tactics"
+ wolfpack_tactics_desc:0 "Wolfpack Tactics"
+ coastal_defenses:0 "Coastline Defenses"
+ coastal_defenses_desc:0 "Coastline Defenses"
+ 
+ modern_strategy_ideas:0 "Modern Strategy Ideas"
+ bunkers_and_trench_garrisons:0 "Bunkers and Trench Garrisons"
+ bunkers_and_trench_garrisons_desc:0 "Bunkers and Trench Garrisons"
+ ready_conscripts:0 "Ready Conscripts"
+ ready_conscripts_desc:0 "Ready Conscripts"
+ military_science_division:0 "Military Science Divisions"
+ military_science_division_desc:0 "Military Science Divisions"
+ rally_national_defenses:0 "Rally National Defenses"
+ rally_national_defenses_desc:0 "Rally National Defenses"
+ naval_design_quality_regulations:0 "Naval Design Quality Regulations"
+ naval_design_quality_regulations_desc:0 "Naval Design Quality Regulations"
+ equipment_stockpiling:0 "Equipment Stockpiling"
+ equipment_stockpiling_desc:0 "Equipment Stockpiling"
+ offensive_tactics:0 "Offensive Tactics"
+ offensive_tactics_desc:0 "Offensive Tactics"
+ 
+ modern_trade_ideas:0 "Modern Capitalist Ideas"
+ international_trade:0 "International Trade Markets"
+ international_trade_desc:0 "International Trade Markets"
+ expansion_of_foreign_ministries:0 "Expansion of Foreign Ministries"
+ expansion_of_foreign_ministries_desc:0 "Expansion of Foreign Ministries"
+ international_stock_market:0 "International Stock Market"
+ international_stock_market_desc:0 "International Stock Market"
+ subsidization_of_businesses:0 "Subsidization of Businesses"
+ subsidization_of_businesses_desc:0 "Subsidization of Businesses"
+ deregulation_of_business:0 "Deregulation of Business"
+ deregulation_of_business_desc:0 "Deregulation of Business"
+ advancement_of_private_companies:0 "Advancement of Private Enterprises"
+ advancement_of_private_companies_desc:0 "Advancement of Private Enterprises"
+ foreign_trade_reputation:0 "Foreign Trade Reputation"
+ foreign_trade_reputation_desc:0 "Foreign Trade Reputation"
+ 
+ modern_espionage_ideas:0 "Modern Espionage Ideas"
+ polygraph_testing:0 "Polygraph Testing"
+ polygraph_testing_desc:0 "Polygraph Testing"
+ intelligence_cryptography:0 "Intelligence Cryptology"
+ intelligence_cryptography_desc:0 "Intelligence Cryptology"
+ insurgent_training:0 "Modern Insurgent Training"
+ insurgent_training_desc:0 "Modern Insurgent Training"
+ subject_intelligence:0 "Subject Intelligence Divisions"
+ subject_intelligence_desc:0 "Subject Intelligence Divisions"
+ remote_communication:0 "Remote Communications"
+ remote_communication_desc:0 "Remote Communications"
+ influence_over_foreign_nations:0 "Foreign Espionage Influence"
+ influence_over_foreign_nations_desc:0 "Foreign Espionage Influence"
+ formalized_espionage_division:0 "Formalized Intelligence Divisions"
+ formalized_espionage_division_desc:0 "Formalized Intelligence Divisions"
+ 
+ modern_socialist_ideas:0 "Modern Collectivist Ideas"
+ wartime_tax_collection:0 "Wartime Tax Collections"
+ wartime_tax_collection_desc:0 "Wartime Tax Collections"
+ expansion_of_administration:0 "Expansion of National Administration"
+ expansion_of_administration_desc:0 "Expansion of National Administration"
+ state_controlled_business:0 "State-Controlled Business"
+ state_controlled_business_desc:0 "State-Controlled Business"
+ socialist_rhetoric:0 "Socialist Rhetoric"
+ socialist_rhetoric_desc:0 "Socialist Rhetoric"
+ regulated_economoy:0 "Strict Economic Regulations"
+ regulated_economoy_desc:0 "Strict Economic Regulations"
+ marxist_philosophy:0 "Strict Economic Regulations"
+ marxist_philosophy_desc:0 "Strict Economic Regulations"
+ socialist_warfare:0 "Socialist Conscription"
+ socialist_warfare_desc:0 "Socialist Conscription"
+ 
+ autarky:0 "Autarky"
+ labor_facility:0 "Labor Facilities"
+ 
+ friese:0 "Friese"
+ niederlandisch:0 "Niederländisch"
+ flamisch:0 "Flämisch"
+ 
+ leader_of_german_nations:0 "German Statehood"
+ land_of_opportunity:0 "Land of Opportunity"
+ 
+ illirico:0 "Illirico"
+ algerino:0 "Algerino"
+ 
+ marocchino:0 "Marocchino"
+ 
+ provincial_railroad:0 "Provincial Railroad"
+ 
+ chinese_statehood:0 "Chinese Statehood"
+
+ EST_PROLE_EGAL:0 "Egalite Reform: "
+ EST_PROLE_LIBERTY:0 "Liberte Reform"
+ EST_PROLE_FANAT:0 "Revolutionary Fanaticism"
+ EST_PROLE_DEMANDS_MET:0 "Societal Modernization Demands"
+ EST_PROLE_DEMANDS:0 "Proletarian Demands: "
+ 
+ EST_IND_EGAL:0 "Egalite Reform: "
+ EST_IND_LIBERTY:0 "Liberte Reform"
+ EST_IND_FRATERNITE:0 "Fraternite Reform"
+ 
+ 
+ modern_administrative_ideas:0 "Modern Administrative Ideas"
+ introduction_of_identification_measures:0 "Identification Measures"
+ introduction_of_identification_measures_desc:0 "Identification Measures"
+ urban_planning:0 "Modern Urban Planning"
+ urban_planning_desc:0 "Modern Urban Planning"
+ public_utilities:0 "Public Utilities"
+ public_utilities_desc:0 "Public Utilities"
+ expansion_of_bureaucracy:0 "Expansion of Administrative Bureaucracies"
+ expansion_of_bureaucracy_desc:0 "Expansion of Administrative Bureaucracies"
+ management_of_internal_regions:0 "Management of Internal States"
+ management_of_internal_regions_desc:0 "Management of Internal States"
+ integration_streamlining:0 "Integration Streamlining"
+ integration_streamlining_desc:0 "Integration Streamlining"
+ modern_territorial_management:0 "Modern Territorial Management"
+ modern_territorial_management_desc:0 "Modern Territorial Management"
+ 
+ subsidize_mass_media_industry_title:0 "Subsidize the Mass Media Industry"
+ subsidize_mass_media_industry_desc:0 "Subsidize the Mass Media Industry"
+ establish_space_program_title:0 "Establish Space Program"
+ establish_space_program_desc:0 "Establish Space Program"
+ cancel_space_program_title:0 "Cancel Space Program"
+ cancel_space_program_desc:0 "Cancel Space Program"
+ launch_space_station_title:0 "Launch A Space Station"
+ launch_space_station_desc:0 "Launch A Space Station"
+ 
+ industrial_government:0 "Industrial Government"
+ modern_government:0 "Modern Government"
+ military_industrial_complex:0 "Military Industrial Complex"
+ 
+ denied_application:0 "Denied Dominionship Application"
+ 
+ overlord_mercantilism:0 "Overlord's Mercantilist Policies"
+ overlord_tariff:0 "Overlord's Tariff Acts"
+ overlord_acts:0 "Overlord's Intolerable Acts"
+ 
+ modern_inquisition:0 "Inquisitions"
+ 
+ tooltip_parliament:0 "Nation has Parliament"
+ 
+ 
+ romanian_group:0 "Romanian Group"
+ 
+ cosmopolitan_french:0 "French"
+ anglais:0 "Anglais"
+ ecossaise:0 "Écossais"
+ souabe:0 "Souabe"
+ du_rhin:0 "Du Rhin"
+ bavarois:0 "Bavarois"
+ franconien:0 "Franconien"
+ saxonne:0 "Saxonne"
+ prussien:0 "Prussien"
+ westphalien:0 "Westphalien"
+ pomeranien:0 "Poméranien"
+ castillan:0 "Castillan"
+ catalane:0 "Catalane"
+ aragonais:0 "Aragonais"
+ french_leonese:0 "French Leonese"
+ galicien:0 "Galicien"
+ portugais:0 "Portugais"
+ portugais:0 "Portugais"
+ venitien:0 "Vénitien"
+ piemontais:0 "Piémontais"
+ ligure:0 "Ligure"
+ french_lombard:0 "Lombardien"
+ maltais:0 "Maltais"
+ napolitain:0 "Napolitain"
+ ombrien:0 "Ombrien"
+ romain:0 "Romain"
+ sarde:0 "Sarde"
+ sicilien:0 "Sicilien"
+ toscan:0 "Toscan"
+ romandian:0 "Romand"
+ franco_german:0 "Franco-German"
+ 
+ siciliano:0 "Siciliano"
+ portugese_g:0 "Portugese Group"
+ borgonon:0 "Borgoñón"
+ frances:0 "Frances"
+ occitanos:0 "Los Occitanos"
+ gasconios:0 "Los Gasconios"
+ normando:0 "Los Normandos"
+ valon:0 "Valon"
+ bretones:0 "Bretones"
+ sardo:0 "Sardo"
+ ingles:0 "Ingles"
+ escoses:0 "Escoses"
+ toscano:0 "Toscano"
+ umbrias:0 "Umbrias"
+ napolitano:0 "Napolitano"
+ ligures:0 "Ligures"
+ lombardiano:0 "Lombardiano"
+ veneciano:0 "Veneciano"
+ romagnanos:0 "Romagnanos"
+ maltano:0 "Maltano"
+ piamontes:0 "Piamontes"
+ romandias:0 "Romandías"
+ 
+ faransian:0 "Faransian"
+ 
+ waldensian:0 "Waldensian"
+ 
+ italiu:0 "Italiu"
+ 
+ sirbiun:0 "Sirbiun"
+ bulgharian:0 "Bulgharian"
+ rumani:0 "Rumani"
+ hingharian:0 "Hingharian"
+ transilfanian:0 "Transilfanian"
+ maniin:0 "Maniin"
+ 
+ occitano:0 "Occitano"
+ francese:0 "Francese"
+ vallone:0 "Vallone"
+ borgognone:0 "Borgognone"
+ bretone:0 "Bretone"
+ normanno:0 "Normanno"
+ gasconione:0 "Gasconione"
+ latin_leonese:0 "Leonese Latin"
+ latin_aragonese:0 "Aragonese Latin"
+ castigliano:0 "Castigliano"
+ portoghese:0 "Portoghese"
+ galiziano:0 "Galiziano"
+ catalano:0 "Catalano"
+ romando:0 "Romando"
+ italo_latin:0 "Italo-Latin"
+ gallo_italian:0 "Gallo-Italian"
+ 
+ umbrisch:0 "Umbrisch"
+ neapolitanisch:0 "Neapolitanisch"
+ maltesisch:0 "Maltesisch"
+ lombardisch:0 "Lombardisch"
+ piemontesisch:0 "Piemontesisch"
+ venezianisch:0 "Venezianisch"
+ romagnanisch:0 "Romagnanisch"
+ toskanisch:0 "Toskanisch"
+ sardinisch:0 "Sardinisch"
+ ligurier:0 "Ligurier"
+ sizilianisch:0 "Sizilianisch"
+ englisch:0 "Englisch"
+ schottisch:0 "Schottisch"
+ wallonisch:0 "Wallonisch"
+ burgunder:0 "Burgunder"
+ franzosisch:0 "Französisch"
+ okzitanisch:0 "Okzitanisch"
+ normannisch:0 "Normannisch"
+ aquitainisch:0 "Aquitainisch"
+ gasconisch:0 "Gasconisch"
+ bretonisch:0 "Bretonisch"
+ romandisch:0 "Romandisch"
+ germano_french:0 "Germano-French"
+ 
+ countremerin:0 "Countremerin"
+ condonine:0 "Condonine"
+ francine:0 "Francine"
+ normandine:0 "Normandine"
+ ocitin:0 "Ocitin"
+ gascine:0 "Gascine"
+ bratine:0 "Bratine"
+ valine:0 "Valine"
+ burcontine:0 "Burcontine"
+ acuitin:0 "Acuitin"
+ ecotin:0 "Ecotin"
+ 
+ south_german:0 "South German"
+ 
+ benelux:0 "Benelux"
+ engels:0 "Engels"
+ schots:0 "Schots"
+ waals:0 "Waals"
+ frans:0 "Frans"
+ bourgondisch:0 "Bourgondisch"
+ gasconjer:0 "Gasconjer"
+ occitaans:0 "Occitaans"
+ francoprovencaals:0 "Franco-Provençaals"
+ dutchbreton:0 "Dutch-Breton"
+ normandier:0 "Normandiër"
+ 
+ rijnlands:0 "Rijnlands"
+ westfaals:0 "Westfaals"
+ zwabisch:0 "Zwabisch"
+ beiers:0 "Beiers"
+ zwitsers:0 "Zwitsers"
+ oostenrijks:0 "Oostenrijks"
+ frankisch:0 "Frankisch"
+ sakser:0 "Sakser"
+ pruisisch:0 "Pruisisch"
+ pommers:0 "Pommers"
+ 
+ 
+ muslim_spain:0 "Islamic Spanish"
+ muslim_france:0 "Islamic French"
+ muslim_balkans:0 "Islamic Balkan"
+ 
+ turkic:0 "Turkic"
+ 
+ roman_group:0 "Roman Latin"
+ anglo_saxon_group:0 "Old English"
+ 
+ secular:0 "Secular Religious Policy"
+ secular_religion_desc:0 "Secular Religious Policy"
+ 
+ invest_in_reforms:0 "Invest in Government Reforms"
+ colonial_stability:0 "Invest in Imperial Stability"
+ national_security:0 "Invest in National Security Programs"
+ funding_to_army:0 "Raise Military Budget"
+ funding_to_the_army:0 "High Military Budget"
+ 
+ early_modern_howitzer:0 "Early Howitzer"
+ percussion_rifle:0 "Percussion-Cap Rifle"
+ modern_cavalry:0 "Modern Cavalry"
+ armstrong_gun:0 "Armstrong Gun"
+ needle_rifle:0 "Needle Rifle"
+ bolt_action_rifle:0 "Bolt-Action Rifle"
+ early_tank:0 "Early Tank"
+ wwi_howitzer:0 "WWI-Era Howitzer"
+ semi_automatic_rifle:0 "Semi-Automatic Rifle"
+ wwii_artillery:0 "WWII-Era Artillery"
+ offensive_wwii_tank:0 "Offensive WWII Era Tanks"
+ defensive_wwii_tank:0 "Defensive WWII Era Tanks"
+ automatic_rifle:0 "Automatic Rifle"
+ defensive_modern_tank:0 "Defensive Modern Tanks"
+ offensive_modern_tank:0 "Offensive Modern Tanks"
+ modern_artillery:0 "Modern Artillery"
+ sub_machine_gun:0 "Sub-Machine Gun"
+ t34:0 "T-34 Tank"
+ stg44:0 "Sturmgewehr-44 Rifle"
+ 
+ steamship:0 "Steamship"
+ ironclad:0 "Ironclad"
+ transport:0 "Transport"
+ cruiser:0 "Cruiser"
+ destroyer:0 "Destroyer"
+ pre-dreadnought:0 "Pre-Dreadnought"
+ dreadnought:0 "Dreadnought"
+ early_battleship:0 "Early Battleship"
+ battleship:0 "Battleship"
+ missile_ship:0 "Missile Ship"
+ 
+ tanks_i:0 "Armor I"
+ tanks_ii:0 "Armor II"
+ tanks_iii:0 "Armor III"
+ 
+ national_collapse:0 "Collapsing Empire"
+ 
+ svizzero:0 "Svizzero"
+ 
+ 
+ ooselid:0 "Ööselid"
+ saarkorge:0 "Saarkõrge"
+ saarmadal:0 "Saarmadal"
+ saarnyelvid:0 "Saarnyelvid"
+ saarnordlig:0 "Saarnørdlig"
+ liivid:0 "Liivid"
+ inkriid:0 "Inkriid"
+ saarmagi:0 "Saarmägi"
+ saarhasaslik:0 "Saarhälaslik"
+ saarkorkid:0 "Saarkõrkid"
+ 
+ 

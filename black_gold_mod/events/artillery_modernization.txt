@@ -1,0 +1,121 @@
+namespace = artillery_modernization
+
+	country_event = {
+		id = artillery_modernization.1
+		title = "artillery_modernization.t.1"
+		desc = "artillery_modernization.d.1"
+		picture = MIL_ADVANCE_eventPicture
+
+		trigger = {
+			mil_tech = 32
+			NOT = { has_country_modifier = artillery_one }
+		}	
+
+		mean_time_to_happen = {
+			days = 1
+		}
+	
+		option = {
+			name = "artillery_modernization.1.a"
+			add_country_modifier = {
+				name = "artillery_one"
+				duration = -1
+			}
+		}
+	}
+
+	country_event = {
+		id = artillery_modernization.2
+		title = "artillery_modernization.t.2"
+		desc = "artillery_modernization.d.2"
+		picture = MIL_ADVANCE_eventPicture
+
+		trigger = {
+			mil_tech = 33
+			NOT = { has_country_modifier = artillery_two }
+		}	
+
+		mean_time_to_happen = {
+			days = 1
+		}
+	
+		option = {
+			name = "artillery_modernization.2.a"
+			add_country_modifier = {
+				name = "artillery_two"
+				duration = -1
+			}
+		}
+	}
+
+	country_event = {
+		id = artillery_modernization.3
+		title = "artillery_modernization.t.3"
+		desc = "artillery_modernization.d.3"
+		picture = MIL_ADVANCE_eventPicture
+
+		trigger = {
+			mil_tech = 35
+			NOT = { has_country_modifier = artillery_three }
+		}	
+
+		mean_time_to_happen = {
+			days = 1
+		}
+	
+		option = {
+			name = "artillery_modernization.3.a"
+			add_country_modifier = {
+				name = "artillery_three"
+				duration = -1
+			}
+		}
+	}
+
+	country_event = {
+		id = artillery_modernization.4
+		title = "artillery_modernization.t.4"
+		desc = "artillery_modernization.d.4"
+		picture = MIL_ADVANCE_eventPicture
+
+		trigger = {
+			mil_tech = 37
+			NOT = { has_country_modifier = artillery_four }
+		}	
+
+		mean_time_to_happen = {
+			days = 1
+		}
+		
+		option = {
+			name = "artillery_modernization.4.a"
+			add_country_modifier = {
+				name = "artillery_four"
+				duration = -1
+			}
+		}
+	}
+
+	country_event = {
+		id = artillery_modernization.5
+		title = "artillery_modernization.t.5"
+		desc = "artillery_modernization.d.5"
+		picture = MIL_ADVANCE_eventPicture
+
+		trigger = {
+			mil_tech = 38
+			NOT = { has_country_modifier = artillery_five }
+		}	
+
+		mean_time_to_happen = {
+			days = 1
+		}
+	
+		option = {
+			name = "artillery_modernization.5.a"
+			add_country_modifier = {
+				name = "artillery_five"
+				duration = -1
+			}
+		}
+	}

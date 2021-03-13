@@ -1,0 +1,229 @@
+country_decisions = {
+
+	establish_welfare_programs = {
+		potential = {
+			has_country_flag = welfare_program_complete
+			NOT = { has_country_modifier = social_welfare_program }
+		}
+		allow = {
+			has_country_modifier = demand_welfare
+			years_of_income = 0.05
+			adm_power = 15
+		}
+		effect = {
+			add_country_modifier = {
+				name = social_welfare_program
+				duration = -1
+			}
+			remove_country_modifier = demand_welfare
+			add_years_of_income = -0.05
+			add_adm_power = -15
+			add_stability = -1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	institute_employment_health_regulation = {
+		potential = {
+			has_country_flag = health_reg_complete
+			NOT = { has_country_modifier = employment_health_regulation }
+		}
+		allow = {
+			years_of_income = 0.05
+			adm_power = 15
+		}
+		effect = {
+			add_country_modifier = {
+				name = employment_health_regulation
+				duration = -1
+			}
+			remove_country_modifier = demand_health_regulation
+			add_years_of_income = -0.05
+			add_adm_power = -15
+			add_stability = -1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	institute_health_care_program = {
+		potential = {
+			has_country_flag = health_program_ready
+			NOT = { has_country_modifier = establish_health_care_program }
+		}
+		allow = {
+			years_of_income = 1.0
+			adm_power = 15
+		}
+		effect = {
+			add_country_modifier = {
+				name = establish_health_care_program
+				duration = -1
+			}
+			remove_country_modifier = demand_health_program
+			add_years_of_income = -0.05
+			add_adm_power = -15
+			add_stability = -1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	establish_equipment_safety_requirement = {
+		potential = {
+			has_country_flag = safety_requirement_policy_prep
+			NOT = { has_country_modifier = equipment_safety_requirement }
+		}
+		allow = {
+			years_of_income = 0.05
+			adm_power = 15
+		}
+		effect = {
+			add_country_modifier = {
+				name = equipment_safety_requirement
+				duration = -1
+			}
+			remove_country_modifier = demand_safety_requirement
+			add_years_of_income = -0.05
+			add_adm_power = -15
+			add_stability = -1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	regulate_work_week = {
+		potential = {
+			has_country_flag = work_week_program_complete
+			NOT = { has_country_modifier = establish_work_week }
+		}
+		allow = {
+			years_of_income = 0.05
+			adm_power = 15
+		}
+		effect = {
+			add_country_modifier = {
+				name = establish_work_week
+				duration = -1
+			}
+			remove_country_modifier = demand_work_week
+			add_years_of_income = -0.05
+			add_adm_power = -15
+			add_stability = -1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	establish_labor_union_rights_decision = {
+		potential = {
+			has_country_flag = labor_union_policy_complete
+			NOT = { has_country_modifier = establish_labor_union_rights }
+		}
+		allow = {
+			years_of_income = 0.05
+			adm_power = 15
+		}
+		effect = {
+			add_country_modifier = {
+				name = establish_labor_union_rights
+				duration = -1
+			}
+			remove_country_modifier = demand_union_rights
+			add_years_of_income = -0.05
+			add_adm_power = -15
+			add_stability = -1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	institute_product_regulations = {
+		potential = {
+			adm_tech = 33
+			NOT = { has_country_flag = demand_product_reg }
+		}
+		allow = {
+			adm_tech = 34
+			has_country_modifier = demand_product_regulations
+			years_of_income = 0.05
+			adm_power = 15
+		}
+		effect = {
+			add_country_modifier = {
+				name = establish_product_regulations
+				duration = -1
+			}
+			remove_country_modifier = demand_product_regulations
+			add_years_of_income = -0.05
+			add_adm_power = -15
+			add_stability = -1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	################not part of the unrest things################
+	
+	#establish_federal_science_division = {
+	#	potential = {
+	#		has_reform = pro_enlightenment_reform
+	#		adm_tech = 32
+	#		NOT = {
+	#			has_country_modifier = federal_science
+	#		}
+	#	}
+	#	allow = {
+	#		has_reform = pro_enlightenment_reform
+	#		adm_tech = 33
+	#		years_of_income = 1.0
+	#		adm_power = 50
+	#	}
+	#	effect = {
+	#		add_country_modifier = {
+	#			name = federal_science
+	#			duration = -1
+	#		}
+	#		add_years_of_income = -1.0
+	#		add_adm_power = -50
+	#	}
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#}
+	
+	establish_state_inquisitions = {
+		potential = {
+			has_reform = anti_enlightenment_reform
+			adm_tech = 32
+			NOT = {
+				has_country_modifier = modern_inquisition
+			}
+		}
+		allow = {
+			has_reform = anti_enlightenment_reform
+			adm_tech = 33
+			years_of_income = 1.0
+			adm_power = 150
+		}
+		effect = {
+			add_country_modifier = {
+				name = modern_inquisition
+				duration = -1
+			}
+			add_years_of_income = -1.0
+			add_adm_power = -150
+		}
+		ai_will_do = {
+			factor = 0
+				
+			modifier = {
+				factor = 1
+				
+				years_of_income = 1.0 
+			}
+		}
+	}
+}

@@ -1,0 +1,137 @@
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_fascist_reform"
+		texturefile = "gfx//interface//government_reform_icons//fascist_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_socialist_reform"
+		texturefile = "gfx//interface//government_reform_icons//socialist_reform.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_democratic_reform"
+		texturefile = "gfx//interface//government_reform_icons//democratic_reform.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_authoritarian_reform"
+		texturefile = "gfx//interface//government_reform_icons//authoritarian_reform.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_socialist_juche"
+		texturefile = "gfx//interface//government_reform_icons//socialist_juche.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_technocracy_gfx"
+		texturefile = "gfx//interface//government_reform_icons//technocracy.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_futurist_government"
+		texturefile = "gfx//interface//government_reform_icons//futurist_government.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_futurist_government_gold"
+		texturefile = "gfx//interface//government_reform_icons//futurist_government_gold.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_socialist_star"
+		texturefile = "gfx//interface//government_reform_icons//socialist_star.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_socialist_revolutionary"
+		texturefile = "gfx//interface//government_reform_icons//socialist_revolutionary.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_fascist_government"
+		texturefile = "gfx//interface//government_reform_icons//fascist_government.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_fascist_government_italy"
+		texturefile = "gfx//interface//government_reform_icons//fascist_government_italy.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_eagle_empire"
+		texturefile = "gfx//interface//government_reform_icons//eagle_empire.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_swastika"
+		texturefile = "gfx//interface//government_reform_icons//swastika.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_purge_foreign_culture"
+		texturefile = "gfx//interface//government_reform_icons//purge_foreign_culture.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_soc_exp_bureau"
+		texturefile = "gfx//interface//government_reform_icons//soc_exp_bureau.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_soc_col_bureau"
+		texturefile = "gfx//interface//government_reform_icons//soc_col_bureau.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_fascist_government_gold"
+		texturefile = "gfx//interface//government_reform_icons//fascist_government_gold.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_socialist_star_gold"
+		texturefile = "gfx//interface//government_reform_icons//socialist_star_gold.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_fascist_government_white"
+		texturefile = "gfx//interface//government_reform_icons//fascist_government_white.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_socialist_star_white"
+		texturefile = "gfx//interface//government_reform_icons//socialist_star_white.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_strasserism"
+		texturefile = "gfx//interface//government_reform_icons//strasserism.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_futurism"
+		texturefile = "gfx//interface//government_reform_icons//futurism_ideology.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_parliamentary_monarchism"
+		texturefile = "gfx//interface//government_reform_icons//parliamentary_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_parliamentary_republicanism"
+		texturefile = "gfx//interface//government_reform_icons//parliamentary_republicanism.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_liberal_dictatorship"
+		texturefile = "gfx//interface//government_reform_icons//liberal_dictatorship.dds"
+	}
+	
+	
+	
+	spriteType = {
+		name = "government_reform_placeholder"
+		texturefile = "gfx//interface//government_reform_icons//placeholder.dds"
+	}
+}

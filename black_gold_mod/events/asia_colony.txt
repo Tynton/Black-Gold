@@ -1,0 +1,125 @@
+namespace = asia_colony
+
+#Establishment of the Raj
+country_event = {
+	id = asia_colony.1
+	title = "asia_colony.n.1"
+	desc = "asia_colony.d.1"
+	picture = BUREAU_eventPicture
+	
+	major = yes
+
+	trigger = {
+		capital_scope = {
+			OR = {
+				continent = europe
+				region = japan_region
+			}
+		}
+		NOT = { has_global_flag = raj_event_flag }
+		development_in_provinces = {
+			value = 200
+			superregion = india_superregion
+		}
+		ROOT = {
+			adm_tech = 34
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 36
+	}
+	
+	option = {
+		name = "asia_colony.1.a"
+		hidden_effect = {
+			release = RAJ
+			every_owned_province = {
+				limit = {
+					superregion = india_superregion
+				}
+				add_core = RAJ
+				cede_province = RAJ
+			}
+			RAJ = {
+				change_government = republic
+				add_government_reform = oligarchy_reform
+				india_superregion = {
+					add_permanent_claim = RAJ
+				}
+			}
+			create_subject = {
+				subject_type = old_world_colony
+				subject = RAJ
+			}
+		}
+		set_global_flag = raj_event_flag
+		custom_tooltip = form_raj
+		ai_chance = { factor = 80 }
+	}
+	option = {
+		name = "asia_colony.1.b"
+		custom_tooltip = form_raj_later
+		set_global_flag = raj_event_flag
+		ai_chance = { factor = 20 }
+	}
+}
+
+country_event = {
+	id = asia_colony.2
+	title = "asia_colony.n.2"
+	desc = "asia_colony.d.2"
+	picture = BUREAU_eventPicture
+	
+
+	trigger = {
+		tag = RAJ
+		is_subject = no
+	}	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "asia_colony.2.a"
+		change_tag = BHA
+		india_superregion = {
+			add_core = BHA
+		}
+	}
+}
+
+country_event = {
+	id = asia_colony.3
+	title = "asia_colony.n.3"
+	desc = "asia_colony.d.3"
+	picture = BUREAU_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		RAJ = {
+			is_subject_of = ROOT
+		}
+		ROOT = {
+			any_owned_province = {
+				superregion = india_superregion
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "asia_colony.2.a"
+		every_owned_province = {
+			limit = {
+				superregion = india_superregion
+			}
+			cede_province = RAJ
+		}
+	}
+}

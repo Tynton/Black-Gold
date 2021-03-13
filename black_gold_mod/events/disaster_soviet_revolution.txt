@@ -1,0 +1,241 @@
+namespace = soviet_revolution
+
+# Revolution
+country_event = {
+	id = soviet_revolution.1
+	title = "soviet_revolution.1.t"
+	desc = "soviet_revolution.1.d"
+	picture = {
+		trigger = {
+			NOT = {
+				OR = {
+					tag = RUS
+					tag = RUF
+				}
+			}
+		}
+		picture = SOC_REV_eventPicture
+	}
+	picture = {
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = RUF
+			}
+		}
+		picture = SOV_REV_eventPicture
+	}
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+
+	immediate = {
+		random_owned_province = { 
+			limit = {
+				development = 8
+			}
+			spawn_rebels = {
+				type = socialist_rebels
+				size = 3		
+				win = yes
+				unrest = 10
+			}
+			
+		}
+		add_stability = -5
+	
+		set_country_flag = had_soviet_revolution
+	}
+	
+	option = {
+		name = "soviet_revolution.1.a"			# Dire times are ahead of us
+		add_prestige = -10
+	}
+	
+	option = {
+		name = "soviet_revolution.1.b"			# Dire times are ahead of us
+		add_prestige = -50
+		
+		change_government = socialist_government
+		
+		end_disaster = soviet_revolution
+		
+		33 = {
+			change_province_name = "Petrograd"
+		}
+		
+		1971 = {
+			change_province_name = "Stalingrad"
+		}
+		
+		294 = {
+			change_province_name = "Kalinin"
+		}
+		
+		310 = {
+			change_province_name = "Veliky Novgorod"
+		}
+		
+		2420 = {
+			change_province_name = "Chkalov"
+		}
+		
+		305 = {
+			change_province_name = "Molotov"
+		}
+		
+		set_global_flag = socialist_nation_exists
+		
+		
+	}
+}
+
+# Industry leaders
+country_event = {
+	id = soviet_revolution.3
+	title = "soviet_revolution.3.t"
+	desc = "soviet_revolution.3.d"
+	picture = SOC_REV_eventPicture
+	
+	trigger = {
+		NOT = { has_country_flag = industry_leaders }
+	}
+	
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_country_flag = industry_leaders
+	}
+	
+	option = {
+		name = "soviet_revolution.3.a"			# Restrict industry_leaders
+		ai_chance = { factor = 30 }
+		if = {
+			limit = {
+				has_disaster = soviet_revolution
+			}
+			add_country_modifier = {
+				name = "restrict_industry_leaders"
+				duration = -1
+				desc = "END_OF_REVOLUTION"
+			}
+		}
+	}
+	option = {
+		name = "soviet_revolution.3.b"			# do so with force
+		ai_chance = { factor = 70 }
+		random_owned_province = { socialist_rebels = 1 }
+		add_stability_or_adm_power = yes
+		if = {
+			limit = {
+				has_disaster = soviet_revolution
+			}
+			add_country_modifier = {
+				name = "industry_leader_restrictions"
+				duration = -1
+				desc = "END_OF_REVOLUTION"
+			}
+		}
+	}
+}
+
+#####Revolution Events######
+
+country_event = {
+	id = soviet_revolution.10
+	title = "soviet_revolution.10.t"
+	desc = "soviet_revolution.10.d"
+	picture = SOC_REV_eventPicture
+	
+	major = yes
+	
+	trigger = {
+		capital_scope = {
+			controlled_by = REB
+		} 
+		num_of_cities = 10
+		NOT = { 
+			OR = {
+				has_reform = socialist_government_reform
+				has_reform = socialist_juche
+				has_reform = revolutionary_socialism
+				has_reform = socialist_republic
+			}
+		}
+		OR = {
+			has_disaster = soviet_revolution
+			has_dlc = "Art of War"
+		}
+	}
+	
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "soviet_revolution.10.a"
+		disband_rebels = socialist_rebels
+		add_mercantilism = -1
+		#country_event = { id = soviet_revolution.20 }
+		add_stability_or_adm_power = yes
+		if = {
+			limit = { NOT = { government = socialist_government } }
+			change_government = socialist_government
+		}
+		kill_ruler = yes
+		add_country_modifier = {
+			name = "forced_socialism"
+			duration = -1
+		}
+		add_government_reform = revolutionary_socialism
+		set_global_flag = socialist_nation_exists
+	}
+}
+
+country_event = {
+	id = soviet_revolution.15
+	title = soviet_revolution.15.t
+	desc = soviet_revolution.15.d
+	picture = SOC_REV_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet_revolution.15.a
+		
+	}
+}
+
+country_event = {
+	id = soviet_revolution.20
+	title = soviet_revolution.20.t
+	desc = soviet_revolution.20.d
+	picture = SOC_REV_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet_revolution.20.a
+		end_disaster = soviet_revolution
+
+
+		clr_country_flag = restrict_industry_leaders
+		remove_country_modifier = industry_leader_restrictions
+		
+		add_country_modifier = {
+			name = "victorious_against_revolution"
+			duration = 5475
+		}
+	}
+}
+

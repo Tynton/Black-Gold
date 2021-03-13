@@ -1,0 +1,12 @@
+# Armstrong Gun
+
+type = artillery
+
+maneuver = 2
+offensive_morale = 9
+defensive_morale = 9
+offensive_fire = 12
+defensive_fire = 12
+offensive_shock = 12
+defensive_shock = 12
+

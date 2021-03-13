@@ -1,0 +1,12 @@
+government = republic
+add_government_reform = oligarchy_reform
+add_government_reform = socialist_reform
+primary_culture = cosmopolitan_french
+add_accepted_culture = gascon
+add_accepted_culture = occitain
+religion = atheism
+technology_group = western
+capital = 183 # Paris
+national_focus = ADM
+historical_rival = GER
+government_rank = 3

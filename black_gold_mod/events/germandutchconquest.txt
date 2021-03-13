@@ -1,0 +1,166 @@
+namespace = germandutchconquest
+
+province_event = {
+	id = germandutchconquest.1
+	title = "germandutchconquest.n.1"
+	desc = "germandutchconquest.d.1"
+	picture = HRE_eventPicture
+
+	trigger = {
+		AND = {
+			culture = dutch
+			owner = {
+				culture_group = germanic
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		OR = {
+			owner = {
+				ai = no
+				government_rank = 3
+			}
+		}
+		NOT = {
+			OR = {
+				AND = {
+					local_autonomy = 5
+					unrest = 1
+				}
+				has_province_modifier = nationalism_unrest_bgm
+			}
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+		
+		modifier = {
+			factor = 0.5
+			
+			any_neighbor_province = { 
+				culture_group = germanic
+			} 
+		}
+	}
+	
+	option = {
+		name = "germandutchconquest.1.a"
+		change_culture = niederlandisch
+	}
+}
+
+province_event = {
+	id = germandutchconquest.2
+	title = "germandutchconquest.n.2"
+	desc = "germandutchconquest.d.2"
+	picture = HRE_eventPicture
+
+	trigger = {
+		AND = {	
+			culture = frisian
+			owner = {
+				culture_group = germanic
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		OR = {
+			owner = {
+				ai = no
+				government_rank = 3
+			}
+		}
+		NOT = {
+			OR = {
+				AND = {
+					local_autonomy = 5
+					unrest = 1
+				}
+				has_province_modifier = nationalism_unrest_bgm
+			}
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+		
+		modifier = {
+			factor = 0.5
+			
+			any_neighbor_province = { 
+				culture_group = germanic
+			} 
+		}
+	}
+	
+	option = {
+		name = "germandutchconquest.2.a"
+		change_culture = friese
+	}
+}
+
+province_event = {
+	id = germandutchconquest.3
+	title = "germandutchconquest.n.3"
+	desc = "germandutchconquest.d.3"
+	picture = HRE_eventPicture
+
+	trigger = {
+		AND = {	
+			culture = flemish
+			owner = {
+				culture_group = germanic
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		OR = {
+			owner = {
+				ai = no
+				government_rank = 3
+			}
+		}
+		NOT = {
+			OR = {
+				AND = {
+					local_autonomy = 5
+					unrest = 1
+				}
+				has_province_modifier = nationalism_unrest_bgm
+			}
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+		
+		modifier = {
+			factor = 0.5
+			
+			any_neighbor_province = { 
+				culture_group = germanic
+			} 
+		}
+	}
+	
+	option = {
+		name = "germandutchconquest.3.a"
+		change_culture = flamisch
+	}
+}

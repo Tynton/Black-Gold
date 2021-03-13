@@ -1,0 +1,320 @@
+namespace = italic_league
+
+############################################CREATION OF THE ITALIC LEAGUE############################################
+
+country_event = {
+	id = italic_league.3
+	title = "italic_league.n.3"
+	desc = "italic_league.d.3"
+	picture = HRE_eventPicture
+	
+	major = yes
+	
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			france_region = {
+				any_country = { 
+					total_development = 375
+				}
+			}
+			iberia_region = {
+				any_country = { 
+					total_development = 375
+				}
+			}
+			
+			#is_institution_enabled = nationalism_institution
+		}
+		
+		NOT = {
+			OR = {
+				any_country = {
+					is_subject_of_type = italic_league_member
+				}
+				any_country = {
+					is_subject_of_type = italic_league_member
+				}
+			}
+		}
+		
+		culture_group = latin
+		tag = PAP
+		NOT = { exists = ITA }
+	}
+
+	mean_time_to_happen = {
+		months = 48
+		
+		modifier = {
+			factor = 0.7
+			OR = {
+				france_region = {
+					any_country = { 
+						total_development = 450
+					}
+				}
+				iberia_region = {
+					any_country = {
+						total_development = 450
+					}
+				}
+			}
+		}
+	}
+	
+	
+	option = {
+		name = "italic_league.3.a"
+		
+		set_country_flag = italea_leader
+		
+		every_country = {
+			limit = {
+				culture_group = latin
+			}
+			#total_development = 225
+			country_event = {
+				id = italic_league.4
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = italic_league.4
+	title = "italic_league.n.4"
+	desc = "italic_league.d.4"
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "italic_league.4.a"
+		
+		trigger = {
+			is_subject = no
+			
+			NOT = {
+				OR = {
+					dynasty = "de Trastámara"
+					has_country_flag = italea_leader
+				}
+			}
+		}
+		
+		#release_all_subjects = yes
+		
+		FROM = {
+			create_subject = {
+				subject_type = italic_league_member
+				subject = ROOT
+			}
+		}
+		
+		ai_chance = { factor = 1 }
+	}
+	
+	option = {
+		name = "italic_league.4.b"
+		
+		trigger = {
+			OR = {
+				NOT = {
+					capital_scope = {
+						region = italy_region
+					}
+				}
+				ai = no
+				is_subject = yes
+			}
+			NOT = {
+				has_country_flag = italea_leader
+			}
+		}
+		
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "italic_league.4.c"
+		
+		trigger = {
+			has_country_flag = italea_leader
+		}
+	}
+}
+
+country_event = {
+	id = italic_league.5
+	title = "italic_league.n.5"
+	desc = "italic_league.d.5"
+	picture = HRE_eventPicture
+	
+	major = yes
+	
+	trigger = {
+		has_country_flag = italea_leader
+
+		any_subject_country = {
+			is_subject_of_type = italic_league_member
+		}
+		
+		is_at_war = no
+		
+		is_year = 1490
+		
+		all_subject_country = {
+			NOT = {
+				liberty_desire = 50
+			}
+		} 
+	}
+	
+	mean_time_to_happen = {
+		months = 395
+		
+		modifier = {
+			factor = 0.95
+			all_subject_country = {
+				NOT = {
+					liberty_desire = 45
+				}
+			} 
+		}
+		
+		modifier = {
+			factor = 0.95
+			all_subject_country = {
+				NOT = {
+					liberty_desire = 40
+				}
+			} 
+		}
+		
+		modifier = {
+			factor = 0.95
+			all_subject_country = {
+				NOT = {
+					liberty_desire = 35
+				}
+			} 
+		}
+	}
+	
+	option = {
+		name = "italic_league.5.a"
+		
+		every_subject_country = {
+			limit = {
+				is_subject_of_type = italic_league_member
+			}
+			country_event = {
+				id = italic_league.6
+			}
+		}
+		
+		add_stability = -5
+		
+		change_tag = ITA
+		change_government = monarchy
+	}
+	
+	option = {
+		name = "italic_league.5.b"
+		
+		every_subject_country = {
+			limit = {
+				is_subject_of_type = italic_league_member
+			}
+			grant_independence = yes
+		}
+	}
+}
+
+country_event = {
+	id = italic_league.6
+	title = "italic_league.n.6"
+	desc = "italic_league.d.6"
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "italic_league.6.a"
+		
+		ITA = {
+			inherit = ROOT
+			ROOT = {
+				every_owned_province = {
+					add_core = ITA
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "italic_league.6.b"
+		ITA = {
+			inherit = ROOT
+			ROOT = {
+				every_owned_province = {
+					add_core = ITA
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = italic_league.7
+	title = "italic_league.n.7"
+	desc = "italic_league.d.7"
+	picture = HRE_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		any_subject_country = {
+			is_subject_of_type = italic_league_member
+		}
+		
+		NOT = {
+			culture_group = latin
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "italic_league.7.a"
+		
+		every_subject_country = {
+			limit = {
+				is_subject_of_type = italic_league_member
+			}
+			country_event = {
+				id = italic_league.8
+			}
+		}
+	}
+}
+
+country_event = {
+	id = italic_league.8
+	title = "italic_league.n.8"
+	desc = "italic_league.d.8"
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "italic_league.8.a"
+		
+		grant_independence = yes
+	}
+}

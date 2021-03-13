@@ -1,0 +1,7 @@
+government = republic
+add_government_reform = consolidation_of_power_reform
+primary_culture = slovak
+religion = secular
+technology_group = eastern
+capital = 1772 # Nitra
+government_rank = 1

@@ -1,0 +1,121 @@
+namespace = societalliberalization
+
+country_event = {
+	id = societalliberalization.1
+	title = "societalliberalization.t.1"
+	desc = "societalliberalization.d.1"
+	picture = BUREAU_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = pro_enlightenment_reform
+			has_reform = egalite_reform
+		}
+		NOT = { has_country_modifier = demand_child_labor_abolition }
+		NOT = { has_country_modifier = abolished_child_labor }
+		is_revolutionary = no
+		has_institution = industrialization
+	}	
+
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "societalliberalization.1.a"
+		add_country_modifier = {
+			name = "demand_child_labor_abolition"
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = societalliberalization.2
+	title = "societalliberalization.t.2"
+	desc = "societalliberalization.d.2"
+	picture = BUREAU_eventPicture
+	
+	trigger = {
+		OR = {
+			has_reform = pro_enlightenment_reform
+			has_reform = egalite_reform
+		}
+		NOT = { has_country_modifier = demand_suffrage }
+		NOT = { has_country_modifier = womens_suffrage_demands_met }
+		is_revolutionary = no
+		has_institution = electrification
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "societalliberalization.2.a"
+		add_country_modifier = {
+			name = "demand_suffrage"
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = societalliberalization.3
+	title = "societalliberalization.t.3"
+	desc = "societalliberalization.d.3"
+	picture = BUREAU_eventPicture
+	
+	trigger = {
+			OR = {
+				has_reform = pro_enlightenment_reform
+				has_reform = egalite_reform
+			}
+		NOT = { has_country_modifier = demand_minority_rights }
+		NOT = { has_country_modifier = minority_rights }
+		is_revolutionary = no
+		has_institution = nationalism_institution
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "societalliberalization.3.a"
+		add_country_modifier = {
+			name = "demand_minority_rights"
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = societalliberalization.4
+	title = "societalliberalization.t.4"
+	desc = "societalliberalization.d.4"
+	picture = BUREAU_eventPicture
+	
+	trigger = {
+			OR = {
+				has_reform = pro_enlightenment_reform
+				has_reform = egalite_reform
+			}
+			NOT = { has_country_modifier = demand_right_adequate_living }
+			NOT = { has_country_modifier = right_to_adequate_living_standards }
+			is_revolutionary = no
+			has_institution = electrification
+	}	
+
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "societalliberalization.4.a"
+		add_country_modifier = {
+			name = "demand_right_adequate_living"
+			duration = -1
+		}
+	}
+}

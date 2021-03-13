@@ -1,0 +1,8 @@
+government = republic
+primary_culture = kongolese
+religion = secular
+technology_group = western
+
+unit_type = sub_saharan
+capital = 1170	# M'banza Kongo
+

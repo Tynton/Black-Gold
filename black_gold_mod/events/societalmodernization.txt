@@ -1,0 +1,1138 @@
+namespace = societalmodernization
+
+country_event = {
+	id = societalmodernization.1
+	title = "societalmodernization.t.1"
+	desc = "societalmodernization.d.1"
+	picture = MODERN_UNREST_eventPicture
+	
+	trigger = {
+		AND = {
+			OR = {
+				has_institution = industrialization
+				has_first_revolution_started = yes
+			}
+			NOT = { has_country_modifier = demand_welfare }
+			NOT = { has_country_modifier = social_welfare_program }
+		}
+		has_estate = estate_proletarian
+	}	
+
+	mean_time_to_happen = {
+		months = 96
+		
+		modifier = {
+			factor = 0.75
+			any_neighbor_country = { 
+				has_country_modifier = demand_welfare
+			} 
+		}
+		
+		modifier = {
+			factor = 0.75
+			any_ally = { 
+				has_country_modifier = demand_welfare
+			} 
+		}
+		
+		modifier = {
+			factor = 0.9
+			any_rival_country = { 
+				has_country_modifier = demand_welfare
+			} 
+		}
+		
+		modifier = {
+			factor = 0.85
+			OR = {
+				religion = protestant
+				religion = reformed
+				religion = anglican
+				religion = confucian
+			}
+		}
+		
+		modifier = {
+			factor = 1.15
+			OR = {
+				religion = catholic
+				religion = orthodox
+			}
+		}
+		
+		modifier = {
+			factor = 1.25
+			OR = {
+				religion = sunni
+				religion = shiite
+				religion = ibadi
+				religion = shinto
+			}
+		}
+		
+		modifier = {
+			factor = 2.1
+			OR = {
+				has_country_modifier = demand_health_regulation
+				has_country_modifier = demand_welfare
+				has_country_modifier = demand_health_program
+				has_country_modifier = demand_safety_requirement
+				has_country_modifier = demand_work_week
+				has_country_modifier = demand_union_rights
+				has_country_modifier = demand_product_regulations
+			}
+		}
+	}
+	
+	option = {
+		name = "societalmodernization.1.a"
+		add_country_modifier = {
+			name = "demand_welfare"
+			duration = -1
+		}
+		custom_tooltip = moderniz_tool
+	}
+}
+
+country_event = {
+	id = societalmodernization.2
+	title = "societalmodernization.t.2"
+	desc = "societalmodernization.d.2"
+	picture = MODERN_UNREST_eventPicture
+	
+	trigger = {
+		AND = {
+			has_institution = nationalism_institution
+			NOT = { has_country_modifier = demand_health_regulation }
+			NOT = { has_country_modifier = employment_health_regulation }
+		}
+		has_estate = estate_proletarian
+	}	
+
+	mean_time_to_happen = {
+		months = 96
+		
+		modifier = {
+			factor = 0.75
+			any_neighbor_country = { 
+				has_country_modifier = demand_health_regulation
+			} 
+		}
+		
+		modifier = {
+			factor = 0.75
+			any_ally = { 
+				has_country_modifier = demand_health_regulation
+			} 
+		}
+		
+		modifier = {
+			factor = 0.9
+			any_rival_country = { 
+				has_country_modifier = demand_health_regulation
+			} 
+		}
+		
+		modifier = {
+			factor = 0.85
+			OR = {
+				religion = protestant
+				religion = reformed
+				religion = anglican
+				religion = confucian
+			}
+		}
+		
+		modifier = {
+			factor = 1.15
+			OR = {
+				religion = catholic
+				religion = orthodox
+			}
+		}
+		
+		modifier = {
+			factor = 1.25
+			OR = {
+				religion = sunni
+				religion = shiite
+				religion = ibadi
+				religion = shinto
+			}
+		}
+		
+		modifier = {
+			factor = 2.1
+			OR = {
+				has_country_modifier = demand_health_regulation
+				has_country_modifier = demand_welfare
+				has_country_modifier = demand_health_program
+				has_country_modifier = demand_safety_requirement
+				has_country_modifier = demand_work_week
+				has_country_modifier = demand_union_rights
+				has_country_modifier = demand_product_regulations
+			}
+		}
+	}
+	
+	option = {
+		name = "societalmodernization.2.a"
+		add_country_modifier = {
+			name = "demand_health_regulation"
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = societalmodernization.3
+	title = "societalmodernization.t.3"
+	desc = "societalmodernization.d.3"
+	picture = MODERN_UNREST_eventPicture
+	
+	trigger = {
+		AND = {
+			has_institution = nationalism_institution
+			NOT = { has_country_modifier = demand_health_program }
+			NOT = { has_country_modifier = establish_health_care_program }
+		}
+		has_estate = estate_proletarian
+	}	
+
+	mean_time_to_happen = {
+		months = 96
+		
+		modifier = {
+			factor = 0.75
+			any_neighbor_country = { 
+				has_country_modifier = demand_health_program
+			} 
+		}
+		
+		modifier = {
+			factor = 0.75
+			any_ally = { 
+				has_country_modifier = demand_health_program
+			} 
+		}
+		
+		modifier = {
+			factor = 0.9
+			any_rival_country = { 
+				has_country_modifier = demand_health_program
+			} 
+		}
+		
+		modifier = {
+			factor = 0.85
+			OR = {
+				religion = protestant
+				religion = reformed
+				religion = anglican
+				religion = confucian
+			}
+		}
+		
+		modifier = {
+			factor = 1.15
+			OR = {
+				religion = catholic
+				religion = orthodox
+			}
+		}
+		
+		modifier = {
+			factor = 1.25
+			OR = {
+				religion = sunni
+				religion = shiite
+				religion = ibadi
+				religion = shinto
+			}
+		}
+		
+		modifier = {
+			factor = 2.1
+			OR = {
+				has_country_modifier = demand_health_regulation
+				has_country_modifier = demand_welfare
+				has_country_modifier = demand_health_program
+				has_country_modifier = demand_safety_requirement
+				has_country_modifier = demand_work_week
+				has_country_modifier = demand_union_rights
+				has_country_modifier = demand_product_regulations
+			}
+		}
+	}
+	
+	option = {
+		name = "societalmodernization.3.a"
+		add_country_modifier = {
+			name = "demand_health_program"
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = societalmodernization.4
+	title = "societalmodernization.t.4"
+	desc = "societalmodernization.d.4"
+	picture = MODERN_UNREST_eventPicture
+	
+	trigger = {
+		AND = {
+			has_institution = industrialization
+			NOT = { has_country_modifier = demand_safety_requirement }
+			NOT = { has_country_modifier = equipment_safety_requirement }
+		}
+		has_estate = estate_proletarian
+	}	
+
+	mean_time_to_happen = {
+		months = 96
+		
+		modifier = {
+			factor = 0.75
+			any_neighbor_country = { 
+				has_country_modifier = demand_safety_requirement
+			} 
+		}
+		
+		modifier = {
+			factor = 0.75
+			any_ally = { 
+				has_country_modifier = demand_safety_requirement
+			} 
+		}
+		
+		modifier = {
+			factor = 0.9
+			any_rival_country = { 
+				has_country_modifier = demand_safety_requirement
+			} 
+		}
+		
+		modifier = {
+			factor = 0.85
+			OR = {
+				religion = protestant
+				religion = reformed
+				religion = anglican
+				religion = confucian
+			}
+		}
+		
+		modifier = {
+			factor = 1.15
+			OR = {
+				religion = catholic
+				religion = orthodox
+			}
+		}
+		
+		modifier = {
+			factor = 1.25
+			OR = {
+				religion = sunni
+				religion = shiite
+				religion = ibadi
+				religion = shinto
+			}
+		}
+		
+		modifier = {
+			factor = 2.1
+			OR = {
+				has_country_modifier = demand_health_regulation
+				has_country_modifier = demand_welfare
+				has_country_modifier = demand_health_program
+				has_country_modifier = demand_safety_requirement
+				has_country_modifier = demand_work_week
+				has_country_modifier = demand_union_rights
+				has_country_modifier = demand_product_regulations
+			}
+		}
+	}
+	
+	option = {
+		name = "societalmodernization.4.a"
+		add_country_modifier = {
+			name = "demand_safety_requirement"
+			duration = -1
+		}
+		custom_tooltip = moderniz_tool
+	}
+}
+
+country_event = {
+	id = societalmodernization.5
+	title = "societalmodernization.t.5"
+	desc = "societalmodernization.d.5"
+	picture = MODERN_UNREST_eventPicture
+	
+	trigger = {
+		AND = {
+			has_institution = nationalism_institution
+			NOT = { has_country_modifier = demand_work_week }
+			NOT = { has_country_modifier = establish_work_week }
+		}
+		has_estate = estate_proletarian
+	}	
+
+	mean_time_to_happen = {
+		months = 96
+		
+		modifier = {
+			factor = 0.75
+			any_neighbor_country = { 
+				has_country_modifier = demand_work_week
+			} 
+		}
+		
+		modifier = {
+			factor = 0.75
+			any_ally = { 
+				has_country_modifier = demand_work_week
+			} 
+		}
+		
+		modifier = {
+			factor = 0.9
+			any_rival_country = { 
+				has_country_modifier = demand_work_week
+			} 
+		}
+		
+		modifier = {
+			factor = 0.85
+			OR = {
+				religion = protestant
+				religion = reformed
+				religion = anglican
+				religion = confucian
+			}
+		}
+		
+		modifier = {
+			factor = 1.15
+			OR = {
+				religion = catholic
+				religion = orthodox
+			}
+		}
+		
+		modifier = {
+			factor = 1.25
+			OR = {
+				religion = sunni
+				religion = shiite
+				religion = ibadi
+				religion = shinto
+			}
+		}
+		
+		modifier = {
+			factor = 2.1
+			OR = {
+				has_country_modifier = demand_health_regulation
+				has_country_modifier = demand_welfare
+				has_country_modifier = demand_health_program
+				has_country_modifier = demand_safety_requirement
+				has_country_modifier = demand_work_week
+				has_country_modifier = demand_union_rights
+				has_country_modifier = demand_product_regulations
+			}
+		}
+	}
+	
+	option = {
+		name = "societalmodernization.5.a"
+		add_country_modifier = {
+			name = "demand_work_week"
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = societalmodernization.6
+	title = "societalmodernization.t.6"
+	desc = "societalmodernization.d.6"
+	picture = MODERN_UNREST_eventPicture
+	
+	trigger = {
+		AND = {
+			has_institution = nationalism_institution
+			NOT = { has_country_modifier = demand_union_rights }
+			NOT = { has_country_modifier = establish_labor_union_rights }
+		}
+		has_estate = estate_proletarian
+	}	
+
+	mean_time_to_happen = {
+		months = 96
+		
+		modifier = {
+			factor = 0.75
+			any_neighbor_country = { 
+				has_country_modifier = demand_union_rights
+			} 
+		}
+		
+		modifier = {
+			factor = 0.75
+			any_ally = { 
+				has_country_modifier = demand_union_rights
+			} 
+		}
+		
+		modifier = {
+			factor = 0.9
+			any_rival_country = { 
+				has_country_modifier = demand_union_rights
+			} 
+		}
+		
+		modifier = {
+			factor = 0.85
+			OR = {
+				religion = protestant
+				religion = reformed
+				religion = anglican
+				religion = confucian
+			}
+		}
+		
+		modifier = {
+			factor = 1.15
+			OR = {
+				religion = catholic
+				religion = orthodox
+			}
+		}
+		
+		modifier = {
+			factor = 1.25
+			OR = {
+				religion = sunni
+				religion = shiite
+				religion = ibadi
+				religion = shinto
+			}
+		}
+		
+		modifier = {
+			factor = 2.1
+			OR = {
+				has_country_modifier = demand_health_regulation
+				has_country_modifier = demand_welfare
+				has_country_modifier = demand_health_program
+				has_country_modifier = demand_safety_requirement
+				has_country_modifier = demand_work_week
+				has_country_modifier = demand_union_rights
+				has_country_modifier = demand_product_regulations
+			}
+		}
+	}
+	
+	option = {
+		name = "societalmodernization.6.a"
+		add_country_modifier = {
+			name = "demand_union_rights"
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = societalmodernization.7
+	title = "societalmodernization.t.7"
+	desc = "societalmodernization.d.7"
+	picture = MODERN_UNREST_eventPicture
+	
+	trigger = {
+		AND = {
+			has_institution = nationalism_institution
+			NOT = { has_country_modifier = demand_product_regulations }
+			NOT = { has_country_modifier = establish_product_regulations }
+		}
+		has_estate = estate_proletarian
+	}	
+
+	mean_time_to_happen = {
+		months = 96
+		
+		modifier = {
+			factor = 0.75
+			any_neighbor_country = { 
+				has_country_modifier = demand_product_regulations
+			} 
+		}
+		
+		modifier = {
+			factor = 0.75
+			any_ally = { 
+				has_country_modifier = demand_product_regulations
+			} 
+		}
+		
+		modifier = {
+			factor = 0.9
+			any_rival_country = { 
+				has_country_modifier = demand_product_regulations
+			} 
+		}
+		
+		modifier = {
+			factor = 0.85
+			OR = {
+				religion = protestant
+				religion = reformed
+				religion = anglican
+				religion = confucian
+			}
+		}
+		
+		modifier = {
+			factor = 1.15
+			OR = {
+				religion = catholic
+				religion = orthodox
+			}
+		}
+		
+		modifier = {
+			factor = 1.25
+			OR = {
+				religion = sunni
+				religion = shiite
+				religion = ibadi
+				religion = shinto
+			}
+		}
+		
+		modifier = {
+			factor = 2.1
+			OR = {
+				has_country_modifier = demand_health_regulation
+				has_country_modifier = demand_welfare
+				has_country_modifier = demand_health_program
+				has_country_modifier = demand_safety_requirement
+				has_country_modifier = demand_work_week
+				has_country_modifier = demand_union_rights
+				has_country_modifier = demand_product_regulations
+			}
+		}
+	}
+	
+	option = {
+		name = "societalmodernization.7.a"
+		add_country_modifier = {
+			name = "demand_product_regulations"
+			duration = -1
+		}
+	}
+}
+
+
+
+###########################################POLICY PREPARATION###########################################
+
+country_event = {
+	id = societalmodernization.8
+	title = "societalmodernization.t.8"
+	desc = "societalmodernization.d.8"
+	picture = BUREAU_eventPicture
+	
+	trigger = {
+		has_country_modifier = demand_safety_requirement
+		NOT = { has_country_modifier = equipment_safety_requirement }
+		NOT = { has_country_flag = safety_requirement_policy_prep }
+	}	
+
+	mean_time_to_happen = {
+		months = 180
+		
+		modifier = {
+			factor = 0.85
+			adm = 6
+		}
+		
+		modifier = {
+			factor = 0.95
+			adm = 5
+		}
+		
+		modifier = {
+			factor = 0.95
+			adm = 4
+		}
+		
+		modifier = {
+			factor = 1.2
+			adm = 2
+		}
+		
+		modifier = {
+			factor = 1.2
+			adm = 1
+		}
+		
+		modifier = {
+			factor = 1.4
+			adm = 0
+		}
+		
+		modifier = {
+			factor = 0.8
+			is_revolutionary = yes
+		}
+		
+	}
+	
+	option = {
+		name = "societalmodernization.8.a"
+		
+		add_country_modifier = {
+			name = equipment_safety_requirement
+			duration = -1
+		}
+		remove_country_modifier = demand_safety_requirement
+		add_years_of_income = -0.05
+		add_adm_power = -15
+		add_stability = -1
+	}
+	
+	option = {
+		name = "societalmodernization.8.b"
+		set_country_flag = safety_requirement_policy_prep
+		custom_tooltip = policy_prepared
+	}
+}
+
+country_event = {
+	id = societalmodernization.9
+	title = "societalmodernization.t.9"
+	desc = "societalmodernization.d.9"
+	picture = BUREAU_eventPicture
+	
+	trigger = {
+		has_country_modifier = demand_welfare
+		NOT = { has_country_modifier = social_welfare_program }
+		NOT = { has_country_flag = welfare_program_complete }
+	}	
+
+	mean_time_to_happen = {
+		months = 180
+		
+		modifier = {
+			factor = 0.85
+			adm = 6
+		}
+		
+		modifier = {
+			factor = 0.95
+			adm = 5
+		}
+		
+		modifier = {
+			factor = 0.95
+			adm = 4
+		}
+		
+		modifier = {
+			factor = 1.2
+			adm = 2
+		}
+		
+		modifier = {
+			factor = 1.2
+			adm = 1
+		}
+		
+		modifier = {
+			factor = 1.4
+			adm = 0
+		}
+		
+		modifier = {
+			factor = 0.8
+			is_revolutionary = yes
+		}
+	}
+	
+	option = {
+		name = "societalmodernization.9.a"
+		
+		add_country_modifier = {
+			name = social_welfare_program
+			duration = -1
+		}
+		remove_country_modifier = demand_welfare
+		add_years_of_income = -0.05
+		add_adm_power = -15
+		add_stability = -1
+	}
+	
+	option = {
+		name = "societalmodernization.9.b"
+		set_country_flag = welfare_program_complete
+		custom_tooltip = policy_prepared
+	}
+}
+
+country_event = {
+	id = societalmodernization.10
+	title = "societalmodernization.t.10"
+	desc = "societalmodernization.d.10"
+	picture = BUREAU_eventPicture
+	
+	trigger = {
+		has_country_modifier = demand_health_regulation
+		NOT = { has_country_modifier = employment_health_regulation }
+		NOT = { has_country_flag = health_reg_complete }
+	}	
+
+	mean_time_to_happen = {
+		months = 180
+		
+		modifier = {
+			factor = 0.85
+			adm = 6
+		}
+		
+		modifier = {
+			factor = 0.95
+			adm = 5
+		}
+		
+		modifier = {
+			factor = 0.95
+			adm = 4
+		}
+		
+		modifier = {
+			factor = 1.2
+			adm = 2
+		}
+		
+		modifier = {
+			factor = 1.2
+			adm = 1
+		}
+		
+		modifier = {
+			factor = 1.4
+			adm = 0
+		}
+		
+		modifier = {
+			factor = 0.8
+			is_revolutionary = yes
+		}
+	}
+	
+	option = {
+		name = "societalmodernization.10.a"
+		
+		add_country_modifier = {
+			name = employment_health_regulation
+			duration = -1
+		}
+		remove_country_modifier = demand_health_regulation
+		add_years_of_income = -0.05
+		add_adm_power = -15
+		add_stability = -1
+	}
+	
+	option = {
+		name = "societalmodernization.10.b"
+		set_country_flag = health_reg_complete
+		custom_tooltip = policy_prepared
+	}
+}
+
+country_event = {
+	id = societalmodernization.11
+	title = "societalmodernization.t.11"
+	desc = "societalmodernization.d.11"
+	picture = BUREAU_eventPicture
+	
+	trigger = {
+		has_country_modifier = demand_health_program
+		NOT = { has_country_modifier = establish_health_care_program }
+		NOT = { has_country_flag = health_program_ready }
+	}	
+
+	mean_time_to_happen = {
+		months = 180
+		
+		modifier = {
+			factor = 0.85
+			adm = 6
+		}
+		
+		modifier = {
+			factor = 0.95
+			adm = 5
+		}
+		
+		modifier = {
+			factor = 0.95
+			adm = 4
+		}
+		
+		modifier = {
+			factor = 1.2
+			adm = 2
+		}
+		
+		modifier = {
+			factor = 1.2
+			adm = 1
+		}
+		
+		modifier = {
+			factor = 1.4
+			adm = 0
+		}
+		
+		modifier = {
+			factor = 0.8
+			is_revolutionary = yes
+		}
+	}
+	
+	option = {
+		name = "societalmodernization.11.a"
+		
+		add_country_modifier = {
+			name = establish_health_care_program
+			duration = -1
+		}
+		remove_country_modifier = demand_health_program
+		add_years_of_income = -0.05
+		add_adm_power = -15
+		add_stability = -1
+	}
+	
+	option = {
+		name = "societalmodernization.11.b"
+		set_country_flag = health_program_ready
+		custom_tooltip = policy_prepared
+	}
+}
+
+country_event = {
+	id = societalmodernization.12
+	title = "societalmodernization.t.12"
+	desc = "societalmodernization.d.12"
+	picture = BUREAU_eventPicture
+	
+	trigger = {
+		has_country_modifier = demand_work_week
+		NOT = { has_country_modifier = establish_work_week }
+		NOT = { has_country_flag = work_week_program_complete }
+	}	
+
+	mean_time_to_happen = {
+		months = 180
+		
+		modifier = {
+			factor = 0.85
+			adm = 6
+		}
+		
+		modifier = {
+			factor = 0.95
+			adm = 5
+		}
+		
+		modifier = {
+			factor = 0.95
+			adm = 4
+		}
+		
+		modifier = {
+			factor = 1.2
+			adm = 2
+		}
+		
+		modifier = {
+			factor = 1.2
+			adm = 1
+		}
+		
+		modifier = {
+			factor = 1.4
+			adm = 0
+		}
+		
+		modifier = {
+			factor = 0.8
+			is_revolutionary = yes
+		}
+	}
+	
+	option = {
+		name = "societalmodernization.12.a"
+		
+		add_country_modifier = {
+			name = establish_work_week
+			duration = -1
+		}
+		remove_country_modifier = demand_work_week
+		add_years_of_income = -0.05
+		add_adm_power = -15
+		add_stability = -1
+	}
+	
+	option = {
+		name = "societalmodernization.12.b"
+		set_country_flag = work_week_program_complete
+		custom_tooltip = policy_prepared
+	}
+}
+
+country_event = {
+	id = societalmodernization.13
+	title = "societalmodernization.t.13"
+	desc = "societalmodernization.d.13"
+	picture = BUREAU_eventPicture
+	
+	trigger = {
+		has_country_modifier = demand_union_rights
+		NOT = { has_country_modifier = establish_labor_union_rights }
+		NOT = { has_country_flag = labor_union_policy_complete }
+	}	
+
+	mean_time_to_happen = {
+		months = 180
+		
+		modifier = {
+			factor = 0.85
+			adm = 6
+		}
+		
+		modifier = {
+			factor = 0.95
+			adm = 5
+		}
+		
+		modifier = {
+			factor = 0.95
+			adm = 4
+		}
+		
+		modifier = {
+			factor = 1.2
+			adm = 2
+		}
+		
+		modifier = {
+			factor = 1.2
+			adm = 1
+		}
+		
+		modifier = {
+			factor = 1.4
+			adm = 0
+		}
+		
+		modifier = {
+			factor = 0.8
+			is_revolutionary = yes
+		}
+	}
+	
+	option = {
+		name = "societalmodernization.13.a"
+		
+		add_country_modifier = {
+			name = establish_labor_union_rights
+			duration = -1
+		}
+		remove_country_modifier = demand_union_rights
+		add_years_of_income = -0.05
+		add_adm_power = -15
+		add_stability = -1
+	}
+	
+	option = {
+		name = "societalmodernization.13.b"
+		set_country_flag = labor_union_policy_complete
+		custom_tooltip = policy_prepared
+	}
+}
+
+country_event = {
+	id = societalmodernization.14
+	title = "societalmodernization.t.14"
+	desc = "societalmodernization.d.14"
+	picture = BUREAU_eventPicture
+	
+	trigger = {
+		has_country_modifier = demand_product_regulations
+		NOT = { has_country_modifier = establish_product_regulations }
+		NOT = { has_country_flag = product_regulation_complete }
+	}	
+
+	mean_time_to_happen = {
+		months = 180
+		
+		modifier = {
+			factor = 0.85
+			adm = 6
+		}
+		
+		modifier = {
+			factor = 0.95
+			adm = 5
+		}
+		
+		modifier = {
+			factor = 0.95
+			adm = 4
+		}
+		
+		modifier = {
+			factor = 1.2
+			adm = 2
+		}
+		
+		modifier = {
+			factor = 1.2
+			adm = 1
+		}
+		
+		modifier = {
+			factor = 1.4
+			adm = 0
+		}
+		
+		modifier = {
+			factor = 0.8
+			is_revolutionary = yes
+		}
+	}
+	
+	option = {
+		name = "societalmodernization.14.a"
+		
+		add_country_modifier = {
+			name = establish_product_regulations
+			duration = -1
+		}
+		remove_country_modifier = demand_product_regulations
+		add_years_of_income = -0.05
+		add_adm_power = -15
+		add_stability = -1
+	}
+	
+	option = {
+		name = "societalmodernization.14.b"
+		set_country_flag = product_regulation_complete
+		custom_tooltip = policy_prepared
+	}
+}

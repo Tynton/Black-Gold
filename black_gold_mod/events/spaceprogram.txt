@@ -1,0 +1,221 @@
+namespace = spaceprogram
+
+#MOON LANDING, SUCCESS
+
+country_event = {
+	id = spaceprogram.1
+	title = "spaceprogram.t.1"
+	desc = "spaceprogram.d.1"
+	picture = SATELLITE_eventPicture
+	
+	major = yes
+	
+	trigger = {
+		has_country_flag = lunar_landing_launched
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = "spaceprogram.1.a"
+		add_country_modifier = {
+			name = "lunar_landing"
+			duration = -1
+		}
+		add_prestige = 35
+		clr_country_flag = lunar_landing_launched
+	}
+}
+
+#SATELLITE PROGRAM INITIATED
+
+country_event = {
+	id = spaceprogram.2
+	title = "spaceprogram.t.2"
+	desc = "spaceprogram.d.2"
+	picture = SATELLITE_eventPicture
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = "spaceprogram.2.a"
+		add_prestige = 35
+	}
+}
+
+#PROGRAM INITIATED
+
+country_event = {
+	id = spaceprogram.3
+	title = "spaceprogram.t.3"
+	desc = "spaceprogram.d.3"
+	picture = SATELLITE_eventPicture
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = "spaceprogram.3.a"
+		add_prestige = 35
+	}
+}
+
+#MOON LANDING, LAUNCH
+
+country_event = {
+	id = spaceprogram.4
+	title = "spaceprogram.t.4"
+	desc = "spaceprogram.d.4"
+	picture = SATELLITE_eventPicture
+	
+	trigger = {
+		has_country_modifier = preparing_mission
+	}	
+
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "spaceprogram.4.a"
+		random_list = {
+			30 = { 
+				country_event = {
+					id = spaceprogram.5
+				}
+			}
+			70 = {
+				country_event = {
+					id = spaceprogram.6
+				}
+			}
+		}
+	}
+}
+
+#MOON LANDING, LAUNCH FAILURE
+
+country_event = {
+	id = spaceprogram.5
+	title = "spaceprogram.t.5"
+	desc = "spaceprogram.d.5"
+	picture = SATELLITE_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "spaceprogram.5.a"
+		remove_country_modifier = preparing_mission
+	}
+}
+
+#MOON LANDING, LAUNCH SUCCESS
+
+country_event = {
+	id = spaceprogram.6
+	title = "spaceprogram.t.6"
+	desc = "spaceprogram.d.6"
+	picture = SATELLITE_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "spaceprogram.6.a"
+		remove_country_modifier = preparing_mission
+		set_country_flag = lunar_landing_launched
+	}
+}
+
+#SPACE STATION LAUNCH
+
+country_event = {
+	id = spaceprogram.7
+	title = "spaceprogram.t.7"
+	desc = "spaceprogram.d.7"
+	picture = SATELLITE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "spaceprogram.4.a"
+		random_list = {
+			5 = { 
+				country_event = {
+					id = spaceprogram.8
+				}
+			}
+			95 = {
+				country_event = {
+					id = spaceprogram.9
+				}
+			}
+		}
+	}
+}
+
+#SPACE STATION, LAUNCH FAILURE
+
+country_event = {
+	id = spaceprogram.8
+	title = "spaceprogram.t.8"
+	desc = "spaceprogram.d.8"
+	picture = SATELLITE_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "spaceprogram.8.a"
+	}
+}
+
+#SPACE STATION, LAUNCH SUCCESS
+
+country_event = {
+	id = spaceprogram.9
+	title = "spaceprogram.t.9"
+	desc = "spaceprogram.d.9"
+	picture = SATELLITE_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "spaceprogram.9.a"
+		remove_country_modifier = preparing_mission
+		add_country_modifier = {
+			name = "space_station"
+			duration = -1
+		}
+	}
+}
+
+#ORBITER
+
+country_event = {
+	id = spaceprogram.10
+	title = "spaceprogram.t.10"
+	desc = "spaceprogram.d.10"
+	picture = SATELLITE_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "spaceprogram.10.a"
+		remove_country_modifier = preparing_mission
+		set_country_flag = lunar_orbiter_launched
+	}
+}

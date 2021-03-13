@@ -1,0 +1,256 @@
+namespace = REVOLUTIONARY_UNITY
+
+#founding
+
+country_event = {
+	id = REVOLUTIONARY_UNITY.1
+	title = "REVOLUTIONARY_UNITY.n.1"
+	desc = "REVOLUTIONARY_UNITY.d.1"
+	picture = HRE_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		OR = {
+			culture_group = germanic
+			culture_group = benelux
+		}
+		is_revolutionary = yes
+		total_development = 400
+		NOT = {
+			has_country_flag = has_german_ambition
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "REVOLUTIONARY_UNITY.1.a"
+		
+		change_tag = GER
+		
+		every_province = {
+			limit = {
+				culture_group = germanic
+				continent = europe
+			}
+			add_core = ROOT
+		}
+		every_province = {
+			limit = {
+				culture_group = benelux
+				continent = europe
+			}
+			add_core = ROOT
+		}
+		add_country_flag = has_german_ambition
+	}
+}
+
+#nations join
+
+country_event = {
+	id = REVOLUTIONARY_UNITY.2
+	title = "REVOLUTIONARY_UNITY.n.2"
+	desc = "REVOLUTIONARY_UNITY.d.2"
+	picture = HRE_eventPicture
+
+	trigger = {
+		NOT = {
+			exists = GER
+		}
+		NOT = {
+			all_country = {
+				limit = {
+					has_country_flag = has_german_ambition
+				}
+				is_rival = ROOT
+			}
+		}
+		NOT = {
+			OR = {
+				num_of_cities = 40
+				total_development = 400
+			}
+		}
+		ai = yes 
+		OR = {
+			AND = {
+				OR = {
+					culture_group = germanic
+					culture_group = benelux
+				}
+				is_revolutionary = yes
+			}
+		}
+		OR = {
+			is_subject = no
+			is_subject_of = GER
+		}
+		capital_scope = {
+			OR = {
+				region = north_german_region
+				region = south_german_region
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "REVOLUTIONARY_UNITY.2.a"
+		GER = {
+			inherit = ROOT
+			ROOT = {
+				every_owned_province = {
+					add_core = GER
+				}
+			}
+		}
+	}
+}
+
+##############LEAVE HRE##############
+
+#currently no proper commands found
+
+#country_event = {
+#	id = REVOLUTIONARY_UNITY.3
+#	title = "REVOLUTIONARY_UNITY.n.3"
+#	desc = "REVOLUTIONARY_UNITY.d.3"
+#	picture = ANGRY_MOB_eventPicture
+#
+#	trigger = {
+#		is_revolutionary = yes
+#		is_part_of_hre = yes 
+#	}	
+#
+#	mean_time_to_happen = {
+#		days = 1
+#	}
+#	
+#	option = {
+#		name = "REVOLUTIONARY_UNITY.3.a"
+#		FROM = {
+#			inherit = ROOT
+#			ROOT = {
+#				every_owned_province = {
+#					add_core = FROM
+#				}
+#			}
+#		}
+#	}
+#}
+
+country_event = {
+	id = REVOLUTIONARY_UNITY.4
+	title = "REVOLUTIONARY_UNITY.n.4"
+	desc = "REVOLUTIONARY_UNITY.d.4"
+	picture = HRE_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		culture_group = latin
+		is_revolutionary = yes
+		total_development = 400
+		NOT = {
+			has_country_flag = has_italian_ambition
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "REVOLUTIONARY_UNITY.4.a"
+		
+		change_tag = ITA
+		
+		every_province = {
+			limit = {
+				culture_group = latin
+				continent = europe
+			}
+			add_core = ROOT
+		}
+		
+		east_adriatic_coast_area = {
+			add_permanent_claim = ROOT
+		}
+		
+		102 = {
+			add_permanent_claim = ROOT
+		}
+		205 = {
+			add_permanent_claim = ROOT
+		}
+		add_country_flag = has_italian_ambition
+	}
+}
+
+#nations join
+
+country_event = {
+	id = REVOLUTIONARY_UNITY.5
+	title = "REVOLUTIONARY_UNITY.n.5"
+	desc = "REVOLUTIONARY_UNITY.d.5"
+	picture = HRE_eventPicture
+
+	trigger = {
+		NOT = {
+			exists = ITA
+		}
+		NOT = {
+			all_country = {
+				limit = {
+					has_country_flag = has_italian_ambition
+				}
+				is_rival = ROOT
+			}
+		}
+		NOT = {
+			OR = {
+				num_of_cities = 40
+				total_development = 400
+			}
+		}
+		ai = yes 
+		
+		culture_group = latin
+		is_revolutionary = yes
+		
+		OR = {
+			is_subject = no
+			is_subject_of = ITA
+		}
+		capital_scope = {
+			region = italy_region
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "REVOLUTIONARY_UNITY.5.a"
+		ITA = {
+			inherit = ROOT
+			ROOT = {
+				every_owned_province = {
+					add_core = ITA
+				}
+			}
+		}
+	}
+}

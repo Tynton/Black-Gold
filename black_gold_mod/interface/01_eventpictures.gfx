@@ -1,0 +1,276 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "NUKE_eventPicture"
+		texturefile = "gfx/event_pictures/NUKE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "AIRFORCE_eventPicture"
+		texturefile = "gfx/event_pictures/AIRFORCE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "BOMBING_eventPicture"
+		texturefile = "gfx/event_pictures/BOMBING_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "BUREAU_eventPicture"
+		texturefile = "gfx/event_pictures/BUREAU_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "MODERN_UNREST_eventPicture"
+		texturefile = "gfx/event_pictures/MODERN_UNREST_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "EDUCATION_INSTITUTION_eventPicture"
+		texturefile = "gfx/event_pictures/EDUCATION_INSTITUTION_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "ELECTRICITY_eventPicture"
+		texturefile = "gfx/event_pictures/ELECTRICITY_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GLOBAL_eventPicture"
+		texturefile = "gfx/event_pictures/GLOBAL_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "INDUSTRY_eventPicture"
+		texturefile = "gfx/event_pictures/INDUSTRY_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "NATIONAL_INSTITUTION_eventPicture"
+		texturefile = "gfx/event_pictures/NATIONAL_INSTITUTION_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "RADIO_TV_eventPicture"
+		texturefile = "gfx/event_pictures/RADIO_TV_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "MIL_ADVANCE_eventPicture"
+		texturefile = "gfx/event_pictures/MIL_ADVANCE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "FACTORY_eventPicture"
+		texturefile = "gfx/event_pictures/FACTORY_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "REFRIGERATION_eventPicture"
+		texturefile = "gfx/event_pictures/REFRIGERATION_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "DREADNOUGHT_eventPicture"
+		texturefile = "gfx/event_pictures/DREADNOUGHT_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "CIRCUIT_eventPicture"
+		texturefile = "gfx/event_pictures/CIRCUIT_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "COAL_FURNACE_eventPicture"
+		texturefile = "gfx/event_pictures/COAL_FURNACE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "MODERN_ARCHITECTURE_eventPicture"
+		texturefile = "gfx/event_pictures/MODERN_ARCHITECTURE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "ENTENTE_eventPicture"
+		texturefile = "gfx/event_pictures/ENTENTE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "FASC_REV_eventPicture"
+		texturefile = "gfx/event_pictures/FASC_REV_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "FUTURIST_REV_eventPicture"
+		texturefile = "gfx/event_pictures/FUTURIST_REV_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "FUTURISM_eventPicture"
+		texturefile = "gfx/event_pictures/FUTURISM_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "FASC_SABOTAGE_eventPicture"
+		texturefile = "gfx/event_pictures/FASC_SABOTAGE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "SOC_SABOTAGE_eventPicture"
+		texturefile = "gfx/event_pictures/SOC_SABOTAGE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "FUT_SABOTAGE_eventPicture"
+		texturefile = "gfx/event_pictures/FUT_SABOTAGE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "SOC_REV_eventPicture"
+		texturefile = "gfx/event_pictures/SOC_REV_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "SOV_REV_eventPicture"
+		texturefile = "gfx/event_pictures/SOV_REV_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "MARX_eventPicture"
+		texturefile = "gfx/event_pictures/MARX_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "LON_eventPicture"
+		texturefile = "gfx/event_pictures/LON_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "COMMONWEALTH_eventPicture"
+		texturefile = "gfx/event_pictures/COMMONWEALTH_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "SCR_AFRICA_eventPicture"
+		texturefile = "gfx/event_pictures/SCR_AFRICA_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GULAG_eventPicture"
+		texturefile = "gfx/event_pictures/GULAG_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "TIANANMEN_eventPicture"
+		texturefile = "gfx/event_pictures/TIANANMEN_eventPicture"
+		allwaystransparent = yes
+	}
+	
+	#Broken for some reason
+	
+	spriteType = {
+		name = "EMBASSYBG_eventPicture"
+		texturefile = "gfx/event_pictures/EMBASSYBG_eventPicture"
+		allwaystransparent = yes
+	}
+	
+	#SPACE
+	
+	spriteType = {
+		name = "EARTH_eventPicture"
+		texturefile = "gfx/event_pictures/EARTH_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "VENUS_eventPicture"
+		texturefile = "gfx/event_pictures/VENUS_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "MARS_eventPicture"
+		texturefile = "gfx/event_pictures/MARS_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "MERCURY_eventPicture"
+		texturefile = "gfx/event_pictures/MERCURY_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "JUPITER_eventPicture"
+		texturefile = "gfx/event_pictures/JUPITER_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "SATURN_eventPicture"
+		texturefile = "gfx/event_pictures/SATURN_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "URANUS_eventPicture"
+		texturefile = "gfx/event_pictures/URANUS_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "NEPTUNE_eventPicture"
+		texturefile = "gfx/event_pictures/NEPTUNE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "SATELLITE_eventPicture"
+		texturefile = "gfx/event_pictures/SATELLITE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "PIONEER_eventPicture"
+		texturefile = "gfx/event_pictures/PIONEER_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "SKYLAB_eventPicture"
+		texturefile = "gfx/event_pictures/SKYLAB_eventPicture.dds"
+		allwaystransparent = yes
+	}
+}

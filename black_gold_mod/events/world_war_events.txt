@@ -1,0 +1,306 @@
+namespace = world_war_events
+
+#Diplomatic Mission ######################OBSOLETE######################
+
+country_event = {
+	id = world_war_events.1
+	title = "world_war_events.n.1"
+	desc = "world_war_events.d.1"
+	picture = BUREAU_eventPicture
+	
+	trigger = {
+		current_age = age_of_great_wars
+		current_age = age_of_industrialization 
+		
+		NOT = {
+			num_of_free_diplomatic_relations = 1
+		}
+		
+		any_country = {
+			military_strength = {
+				who = ROOT
+				value = 0.3
+				#value = 1.2
+			}
+			#NOT = {
+			#	
+			#}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = "world_war_events.1.a"
+		
+		all_country = {
+			limit = {
+				ai_attitude = {
+					who = ROOT
+					attitude = attitude_friendly
+				}
+			}
+			country_event {
+				id = world_war_events.2
+			}
+		}
+	}
+	
+	option = {
+		name = "world_war_events.1.b"
+	}
+}
+
+#Diplomatic Mission, Recipient
+
+country_event = {
+	id = world_war_events.2
+	title = "world_war_events.n.2"
+	desc = "world_war_events.d.2"
+	picture = BUREAU_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "world_war_events.2.a"
+		
+		FROM = {
+			create_alliance = ROOT
+			
+			add_opinion = {
+				who = ROOT
+				modifier = diplomatic_mission
+			}
+		}
+		
+		reverse_add_opinion = {
+			who = ROOT
+			modifier = diplomatic_mission
+		}
+	}
+	
+	option = {
+		name = "world_war_events.2.b"
+	}
+}
+
+
+
+
+
+
+
+
+
+
+#Diplomatic Crisis initiation
+
+country_event = {
+	id = world_war_events.3
+	title = "world_war_events.n.3"
+	desc = "world_war_events.d.3"
+	picture = BUREAU_eventPicture
+	
+	#major = yes
+	
+	trigger = {
+		current_age = age_of_great_wars 
+		
+		is_great_power = yes 
+		
+		is_at_war = no
+		
+		NOT = {
+			any_rival_country = {
+				OR = {
+					war_with = ROOT
+					truce_with = ROOT
+				}
+			}
+			has_global_flag = diplomatic_crisis
+		}
+		any_rival_country = {
+			is_neighbor_of = ROOT
+			OR = {
+				num_of_allies = 2
+				num_of_subjects = 4
+			}
+			is_great_power = yes
+		}
+		
+		OR = {
+			num_of_allies = 2
+			num_of_subjects = 4
+		}
+		
+		NOT = {
+			has_global_flag = world_war_ongoing
+		}
+		
+		NOT = {
+			OR = {
+				ROOT = {
+					OR = {
+						technology_group = modern_nuke
+						technology_group = modern_german_nuke
+						technology_group = modern_soviet_nuke
+					}
+				}
+				FROM = {
+					OR = {
+						technology_group = modern_nuke
+						technology_group = modern_german_nuke
+						technology_group = modern_soviet_nuke
+					}
+				}
+			}
+		}
+
+		#all_country = {
+		#	limit = {
+		#		is_great_power = yes
+		#	}
+		#	is_at_war = no
+		#}
+	}
+
+	mean_time_to_happen = {
+		months = 220
+		
+		modifier = {
+			factor = 0.9
+			year = 1910
+		}
+		
+		modifier = {
+			factor = 0.75
+			has_reform = fascist_mechanic
+		}
+	}
+	
+	#escalate tension
+	
+	option = {
+		name = "world_war_events.3.a"
+		random_rival_country = { 
+			country_event = {
+				id = world_war_events.4
+				days = 30
+			}
+		} 
+		
+		ai_chance = { factor = 15 }
+	}
+	
+	#settle peacefully
+	
+	option = {
+		name = "world_war_events.3.b"
+		add_prestige = -25
+		add_stability = -1
+		
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = world_war_events.4
+	title = "world_war_events.n.4"
+	desc = "world_war_events.d.4"
+	picture = BUREAU_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	#escalate tension
+	
+	option = {
+		name = "world_war_events.4.a"
+		FROM = {
+			country_event = {
+				id = world_war_events.5
+				days = 30
+			}
+		}
+		
+		ai_chance = { factor = 15 }
+	}
+	
+	#settle peacefully
+	
+	option = {
+		name = "world_war_events.4.b"
+		add_prestige = -25
+		add_stability = -1
+		
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = world_war_events.5
+	title = "world_war_events.n.5"
+	desc = "world_war_events.d.5"
+	picture = BUREAU_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	#to war
+	
+	option = {
+		name = "world_war_events.5.a"
+		FROM = {
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_world_war
+			}
+			
+			every_country = {
+				limit = {
+					alliance_with = FROM
+				}
+				join_all_offensive_wars_of = FROM
+			}
+		}
+		
+		clr_global_flag = diplomatic_crisis
+		
+		set_global_flag = world_war_ongoing
+		
+		hidden_effect = {
+			country_event = {
+				id = world_war_events.6
+				days = 4380
+			}
+		}
+		ai_chance = { factor = 15 }
+	}
+	
+	#settle peacefully
+	
+	#option = {
+	#	name = "world_war_events.5.b"
+	#	add_prestige = -25
+	#	add_stability = -1
+	#	
+	#	ai_chance = { factor = 1 }
+	#}
+}
+
+#######################END OF WW1#######################
+
+country_event = {
+	id = world_war_events.6
+	
+	hidden = yes
+	
+	option = {
+		name = "world_war_events.4.a"
+		clr_global_flag = world_war_ongoing
+	}
+}

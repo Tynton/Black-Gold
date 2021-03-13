@@ -1,0 +1,1195 @@
+# For specific government types
+# Will pick the first valid one it finds in list
+
+
+auth_republic = {
+	rank = {
+		1 = REPUBLIC
+		2 = REPUBLIC
+		3 = REPUBLIC
+	}
+
+	ruler_male = {
+		1 = PRESIDENT
+		2 = PRESIDENT
+		3 = PRESIDENT
+	}
+
+	ruler_female = {
+		1 = PRESIDENT
+		2 = PRESIDENT
+		3 = PRESIDENT
+	}
+
+	trigger = {
+		has_reform = auth_republic_reform
+	}
+}
+
+auth_republic_reform = {
+	rank = {
+		1 = DUCHY
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = DUKE
+		2 = KING
+		3 = EMPEROR
+	}
+
+	ruler_female = {
+		1 = DUCHESS
+		2 = QUEEN
+		3 = EMPRESS
+	}
+
+	trigger = {
+		has_reform = auth_monarchism
+	}
+}
+
+
+
+socialist_state_name = {
+	rank = {
+		1 = DEMOCRATIC_REPUBLIC
+		2 = PEOPLES_REPUBLIC
+		3 = UNION
+	}
+
+	ruler_male = {
+		1 = CHAIRMAN
+		2 = CHAIRMAN
+		3 = CHAIRMAN
+	}
+
+	ruler_female = {
+		1 = CHAIRWOMAN
+		2 = CHAIRWOMAN
+		3 = CHAIRWOMAN
+	}
+
+	trigger = {
+		OR = {
+			has_reform = socialist_government_reform
+			has_reform = socialist_juche
+			has_reform = revolutionary_socialism
+			has_reform = socialist_republic
+		}
+		NOT = {
+			culture_group = germanic
+		}
+	}
+}
+
+german_socialist_state = {
+	rank = {
+		1 = UNION
+		2 = UNION
+		3 = DEMOCRATIC_REPUBLIC
+	}
+
+	ruler_male = {
+		1 = GENERALDIREKTOR
+		2 = GENERALDIREKTOR
+		3 = GENERALDIREKTOR
+	}
+
+	ruler_female = {
+		1 = GENERALDIREKTOR_fem
+		2 = GENERALDIREKTOR_fem
+		3 = GENERALDIREKTOR_fem
+	}
+
+	trigger = {
+		OR = {
+			has_reform = socialist_mechanic
+		}
+		culture_group = germanic
+	}
+}
+
+norwegian_democracy = {
+	rank = {
+		1 = REPUBLIKK
+		2 = REPUBLIKK
+		3 = FODERAL_REPUBLIKK #føderal republikk
+	}
+
+	ruler_male = {
+		1 = KANSLER
+		2 = PRESIDENT
+		3 = PRESIDENT
+	}
+
+	ruler_female = {
+		1 = KANSLER_fem
+		2 = PRESIDENT_fem
+		3 = PRESIDENT_fem
+	}
+
+	trigger = {
+		AND = {
+			has_reform = democratic_mechanic
+			NOT = {
+				has_reform = parliamentary_monarchism
+			}
+		}
+		primary_culture = norwegian
+	}
+}
+
+swedish_democracy = {
+	rank = {
+		1 = REPUBLIK
+		2 = REPUBLIK
+		3 = FEDERAL_REPUBLIK
+	}
+
+	ruler_male = {
+		1 = KANSLER
+		2 = PRESIDENT
+		3 = PRESIDENT
+	}
+
+	ruler_female = {
+		1 = KANSLER_fem
+		2 = PRESIDENT_fem
+		3 = PRESIDENT_fem
+	}
+
+	trigger = {
+		AND = {
+			has_reform = democratic_mechanic
+			NOT = {
+				has_reform = parliamentary_monarchism
+			}
+		}
+		primary_culture = swedish
+	}
+}
+
+danish_democracy = {
+	rank = {
+		1 = REPUBLIK
+		2 = REPUBLIK
+		3 = FORBUNDSREPUBLIK #forbundsrepublik
+	}
+
+	ruler_male = {
+		1 = KANSLER
+		2 = FORMAND
+		3 = FORMAND
+	}
+
+	ruler_female = {
+		1 = KANSLER_fem
+		2 = FORMAND_fem
+		3 = FORMAND_fem
+	}
+
+	trigger = {
+		AND = {
+			has_reform = democratic_mechanic
+			NOT = {
+				has_reform = parliamentary_monarchism
+			}
+		}
+		primary_culture = danish
+	}
+}
+
+fascist_government_name = {
+	rank = {
+		1 = EMPIRE
+		2 = EMPIRE
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = LEADER
+		2 = LEADER
+		3 = LEADER
+	}
+
+	ruler_female = {
+		1 = LEADER_fem
+		2 = LEADER_fem
+		3 = LEADER_fem
+	}
+
+	#government_reform = fascist_mechanic
+
+	trigger = {
+		has_reform = fascist_mechanic
+		NOT = {
+			has_reform = fascist_monarchism
+		}
+		NOT = {
+			OR = {
+				culture_group = french
+				culture_group = iberian
+				culture_group = latin
+				culture_group = germanic
+			}
+		}
+	}
+}
+
+fascist_france = {
+	rank = {
+		1 = EMPIRE
+		2 = EMPIRE
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = CHEF_DETAT
+		2 = CHEF_DETAT
+		3 = CHEF_DETAT
+	}
+
+	ruler_female = {
+		1 = CHEF_DETAT_fem
+		2 = CHEF_DETAT_fem
+		3 = CHEF_DETAT_fem
+	}
+
+	#government_reform = fascist_mechanic
+
+	trigger = {
+		has_reform = fascist_mechanic
+		NOT = {
+			has_reform = fascist_monarchism
+		}
+		culture_group = french
+	}
+}
+
+fascist_benelux = {
+	rank = {
+		1 = RIJK
+		2 = RIJK
+		3 = RIJK
+	}
+
+	ruler_male = {
+		1 = LEIDER
+		2 = LEIDER
+		3 = LEIDER
+	}
+
+	ruler_female = {
+		1 = LEIDER_fem
+		2 = LEIDER_fem
+		3 = LEIDER_fem
+	}
+
+	trigger = {
+		has_reform = fascist_mechanic
+		NOT = {
+			has_reform = fascist_monarchism
+		}
+		OR = {
+			primary_culture = dutch
+			primary_culture = flemish
+		}
+	}
+}
+
+fascist_danish = {
+	rank = {
+		1 = RIGE
+		2 = RIGE
+		3 = RIGE
+	}
+
+	ruler_male = {
+		1 = LEDER
+		2 = LEDER
+		3 = LEDER
+	}
+
+	ruler_female = {
+		1 = LEDER_fem
+		2 = LEDER_fem
+		3 = LEDER_fem
+	}
+
+	trigger = {
+		has_reform = fascist_mechanic
+		NOT = {
+			has_reform = fascist_monarchism
+		}
+		primary_culture = danish
+	}
+}
+
+fascist_swedish = {
+	rank = {
+		1 = RIK
+		2 = RIK
+		3 = RIK
+	}
+
+	ruler_male = {
+		1 = LEDARE
+		2 = LEDARE
+		3 = LEDARE
+	}
+
+	ruler_female = {
+		1 = LEDARE_fem
+		2 = LEDARE_fem
+		3 = LEDARE_fem
+	}
+
+	trigger = {
+		has_reform = fascist_mechanic
+		NOT = {
+			has_reform = fascist_monarchism
+		}
+		primary_culture = swedish
+	}
+}
+
+fascist_norwegian = {
+	rank = {
+		1 = RIK
+		2 = RIK
+		3 = RIK
+	}
+
+	ruler_male = {
+		1 = LEDER
+		2 = LEDER
+		3 = LEDER
+	}
+
+	ruler_female = {
+		1 = LEDER_fem
+		2 = LEDER_fem
+		3 = LEDER_fem
+	}
+
+	trigger = {
+		has_reform = fascist_mechanic
+		NOT = {
+			has_reform = fascist_monarchism
+		}
+		primary_culture = norwegian
+	}
+}
+
+fascist_spain = {
+	rank = {
+		1 = IMPERIO
+		2 = IMPERIO
+		3 = IMPERIO
+	}
+
+	ruler_male = {
+		1 = CAUDILLO
+		2 = CAUDILLO
+		3 = CAUDILLO
+	}
+
+	ruler_female = {
+		1 = CAUDILLA
+		2 = CAUDILLA
+		3 = CAUDILLA
+	}
+	
+	#government_reform = fascist_mechanic
+
+	trigger = {
+		has_reform = fascist_mechanic
+		NOT = {
+			has_reform = fascist_monarchism
+		}
+		culture_group = iberian
+	}
+}
+
+fascist_italy = {
+	rank = {
+		1 = IMPERO
+		2 = IMPERO
+		3 = IMPERO
+	}
+
+	ruler_male = {
+		1 = DUCE
+		2 = DUCE
+		3 = DUCE
+	}
+
+	ruler_female = {
+		1 = DUCE_fem
+		2 = DUCE_fem
+		3 = DUCE_fem
+	}
+	
+	#government_reform = fascist_mechanic
+
+	trigger = {
+		has_reform = fascist_mechanic
+		NOT = {
+			has_reform = fascist_monarchism
+		}
+		culture_group = latin
+	}
+}
+
+fascist_germany = {
+	rank = {
+		1 = REICH
+		2 = REICH
+		3 = REICH
+	}
+
+	ruler_male = {
+		1 = FUHRER
+		2 = FUHRER
+		3 = FUHRER
+	}
+
+	ruler_female = {
+		1 = FUHRER_fem
+		2 = FUHRER_fem
+		3 = FUHRER_fem
+	}
+	
+	#government_reform = fascist_mechanic
+
+	trigger = {
+		has_reform = fascist_mechanic
+		NOT = {
+			has_reform = fascist_monarchism
+		}
+		culture_group = germanic
+	}
+}
+
+dutch_monarchy = {
+	rank = {
+		1 = HERTOGDOM
+		2 = KONINKRIJK
+		3 = KEIZERRIJK
+	}
+
+	ruler_male = {
+		1 = HERTOG
+		2 = KONING
+		3 = KEIZER
+	}
+
+	ruler_female = {
+		1 = HERTOGIN
+		2 = KONINGIN
+		3 = KEIZERIN
+	}
+	
+	consort_male = {
+		1 = HERTOG_CONSORT
+		2 = KONING_CONSORT
+		3 = KEIZER_CONSORT
+	}
+
+	consort_female = {
+		1 = HERTOGIN
+		2 = KONINGIN
+		3 = KEIZERIN
+	}
+	
+	heir_male = {
+		1 = PRINS
+		2 = PRINS
+		3 = PRINS
+	}
+
+	heir_female = {
+		1 = PRINSES
+		2 = PRINSES
+		3 = PRINSES
+	}
+
+	trigger = {
+		OR = {
+			has_reform = fascist_monarchism
+			has_reform = futurist_empire
+			has_reform = parliamentary_monarchism
+			has_reform = monarchy_mechanic
+		}
+		culture_group = benelux
+	}
+}
+
+portugese_monarchy = {
+	rank = {
+		1 = DUCADO
+		2 = REINO
+		3 = IMPERIO_PORTUGESE #Império
+	}
+
+	ruler_male = {
+		1 = DUQUE
+		2 = REI
+		3 = IMPERADOR
+	}
+
+	ruler_female = {
+		1 = DUQUESA
+		2 = RAINHA
+		3 = IMPERATRIZ
+	}
+	
+	consort_male = {
+		1 = DUQUE
+		2 = REI
+		3 = IMPERADOR
+	}
+
+	consort_female = {
+		1 = DUQUESA
+		2 = RAINHA
+		3 = IMPERATRIZ
+	}
+	
+	heir_male = {
+		1 = PRINCIPE
+		2 = PRINCIPE
+		3 = PRINCIPE
+	}
+
+	heir_female = {
+		1 = PRINCESA
+		2 = PRINCESA
+		3 = PRINCESA
+	}
+
+	trigger = {
+		OR = {
+			has_reform = fascist_monarchism
+			has_reform = futurist_empire
+			has_reform = parliamentary_monarchism
+			has_reform = monarchy_mechanic
+		}
+		culture_group = portugese_g
+	}
+}
+
+danish_monarchy = {
+	rank = {
+		1 = HERTUGDOMME #Hertugdømme
+		2 = KONGERIGE #Kongerige
+		3 = IMPERIUM
+	}
+
+	ruler_male = {
+		1 = DUKE
+		2 = KONGE
+		3 = KEJSER
+	}
+
+	ruler_female = {
+		1 = HERTUGINDE
+		2 = DRONNING
+		3 = KEJSERINDE
+	}
+	
+	consort_male = {
+		1 = DUKE
+		2 = KONGE
+		3 = KEJSER
+	}
+
+	consort_female = {
+		1 = HERTUGINDE
+		2 = DRONNING
+		3 = KEJSERINDE
+	}
+	
+	heir_male = {
+		1 = PRINS
+		2 = PRINS
+		3 = PRINS
+	}
+
+	heir_female = {
+		1 = PRINSESSE
+		2 = PRINSESSE
+		3 = PRINSESSE
+	}
+
+	trigger = {
+		OR = {
+			has_reform = fascist_monarchism
+			has_reform = futurist_empire
+			has_reform = parliamentary_monarchism
+			has_reform = monarchy_mechanic
+		}
+		primary_culture = danish
+	}
+}
+
+swedish_monarchy = {
+	rank = {
+		1 = HERTIGDOME #Hertigdöme
+		2 = KUNGARIKE
+		3 = IMPERIUM
+	}
+
+	ruler_male = {
+		1 = HERTIG
+		2 = KUNG
+		3 = KEJSARE
+	}
+
+	ruler_female = {
+		1 = HERTIGINNA
+		2 = DROTTNING
+		3 = KEJSARINNA
+	}
+	
+	consort_male = {
+		1 = HERTIG
+		2 = KUNG
+		3 = KEJSARE
+	}
+
+	consort_female = {
+		1 = HERTIGINNA
+		2 = DROTTNING
+		3 = KEJSARINNA
+	}
+	
+	heir_male = {
+		1 = PRINS
+		2 = PRINS
+		3 = PRINS
+	}
+
+	heir_female = {
+		1 = PRINSESSA
+		2 = PRINSESSA
+		3 = PRINSESSA
+	}
+
+	trigger = {
+		OR = {
+			has_reform = fascist_monarchism
+			has_reform = futurist_empire
+			has_reform = parliamentary_monarchism
+			has_reform = monarchy_mechanic
+		}
+		primary_culture = swedish
+	}
+}
+
+norwegian_monarchy = {
+	rank = {
+		1 = HERTUGDOMMET #hertugdømmet
+		2 = KONGEDOMME #kongedømme
+		3 = IMPERIUM
+	}
+
+	ruler_male = {
+		1 = HERTUG
+		2 = KONGE
+		3 = KEISER
+	}
+
+	ruler_female = {
+		1 = HERTUGINNE
+		2 = DRONNING
+		3 = KEISERINNE
+	}
+	
+	consort_male = {
+		1 = HERTUG
+		2 = KONGE
+		3 = KEISER
+	}
+
+	consort_female = {
+		1 = HERTUGINNE
+		2 = DRONNING
+		3 = KEISERINNE
+	}
+	
+	heir_male = {
+		1 = PRINS
+		2 = PRINS
+		3 = PRINS
+	}
+
+	heir_female = {
+		1 = PRINSESSE
+		2 = PRINSESSE
+		3 = PRINSESSE
+	}
+
+	trigger = {
+		OR = {
+			has_reform = fascist_monarchism
+			has_reform = futurist_empire
+			has_reform = parliamentary_monarchism
+			has_reform = monarchy_mechanic
+		}
+		primary_culture = norwegian
+	}
+}
+
+french_monarchy = {
+	rank = {
+		1 = DUCHE
+		2 = ROYAUME
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = DUC
+		2 = ROI
+		3 = EMPEREUR
+	}
+
+	ruler_female = {
+		1 = DUCHESSE
+		2 = REINE
+		3 = IMPERATRICE
+	}
+	
+	consort_male = {
+		1 = DUC_CONSORT
+		2 = ROI_CONSORT
+		3 = EMPEREUR_CONSORT
+	}
+
+	consort_female = {
+		1 = DUCHESSE
+		2 = REINE
+		3 = IMPERATRICE
+	}
+	
+	heir_male = {
+		1 = PRINCE
+		2 = PRINCE
+		3 = PRINCE
+	}
+
+	heir_female = {
+		1 = PRINCESSE
+		2 = PRINCESSE
+		3 = PRINCESSE
+	}
+
+	trigger = {
+		OR = {
+			has_reform = fascist_monarchism
+			has_reform = futurist_empire
+			has_reform = parliamentary_monarchism
+			has_reform = monarchy_mechanic
+		}
+		OR = {
+			culture_group = french
+			tag = FRA
+		}
+	}
+}
+
+german_monarchy = {
+	rank = {
+		1 = HERZOGTUM
+		2 = KONIGREICH
+		3 = KAISERREICH
+	}
+
+	ruler_male = {
+		1 = HERZOG
+		2 = KONIG
+		3 = KAISER
+	}
+
+	ruler_female = {
+		1 = HERZOGIN
+		2 = KONIGIN
+		3 = KAISERIN
+	}
+	
+	consort_male = {
+		1 = HERZOG_CONSORT
+		2 = KONIG_CONSORT
+		3 = KAISER_CONSORT
+	}
+
+	consort_female = {
+		1 = HERZOGIN
+		2 = KONIGIN
+		3 = KAISERIN
+	}
+	
+	heir_male = {
+		1 = PRINZ
+		2 = PRINZ
+		3 = PRINZ
+	}
+
+	heir_female = {
+		1 = PRINZESSIN
+		2 = PRINZESSIN
+		3 = PRINZESSIN
+	}
+
+	trigger = {
+		OR = {
+			has_reform = fascist_monarchism
+			has_reform = futurist_empire
+			has_reform = parliamentary_monarchism
+			has_reform = monarchy_mechanic
+		}
+		culture_group = germanic
+	}
+}
+
+futurist_govt = {
+	rank = {
+		1 = FREE_STATE
+		2 = NATIONAL_REPUBLIC
+		3 = NATIONAL_REPUBLIC
+	}
+
+	ruler_male = {
+		1 = LEADER
+		2 = LEADER
+		3 = LEADER
+	}
+
+	ruler_female = {
+		1 = LEADER_fem
+		2 = LEADER_fem
+		3 = LEADER_fem
+	}
+
+	trigger = {
+		has_reform = futurist_mechanic
+		
+		NOT = {
+			has_reform = futurist_empire
+		}
+	}
+}
+
+holy_roman_german_electors_monarchy = {
+	rank = {
+		1 = HERZOGTUM
+		2 = KONIGREICH
+		3 = KAISERREICH
+	}
+
+	ruler_male = {
+		1 = HERZOG_ELECTOR
+		2 = KONIG_ELECTOR
+		3 = KAISER
+	}
+
+	ruler_female = {
+		1 = HERZOGIN_ELECTOR
+		2 = KONIGIN_ELECTOR	
+		3 = KAISERIN
+	}
+	
+	consort_male  = {
+		1 = HERZOG_ELECTOR
+		2 = KONIG_ELECTOR
+		3 = ELECTOR
+	}
+	
+	consort_female = {
+		1 = HERZOGIN_ELECTOR
+		2 = KONIGIN_ELECTOR	
+		3 = ELECTRESS
+	}
+	
+	#Standard titles for heirs.
+	
+	trigger = {
+		OR = {
+			has_reform = fascist_monarchism
+			has_reform = futurist_empire
+			has_reform = parliamentary_monarchism
+			has_reform = monarchy_mechanic
+		}
+		is_elector = yes
+		is_emperor = no
+		culture_group = germanic
+		NOT = { tag = HAB } #Archdukes
+	}
+}
+
+spanish_monarchy = {
+	rank = {
+		1 = DUCADO
+		2 = REINO
+		3 = IMPERIO
+	}
+
+	ruler_male = {
+		1 = DUQUE
+		2 = REY
+		3 = EMPERADOR
+	}
+
+	ruler_female = {
+		1 = DUQUESA
+		2 = REINA
+		3 = EMPERATRIZ
+	}
+	
+	consort_male = {
+		1 = DUQUE_CONSORT
+		2 = REY_CONSORT
+		3 = EMPERADOR_CONSORT
+	}
+
+	consort_female = {
+		1 = DUQUESA
+		2 = REINA
+		3 = EMPERATRIZ
+	}
+	
+	heir_male = {
+		1 = PRINCIPE
+		2 = PRINCIPE
+		3 = PRINCIPE
+	}
+
+	heir_female = {
+		1 = PRINCESA
+		2 = PRINCESA
+		3 = PRINCESA
+	}
+
+	trigger = {
+		OR = {
+			has_reform = fascist_monarchism
+			has_reform = futurist_empire
+			has_reform = parliamentary_monarchism
+			has_reform = monarchy_mechanic
+		}
+		culture_group = iberian
+	}
+}
+
+italian_monarchy = {
+	rank = {
+		1 = DUCATO
+		2 = REGNO
+		3 = IMPERO
+	}
+
+	ruler_male = {
+		1 = DUCA
+		2 = RE
+		3 = IMPERATORE
+	}
+
+	ruler_female = {
+		1 = DUCHESSA
+		2 = REGINA
+		3 = IMPERATRICE
+	}
+	
+	consort_male = {
+		1 = DUCA_CONSORT
+		2 = RE_CONSORT
+		3 = IMPERATORE_CONSORT
+	}
+
+	consort_female = {
+		1 = DUCHESSA
+		2 = REGINA
+		3 = IMPERATRICE
+	}
+	
+	heir_male = {
+		1 = ITAPRINCIPE
+		2 = ITAPRINCIPE
+		3 = ITAPRINCIPE
+	}
+
+	heir_female = {
+		1 = PRINCIPESSA
+		2 = PRINCIPESSA
+		3 = PRINCIPESSA
+	}
+
+	trigger = {
+		OR = {
+			has_reform = fascist_monarchism
+			has_reform = futurist_empire
+			has_reform = parliamentary_monarchism
+			has_reform = monarchy_mechanic
+		}
+		culture_group = latin
+	}
+}
+
+
+
+czech_monarchy = {
+	rank = {
+		1 = VEVODSTVI
+		2 = KRALOVSTVI
+		3 = CISARSTVI
+	}
+
+	ruler_male = {
+		1 = VEVODA
+		2 = KRAL
+		3 = CISAR
+	}
+
+	ruler_female = {
+		1 = VEVODKYNE
+		2 = KRALOVNA
+		3 = CISAROVNA
+	}
+	
+	consort_male = {
+		1 = VEVODA_CONSORT
+		2 = KRAL_CONSORT
+		3 = CISAR_CONSORT
+	}
+
+	consort_female = {
+		1 = VEVODKYNE
+		2 = KRALOVNA
+		3 = CISAROVNA
+	}
+	
+	heir_male = {
+		1 = PRINC
+		2 = PRINC
+		3 = PRINC
+	}
+
+	heir_female = {
+		1 = PRINCEZNA
+		2 = PRINCEZNA
+		3 = PRINCEZNA
+	}
+
+	trigger = {
+		OR = {
+			has_reform = fascist_monarchism
+			has_reform = futurist_empire
+			has_reform = parliamentary_monarchism
+			has_reform = monarchy_mechanic
+		}
+		culture = czech
+	}
+}
+
+dominion_state = {
+	rank = {
+		1 = DOMINION
+		2 = DOMINION
+		3 = DOMINION
+	}
+
+	ruler_male = {
+		1 = PRIME_MINISTER_LEADER
+		2 = PRIME_MINISTER_LEADER
+		3 = PRIME_MINISTER_LEADER
+	}
+
+	ruler_female = {
+		1 = PRIME_MINISTER_LEADER_fem
+		2 = PRIME_MINISTER_LEADER_fem
+		3 = PRIME_MINISTER_LEADER_fem
+	}
+
+	trigger = {
+		is_subject_of_type = dominion 
+		has_reform = democratic_mechanic
+	}
+}
+
+parliament_republic = {
+	rank = {
+		1 = REPUBLIC
+		2 = REPUBLIC
+		3 = FEDERAL_REPUBLIC
+	}
+
+	ruler_male = {
+		1 = CHANCELLOR
+		2 = PRESIDENT
+		3 = PRESIDENT
+	}
+
+	ruler_female = {
+		1 = CHANCELLOR_fem
+		2 = PRESIDENT_fem
+		3 = PRESIDENT_fem
+	}
+
+	trigger = {
+		government = republic
+		OR = {
+			has_reform = parliamentary_reform
+			has_reform = parliamentary_republic_reform
+		}
+	}
+}
+
+liberal_government = {
+	rank = {
+		1 = LIB_STATE
+		2 = LIB_STATE
+		3 = LIB_STATE
+	}
+
+	ruler_male = {
+		1 = CHAIRMAN
+		2 = CHAIRMAN
+		3 = CHAIRMAN
+	}
+
+	ruler_female = {
+		1 = CHAIRWOMAN
+		2 = CHAIRWOMAN
+		3 = CHAIRWOMAN
+	}
+
+	trigger = {
+		has_reform = liberal_dictatorship
+	}
+}
+
+english_liberal_monarchy = {
+	rank = {
+		1 = DUCHY
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = DUKE
+		2 = KING
+		3 = EMPEROR
+	}
+
+	ruler_female = {
+		1 = DUCHESS
+		2 = QUEEN
+		3 = EMPRESS
+	}
+
+	trigger = {
+		has_reform = parliamentary_monarchism
+	}
+}

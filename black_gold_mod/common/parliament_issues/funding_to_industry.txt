@@ -1,0 +1,44 @@
+funding_to_industry = {
+
+	category = 1
+	
+	allow = {
+		has_institution = industrialization
+		NOT = {
+			factory_infrastructure = 5
+		}
+		num_of_loans = 1
+	}
+	
+	modifier = {
+		global_tax_modifier = 0.2
+		production_efficiency = 0.1
+		build_cost = -0.2
+		build_time = -0.25
+	}
+	
+	effect = {
+		add_years_of_income = 0.15
+	}
+	
+	
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 4
+			NOT = {
+				factory_infrastructure = 10
+			}
+		}
+		modifier = {
+			factor = 5
+			NOT = {
+				factory_infrastructure = 20
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}

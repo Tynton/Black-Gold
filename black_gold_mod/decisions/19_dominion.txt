@@ -1,0 +1,37 @@
+country_decisions = {
+
+	dominion_independence = {
+	
+		major = yes
+	
+		potential = {
+			adm_tech = 43
+			overlord = {
+				adm_tech = 43
+			}
+			is_subject_of_type = dominion
+		}
+		allow = {
+			adm_tech = 45
+			adm_power = 50
+			has_parliament = yes
+			OR = {
+				prestige = 25
+				stability = 1
+			}
+		}
+		effect = {
+			country_event = {
+				id = dominionhood_colonies.4
+			}
+			add_adm_power = -50
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				num_of_loans = 1
+			}
+		}
+	}
+}

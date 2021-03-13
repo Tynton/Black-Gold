@@ -1,0 +1,54 @@
+﻿l_english:
+ BIRTHPLACE_OF_INSTITUTION:0 "$PROV$ is the birthplace of the §Y$NAME$§!"
+ 
+ global_imperialism_date:0 "1750"
+ 
+ global_imperialism:0 "Global Imperialism"
+ desc_global_imperialism:0 "Global Imperialism - generally seeking to construct a massive empire around the globe, a goal sought by most - if not all - european states."
+ birthplace_of_global_imperialism:0 "Birthplace of Global Imperialism"
+ desc_birthplace_of_global_imperialism:0 "This province is home to the very first institutions of new age global imperialism."
+ 
+ industrialization_date:0 "1785"
+ 
+ industrialization:0 "Industrialization"
+ desc_industrialization:0 "Industrialization"
+ birthplace_of_industrialization:0 "Nexus of the Industrial Revolution"
+ desc_birthplace_of_industrialization:0 "This province is home to the very first mass industrial buildings."
+ 
+ nationalism_institution_date:0 "1840"
+ 
+ nationalism_institution:0 "Nationalism"
+ desc_nationalism_institution:0 "Nationalism"
+ birthplace_of_desc_nationalism_institution:0 "Foundation of Nationalist Movements"
+ desc_birthplace_of_desc_nationalism_institution:0 "This province is one of the first to house nationalist movements for the nation it is a part of. By extension it is one of the first provinces for nationalist movements on the planet."
+ 
+ compulsory_education_date:0 "1880"
+ 
+ compulsory_education:0 "Compulsory Education"
+ desc_compulsory_education:0 "Compulsory Education"
+ birthplace_of_desc_compulsory_education:0 "First Public Education Institutions"
+ desc_birthplace_of_desc_compulsory_education:0 "This province is one of the first to maintain government-mandated public schooling."
+ 
+ electrification_date:0 "1885"
+ 
+ electrification:0 "Electrification"
+ desc_electrification:0 "Electrification"
+ birthplace_of_desc_electrification:0 "First Use of Electricity for Infrastructure"
+ desc_birthplace_of_desc_electrification:0 "This province is the first to utilize electric technologies en-masse for the public."
+ 
+ mass_media_date:0 "1920"
+ 
+ mass_media:0 "Mass Media"
+ desc_mass_media:0 "Mass Media (televisions, films, radios and very early computing technologies) were on the rise in the early 20th century."
+ birthplace_of_desc_mass_media:0 "First Industries of Mass Media"
+ desc_birthplace_of_desc_mass_media:0 "This province is one of the founding areas of the Mass Media industry."
+ 
+ information_infrastructure_date:0 "1960"
+ 
+ information_infrastructure:0 "COMP. INFRA."
+ desc_information_infrastructure:0 "Informational Infrastructure (abbreviated to COMP. INFRA., "Computer Infrastructure" for the mod) includes, but is not limited to, Cold War era informational dissemination projects. The Internet was considered as early as the Cold War as a manner of coordinating computer efforts in the event of nuclear attacks. This is not the only purpose of this institution however, since the internet was publicized in the 1990's, the purpose of information control has been exhibited in the modern day to some degrees. This will inevitably become a pivot point of democracies and dictatorships alike as the control of information is paramount to a regime's overall success."
+ birthplace_of_desc_information_infrastructure:0 "Nexus of Informational Infrastructure"
+ desc_birthplace_of_desc_information_infrastructure:0 "This province is one of the primary databases in the national (and possibly international) spheres."
+ 
+
+

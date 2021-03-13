@@ -1,0 +1,98 @@
+march_on_rome = {
+	potential = {
+		tag = ITA
+		NOT = {
+			OR = {
+				has_reform = fascist_mechanic
+			}
+			#has_country_modifier = victorious_against_revolution
+		}
+		is_subject = no
+		is_free_or_tributary_trigger = yes
+		uses_doom = no
+		OR = {
+			current_age = age_of_great_wars
+			#current_age = age_of_industrialization
+		}
+		#adm_tech = 35
+	}
+	
+	
+	can_start = {
+		OR = {
+			num_of_loans = 4
+			inflation = 6
+			NOT = { prestige = -25 }
+			corruption = 0.5
+			war_exhaustion = 8
+			NOT = { stability = 0 }
+		}
+		is_institution_enabled = nationalism_institution
+		has_any_disaster = no
+	}
+	
+	can_stop = { 
+		OR = {
+			has_any_disaster = yes
+		}
+	}
+	
+	
+	progress = {
+		modifier = {
+			factor = 1
+			NOT = { prestige = 0 }
+		}
+		modifier = {
+			factor = 2
+			war_exhaustion = 5
+		} 
+		modifier = {
+			factor = 2
+			num_of_loans = 4
+			NOT = { num_of_loans = 6 }
+		}	
+		modifier = {
+			factor = 2
+			num_of_loans = 6
+		}
+		modifier = {
+			factor = 4
+			is_bankrupt = yes
+		}	
+		modifier = {
+			factor = 1
+			revolution_target_exists = yes
+		}		
+
+	}
+	
+	can_end = {
+		stability = 1
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+	}
+	
+
+	modifier = {
+		global_unrest = 40
+		stability_cost_modifier = 0.5
+		defensiveness = -0.5
+	}	
+	
+	
+	on_start = march_on_rome.1
+	on_end = fascist_revolution.20
+	
+	on_monthly = {
+		events = {
+			fascist_revolution.10
+			fascist_revolution.15
+		}
+		random_events = { 
+			1000 = 0
+			100 = fascist_revolution.3
+		}
+	}
+}
+}
+

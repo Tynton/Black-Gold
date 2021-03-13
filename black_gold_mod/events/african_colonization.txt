@@ -1,0 +1,68 @@
+namespace = african_colonization
+
+#ALGERIE FRANCE
+
+country_event = {
+	id = african_colonization.1
+	title = "african_colonization.n.1"
+	desc = "african_colonization.d.1"
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	major = yes
+
+	trigger = {
+		adm_tech = 32
+		
+		capital_scope = {
+			OR = {
+				region = france_region
+				region = italy_region
+			}
+		}
+		OR = {
+			full_idea_group = expansion_ideas
+			full_idea_group = exploration_ideas
+		}
+		development = 900
+		is_subject = no
+	}
+
+	mean_time_to_happen = {
+		months = 20
+		
+		modifier = {
+			factor = 0.5
+			government_rank = 3
+		}
+	}
+	
+	###################OPTIONS###################
+	
+	#refrain from colonization
+	option = {
+		name = "african_colonization.1.a"
+	}
+	
+	#CLAIM ALGERIE
+	option = {
+		name = "african_colonization.1.b"
+		algiers_area = {
+			add_core = ROOT
+		}
+		hautes_plaines_area = {
+			add_core = ROOT
+		}
+		ouled_nail_area = {
+			add_core = ROOT
+		}
+		north_saharan_area = {
+			add_core = ROOT
+		}
+		barbary_coast_area = {
+			add_core = ROOT
+		}
+		kabylia_area = {
+			add_core = ROOT
+		}
+	}
+}

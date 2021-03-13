@@ -1,0 +1,325 @@
+namespace = space_probe_flyby
+
+#MARS FLYBY
+
+country_event = {
+	id = space_probe_flyby.1
+	title = "space_probe_flyby.n.1"
+	desc = "space_probe_flyby.d.1"
+	picture = MARS_eventPicture
+	
+	#major = yes
+	
+	trigger = {
+		has_country_modifier = satellite
+		
+		NOT = {
+			has_country_flag = mars_flyby
+		}
+		
+		adm_tech = 45
+		dip_tech = 45
+		mil_tech = 45
+		
+		adm_power = 100
+		dip_power = 100
+		mil_power = 100
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = "space_probe_flyby.1.a"
+		
+		set_country_flag = mars_flyby
+		add_adm_power = 75
+		add_dip_power = 75
+		add_mil_power = 75
+	}
+}
+
+#VENUS FLYBY
+
+country_event = {
+	id = space_probe_flyby.2
+	title = "space_probe_flyby.n.2"
+	desc = "space_probe_flyby.d.2"
+	picture = VENUS_eventPicture
+	
+	#major = yes
+	
+	trigger = {
+		has_country_modifier = satellite
+		
+		NOT = {
+			has_country_flag = venus_flyby
+		}
+		has_country_flag = mars_flyby
+		
+		adm_tech = 45
+		dip_tech = 45
+		mil_tech = 45
+		
+		adm_power = 150
+		dip_power = 150
+		mil_power = 150
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = "space_probe_flyby.2.a"
+		
+		set_country_flag = venus_flyby
+		add_adm_power = 50
+		add_dip_power = 50
+		add_mil_power = 50
+	}
+}
+
+#MERCURY FLYBY
+
+country_event = {
+	id = space_probe_flyby.3
+	title = "space_probe_flyby.n.3"
+	desc = "space_probe_flyby.d.3"
+	picture = MERCURY_eventPicture
+	
+	#major = yes
+	
+	trigger = {
+		has_country_modifier = satellite
+		
+		NOT = {
+			has_country_flag = mercury_flyby
+		}
+		has_country_flag = venus_flyby
+		
+		adm_tech = 45
+		dip_tech = 45
+		mil_tech = 45
+		
+		adm_power = 150
+		dip_power = 150
+		mil_power = 150
+	}
+
+	mean_time_to_happen = {
+		months = 36
+	}
+	
+	option = {
+		name = "space_probe_flyby.3.a"
+		
+		set_country_flag = mercury_flyby
+		add_adm_power = 50
+		add_dip_power = 50
+		add_mil_power = 50
+	}
+}
+
+#JUPITER FLYBY
+
+country_event = {
+	id = space_probe_flyby.4
+	title = "space_probe_flyby.n.4"
+	desc = "space_probe_flyby.d.4"
+	picture = JUPITER_eventPicture
+	
+	#major = yes
+	
+	trigger = {
+		has_country_modifier = satellite
+		
+		NOT = {
+			has_country_flag = jupiter_flyby
+		}
+		has_country_flag = mercury_flyby
+		
+		adm_tech = 46
+		dip_tech = 46
+		mil_tech = 46
+		
+		adm_power = 150
+		dip_power = 150
+		mil_power = 150
+	}
+
+	mean_time_to_happen = {
+		months = 58
+	}
+	
+	option = {
+		name = "space_probe_flyby.4.a"
+		
+		set_country_flag = jupiter_flyby
+		add_adm_power = 125
+		add_dip_power = 125
+		add_mil_power = 125
+	}
+}
+
+#SATURN FLYBY
+
+country_event = {
+	id = space_probe_flyby.5
+	title = "space_probe_flyby.n.5"
+	desc = "space_probe_flyby.d.5"
+	picture = SATURN_eventPicture
+	
+	#major = yes
+	
+	trigger = {
+		has_country_modifier = satellite
+		
+		NOT = {
+			has_country_flag = saturn_flyby
+		}
+		has_country_flag = jupiter_flyby
+		
+		adm_tech = 46
+		dip_tech = 46
+		mil_tech = 46
+		
+		adm_power = 150
+		dip_power = 150
+		mil_power = 150
+	}
+
+	mean_time_to_happen = {
+		months = 48
+	}
+	
+	option = {
+		name = "space_probe_flyby.5.a"
+		
+		set_country_flag = saturn_flyby
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
+}
+
+#URANUS FLYBY
+
+country_event = {
+	id = space_probe_flyby.6
+	title = "space_probe_flyby.n.6"
+	desc = "space_probe_flyby.d.6"
+	picture = URANUS_eventPicture
+	
+	#major = yes
+	
+	trigger = {
+		has_country_modifier = satellite
+		
+		NOT = {
+			has_country_flag = uranus_flyby
+		}
+		has_country_flag = saturn_flyby
+		
+		adm_tech = 46
+		dip_tech = 46
+		mil_tech = 46
+		
+		adm_power = 150
+		dip_power = 150
+		mil_power = 150
+	}
+
+	mean_time_to_happen = {
+		months = 64
+	}
+	
+	option = {
+		name = "space_probe_flyby.6.a"
+		
+		set_country_flag = uranus_flyby
+		add_adm_power = 75
+		add_dip_power = 75
+		add_mil_power = 75
+	}
+}
+
+#NEPTUNE FLYBY
+
+country_event = {
+	id = space_probe_flyby.7
+	title = "space_probe_flyby.n.7"
+	desc = "space_probe_flyby.d.7"
+	picture = NEPTUNE_eventPicture
+	
+	#major = yes
+	
+	trigger = {
+		has_country_modifier = satellite
+		
+		NOT = {
+			has_country_flag = neptune_flyby
+		}
+		
+		has_country_flag = uranus_flyby
+		
+		adm_tech = 47
+		dip_tech = 47
+		mil_tech = 47
+		
+		adm_power = 150
+		dip_power = 150
+		mil_power = 150
+	}
+
+	mean_time_to_happen = {
+		months = 72
+	}
+	
+	option = {
+		name = "space_probe_flyby.7.a"
+		
+		set_country_flag = neptune_flyby
+		add_adm_power = 75
+		add_dip_power = 75
+		add_mil_power = 75
+	}
+}
+
+#EXITING THE SOLAR SYSTEM
+
+country_event = {
+	id = space_probe_flyby.8
+	title = "space_probe_flyby.n.8"
+	desc = "space_probe_flyby.d.8"
+	picture = PIONEER_eventPicture
+	
+	#major = yes
+	
+	trigger = {
+		has_country_modifier = satellite
+		
+		NOT = {
+			has_country_flag = solar_exit
+		}
+		has_country_flag = neptune_flyby
+		
+		adm_tech = 47
+		dip_tech = 47
+		mil_tech = 47
+	}
+
+	mean_time_to_happen = {
+		months = 220
+	}
+	
+	option = {
+		name = "space_probe_flyby.8.a"
+		
+		set_country_flag = solar_exit
+		add_adm_power = 1000
+		add_dip_power = 1000
+		add_mil_power = 1000
+	}
+}

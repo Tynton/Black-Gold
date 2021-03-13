@@ -1,0 +1,11 @@
+# Napoleonic Square
+
+type = infantry
+
+maneuver = 2
+offensive_morale = 12
+defensive_morale = 10
+offensive_fire = 15
+defensive_fire = 12
+offensive_shock = 16
+defensive_shock = 13

@@ -1,0 +1,12 @@
+# Napoleonic Lancers
+
+type = cavalry
+unit_type = modern_soviet
+
+maneuver = 2
+offensive_morale = 13
+defensive_morale = 13
+offensive_fire = 8
+defensive_fire = 8
+offensive_shock = 11
+defensive_shock = 11

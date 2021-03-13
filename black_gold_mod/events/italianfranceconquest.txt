@@ -1,0 +1,380 @@
+namespace = italianfranceconquest
+
+province_event = {
+	id = italianfranceconquest.1
+	title = "italianfranceconquest.n.1"
+	desc = "italianfranceconquest.d.1"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = cosmopolitan_french
+			owner = {
+				culture_group = latin
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+		#any_neighbor_province = {
+		#	culture_group = latin
+		#}
+	}
+
+	mean_time_to_happen = {
+		months = 48
+	}
+	
+	option = {
+		name = "italianfranceconquest.1.a"
+		change_culture = francese
+	}
+}
+
+province_event = {
+	id = italianfranceconquest.2
+	title = "italianfranceconquest.n.2"
+	desc = "italianfranceconquest.d.2"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {	
+			culture = normand
+			owner = {
+				culture_group = latin
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+		
+	}	
+
+	mean_time_to_happen = {
+		months = 80
+	}
+	
+	option = {
+		name = "italianfranceconquest.2.a"
+		change_culture = normanno
+	}
+}
+
+province_event = {
+	id = italianfranceconquest.3
+	title = "italianfranceconquest.n.3"
+	desc = "italianfranceconquest.d.3"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {	
+			culture = wallonian
+			owner = {
+				culture_group = latin
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+		
+	}	
+
+	mean_time_to_happen = {
+		months = 80
+	}
+	
+	option = {
+		name = "italianfranceconquest.3.a"
+		change_culture = vallone
+	}
+}
+
+province_event = {
+	id = italianfranceconquest.4
+	title = "italianfranceconquest.n.4"
+	desc = "italianfranceconquest.d.4"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {	
+			culture = burgundian
+			owner = {
+				culture_group = latin
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+		
+	}	
+
+	mean_time_to_happen = {
+		months = 80
+	}
+	
+	option = {
+		name = "italianfranceconquest.4.a"
+		change_culture = borgognone
+	}
+}
+
+province_event = {
+	id = italianfranceconquest.5
+	title = "italianfranceconquest.n.5"
+	desc = "italianfranceconquest.d.5"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {	
+			culture = breton
+			owner = {
+				culture_group = latin
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+		
+	}	
+
+	mean_time_to_happen = {
+		months = 80
+	}
+	
+	option = {
+		name = "italianfranceconquest.5.a"
+		change_culture = bretone
+	}
+}
+
+province_event = {
+	id = italianfranceconquest.6
+	title = "italianfranceconquest.n.6"
+	desc = "italianfranceconquest.d.6"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {	
+			culture = gascon
+			owner = {
+				culture_group = latin
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		OR = {
+			owner = {
+				ai = no
+				government_rank = 3
+			}
+		}
+		NOT = {
+			OR = {
+				AND = {
+					local_autonomy = 5
+					unrest = 1
+				}
+				has_province_modifier = nationalism_unrest_bgm
+			}
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+		
+	}	
+
+	mean_time_to_happen = {
+		months = 80
+	}
+	
+	option = {
+		name = "italianfranceconquest.6.a"
+		change_culture = gasconione
+	}
+}
+
+province_event = {
+	id = italianfranceconquest.7
+	title = "italianfranceconquest.n.7"
+	desc = "italianfranceconquest.d.7"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {	
+			culture = occitain
+			owner = {
+				culture_group = latin
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		OR = {
+			owner = {
+				ai = no
+				government_rank = 3
+			}
+		}
+		NOT = {
+			OR = {
+				AND = {
+					local_autonomy = 5
+					unrest = 1
+				}
+				has_province_modifier = nationalism_unrest_bgm
+			}
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+		
+	}	
+
+	mean_time_to_happen = {
+		months = 80
+	}
+	
+	option = {
+		name = "italianfranceconquest.7.a"
+		change_culture = occitano
+	}
+}
+
+province_event = {
+	id = italianfranceconquest.8
+	title = "italianfranceconquest.n.8"
+	desc = "italianfranceconquest.d.8"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {	
+			culture = arpitan
+			owner = {
+				culture_group = latin
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		OR = {
+			owner = {
+				ai = no
+				government_rank = 3
+			}
+		}
+		NOT = {
+			OR = {
+				AND = {
+					local_autonomy = 5
+					unrest = 1
+				}
+				has_province_modifier = nationalism_unrest_bgm
+			}
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 50
+			}
+		}
+		
+	}	
+
+	mean_time_to_happen = {
+		months = 80
+	}
+	
+	option = {
+		name = "italianfranceconquest.8.a"
+		change_culture = romando
+	}
+}
+
+country_event = {
+	id = italianfranceconquest.9
+	title = "italianfranceconquest.n.9"
+	desc = "italianfranceconquest.d.9"
+	picture = HRE_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+	
+	trigger = {
+		government_rank = 3
+		
+		culture_group = latin
+		
+		development_in_provinces = {
+			value = 250
+			region = france_region
+		}
+		
+	}	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "italianfranceconquest.9.a"
+		
+		change_primary_culture = gallo_italian
+		
+		every_owned_province = {
+			limit = {
+				culture = ROOT
+			}
+			change_culture = gallo_italian
+		}
+		
+		france_region = {
+			add_permanent_claim = ROOT
+		}
+	}
+	
+	option = {
+		name = "italianfranceconquest.9.b"
+	}
+}

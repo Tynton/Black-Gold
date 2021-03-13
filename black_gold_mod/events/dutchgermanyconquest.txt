@@ -1,0 +1,351 @@
+namespace = dutchgermanyconquest
+
+province_event = {
+	id = dutchgermanyconquest.1
+	title = "dutchgermanyconquest.n.1"
+	desc = "dutchgermanyconquest.d.1"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = swabian
+			owner = {
+				culture_group = benelux
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 50
+			}
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "dutchgermanyconquest.1.a"
+		change_culture = zwabisch
+	}
+}
+
+province_event = {
+	id = dutchgermanyconquest.2
+	title = "dutchgermanyconquest.n.2"
+	desc = "dutchgermanyconquest.d.2"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = hannoverian
+			owner = {
+				culture_group = benelux
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 50
+			}
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "dutchgermanyconquest.2.a"
+		change_culture = westfaals
+	}
+}
+
+province_event = {
+	id = dutchgermanyconquest.3
+	title = "dutchgermanyconquest.n.3"
+	desc = "dutchgermanyconquest.d.3"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = hessian
+			owner = {
+				culture_group = benelux
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 50
+			}
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "dutchgermanyconquest.3.a"
+		change_culture = rijnlands
+	}
+}
+
+province_event = {
+	id = dutchgermanyconquest.4
+	title = "dutchgermanyconquest.n.4"
+	desc = "dutchgermanyconquest.d.4"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = bavarian
+			owner = {
+				culture_group = benelux
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 50
+			}
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "dutchgermanyconquest.4.a"
+		change_culture = beiers
+	}
+}
+
+province_event = {
+	id = dutchgermanyconquest.5
+	title = "dutchgermanyconquest.n.5"
+	desc = "dutchgermanyconquest.d.5"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			OR = {
+				culture = saxon
+				culture = lower_saxon
+			}
+			owner = {
+				culture_group = benelux
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 50
+			}
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "dutchgermanyconquest.5.a"
+		change_culture = sakser
+	}
+}
+
+province_event = {
+	id = dutchgermanyconquest.6
+	title = "dutchgermanyconquest.n.6"
+	desc = "dutchgermanyconquest.d.6"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = pommeranian
+			owner = {
+				culture_group = benelux
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 50
+			}
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "dutchgermanyconquest.6.a"
+		change_culture = pommers
+	}
+}
+
+province_event = {
+	id = dutchgermanyconquest.7
+	title = "dutchgermanyconquest.n.7"
+	desc = "dutchgermanyconquest.d.7"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = prussian
+			owner = {
+				culture_group = benelux
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 50
+			}
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "dutchgermanyconquest.7.a"
+		change_culture = pruisisch
+	}
+}
+
+province_event = {
+	id = dutchgermanyconquest.8
+	title = "dutchgermanyconquest.n.8"
+	desc = "dutchgermanyconquest.d.8"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = austrian
+			owner = {
+				culture_group = benelux
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 50
+			}
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+		
+		modifier = {
+			factor = 0.75
+			any_neighbor_province = { 
+				culture_group = benelux
+			} 
+		}
+	}
+	
+	option = {
+		name = "dutchgermanyconquest.8.a"
+		change_culture = oostenrijks
+	}
+}
+
+province_event = {
+	id = dutchgermanyconquest.9
+	title = "dutchgermanyconquest.n.9"
+	desc = "dutchgermanyconquest.d.9"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = franconian
+			owner = {
+				culture_group = benelux
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 50
+			}
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+		
+		modifier = {
+			factor = 0.75
+			any_neighbor_province = { 
+				culture_group = benelux
+			} 
+		}
+	}
+	
+	option = {
+		name = "dutchgermanyconquest.9.a"
+		change_culture = frankisch
+	}
+}

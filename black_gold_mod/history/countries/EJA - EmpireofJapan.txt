@@ -1,0 +1,8 @@
+government = monarchy
+add_government_reform = feudalism_reform
+add_government_reform = authoritarian_reform
+primary_culture = japanese
+religion = shinto
+technology_group = chinese
+capital = 4190 # Tokyo
+national_focus = MIL

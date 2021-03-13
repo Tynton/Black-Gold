@@ -1,0 +1,240 @@
+namespace = dominionhood_colonies
+
+#idea for dominion
+country_event = {
+	id = dominionhood_colonies.1
+	title = "dominionhood_colonies.n.1"
+	desc = "dominionhood_colonies.d.1"
+	picture = BUREAU_eventPicture
+
+	trigger = {
+		is_colonial_nation = yes
+		overlord = { 
+			has_reform = democratic_mechanic 
+		}
+		OR = {
+			current_age = age_of_industrialization
+			current_age = age_of_great_wars
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+		
+		modifier = {
+			factor = 0.8
+			liberty_desire = 20
+		}
+		
+		modifier = {
+			factor = 0.6
+			liberty_desire = 40
+		}
+		
+		modifier = {
+			factor = 0.4
+			liberty_desire = 60
+		}
+		
+		modifier = {
+			factor = 0.2
+			liberty_desire = 80
+		}
+		
+		modifier = {
+			factor = 0.01
+			liberty_desire = 100
+		}
+	}
+	
+	option = {
+		name = "dominionhood_colonies.1.a"
+		overlord = {
+			country_event = {
+				id = dominionhood_colonies.2
+			}
+		}
+	}
+	
+	option = {
+		name = "dominionhood_colonies.1.b"
+		
+	}
+}
+
+country_event = {
+	id = dominionhood_colonies.2
+	title = "dominionhood_colonies.n.2"
+	desc = "dominionhood_colonies.d.2"
+	picture = BUREAU_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		is_colonial_nation = no
+	}	
+
+	#mean_time_to_happen = {
+	#	months = 360
+	#}
+	
+	option = {
+		name = "dominionhood_colonies.2.a"
+		FROM = {
+			change_government = democracy_govt
+			add_government_reform = democratic_mechanic
+		}
+		create_subject = {
+			subject_type = dominion
+			subject = FROM
+		}
+	}
+	
+	option = {
+		name = "dominionhood_colonies.2.b"
+		FROM = {
+			add_country_modifier = { 
+				name = denied_application
+				duration = 9125
+			}
+		}
+	}
+}
+
+###########################################################
+
+country_event = {
+	id = dominionhood_colonies.4
+	title = "dominionhood_colonies.n.4"
+	desc = "dominionhood_colonies.d.4"
+	picture = BUREAU_eventPicture
+
+	trigger = {
+		is_subject_of_type = dominion
+		overlord = { 
+			has_reform = democratic_mechanic
+			adm_tech = 43
+		}
+		current_age = age_of_great_wars
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+		
+		modifier = {
+			factor = 0.8
+			liberty_desire = 20
+		}
+		
+		modifier = {
+			factor = 0.6
+			liberty_desire = 40
+		}
+		
+		modifier = {
+			factor = 0.1
+			liberty_desire = 60
+		}
+		
+		modifier = {
+			factor = 0.1
+			liberty_desire = 80
+		}
+		
+		modifier = {
+			factor = 0.01
+			liberty_desire = 100
+		}
+	}
+	
+	option = {
+		name = "dominionhood_colonies.4.a"
+		overlord = {
+			country_event = {
+				id = dominionhood_colonies.5
+			}
+		}
+	}
+	
+	option = {
+		name = "dominionhood_colonies.4.b"
+		
+	}
+}
+
+country_event = {
+	id = dominionhood_colonies.5
+	title = "dominionhood_colonies.n.5"
+	desc = "dominionhood_colonies.d.5"
+	picture = BUREAU_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "dominionhood_colonies.5.a"
+		FROM = {
+			grant_independence = yes
+		}
+	}
+	
+	option = {
+		name = "dominionhood_colonies.5.b"
+		FROM = {
+			add_country_modifier = { 
+				name = denied_application
+				duration = 9125
+			}
+		}
+	}
+}
+
+country_event = {
+	id = dominionhood_colonies.6
+	title = "dominionhood_colonies.n.6"
+	desc = "dominionhood_colonies.d.6"
+	picture = COMMONWEALTH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "dominionhood_colonies.6.a"
+		grant_independence = yes
+		overlord = {
+			country_event = {
+				id = dominionhood_colonies.7
+			}
+		}
+	}
+}
+
+country_event = {
+	id = dominionhood_colonies.7
+	title = "dominionhood_colonies.n.7"
+	desc = "dominionhood_colonies.d.7"
+	picture = COMMONWEALTH_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		overlord = {
+			OR = {
+				has_reform = fascist_mechanic
+				has_reform = socialist_mechanic
+				has_reform = authoritarian_mechanic
+				has_reform = futurist_mechanic
+			}
+		}
+		ROOT = {
+			is_subject_of_type = dominion
+		}
+	}	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "dominionhood_colonies.7.a"
+		grant_independence = yes
+	}
+}

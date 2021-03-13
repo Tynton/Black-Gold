@@ -1,0 +1,765 @@
+namespace = GENERIC_liberal_governments
+
+#Legislation Issues
+
+country_event = {
+	id = GENERIC_liberal_governments.1
+	title = "GENERIC_liberal_governments.t.1"
+	desc = "GENERIC_liberal_governments.d.1"
+	picture = SCR_AFRICA_eventPicture
+	
+	trigger = {
+		has_reform = democratic_mechanic
+		
+		is_at_war = no
+	}
+
+	mean_time_to_happen = {
+		months = 100
+		
+		modifier = {
+			factor = 0.9
+			NOT = {
+				stability = 0
+			}
+		}
+		
+		modifier = {
+			factor = 0.9
+			NOT = {
+				stability = -1
+			}
+		}
+		
+		modifier = {
+			factor = 0.9
+			NOT = {
+				stability = -2
+			}
+		}
+		
+		###########################
+		
+		modifier = {
+			factor = 1.2
+			
+			stability = 0
+		}
+		
+		modifier = {
+			factor = 1.2
+			
+			stability = 2
+		}
+	}
+	
+	#Let them work things out
+	
+	option = {
+		name = "GENERIC_liberal_governments.1.a"
+		
+		add_adm_power = -25
+		add_dip_power = -25
+		add_mil_power = -25
+		
+	}
+	
+	#Bribe Legislators
+	
+	option = {
+		name = "GENERIC_liberal_governments.1.b"
+		
+		add_adm_power = 50
+		add_dip_power = 50
+		add_mil_power = 50
+		add_corruption = 1
+		
+		random_list = {
+			70 = { 
+				country_event = {
+					id = GENERIC_liberal_governments.2
+				}
+			}
+			30 = {
+				add_stability = -1
+			}
+		}
+		
+	}
+}
+
+#Unity of the Nation
+
+country_event = {
+	id = GENERIC_liberal_governments.2
+	title = "GENERIC_liberal_governments.t.2"
+	desc = "GENERIC_liberal_governments.d.2"
+	picture = SCR_AFRICA_eventPicture
+	
+	trigger = {
+		has_reform = democratic_mechanic
+		
+		stability = 1
+	}
+
+	mean_time_to_happen = {
+		months = 768
+		
+		modifier = {
+			factor = 0.9
+			
+			stability = 2
+		}
+		
+		modifier = {
+			factor = 0.9
+			
+			stability = 3
+		}
+	}
+	
+	#Wonderful day for our nation!
+	
+	option = {
+		name = "GENERIC_liberal_governments.2.a"
+		
+		add_stability = 1
+		
+	}
+}
+
+#Volunteers for Liberty
+
+country_event = {
+	id = GENERIC_liberal_governments.3
+	title = "GENERIC_liberal_governments.t.3"
+	desc = "GENERIC_liberal_governments.d.3"
+	picture = SCR_AFRICA_eventPicture
+	
+	trigger = {
+		has_reform = democratic_mechanic
+		
+		is_at_war = yes
+		
+		manpower_percentage = 0.35
+		NOT = {
+			manpower_percentage = 0.90 
+		}
+		
+	}
+
+	mean_time_to_happen = {
+		months = 14
+	}
+	
+	option = {
+		name = "GENERIC_liberal_governments.3.a"
+		
+		add_yearly_manpower = 0.1
+		add_war_exhaustion = -0.75
+		
+	}
+}
+
+#Politicians' Scandal (Ruling Party)
+
+country_event = {
+	id = GENERIC_liberal_governments.4
+	title = "GENERIC_liberal_governments.t.4"
+	desc = "GENERIC_liberal_governments.d.4"
+	picture = SCR_AFRICA_eventPicture
+	
+	trigger = {
+		has_reform = democratic_mechanic
+		
+		NOT = {
+			stability = 2
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 440
+	}
+	
+	option = {
+		name = "GENERIC_liberal_governments.4.a"
+		
+		add_stability = -1
+		add_prestige = -15
+		
+	}
+	
+	#Cover it up
+	
+	option = {
+		name = "GENERIC_liberal_governments.4.b"
+		
+		add_corruption = 1.5
+		
+		random_list = {
+			65 = { 
+			}
+			35 = {
+				add_stability = -2
+				add_prestige = -25
+			}
+		}
+	}
+}
+
+#Politicians' Scandal (Opposition Party)
+
+country_event = {
+	id = GENERIC_liberal_governments.5
+	title = "GENERIC_liberal_governments.t.5"
+	desc = "GENERIC_liberal_governments.d.5"
+	picture = SCR_AFRICA_eventPicture
+	
+	trigger = {
+		has_reform = democratic_mechanic
+		
+		NOT = {
+			stability = 2
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 440
+	}
+	
+	#Press State Charges
+	
+	option = {
+		name = "GENERIC_liberal_governments.5.a"
+		
+		add_stability = 1
+		
+		add_prestige = -5
+		
+		add_adm_power = 20
+		
+		add_years_of_income = -0.1
+		
+		add_republican_tradition = 5
+		add_legitimacy = 10
+		
+	}
+	
+	#Celebrate the scandal!
+	
+	option = {
+		name = "GENERIC_liberal_governments.5.b"
+		
+		add_stability = -1
+		
+		add_prestige = -10
+		
+		add_adm_power = 75
+		add_mil_power = 10
+		
+		add_years_of_income = -0.25
+		
+		add_republican_tradition = -5
+		add_legitimacy = -10
+		
+	}
+}
+
+
+
+
+
+
+
+
+##############SOCIETAL LIBERALIZATION##############
+
+#SUFFRAGETTE
+
+country_event = {
+	id = GENERIC_liberal_governments.6
+	title = "GENERIC_liberal_governments.t.6"
+	desc = "GENERIC_liberal_governments.d.6"
+	picture = SCR_AFRICA_eventPicture
+	
+	trigger = {
+		has_reform = democratic_mechanic
+		
+		has_institution = electrification
+		NOT = { has_country_modifier = womens_suffrage_demands_met }
+		
+		NOT = { has_country_flag = suffragette_denied }
+	}
+
+	mean_time_to_happen = {
+		months = 440
+		
+		modifier = {
+			factor = 0.5
+			adm_tech = 43
+		}
+		
+		modifier = {
+			factor = 0.5
+			adm_tech = 44
+		}
+		
+		modifier = {
+			factor = 0.5
+			adm_tech = 45
+		}
+	}
+	
+	#Adopt the Suffragette Rights
+	
+	option = {
+		name = "GENERIC_liberal_governments.6.a"
+		
+		add_country_modifier = {
+			name = "womens_suffrage_demands_met"
+			duration = -1
+		}
+		remove_country_modifier = demand_suffrage
+
+		add_adm_power = 175
+		
+		add_republican_tradition = 5
+		add_legitimacy = 5
+	}
+	
+	#They will be denied.
+	
+	option = {
+		name = "GENERIC_liberal_governments.6.b"
+		
+		add_stability = -1
+		
+		add_absolutism = 10
+		
+		set_country_flag = suffragette_denied
+	}
+}
+
+#MINORITY RIGHTS
+
+country_event = {
+	id = GENERIC_liberal_governments.7
+	title = "GENERIC_liberal_governments.t.7"
+	desc = "GENERIC_liberal_governments.d.7"
+	picture = SCR_AFRICA_eventPicture
+	
+	trigger = {
+		has_reform = democratic_mechanic
+		
+		has_institution = electrification
+		NOT = { has_country_modifier = minority_rights }
+		
+		NOT = { has_country_flag = minority_denied }
+	}
+
+	mean_time_to_happen = {
+		months = 440
+		
+		modifier = {
+			factor = 0.5
+			adm_tech = 44
+		}
+		
+		modifier = {
+			factor = 0.5
+			adm_tech = 45
+		}
+		
+		modifier = {
+			factor = 0.5
+			adm_tech = 46
+		}
+	}
+	
+	#Grant Minority Rights
+	
+	option = {
+		name = "GENERIC_liberal_governments.7.a"
+		
+		add_country_modifier = {
+			name = "minority_rights"
+			duration = -1
+		}
+		remove_country_modifier = demand_minority_rights
+
+		add_adm_power = 30
+		add_dip_power = 30
+		add_mil_power = 30
+		
+		add_republican_tradition = 5
+		add_legitimacy = 5
+	}
+	
+	#They will be denied.
+	
+	option = {
+		name = "GENERIC_liberal_governments.7.b"
+		
+		add_stability = -1
+		
+		add_absolutism = 10
+		
+		set_country_flag = minority_denied
+		
+	}
+}
+
+#MINORITY OFFICE
+
+country_event = {
+	id = GENERIC_liberal_governments.8
+	title = "GENERIC_liberal_governments.t.8"
+	desc = "GENERIC_liberal_governments.d.8"
+	picture = SCR_AFRICA_eventPicture
+	
+	trigger = {
+		has_reform = democratic_mechanic
+		
+		has_institution = electrification
+		has_country_modifier = minority_rights
+		NOT = { has_country_modifier = minorities_can_hold_office }
+	}
+
+	mean_time_to_happen = {
+		months = 440
+	}
+	
+	#Grant Minority Offices
+	
+	option = {
+		name = "GENERIC_liberal_governments.8.a"
+		
+		add_country_modifier = {
+			name = "minorities_can_hold_office"
+			duration = -1
+		}
+
+		add_adm_power = 30
+		add_dip_power = 30
+		add_mil_power = 30
+		
+		add_republican_tradition = 5
+		add_legitimacy = 5
+	}
+	
+	#They will be denied.
+	
+	option = {
+		name = "GENERIC_liberal_governments.8.b"
+		
+		add_stability = -1
+		
+		add_absolutism = 10
+		
+	}
+}
+
+########################SOCIALIST SABOTAGE########################
+
+country_event = {
+	id = GENERIC_liberal_governments.9
+	title = "GENERIC_liberal_governments.t.9"
+	desc = "GENERIC_liberal_governments.d.9"
+	picture = SCR_AFRICA_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		has_reform = democratic_mechanic
+		
+		any_country = {
+			has_reform = socialist_mechanic
+			has_spy_network_in = {
+				who = ROOT
+				value = 10
+			}
+		}
+		
+	}
+
+	mean_time_to_happen = {
+		months = 240
+		
+		modifier = {
+			factor = 0.8
+			
+			any_country = {
+				has_reform = socialist_mechanic
+				has_spy_network_in = {
+					who = ROOT
+					value = 25
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 0.7
+			
+			any_country = {
+				has_reform = socialist_mechanic
+				has_spy_network_in = {
+					who = ROOT
+					value = 50
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 0.5
+			
+			any_country = {
+				has_reform = socialist_mechanic
+				has_spy_network_in = {
+					who = ROOT
+					value = 75
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 0.05
+			
+			any_country = {
+				has_reform = socialist_mechanic
+				has_spy_network_in = {
+					who = ROOT
+					value = 100
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "GENERIC_liberal_governments.9.a"
+		
+		add_faction_influence = {
+			faction = dm_communist
+			influence = 5
+		}
+		
+		add_country_modifier = {
+			name = "socialist_sabotage"
+			duration = 7300
+		}
+		
+		random_country = {
+			limit = {
+				has_reform = socialist_mechanic
+				has_spy_network_in = {
+					who = ROOT
+					value = 10
+				}
+			}
+			country_event = {
+				id = enemy_sabotage.1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GENERIC_liberal_governments.10
+	title = "GENERIC_liberal_governments.t.10"
+	desc = "GENERIC_liberal_governments.d.10"
+	picture = SCR_AFRICA_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		has_reform = democratic_mechanic
+		
+		any_country = {
+			has_reform = fascist_mechanic
+			has_spy_network_in = {
+				who = ROOT
+				value = 10
+			}
+		}
+		
+	}
+
+	mean_time_to_happen = {
+		months = 240
+		
+		modifier = {
+			factor = 0.8
+			
+			any_country = {
+			has_reform = fascist_mechanic
+				has_spy_network_in = {
+					who = ROOT
+					value = 25
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 0.7
+			
+			any_country = {
+			has_reform = fascist_mechanic
+				has_spy_network_in = {
+					who = ROOT
+					value = 50
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 0.5
+			
+			any_country = {
+			has_reform = fascist_mechanic
+				has_spy_network_in = {
+					who = ROOT
+					value = 75
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 0.05
+			
+			any_country = {
+			has_reform = fascist_mechanic
+				has_spy_network_in = {
+					who = ROOT
+					value = 100
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "GENERIC_liberal_governments.10.a"
+		
+		add_faction_influence = {
+			faction = dm_fascist
+			influence = 5
+		}
+		
+		add_country_modifier = {
+			name = "fascist_sabotage"
+			duration = 7300
+		}
+		
+		random_country = {
+			limit = {
+				has_reform = fascist_mechanic
+				has_spy_network_in = {
+					who = ROOT
+					value = 10
+				}
+			}
+			country_event = {
+				id = enemy_sabotage.1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GENERIC_liberal_governments.11
+	title = "GENERIC_liberal_governments.t.11"
+	desc = "GENERIC_liberal_governments.d.11"
+	picture = SCR_AFRICA_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		has_reform = democratic_mechanic
+		
+		any_country = {
+			has_reform = futurist_mechanic
+			has_spy_network_in = {
+				who = ROOT
+				value = 10
+			}
+		}
+		
+	}
+
+	mean_time_to_happen = {
+		months = 240
+		
+		modifier = {
+			factor = 0.8
+			
+			any_country = {
+				has_reform = futurist_mechanic
+				has_spy_network_in = {
+					who = ROOT
+					value = 25
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 0.7
+			
+			any_country = {
+				has_reform = futurist_mechanic
+				has_spy_network_in = {
+					who = ROOT
+					value = 50
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 0.5
+			
+			any_country = {
+				has_reform = futurist_mechanic
+				has_spy_network_in = {
+					who = ROOT
+					value = 75
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 0.05
+			
+			any_country = {
+				has_reform = futurist_mechanic
+				has_spy_network_in = {
+					who = ROOT
+					value = 100
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "GENERIC_liberal_governments.11.a"
+		
+		add_faction_influence = {
+			faction = dm_fascist
+			influence = 5
+		}
+		
+		add_country_modifier = {
+			name = "fascist_sabotage"
+			duration = 7300
+		}
+		
+		random_country = {
+			limit = {
+				has_reform = futurist_mechanic
+				has_spy_network_in = {
+					who = ROOT
+					value = 10
+				}
+			}
+			country_event = {
+				id = enemy_sabotage.1
+			}
+		}
+	}
+}

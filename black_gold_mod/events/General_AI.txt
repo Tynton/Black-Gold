@@ -1,0 +1,1115 @@
+namespace = general_ai
+
+#RANDOM DEVELOPMENT, ADM
+
+province_event = {
+	id = general_ai.1
+	title = "general_ai.n.1"
+	desc = "general_ai.d.1"
+	picture = ANGRY_MOB_eventPicture
+
+	hidden = yes
+	
+	trigger = {
+		owner = {
+			ai = yes
+			adm_power = 1000
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 64
+		
+		modifier = {
+			factor = 0.8
+			adm_power = 1100
+		}
+		
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = {
+				is_rival = ROOT
+			}
+		}
+		
+		modifier = {
+			factor = 0.5
+			culture_group = east_asian
+		}
+		
+		modifier = {
+			factor = 0.5
+			culture_group = korean_g
+		}
+		
+		modifier = {
+			factor = 0.5
+			culture_group = japanese_g
+		}
+		
+		modifier = {
+			factor = 0.75
+			OR = {
+				religion = protestant
+				religion = reformed
+				religion = anglican
+			}
+		}
+		
+		modifier = {
+			factor = 0.5
+			is_capital = yes
+		}
+		
+		modifier = {
+			factor = 0.75
+			OR = {
+				province_trade_power = 7
+				province_has_center_of_trade_of_level = 1
+			}
+			current_age = age_of_industrialization
+		}
+		
+		modifier = {
+			factor = 0.4
+			OR = {
+				province_trade_power = 7
+				province_has_center_of_trade_of_level = 1
+			}
+			current_age = age_of_great_wars
+		}
+		
+		modifier = {
+			factor = 0.3
+			OR = {
+				current_age = age_of_industrialization
+				current_age = age_of_great_wars
+			}
+		}
+		
+		modifier = {
+			factor = 0.5
+			OR = {
+				trade_goods = grain
+				trade_goods = livestock
+				trade_goods = fish
+			}
+		}
+		
+		modifier = {
+			factor = 0.8
+			OR = {
+				has_terrain = farmlands
+				has_terrain = grasslands
+			}
+		}
+		
+		modifier = {
+			factor = 2.5
+			OR = {
+				has_terrain = hills
+				has_terrain = highlands
+				has_terrain = coastal_desert
+				has_terrain = savanna
+			}
+		}
+		
+		modifier = {
+			factor = 6.0
+			OR = {
+				has_terrain = marsh
+				has_terrain = mountains
+				has_terrain = jungle
+				has_terrain = desert
+				has_terrain = glacier
+				owner = {
+					has_reform = tribe_mechanic
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 8.0
+			OR = {
+				has_province_modifier = arid
+				has_province_modifier = arctic
+				has_province_modifier = tropical
+			}
+		}
+		
+		modifier = {
+			factor = 8.0
+			owner = {
+				can_migrate = yes
+			}
+		}
+		
+		modifier = {
+			factor = 4.0
+			development = 10
+		}
+		
+		modifier = {
+			factor = 8.0
+			development = 20
+		}
+		
+		modifier = {
+			factor = 16.0
+			development = 30
+		}
+		
+		modifier = {
+			factor = 32.0
+			development = 40
+		}
+		
+		modifier = {
+			factor = 64.0
+			development = 50
+		}
+		
+		modifier = {
+			factor = 128.0
+			development = 60
+		}
+		
+		modifier = {
+			factor = 256.0
+			development = 70
+		}
+	}
+	
+	option = {
+		name = "general_ai.1.a"
+			add_base_tax = 1
+			
+			add_institution_embracement = {
+				which = feudalism
+				value = 5
+			}
+			add_institution_embracement = {
+				which = renaissance
+				value = 5
+			}
+			add_institution_embracement = {
+				which = new_world_i
+				value = 5
+			}
+			add_institution_embracement = {
+				which = printing_press
+				value = 5
+			}
+			add_institution_embracement = {
+				which = global_trade
+				value = 5
+			}
+			add_institution_embracement = {
+				which = manufactories
+				value = 5
+			}
+		owner = {
+			add_adm_power = -50
+		}
+	}
+}
+
+#RANDOM DEVELOPMENT, DIP
+
+province_event = {
+	id = general_ai.2
+	title = "general_ai.n.2"
+	desc = "general_ai.d.2"
+	picture = ANGRY_MOB_eventPicture
+
+	hidden = yes
+	
+	trigger = {
+		owner = {
+			ai = yes
+			dip_power = 1000
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 64
+		
+		modifier = {
+			factor = 0.8
+			dip_power = 1100
+		}
+		
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = {
+				is_rival = ROOT
+			}
+		}
+		
+		modifier = {
+			factor = 0.5
+			culture_group = east_asian
+		}
+		
+		modifier = {
+			factor = 0.5
+			culture_group = korean_g
+		}
+		
+		modifier = {
+			factor = 0.5
+			culture_group = japanese_g
+		}
+		
+		modifier = {
+			factor = 0.75
+			OR = {
+				religion = protestant
+				religion = reformed
+				religion = anglican
+			}
+		}
+		
+		modifier = {
+			factor = 0.75
+			OR = {
+				province_trade_power = 7
+				province_has_center_of_trade_of_level = 1
+			}
+			current_age = age_of_industrialization
+		}
+		
+		modifier = {
+			factor = 0.4
+			OR = {
+				province_trade_power = 7
+				province_has_center_of_trade_of_level = 1
+			}
+			current_age = age_of_great_wars
+		}
+		
+		modifier = {
+			factor = 0.3
+			OR = {
+				current_age = age_of_industrialization
+				current_age = age_of_great_wars
+			}
+		}
+		
+		modifier = {
+			factor = 0.5
+			OR = {
+				trade_goods = cloth
+				trade_goods = iron
+				trade_goods = ivory
+				trade_goods = spices
+				trade_goods = cotton
+				trade_goods = sugar
+				trade_goods = tobacco
+				trade_goods = silk
+				trade_goods = dyes
+				trade_goods = paper
+			}
+		}
+		
+		modifier = {
+			factor = 0.8
+			OR = {
+				has_terrain = farmlands
+				has_terrain = grasslands
+			}
+		}
+		
+		modifier = {
+			factor = 0.5
+			is_capital = yes
+		}
+		
+		modifier = {
+			factor = 2.5
+			OR = {
+				has_terrain = hills
+				has_terrain = highlands
+				has_terrain = coastal_desert
+				has_terrain = savanna
+			}
+		}
+		
+		modifier = {
+			factor = 6.0
+			OR = {
+				has_terrain = marsh
+				has_terrain = mountains
+				has_terrain = jungle
+				has_terrain = desert
+				has_terrain = glacier
+				owner = {
+					has_reform = tribe_mechanic
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 8.0
+			OR = {
+				has_province_modifier = arid
+				has_province_modifier = arctic
+				has_province_modifier = tropical
+			}
+		}
+		
+		modifier = {
+			factor = 8.0
+			owner = {
+				can_migrate = yes
+			}
+		}
+		
+		modifier = {
+			factor = 4.0
+			development = 10
+		}
+		
+		modifier = {
+			factor = 8.0
+			development = 20
+		}
+		
+		modifier = {
+			factor = 16.0
+			development = 30
+		}
+		
+		modifier = {
+			factor = 32.0
+			development = 40
+		}
+		
+		modifier = {
+			factor = 64.0
+			development = 50
+		}
+		
+		modifier = {
+			factor = 128.0
+			development = 60
+		}
+		
+		modifier = {
+			factor = 256.0
+			development = 70
+		}
+	}
+	
+	option = {
+		name = "general_ai.2.a"
+			add_base_production = 1
+			add_institution_embracement = {
+				which = feudalism
+				value = 5
+			}
+			add_institution_embracement = {
+				which = renaissance
+				value = 5
+			}
+			add_institution_embracement = {
+				which = new_world_i
+				value = 5
+			}
+			add_institution_embracement = {
+				which = printing_press
+				value = 5
+			}
+			add_institution_embracement = {
+				which = global_trade
+				value = 5
+			}
+			add_institution_embracement = {
+				which = manufactories
+				value = 5
+			}
+		owner = {
+			add_dip_power = -50
+		}
+	}
+}
+
+#RANDOM DEVELOPMENT, MIL
+
+province_event = {
+	id = general_ai.3
+	title = "general_ai.n.3"
+	desc = "general_ai.d.3"
+	picture = ANGRY_MOB_eventPicture
+
+	hidden = yes
+	
+	trigger = {
+		owner = {
+			ai = yes
+			mil_power = 1000
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 64
+		
+		modifier = {
+			factor = 0.8
+			mil_power = 1100
+		}
+		
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = {
+				is_rival = ROOT
+			}
+		}
+		
+		modifier = {
+			factor = 0.5
+			culture_group = east_asian
+		}
+		
+		modifier = {
+			factor = 0.5
+			culture_group = korean_g
+		}
+		
+		modifier = {
+			factor = 0.5
+			culture_group = japanese_g
+		}
+		
+		modifier = {
+			factor = 0.75
+			OR = {
+				religion = protestant
+				religion = reformed
+				religion = anglican
+			}
+		}
+		
+		modifier = {
+			factor = 0.5
+			is_capital = yes
+		}
+		
+		modifier = {
+			factor = 0.75
+			OR = {
+				province_trade_power = 7
+				province_has_center_of_trade_of_level = 1
+			}
+			current_age = age_of_industrialization
+		}
+		
+		modifier = {
+			factor = 0.4
+			OR = {
+				province_trade_power = 7
+				province_has_center_of_trade_of_level = 1
+			}
+			current_age = age_of_great_wars
+		}
+		
+		modifier = {
+			factor = 0.3
+			OR = {
+				current_age = age_of_industrialization
+				current_age = age_of_great_wars
+			}
+		}
+		
+		modifier = {
+			factor = 0.5
+			OR = {
+				trade_goods = grain
+				trade_goods = livestock
+				trade_goods = fish
+			}
+		}
+		
+		modifier = {
+			factor = 0.8
+			OR = {
+				has_terrain = farmlands
+				has_terrain = grasslands
+			}
+		}
+		
+		modifier = {
+			factor = 2.5
+			OR = {
+				has_terrain = hills
+				has_terrain = highlands
+				has_terrain = coastal_desert
+				has_terrain = savanna
+			}
+		}
+		
+		modifier = {
+			factor = 6.0
+			OR = {
+				has_terrain = marsh
+				has_terrain = mountains
+				has_terrain = jungle
+				has_terrain = desert
+				has_terrain = glacier
+				owner = {
+					has_reform = tribe_mechanic
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 8.0
+			OR = {
+				has_province_modifier = arid
+				has_province_modifier = arctic
+				has_province_modifier = tropical
+			}
+		}
+		
+		modifier = {
+			factor = 8.0
+			owner = {
+				can_migrate = yes
+			}
+		}
+		
+		modifier = {
+			factor = 4.0
+			development = 10
+		}
+		
+		modifier = {
+			factor = 8.0
+			development = 20
+		}
+		
+		modifier = {
+			factor = 16.0
+			development = 30
+		}
+		
+		modifier = {
+			factor = 32.0
+			development = 40
+		}
+		
+		modifier = {
+			factor = 64.0
+			development = 50
+		}
+		
+		modifier = {
+			factor = 128.0
+			development = 60
+		}
+		
+		modifier = {
+			factor = 256.0
+			development = 70
+		}
+	}
+	
+	option = {
+		name = "general_ai.3.a"
+			add_base_manpower = 1
+			add_institution_embracement = {
+				which = feudalism
+				value = 5
+			}
+			add_institution_embracement = {
+				which = renaissance
+				value = 5
+			}
+			add_institution_embracement = {
+				which = new_world_i
+				value = 5
+			}
+			add_institution_embracement = {
+				which = printing_press
+				value = 5
+			}
+			add_institution_embracement = {
+				which = global_trade
+				value = 5
+			}
+			add_institution_embracement = {
+				which = manufactories
+				value = 5
+			}
+		owner = {
+			add_mil_power = -50
+		}
+	}
+}
+
+
+
+###################################FORTRESSES###################################
+
+province_event = {
+	id = general_ai.4
+	title = "general_ai.n.4"
+	desc = "general_ai.d.4"
+	picture = ANGRY_MOB_eventPicture
+
+	hidden = yes
+	
+	trigger = {
+		owner = {
+			NOT = {
+				num_of_loans = 1
+			}
+			treasury = 250
+			
+			ai = yes
+			NOT = { mil_tech = 14 }
+		}
+		
+		num_free_building_slots = 1
+		
+		OR = {
+			NOT = {
+				all_neighbor_province = {
+					fort_level = 1
+				}
+			}
+			fort_level = 1
+		}
+		
+		NOT = {
+			OR = {
+				has_construction = core
+				has_construction = building
+				has_construction = culture
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 64
+		
+		modifier = {
+			factor = 0.25
+			OR = {
+				has_terrain = mountains
+			}
+		}
+		
+		modifier = {
+			factor = 15
+			fort_level = 1
+		}
+		
+		modifier = {
+			factor = 5
+			NOT = {
+				all_neighbor_province = {
+					fort_level = 1
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 3
+			OR = {
+				has_terrain = farmlands
+				has_terrain = grasslands
+			}
+		}
+		
+		modifier = {
+			factor = 0.75
+			OR = {
+				has_terrain = hills
+				has_terrain = highlands
+				has_terrain = jungle
+				has_terrain = marsh
+			}
+		}
+		
+		modifier = {
+			factor = 5
+			
+			any_neighbor_province = {
+				owner = {
+					is_rival = ROOT
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "general_ai.4.a"
+		
+		trigger = {
+			ai = yes
+		}
+		
+		add_building_construction = {
+			building = fort_15th
+			speed = 1.0
+			cost = 1.0
+		}
+	}
+	
+	option = {
+		name = "general_ai.5.b"
+		
+		trigger = {
+			ai = no
+		}
+	}
+}
+
+province_event = {
+	id = general_ai.5
+	title = "general_ai.n.5"
+	desc = "general_ai.d.5"
+	picture = ANGRY_MOB_eventPicture
+
+	hidden = yes
+	
+	trigger = {
+		owner = {
+			NOT = {
+				num_of_loans = 1
+			}
+			treasury = 500
+			
+			ai = yes
+			
+			mil_tech = 14
+			NOT = { mil_tech = 19 }
+		}
+		
+		num_free_building_slots = 1
+		
+		OR = {
+			NOT = {
+				all_neighbor_province = {
+					fort_level = 2
+				}
+			}
+			fort_level = 2
+		}
+		
+		NOT = {
+			OR = {
+				has_construction = core
+				has_construction = building
+				has_construction = culture
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 64
+		
+		modifier = {
+			factor = 0.25
+			OR = {
+				has_terrain = mountains
+			}
+		}
+		
+		modifier = {
+			factor = 15
+			fort_level = 1
+		}
+		
+		modifier = {
+			factor = 5
+			NOT = {
+				all_neighbor_province = {
+					fort_level = 1
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 3
+			OR = {
+				has_terrain = farmlands
+				has_terrain = grasslands
+			}
+		}
+		
+		modifier = {
+			factor = 0.75
+			OR = {
+				has_terrain = hills
+				has_terrain = highlands
+				has_terrain = jungle
+				has_terrain = marsh
+			}
+		}
+		
+		modifier = {
+			factor = 5
+			
+			any_neighbor_province = {
+				owner = {
+					is_rival = ROOT
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "general_ai.5.a"
+		
+		trigger = {
+			ai = yes
+		}
+		
+		add_building_construction = {
+			building = fort_16th
+			speed = 1.0
+			cost = 1.0
+		}
+	}
+	
+	option = {
+		name = "general_ai.5.b"
+		
+		trigger = {
+			ai = no
+		}
+	}
+}
+
+province_event = {
+	id = general_ai.6
+	title = "general_ai.n.6"
+	desc = "general_ai.d.6"
+	picture = ANGRY_MOB_eventPicture
+
+	hidden = yes
+	
+	trigger = {
+		owner = {
+			NOT = {
+				num_of_loans = 1
+			}
+			treasury = 750
+			
+			ai = yes
+			
+			mil_tech = 19
+			NOT = { mil_tech = 24 }
+		}
+		num_free_building_slots = 1 
+		
+		OR = {
+			NOT = {
+				all_neighbor_province = {
+					fort_level = 4
+				}
+			}
+			fort_level = 4
+		}
+		
+		NOT = {
+			OR = {
+				has_construction = core
+				has_construction = building
+				has_construction = culture
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 64
+		
+		modifier = {
+			factor = 0.25
+			OR = {
+				has_terrain = mountains
+			}
+		}
+		
+		modifier = {
+			factor = 15
+			fort_level = 1
+		}
+		
+		modifier = {
+			factor = 5
+			NOT = {
+				all_neighbor_province = {
+					fort_level = 1
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 3
+			OR = {
+				has_terrain = farmlands
+				has_terrain = grasslands
+			}
+		}
+		
+		modifier = {
+			factor = 0.75
+			OR = {
+				has_terrain = hills
+				has_terrain = highlands
+				has_terrain = jungle
+				has_terrain = marsh
+			}
+		}
+		
+		modifier = {
+			factor = 5
+			
+			any_neighbor_province = {
+				owner = {
+					is_rival = ROOT
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "general_ai.6.a"
+		
+		trigger = {
+			ai = yes
+		}
+		
+		add_building_construction = {
+			building = fort_17th
+			speed = 1.0
+			cost = 1.0
+		}
+	}
+	
+	option = {
+		name = "general_ai.6.b"
+		
+		trigger = {
+			ai = no
+		}
+	}
+}
+
+province_event = {
+	id = general_ai.7
+	title = "general_ai.n.7"
+	desc = "general_ai.d.7"
+	picture = ANGRY_MOB_eventPicture
+
+	hidden = yes
+	
+	trigger = {
+		owner = {
+			NOT = {
+				num_of_loans = 1
+			}
+			treasury = 1000
+			
+			ai = yes
+			
+			mil_tech = 24
+		}
+		
+		
+		num_free_building_slots = 1 
+		
+		OR = {
+			NOT = {
+				all_neighbor_province = {
+					fort_level = 6
+				}
+			}
+			fort_level = 6
+		}
+		
+		NOT = {
+			OR = {
+				has_construction = core
+				has_construction = building
+				has_construction = culture
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 64
+		
+		modifier = {
+			factor = 0.25
+			has_terrain = mountains
+		}
+		
+		modifier = {
+			factor = 15
+			fort_level = 1
+		}
+		
+		modifier = {
+			factor = 5
+			NOT = {
+				all_neighbor_province = {
+					fort_level = 1
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 3
+			OR = {
+				has_terrain = farmlands
+				has_terrain = grasslands
+			}
+		}
+		
+		modifier = {
+			factor = 0.75
+			OR = {
+				has_terrain = hills
+				has_terrain = highlands
+				has_terrain = jungle
+				has_terrain = marsh
+			}
+		}
+		
+		modifier = {
+			factor = 5
+			
+			any_neighbor_province = {
+				owner = {
+					is_rival = ROOT
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "general_ai.7.a"
+		
+		trigger = {
+			ai = yes
+		}
+		
+		add_building_construction = {
+			building = fort_18th
+			speed = 1.0
+			cost = 1.0
+		}
+	}
+	
+	option = {
+		name = "general_ai.7.b"
+		
+		trigger = {
+			ai = no
+		}
+	}
+}

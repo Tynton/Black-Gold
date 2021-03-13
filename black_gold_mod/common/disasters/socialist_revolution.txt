@@ -1,0 +1,137 @@
+socialist_revolution = {
+	potential = {
+		NOT = {
+			tag = PAP 
+			tag = SVU
+			tag = RUS
+			tag = RUF
+			#has_flag = had_socialist_revolution
+			#religion_group = muslim
+			is_subject_of_type = dominion
+		}
+		is_subject = no
+		NOT = {
+			OR = {
+				has_reform = futurist_mechanic
+				has_reform = socialist_mechanic
+				has_reform = fascist_mechanic
+			}
+			has_country_modifier = victorious_against_revolution
+		}
+		adm_tech = 38
+		has_global_flag = communist_manifesto_written
+	}
+	
+	
+	can_start = {
+		OR = {
+			war_exhaustion = 10
+			NOT = { stability = 0 }
+		}
+		OR = {
+			NOT = {
+				manpower_percentage = 0.3
+				prestige = -50
+			}
+		}
+		has_any_disaster = no
+	}
+	
+	can_stop = { 
+		OR = {
+			has_any_disaster = yes
+		}
+	}
+	
+	
+	progress = {
+		modifier = {
+			factor = 3
+			NOT = { prestige = -75 }
+		}
+		modifier = {
+			factor = 3
+			war_exhaustion = 12
+		} 
+		modifier = {
+			factor = 3
+			num_of_loans = 1
+			NOT = { num_of_loans = 4 }
+		}	
+		modifier = {
+			factor = 1
+			absolutism = 70
+		}
+		modifier = {
+			factor = 2
+			absolutism = 80
+		}
+		modifier = {
+			factor = 3
+			num_of_loans = 4
+		}
+		modifier = {
+			factor = 4
+			is_bankrupt = yes
+		}	
+		modifier = {
+			factor = 4
+			revolution_target_exists = yes
+		}
+		modifier = {
+			factor = 1
+			OR = {
+				religion = protestant
+				religion = reformed
+			}
+		}
+		modifier = {
+			factor = -1
+			OR = {
+				religion = catholic
+				religion = orthodox
+				religion = shinto
+			}
+		}
+		modifier = {
+			factor = -1
+			religion = secular
+		}
+		modifier = {
+			factor = -1
+			has_parliament = yes
+		}
+		modifier = {
+			factor = -3
+			religion_group = muslim
+		}
+	}
+	
+	can_end = {
+		stability = 1
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+	}
+	
+
+	modifier = {
+		global_unrest = 40
+		stability_cost_modifier = 0.5
+		defensiveness = -0.5
+	}	
+	
+	
+	on_start = socialist_revolution.1
+	on_end = socialist_revolution.20
+	
+	on_monthly = {
+		events = {
+			socialist_revolution.10
+			socialist_revolution.15
+		}
+		random_events = { 
+			1000 = 0
+			100 = socialist_revolution.3
+		}
+	}
+}
+

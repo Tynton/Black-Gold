@@ -1,0 +1,108 @@
+namespace = spanishenglandconquest
+
+province_event = {
+	id = spanishenglandconquest.1
+	title = "spanishenglandconquest.n.1"
+	desc = "spanishenglandconquest.d.1"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {
+			culture = english
+			owner = {
+				culture_group = iberian
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		OR = {
+			owner = {
+				ai = no
+				government_rank = 3
+			}
+		}
+		NOT = {
+			OR = {
+				AND = {
+					local_autonomy = 5
+					unrest = 1
+				}
+				has_province_modifier = nationalism_unrest_bgm
+			}
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 80
+	}
+	
+	option = {
+		name = "spanishenglandconquest.1.a"
+		change_culture = ingles
+		add_core = RDI
+	}
+}
+
+province_event = {
+	id = spanishenglandconquest.2
+	title = "spanishenglandconquest.n.2"
+	desc = "spanishenglandconquest.d.2"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {	
+			culture = scottish
+			owner = {
+				culture_group = iberian
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		OR = {
+			owner = {
+				ai = no
+				government_rank = 3
+			}
+		}
+		NOT = {
+			OR = {
+				AND = {
+					local_autonomy = 5
+					unrest = 1
+				}
+				has_province_modifier = nationalism_unrest_bgm
+			}
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 80
+	}
+	
+	option = {
+		name = "spanishenglandconquest.2.a"
+		change_culture = escoses
+	}
+}

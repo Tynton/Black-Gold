@@ -1,0 +1,7 @@
+government = republic
+add_government_reform = oligarchy_reform
+primary_culture = kanauji
+religion = secular
+technology_group = indian
+capital = 522	# Delhi
+#fixed_capital = 522 # Cannot move capital away from this province & no power cost to move to it

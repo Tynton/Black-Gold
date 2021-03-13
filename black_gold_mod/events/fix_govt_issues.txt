@@ -1,0 +1,32 @@
+namespace = fix_govt_issues
+
+#remove capitalist for socialism
+
+country_event = {
+	id = fix_govt_issues.1
+	title = "fix_govt_issues.n.1"
+	desc = "fix_govt_issues.d.1"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = { 
+		OR = {
+			has_reform = socialist_government_reform
+			has_reform = socialist_juche
+			has_reform = revolutionary_socialism
+			has_reform = socialist_republic
+		}
+	}	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "fix_govt_issues.1.a"
+		
+		remove_idea_group = modern_trade_ideas
+		add_idea_group = modern_socialist_ideas
+	}
+}

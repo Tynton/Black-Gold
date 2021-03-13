@@ -1,0 +1,100 @@
+namespace = INDUSTRIAL_REVOLUTION_EVENTS
+
+#demand for parliament
+
+country_event = {
+	id = INDUSTRIAL_REVOLUTION_EVENTS.1
+	title = "INDUSTRIAL_REVOLUTION_EVENTS.t.1"
+	desc = "INDUSTRIAL_REVOLUTION_EVENTS.d.1"
+	picture = ANGRY_MOB_eventPicture
+	
+	major = yes
+	
+	trigger = {
+		AND = {
+			has_institution = industrialization
+			NOT = {
+				has_reform = parliamentary_reform
+				is_year = 1880
+				stability = 3
+			}
+			is_year = 1840
+			continent = europe
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 18
+	}
+	
+	option = {
+		name = "INDUSTRIAL_REVOLUTION_EVENTS.1.a"
+		add_government_reform = parliamentary_reform
+		add_prestige = -10
+	}
+	
+	option = {
+		name = "INDUSTRIAL_REVOLUTION_EVENTS.1.b"
+		spawn_rebels = {
+			size = 4
+			type = revolutionary_rebels
+		}
+		spawn_rebels = {
+			size = 4
+			type = revolutionary_rebels
+		}
+	}
+}
+
+#revolutions of 1848
+
+country_event = {
+	id = INDUSTRIAL_REVOLUTION_EVENTS.2
+	title = "INDUSTRIAL_REVOLUTION_EVENTS.t.2"
+	desc = "INDUSTRIAL_REVOLUTION_EVENTS.d.2"
+	picture = ANGRY_MOB_eventPicture
+	
+	major = yes
+	
+	trigger = {
+		AND = {
+			has_institution = industrialization
+			NOT = {
+				has_reform = parliamentary_reform
+				is_year = 1850
+				stability = 0
+			}
+			is_year = 1845
+			continent = europe
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	option = {
+		name = "INDUSTRIAL_REVOLUTION_EVENTS.2.a"
+		add_government_reform = parliamentary_reform
+		add_prestige = -10
+	}
+	
+	option = {
+		name = "INDUSTRIAL_REVOLUTION_EVENTS.2.b"
+		spawn_rebels = {
+			size = 6
+			type = revolutionary_rebels
+		}
+		spawn_rebels = {
+			size = 6
+			type = revolutionary_rebels
+		}
+	}
+	
+	option = {
+		name = "INDUSTRIAL_REVOLUTION_EVENTS.2.c"
+		add_government_reform = parliamentary_reform
+		change_government = republic
+		add_prestige = 5
+	}
+}

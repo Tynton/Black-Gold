@@ -1,0 +1,39 @@
+country_decisions = {
+
+	nukes_and_stuff = {
+	
+		major = yes
+	
+		potential = {
+			mil_tech = 42
+			NOT = {
+				OR = {
+					has_country_modifier = developing_nuke
+					technology_group = modern_nuke
+					technology_group = modern_german_nuke
+					technology_group = modern_soviet_nuke
+				}
+			}
+			total_development = 780
+		}
+		allow = {
+			mil_tech = 43
+			mil_power = 200
+			OR = {
+				prestige = 70
+				years_of_income = 1.5
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "developing_nuke"
+				duration = -1
+			}
+			add_years_of_income = -1.5
+			add_mil_power = -200
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+}

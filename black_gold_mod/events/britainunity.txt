@@ -1,0 +1,211 @@
+namespace = britainunity
+
+#initial english revolt
+
+#country_event = {
+#	id = britainunity.1
+#	title = "britainunity.n.1"
+#	desc = "britainunity.d.1"
+#	picture = ANGRY_MOB_eventPicture
+#	
+#	fire_only_once = yes
+#	
+#	major = yes
+#
+#	trigger = {
+#		is_year = 1815
+#		AND = {
+#			NOT = {
+#				culture_group = british
+#			}
+#			NOT = {
+#				OR = {
+#					exists = ENG
+#					exists = GBR
+#					exists = UNK
+#				}
+#			}
+#			any_owned_province = {
+#				AND = {
+#					culture = english
+#					OR = {
+#						area = home_counties_area
+#						area = yorkshire_area
+#						area = east_midlands_area
+#						area = scottish_marches_area
+#						area = wales_area
+#						area = northern_england_area
+#						area = mercia_area
+#						area = wessex_area
+#						area = east_anglia_area
+#					}
+#				}
+#			}
+#			NOT = {
+#				OR = {
+#					tag = ENG
+#					tag = GBR
+#					tag = UNK
+#					tag = SCO
+#				}
+#			}
+#		}
+#	}	
+#
+#	mean_time_to_happen = {
+#		months = 60
+#	}
+#	
+#	option = {
+#		name = "britainunity.1.a"
+#		release = ENG
+#		ENG = {
+#			change_government = republic
+#			add_government_reform = oligarchy_reform
+#			add_government_reform = parliamentary_reform
+#			declare_war_with_cb = {
+#				who = ROOT
+#				casus_belli = cb_independence_war
+#			}
+#		}
+#	}
+#	
+#	option = {
+#		name = "britainunity.1.b"
+#		release = ENG
+#		ENG = {
+#			change_government = monarchy
+#			add_government_reform = autocracy_reform
+#			add_government_reform = parliamentary_reform
+#			create_alliance = ROOT
+#		}
+#	}
+#}
+
+#cores
+
+country_event = {
+	id = britainunity.2
+	title = "britainunity.n.2"
+	desc = "britainunity.d.2"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		is_year = 1840
+		culture = english
+	}	
+
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "britainunity.2.a"
+		every_province = {
+			limit = {
+				culture_group = british
+				continent = europe
+			}
+			add_core = UNK
+		}
+	}
+}
+
+#province revolt
+
+province_event = {
+	id = britainunity.3
+	title = "britainunity.n.3"
+	desc = "britainunity.d.3"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		is_year = 1815
+		NOT = {
+			current_age = age_of_great_wars
+		}
+		NOT = {
+			devastation = 1
+		}
+		culture_group = british
+		is_core = GBR
+		owner = {
+			NOT = {
+				culture_group = british
+			}
+			NOT = {
+				prestige = 65
+			}
+		}
+		exists = GBR
+		unrest = -2
+	}	
+
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "britainunity.3.a"
+		spawn_rebels = {
+			type = nationalist_rebels
+			size = 5
+			friend = GBR
+		}
+		add_devastation = 15
+	}
+	option = {
+		name = "britainunity.3.b"
+		cede_province = GBR
+		add_core = GBR
+	}
+}
+
+#cores
+
+country_event = {
+	id = britainunity.5
+	title = "britainunity.n.5"
+	desc = "britainunity.d.5"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	hidden = yes
+
+	trigger = {
+		is_year = 1810
+		NOT = {
+			culture_group = british
+		}
+		development_in_provinces = {
+			value = 40
+			OR = {
+				culture = scottish
+				culture = highland_scottish
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "britainunity.5.a"
+		every_province = {
+			limit = {
+				OR = {
+					culture = scottish
+					culture = highland_scottish
+				}
+				continent = europe
+			}
+			add_core = SCO
+		}
+	}
+}

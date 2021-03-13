@@ -1,0 +1,49 @@
+waldensian_poverty_aspect = {
+	cost = 100
+	modifier = {
+		global_tax_modifier = 0.1
+		build_cost = -0.1
+	}
+}
+
+waldensian_biblical_adherence_aspect = {
+	cost = 100
+	modifier = {
+		prestige = 0.5
+		discipline = 0.025
+	}
+}
+
+waldensian_translation_aspect = {
+	cost = 100
+	modifier = {
+		advisor_cost = -0.1
+		leader_cost = -0.10
+	}
+}
+
+waldensian_denial_purgatory_aspect = {
+	cost = 100
+	modifier = {
+		stability_cost_modifier = -0.05
+		legitimacy = 0.5
+		republican_tradition = 0.25
+		devotion = 0.5
+	}
+}
+
+waldensian_religious_tolerance_aspect = {
+	cost = 100
+	modifier = {
+		tolerance_heretic = 1
+		ae_impact = -0.05
+	}
+}
+
+waldensian_social_egalitarianism_aspect = {
+	cost = 100
+	modifier = {
+		num_accepted_cultures = 1
+		stability_cost_modifier = -0.05
+	}
+}

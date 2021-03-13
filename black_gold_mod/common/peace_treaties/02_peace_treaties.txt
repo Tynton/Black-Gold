@@ -1,0 +1,54 @@
+po_enforce_puppet_fascist = {
+	category = 6
+	power_projection = humiliated_rival
+	power_cost_base = 0.0
+	prestige_base = 0.1
+	ae_base = 3.0
+	warscore_cost = {
+		all_provinces = 0.0
+		no_provinces = 100.0
+		owner_keeps = 0.0
+		conquered = 0.75
+		returned_core = 1.5
+		released_nation = 0.1
+		cancelled_subject = 0.1
+		concede_colonial_region = 0.0
+	}
+	warscore_cap = -1
+	requires_demand_independence = yes
+	is_make_subject = yes
+	requires_is_allowed = yes
+	
+	is_visible = {
+		always = yes
+	}
+	is_allowed = {
+		has_reform = fascist_mechanic
+		FROM = {
+			NOT = {
+				has_reform = fascist_mechanic
+			}
+		}
+	}
+	effect = {
+		vassalize = FROM
+		FROM = {
+			if = {
+				limit = {
+					NOT = { has_reform = fascist_mechanic }
+				}
+				change_government = fascist_government
+			}
+			add_government_reform = fascist_government_reform
+		}
+	}
+	ai_weight = { # Defaults to always evaluate to 0
+		export_to_variable = {
+			variable_name = ai_value
+			value = 50
+		}
+		limit = {
+			owns_core_province = 1
+		}
+	}
+}

@@ -1,0 +1,203 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new resources, make sure they are uniquely named.
+# Please add price definitions to prices.txt as well.
+
+#Base resources
+rubber = {
+	color = { 0.0 1.0 0.0 }
+	is_latent = yes
+	is_valuable = yes
+
+	rnw_latent_chance = 9 # Kind of on average how many provinces we want to spawn with it
+	
+	trigger = {
+		owner = { adm_tech = 34 }
+		owner = { has_institution = industrialization }
+	}
+	
+	modifier = {
+		movement_speed = 0.05
+	}
+	
+	province = {
+		movement_speed = 0.1 
+	}
+	
+	chance = {
+		factor = 1
+	}
+}
+
+oil = {
+	color = { 1.0 0.85 0.0 }
+	is_latent = yes
+	is_valuable = yes
+
+	rnw_latent_chance = 7 # Kind of on average how many provinces we want to spawn with it
+	
+	trigger = {
+		owner = { adm_tech = 35 }
+		owner = { has_institution = nationalism_institution }
+	}
+	
+	modifier = {
+		naval_maintenance_modifier = -0.1
+	}
+	
+	province = {
+		province_trade_power_value = 0.15
+	}
+	
+	chance = {
+		factor = 1
+	}
+}
+
+uranium = {
+	color = { 0.6 1.0 0.5 }
+	is_latent = yes
+	is_valuable = yes
+
+	rnw_latent_chance = 4 # Kind of on average how many provinces we want to spawn with it
+	
+	trigger = {
+		provincial_institution_progress = {
+			which = electrification
+			value = 100
+		}
+		owner = { mil_tech = 43 }
+		owner = { has_institution = electrification }
+	}
+	
+	modifier = {
+		technology_cost = -0.1
+	}
+	
+	province = {
+		local_production_efficiency = 0.15
+	}
+	
+	chance = {
+		factor = 1
+	}
+}
+
+tungsten = {
+	color = { 1.0 0.0 0.0 }
+	is_latent = yes
+	is_valuable = yes
+
+	rnw_latent_chance = 7 # Kind of on average how many provinces we want to spawn with it
+	
+	trigger = {
+		owner = { mil_tech = 36 }
+		owner = { has_institution = electrification }
+	}
+	
+	modifier = {
+		artillery_bonus_vs_fort = 1
+	}
+	
+	province = {
+		development_cost = -0.1
+	}
+	
+	chance = {
+		factor = 1
+	}
+}
+
+aluminium = {
+	color = { 1.0 0.0 1.0 }
+	is_latent = yes
+	is_valuable = yes
+
+	rnw_latent_chance = 7 # Kind of on average how many provinces we want to spawn with it
+	
+	trigger = {
+		owner = { adm_tech = 36 }
+		owner = { has_institution = electrification }
+	}
+	
+	modifier = {
+		development_cost = -0.1
+	}
+	
+	province = {
+		trade_value_modifier = 0.2
+	}
+	
+	chance = {
+		factor = 1
+	}
+}
+
+industrial_equipment = {
+	color = { 0.3 0.05 0.0 }
+	modifier = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	province = {
+		local_development_cost = -0.1
+	}
+	chance = {
+		factor = 0
+	}
+}
+
+naval_equipment = {
+	color = { 0.1 0.1 0.45 }
+	modifier = {
+		naval_maintenance_modifier = -0.2
+	}
+	province = {
+		local_ship_cost = -0.2
+	}
+	chance = {
+		factor = 0
+	}
+}
+
+electronics = {
+	color = { 0.0 0.3 0.1 }
+	modifier = {
+		idea_cost = -0.4
+	}
+	province = {
+		local_unrest = -1
+	}
+	chance = {
+		factor = 0
+	}
+}
+
+automobile = {
+	color = { 0.0 0.0 1.0 }
+	modifier = {
+		prestige = 0.5
+	}
+	province = {
+		province_trade_power_modifier = 0.2
+	}
+	chance = {
+		factor = 0
+	}
+}
+
+cinema = {
+	color = { 1.0 1.0 1.0 }
+	modifier = {
+		prestige_decay = -0.01
+		all_power_cost = -0.1
+	}
+	province = {
+		local_development_cost = -0.3
+	}
+	chance = {
+		factor = 0
+	}
+}
+
+unknown = {
+	color = { 0.5 0.5 0.5 }
+}

@@ -1,0 +1,27 @@
+namespace = protestantrome
+
+country_event = {
+	id = protestantrome.1
+	title = "protestantrome.n.1"
+	desc = "protestantrome.d.1"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		owns_core_province = 118
+		NOT = { 
+			religion = catholic 
+		}
+		has_country_modifier = sovereignty_vatican
+	}	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "protestantrome.1.a"
+		remove_country_modifier = sovereignty_vatican
+	}
+}

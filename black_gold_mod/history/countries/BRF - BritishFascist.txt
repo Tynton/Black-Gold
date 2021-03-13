@@ -1,0 +1,9 @@
+government = monarchy
+add_government_reform = autocracy_reform
+add_government_reform = fascist_reform
+primary_culture = english
+religion = protestant
+technology_group = western
+capital = 236 # London
+national_focus = MIL
+historical_rival = FRA

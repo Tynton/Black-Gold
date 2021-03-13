@@ -1,0 +1,299 @@
+namespace = REVOLUTION_DIPLOMACY
+
+#FOR NON-REVOLUTIONARY NATIONS, WAR PROPOSITIONS
+
+country_event = {
+	id = REVOLUTION_DIPLOMACY.3
+	title = "REVOLUTION_DIPLOMACY.n.3"
+	desc = "REVOLUTION_DIPLOMACY.d.3"
+	picture = MILITARY_CAMP_eventPicture
+	
+	major = yes
+	
+	trigger = {
+		current_age = age_of_revolutions 
+		
+		is_great_power = yes 
+		
+		is_at_war = no
+		
+		NOT = {
+			tag = POR
+		}
+		
+		NOT = {
+			any_country = {
+				OR = {
+					war_with = ROOT
+					truce_with = ROOT
+				}
+				is_revolution_target = yes
+			}
+			has_global_flag = diplomatic_crisis
+		}
+		is_great_power = yes
+		
+		is_revolutionary = no
+		
+		OR = {
+			any_country = {
+
+				is_neighbor_of = ROOT
+				
+				is_revolution_target = yes
+				NOT = {
+					truce_with = ROOT
+				}
+			}
+			
+			any_rival_country = {
+
+				is_revolution_target = yes
+				NOT = {
+					truce_with = ROOT
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 48
+
+		modifier = {
+			factor = 0.75
+			has_reform = fascist_mechanic
+		}
+	}
+	
+	#escalate tension
+	
+	option = {
+		name = "REVOLUTION_DIPLOMACY.3.a"
+		random_country = { 
+			limit = {
+				is_revolution_target = yes
+			}
+			country_event = {
+				id = REVOLUTION_DIPLOMACY.4
+				days = 15
+			}
+		} 
+		set_global_flag = diplomatic_crisis
+		
+		ai_chance = { factor = 50 }
+	}
+	
+	#settle peacefully
+	
+	option = {
+		name = "REVOLUTION_DIPLOMACY.3.b"
+		add_prestige = -10
+		add_stability = -1
+		
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = REVOLUTION_DIPLOMACY.4
+	title = "REVOLUTION_DIPLOMACY.n.4"
+	desc = "REVOLUTION_DIPLOMACY.d.4"
+	picture = MILITARY_CAMP_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	#escalate tension
+	
+	option = {
+		name = "REVOLUTION_DIPLOMACY.4.a"
+		FROM = {
+			country_event = {
+				id = REVOLUTION_DIPLOMACY.5
+				days = 15
+			}
+		}
+		
+		ai_chance = { factor = 999 }
+	}
+	
+	#settle peacefully
+	
+	option = {
+		name = "REVOLUTION_DIPLOMACY.4.b"
+		add_prestige = -75
+		add_stability = -3
+		
+		add_truce_with = FROM
+		
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = REVOLUTION_DIPLOMACY.5
+	title = "REVOLUTION_DIPLOMACY.n.5"
+	desc = "REVOLUTION_DIPLOMACY.d.5"
+	picture = MILITARY_CAMP_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "REVOLUTION_DIPLOMACY.5.a"
+		every_country = {
+			limit = {
+				alliance_with = ROOT
+			}
+			join_all_offensive_wars_of = ROOT
+		}
+		
+		declare_war_with_cb = {
+			who = FROM
+			casus_belli = cb_crush_the_revolution
+		}
+		
+		clr_global_flag = diplomatic_crisis
+
+		ai_chance = { factor = 1 }
+	}
+}
+
+
+
+
+
+#########################OPINION#########################
+
+
+country_event = {
+	id = REVOLUTION_DIPLOMACY.6
+	title = "REVOLUTION_DIPLOMACY.n.6"
+	desc = "REVOLUTION_DIPLOMACY.d.6"
+	picture = MILITARY_CAMP_eventPicture
+	trigger = {
+		is_revolution_target = yes
+		
+		NOT = {
+			has_country_flag = rev_dip
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+
+		modifier = {
+			factor = 0.001
+			is_revolution_target = yes
+		}
+	}
+
+	option = {
+		name = "REVOLUTION_DIPLOMACY.6.a"
+		
+		
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_revolutionary = no
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = embraced_revolution
+					years = 15
+				}
+			}
+			
+			set_country_flag = rev_dip
+
+			every_country = {
+				limit = {
+					is_revolutionary = no
+				}
+				add_trust = {
+					who = ROOT
+					value = -50
+					mutual = yes
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = REVOLUTION_DIPLOMACY.7
+	title = "REVOLUTION_DIPLOMACY.n.7"
+	desc = "REVOLUTION_DIPLOMACY.d.7"
+	picture = MILITARY_CAMP_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			AND = {
+				is_revolution_target = yes
+				
+				any_country = {
+					is_revolutionary = yes
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = embraced_revolution
+					}
+				}
+			}
+			
+			AND = {
+				is_revolution_target = no
+				
+				any_country = {
+					is_revolutionary = no
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = embraced_revolution
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+
+		modifier = {
+			factor = 0.001
+			is_revolution_target = yes
+		}
+	}
+
+	option = {
+		name = "REVOLUTION_DIPLOMACY.6.a"
+		
+		
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_revolutionary = yes
+				}
+				remove_opinion = {
+					who = ROOT
+					modifier = embraced_revolution
+				}
+			}
+			
+			set_country_flag = rev_dip
+
+			every_country = {
+				limit = {
+					is_revolutionary = yes
+				}
+				add_trust = {
+					who = ROOT
+					value = 25
+					mutual = yes
+				}
+			}
+		}
+	}
+}

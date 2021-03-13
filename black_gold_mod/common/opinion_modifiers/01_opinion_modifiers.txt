@@ -1,0 +1,36 @@
+
+same_ideology = {
+	opinion = 100
+}
+
+diff_ideology = {
+	opinion = -100
+}
+
+fellow_democracy = {
+	opinion = 100
+}
+
+authoritarian_opinion = {
+	opinion = -200
+}
+
+entente_cordiale_opinion = {
+	opinion = 75
+}
+
+diplomatic_mission = {
+	opinion = 75
+}
+
+is_dominion = {
+	opinion = 80
+}
+
+embraced_revolution = {
+	opinion = -150
+}
+
+red_planet_overlord = {
+	opinion = 2000
+}

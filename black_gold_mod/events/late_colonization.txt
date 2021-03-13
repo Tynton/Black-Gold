@@ -1,0 +1,69 @@
+namespace = late_colonization
+
+province_event = {
+	id = late_colonization.1
+	title = "late_colonization.n.1"
+	desc = "late_colonization.d.1"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		all_country = {
+			NOT = {
+				adm_tech = 34
+			}
+		}
+		continent = africa
+		has_port = no
+		OR = {
+			has_province_modifier = tropical
+			has_province_modifier = arid
+			has_terrain = marsh
+			has_terrain = jungle
+			has_terrain = desert
+		}
+		is_empty = yes
+	}	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "late_colonization.1.a"
+		
+		add_province_modifier = {
+			name = difficulty_colonizing
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = late_colonization.2
+	title = "late_colonization.n.2"
+	desc = "late_colonization.d.2"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		adm_tech = 34
+	}	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "late_colonization.2.a"
+		
+		every_province = { 
+			limit = {
+				has_province_modifier = difficulty_colonizing
+			}
+			remove_province_modifier = difficulty_colonizing
+		} 
+	}
+}

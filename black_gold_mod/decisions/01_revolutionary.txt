@@ -1,0 +1,24 @@
+country_decisions = {
+	
+	institute_republican_calendar = {
+		potential = {
+			has_reform = revolutionary_republic_reform
+			religion = cult_of_reason
+		}
+		allow = {
+			stability = 1
+			is_at_war = no
+			has_reform = revolutionary_republic_reform
+		}
+		effect = {
+			add_stability = -2
+			add_country_modifier = {
+				name = "republican_calendar"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,121 @@
+namespace = belgiumindependence
+
+#initial belgian revolt
+
+country_event = {
+	id = belgiumindependence.1
+	title = "belgiumindependence.n.1"
+	desc = "belgiumindependence.d.1"
+	picture = MODERN_UNREST_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		is_year = 1815
+		AND = {
+			NOT = {
+				accepted_culture = wallonian
+			}
+			NOT = {
+				exists = BEL
+			}
+			development_in_provinces = {
+				value = 75
+				culture = wallonian
+			}
+			NOT = { culture_group = french }
+			NOT = {
+				tag = BEL
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "belgiumindependence.1.a"
+		release = BEL
+		BEL = {
+			change_government = monarchy
+			add_government_reform = autocracy_reform
+			add_government_reform = parliamentary_reform
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_independence_war
+			}
+		}
+		BEL = {
+			create_alliance = FRA
+			create_alliance = FRR
+			create_alliance = FRE
+		}
+		FRA = {
+			join_all_offensive_wars_of = BEL
+			join_all_defensive_wars_of = BEL
+		}
+		FRR = {
+			join_all_offensive_wars_of = BEL
+			join_all_defensive_wars_of = BEL
+		}
+		FRE = {
+			join_all_offensive_wars_of = BEL
+			join_all_defensive_wars_of = BEL
+		}
+	}
+	
+	option = {
+		name = "belgiumindependence.1.b"
+		release = BEL
+		BEL = {
+			change_government = monarchy
+			add_government_reform = autocracy_reform
+			add_government_reform = parliamentary_reform
+			create_alliance = ROOT
+		}
+	}
+}
+
+
+#cores
+
+country_event = {
+	id = belgiumindependence.2
+	title = "belgiumindependence.n.2"
+	desc = "belgiumindependence.d.2"
+	picture = MODERN_UNREST_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		is_year = 1810
+		NOT = {
+			accepted_culture = wallonian
+		}
+		any_core_province = {
+			culture = wallonian
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "belgiumindependence.2.a"
+		flanders_area = {
+			add_core = BEL
+		}
+		brabant_area = {
+			add_core = BEL
+		}
+		wallonia_area = {
+			add_core = BEL
+		}
+	}
+}

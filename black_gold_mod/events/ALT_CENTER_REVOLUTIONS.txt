@@ -1,0 +1,182 @@
+namespace = alt_center_rev
+
+#progressive philosophers
+province_event = {
+	id = alt_center_rev.1
+	title = "alt_center_rev.n.1"
+	desc = "alt_center_rev.d.1"
+	picture = ANGRY_MOB_eventPicture
+	
+	major = yes
+
+	trigger = {
+		owner = {
+			has_reform = parliamentary_reform
+			OR = {
+				has_reform = bgm_egalite_reform
+				has_reform = pro_enlightenment_reform
+			}
+		}
+		development = 20
+		
+		current_age = age_of_revolutions
+		
+		NOT = {
+			any_province = { 
+				is_center_of_revolution = yes
+			}
+		}
+		NOT = {
+			owner = {
+				has_country_flag = had_revolution
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 600
+		
+		modifier = {
+			factor = 0.75
+			owner = {
+				religion = secular
+			}
+		}
+		
+		modifier = {
+			factor = 0.8
+			development = 20
+		}
+		modifier = {
+			factor = 0.8
+			development = 25
+		}
+		modifier = {
+			factor = 0.8
+			development = 30
+		}
+		modifier = {
+			factor = 0.8
+			development = 35
+		}
+		modifier = {
+			factor = 0.8
+			development = 40
+		}
+		
+		modifier = {
+			factor = 0.35
+			owner = {
+				OR = {
+					tag = FRA
+					tag = FRE
+					tag = FRR
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 0.0000001
+			owner = {
+				is_revolutionary = yes
+			}
+		}
+	}
+	
+	option = {
+		name = "alt_center_rev.1.a"
+		spawn_center_of_revolution = root
+	}
+}
+
+#DISSOLUTION OF THE REVOLUTION
+province_event = {
+	id = alt_center_rev.2
+	title = "alt_center_rev.n.2"
+	desc = "alt_center_rev.d.2"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	hidden = yes
+
+	trigger = {
+		NOT = {
+			current_age = age_of_revolutions
+		}
+		is_center_of_revolution = yes
+	}	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "alt_center_rev.2.a"
+		remove_center_of_revolution = yes
+		hidden_effect = {
+			every_province = {
+				limit = { has_revolution_in_province = yes }
+				remove_revolution_from_province_effect = yes
+			}
+		}
+		
+		every_country = {
+			country_event = {
+				id = alt_center_rev.3
+			}
+		}
+		every_country = {
+			limit = {
+				is_revolution_target = yes
+			}
+			country_event = {
+				id = alt_center_rev.4
+			}
+		}
+	}
+}
+
+#DISSOLUTION OF THE REVOLUTION
+province_event = {
+	id = alt_center_rev.3
+	title = "alt_center_rev.n.3"
+	desc = "alt_center_rev.d.3"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "alt_center_rev.3.a"
+		hidden_effect = {
+			every_province = {
+				limit = { has_revolution_in_province = yes }
+				remove_revolution_from_province_effect = yes
+			}
+		}
+	}
+}
+
+#REV TARGET DESTRUCTION
+country_event = {
+	id = alt_center_rev.4
+	title = "alt_center_rev.n.4"
+	desc = "alt_center_rev.d.4"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		NOT = {
+			current_age = age_of_revolutions
+		}
+		is_revolution_target = yes
+	}
+	
+	option = {
+		name = "alt_center_rev.4.a"
+		set_revolution_target = ---
+	}
+}

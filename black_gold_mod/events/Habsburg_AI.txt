@@ -1,0 +1,193 @@
+namespace = Habsburg_AI
+
+
+#BOHEMIA
+
+country_event = {
+	id = Habsburg_AI.1
+	title = "Habsburg_AI.n.1"
+	desc = "Habsburg_AI.d.1"
+	picture = BUREAU_eventPicture
+	
+	fire_only_once = yes
+	
+	#major = yes
+	
+	trigger = {
+		NOT = {
+			is_year = 1475
+			has_country_flag = marriage_hab
+		}
+		BOH = {
+			NOT = {
+				OR = {
+					dynasty = "von Habsburg"
+					dynasty = "z Podebrad"
+				}
+				
+			}
+			is_rival = HAB
+			ai = yes
+			
+		}
+		NOT = {
+			is_rival = BOH
+		}
+		ai = yes 
+		tag = HAB
+	}
+
+	mean_time_to_happen = {
+		days = 20
+	}
+	
+	#marry
+	
+	option = {
+		name = "Habsburg_AI.1.a"
+		
+		create_marriage = BOH
+		
+		set_country_flag = marriage_hab
+		
+		ai_chance = { factor = 15 }
+	}
+	
+	#no marriage
+	
+	option = {
+		name = "Habsburg_AI.1.b"
+		add_country_flag = marriage_hab
+		
+		ai_chance = { factor = 1 }
+	}
+}
+
+#BOHEMIA, UNION
+
+country_event = {
+	id = Habsburg_AI.2
+	title = "Habsburg_AI.n.2"
+	desc = "Habsburg_AI.d.2"
+	picture = BUREAU_eventPicture
+	
+	#major = yes
+	
+	trigger = {
+		BOH = {
+			dynasty = "von Habsburg"
+			
+			NOT = {
+				OR = {
+					alliance_with = HAB
+					truce_with = HAB
+					is_subject = yes
+				}
+			}
+			OR = {
+				has_heir = no
+				heir_claim = 25
+			}
+		}
+		has_casus_belli = {
+			type = cb_trade_war_triggered
+			target = BOH
+		}
+		tag = HAB
+		NOT = {
+			has_country_flag = no_war_marriage
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 20
+	}
+	
+	#marry
+	
+	option = {
+		name = "Habsburg_AI.2.a"
+		
+		declare_war_with_cb = {
+			who = BOH
+			casus_belli = cb_restore_personal_union
+		}
+		
+		ai_chance = { factor = 15 }
+	}
+	
+	#no marriage
+	
+	option = {
+		name = "Habsburg_AI.2.b"
+		set_country_flag = no_war_marriage
+		
+		ai_chance = { factor = 1 }
+	}
+}
+
+#HUNGARY, UNION
+
+country_event = {
+	id = Habsburg_AI.3
+	title = "Habsburg_AI.n.3"
+	desc = "Habsburg_AI.d.3"
+	picture = BUREAU_eventPicture
+	
+	#major = yes
+	
+	trigger = {
+		HUN = {
+			dynasty = "von Habsburg"
+			
+			NOT = {
+				OR = {
+					alliance_with = HAB
+					truce_with = HAB
+					is_subject = yes
+				}
+			}
+			OR = {
+				has_heir = no
+				heir_claim = 25
+			}
+		}
+		has_casus_belli = {
+			type = cb_trade_war_triggered
+			target = HUN
+		}
+		tag = HAB
+		NOT = {
+			has_country_flag = no_war_marriage_hun
+		}
+		BOH = {
+			is_subject_of = HAB
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 20
+	}
+	
+	#marry
+	
+	option = {
+		name = "Habsburg_AI.3.a"
+		
+		declare_war_with_cb = {
+			who = HUN
+			casus_belli = cb_restore_personal_union
+		}
+		
+		ai_chance = { factor = 15 }
+	}
+	
+	#no marriage
+	
+	option = {
+		name = "Habsburg_AI.3.b"
+		add_country_flag = no_war_marriage_hun
+		
+		ai_chance = { factor = 1 }
+	}
+}

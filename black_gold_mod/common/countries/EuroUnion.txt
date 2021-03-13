@@ -1,0 +1,247 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 180  190  200 }
+
+revolutionary_colors = { 12  0  6 }
+
+historical_score = 6700
+
+historical_idea_groups = {
+	economic_ideas
+	offensive_ideas
+	exploration_ideas
+	defensive_ideas	
+	administrative_ideas	
+	maritime_ideas
+	quality_ideas
+	innovativeness_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	chevauchee
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	french_caracolle
+	anglofrench_line
+	french_dragoon
+	french_bluecoat
+	french_cuirassier
+	french_impulse
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Louis #10" = 160
+	"Charles #5" = 80
+	"Henri #1" = 60
+	"François #0" = 40
+	"Philippe #6" = 10
+	"Jean #2" = 10
+	"Gaston #0" = 10
+	"Nicolas-Henri #0" = 10
+	"Louis-François #0" = 5
+	"Jacques #0" = 5
+	"Joachim #0" = 5
+	"Xavier #0" = 5
+	"Robert #2" = 1
+	"Hugues #1" = 1
+	"Raoul #1" = 1
+	"Alexandre #0" = 0
+	"Alphonse #0" = 0
+	"Ambroise #0" = 0
+	"Armand #0" = 0
+	"Augustin #0" = 0
+	"Barthélemy #0" = 0
+	"Benoît #0" = 0
+	"Bernard #0" = 0
+	"Blaise #0" = 0
+	"Claude #0" = 0
+	"Clément #0" = 0
+	"Denis #0" = 0
+	"Étienne #0" = 0
+	"Firmin #0" = 0
+	"Georges #0" = 0
+	"Guy #0" = 0
+	"Guillaume #0" = 0
+	"Ignace #0" = 0
+	"Jean-Antoine #0" = 0
+	"Jean-Baptiste #0" = 0
+	"Jean-Jacques #0" = 0
+	"Jean-Philippe #0" = 0
+	"Joseph #0" = 0
+	"Josquin #0" = 0
+	"Jules #0" = 0
+	"Marc #0" = 0
+	"Maurice #0" = 0
+	"Maximilien #0" = 0
+	"Michel #0" = 0
+	"Nicolas #0" = 0
+	"Pascal #0" = 0
+	"Pierre #0" = 0
+	"René #0" = 0
+	"Sébastien #0" = 0
+	"Simon #0" = 0
+	"Jeanne #0" = -10
+	"Marie #0" = -1
+	"Charlotte #0" = -1
+	"Anne #0" = -10
+	"Marguerite #0" = -10
+	"Adélaïde #0" = -10
+}
+
+leader_names = {
+	d'Ambleteuse d'Aulnay
+	"de Beauharnais" "de Bercy" "de Béthune" "de Boissieu" "de Bonnefoy" "de Bonneuil" "du Bosquet" "de la Bretonnière" "de Broglie"
+	"de Castaing" "de Caumartin" "de Chambly" "de Chambronne" "de Champmartin" "de Chevigny" "des Coulons" "de Crèvecœur" "de Crussol"
+	"de Dampierre" Desgouttes Duquesne
+	"des Écures" d'Entraigues d'Estrées
+	"du Fournay"
+	"de Galard"
+	"des Herbiers"
+	"de La Barthe" "de La Ferrandie" "de La Galissonière" "de La Mothe" "de La Motte d'Airan" "de La Porte" "Le Tellier" "de Lhéry" "de Luynes"
+	"de Marguerye" "de Maurepas"
+	"de Neufchâtel"
+	"d'Ornano"
+	"de Pellefort"
+	"de Richemont" "de Rochechouart" "de Rochemaure" "de Rieu"
+	"de Saint-Chamond" "de Saint-Esprit" "de Saint-Germain" "de Saint-Omer" "de Siorac"
+	"de Tocqueville" "de La Tour d'Auvergne" "de Tréville"
+	"d'Usson"
+	"du Valentinois" "de Vergennes" "de Vibien" "de Vigny" "de Villeneuve"
+	"Appiani d'Aragona" "Arborio Mella" 
+	Barberini Barzagli Boncompagni Borghese Borromeo Buonarroti "di Busca"
+	"di Campofregoso" Carafa "di Cardé" "del Carreto" Casanova Castagna
+	Castagnaro "di Cavour" Chigi Colonna Contarini Conti Corsini Cybo 
+	"Doria di Cirié" Doria-Landi Doria-Pamphili
+	d'Este 	"di Farnese" "di Ferrari"
+	"Gaetani dell'Aquila" Galilei Gambacorta Gentileschi Giustiniani Gonzaga Grimaldi
+	Ludovisi Malaspina "de' Medici" Melzi Montefeltro Orsini
+	"di Paesana" "Paleologi Montferrato" Pallavicini Paradisi Petrucci Pico Pignatelli
+	"dalla Rosa" "della Rovere"
+	"di Saluzzo" "di Savoia" Sfondrati Sforza Spinola
+	"della Torre" "della Ubaldini" Vico Visconti
+	Adam Angermann Appelt Arndt Beck Becker Bening Blasius
+	Brilz Bröser Büttner Carl Dahm Deneke Eckstein Edelmann 
+	Elsner Feil Fischer Franke Giewer Haase Hafner Hertel 
+	Hirsch Höhn Kammel Keller Kessler Koeppe Kohn Krämer
+	Kuhn Lindner Mertesdorf Meyer Mick Müller Necker Noell 
+	Oelgemöller Raabe Rainer Scharfbillig Schave Scheler 
+	Schmitt Schneider Schumann Stephan Thelen Trierweiler
+	Uhlig "von Franken" "von Rothenburg" "von Schwaben"
+	"von Vitzgau" "von Weimar" Wachsmuth Wacht "von Werl"
+	Walther Wecker
+}
+
+ship_names = {
+	"Amiral de Biscaye" "Amiral de Galice" "Arc-en-Ciel" "Belle Poule" "Bien-Aimé" "Charles II" "Cheval Marin" "Commerce de Bordeaux" "Commerce de Marseille"
+	"Commerce de Paris" "Commerce du Lyon" "Couronne Ottomane" "Croissant d'Afrique" "Dauphin Royal" "Deux Frères" "Don de Dieu" "Dragon d'Or" "Duc d'Angoulême"
+	"Duc d'Aquitaine" "Duc de Berry" "Duc de Bourgogne" "Ésperance d'Angleterre" "Ésperance de Dieu" "Ésperance en Dieu" "États de Bourgogne" "Étoile de Diane"
+	"Faucon Anglais" "Fleur de Lys" "Frégate Royale" "Galion de Guise" "Grand Anglais" "Grand Chalain" "Grand Danois" "Grand Henry" "Grand Saint Louis"
+	"Grand Vainqueur" "Grand Vasseau du Roi" "Grande Galion de Malte" "Grande Nef d'Écosse" "Grande Saint Jean" "Île de France" "Le Beau Parterre" "Lion Couronné"
+	"Lion d'Or" "Madeleine de Brest" "Marguerite du Ponant" "Marie la Cordelière" "Marie-Elisabeth" "Mont Saint-Bernard" "Navire-du-Roi" "Noire Galère"
+	"Notre Dame de la Victoire" "Notre Dame des Martyres" "Notre Dame du Peuple" "Notre Dame" "Ours Blanc" "Ours d'Or" "Petit Saint Jean" "Petit Saint Louis"
+	"Prince Henri" "Quatre Frères" "Roi de Rome" "Royal Duc" "Royal Hollandais" "Royal Italien" "Royal Louis" "Royale Thérèse" "Saint André" "Saint Antoine de Gênes"
+	"Saint Antoine" "Saint Augustin" "Saint Basile" "Saint Catherine" "Saint Charles" "Saint Cosme" "Saint Dominique" "Saint Edmé" "Saint Esprit" "Saint François"
+	"Saint Georges de Londres" "Saint Ignace" "Saint Jacques du Portugal" "Saint Jacques" "Saint Jean de Bordeaux" "Saint Jean de Hollande" "Saint Jean" "Saint Joseph"
+	"Saint Louis de Brest" "Saint Louis de Nevers" "Saint Louis de Saint-Malo" "Saint Louis" "Saint Michel" "Saint Paul" "Saint Philippe" "Saint Pierre" "Saint Sébastien"
+	"Saint Thomas d'Aquin" "Saint Vincent" "Sainte Croix" "Sainte Geneviève" "Sainte Marie" "Saint-Malo" "Saint-Sacrement" "Sans Pareil" "Soleil d'Afrique"
+	"Soleil d'Alger" "Soleil Royal" "Trois Fanaux" "Trois Rois" "Vaisseau de Torais" "Vaisseau du Roi" "Ville-de-Marseille" "Ville-de-Paris" "Ville-de-Rouen"
+	Achille Actif Actionnaire Adelaïde Admirable Adroit Africain Agamemnon Aigle Aigrette Aimable Ajax Alcide Alcyon Alexandre Alliance Alsace Altier Amarante
+	Amazone Ambitieux America Amiral Amphion Amphitrite Andromaque Anglais Anna Annibal Anonyme Anversois Apollon Aquilon Arcole Ardent Aréthuse Argonaute Artésien
+	Asie Assuré Astrée Astrolabe Athénien Atlante Audacieux Auguste Aurore Avenant Aventurier Badine Banel Basque Beaufort Belliqueux Bellone Bienfaisant Bizarre Bon
+	Bonne Bordelais Borée Boudeuse Bouffonne Bourbon Boussole Brave Brélé Bretagne Breton Brillant Brutal Bucentaure Calypso Capable Capricieux Caraquon Cardinal
+	Caribou Cassard Castiglione Catholique Caton Censeur Centaure César Chalain Charente Charlemagne Charmante Chasseur Choquante Christine Citoyen Cléopâtre Clorinde
+	Colosse Comète Comte Concorde Conquérant Consolante Content Coq Corail Courageux Couronne Courtisan Croissant Curieux Cygne Dalmate Dansé Dantzig Dauphin Dédaigneuse
+	Défenseur Dego Desaix Destin Diadème Diamant Dictateur Dragon Dryade Dubois Duc Duguesclin Dunkerquois Duperre Duquesne Dur Éclatant Écueil Écureuil Église Elbeuf
+	Embuscade Émerillon Éminent Empereur Emporte Engageante Enjouree Entendu Entreprenant Éole Ésperance Europe Éveillé Excellent Fâcheux Fantasque Faucon Favori Fée
+	Félicité Fendant Ferronière Fidèle Fier Fiesque Flamand Fleuron Florissant Formidable Fort Fortune Foudroyant Fougueux Français Frédéric Friponne Fulminant Gaillard
+	Galant Galathée Gaulois Gazelle Généreux Gênois Gentille Gerze Gloire Gracieuse Grand Griffon Guerrier Guirlande Hardi Hasardeux Havre Hébé Henri Hercule Hermione
+	Héroïne Héros Heureux Hippopotame Hirondelle Hymen Inconstante Indien Indomptable Infante Inflexible Intrépide Invincible Iphighénie Isabelle Jason Jemmapes Jeux
+	Joli Jules Junon Jupiter Juste Languedoc Laurier Léger Léopard Licorne Ligourois Lion Lionne Lune Lutine Lys Madame Madeleine Magicienne Magnanime Magnifique
+	Maistresse Majestueux Maquedo Marabout Marguerite Marin Marquise Mars Maure Maurepas Mazarin Méduse Mercœur Mercure Merveilleux Mignonne Minotaure Modéré Monarque
+	Montebello Montenotte Montmorency Montolieu Mutine Nassau Navarrais Neptune Néréide Nieuport Normand Océan Oiseau Opiniâtre Orgueilleux Orient Oriflamme Orion Orphée
+	Ours Pacificateur Palmier Parfait Paris Patriote Pégase Pélican Pélicorne Perle Persée Persévérante Pléiade Poli Polonais Polyphème Pompée Pompeux Pourvoyeuse Prince
+	Princesse Prompt Prosélyte Protée Provençal Prudent Pucelle Puissant Pyrrhus Railleuse Raisonnable Redoutable Réfléchi Régénérateur Regina Regulus Reine Renommée
+	Résistance Robuste Rochefort Roland Rouen Royal Rubis Sage Sagittaire Salamandre Sceptre Scipion Séduisant Seine Sémillante Sérieux Sirène Soleil Solide Sophie
+	Sorlingue Sourdis Souverain Sphinx Subtile Suffisant Suffren Superbe Surveillante Suzanne Sylvie Téméraire Tempête Terpsichore Terreur Terrible Thémistocle Thérèse
+	Thésée Thétis Tigre Tonnant Topaze Toulon Tourbillon Tourville Trajan Trident Triomphe Triton Trocadero Trompeuse Uranie Utile Vaillant Vainqueur Valeur Vendôme
+	Vengeur Vénus Vertu Vestale Vétéran Victoire Victorieux Vierge Volage Volontaire Wallon Zélandais Zélé Zodiaque
+	"Adler von Lübeck" "Admiralität von Hamburg" "Arche Noah" "Brandenburgischer Dragoner" "Brunte Kuh" "Charlotte Louise" "Churfürst von Brandenburg"
+	"Churfürtstlische Liebjagd" "Churprinz von Brandenburg" "Clevesche Lindenbaum" "Der Große Adler" "Der Jungste Prinz von Churlandt" "Der Rote Löve"
+	"Die Drey Heringe" "Die Sieben Provinzien" "Drei Heringe" "Engel Gabriel" "Fliegender Drache" "Fliegender Hirsch" "Friedrich Carl" "Friedrich der Große"
+	"Friedrich Wilhelm zu Pferde" "Friedrich Wilhelm" "Füchslein" "Gelber Löve" "Goldener Löve" "Grafschaft Mark" "Große Jacht" "Großer Kurfürst" "Grüner Drache"
+	"Herzogtum Cleve" "Jacobus Major" "Jacobus Minor" "Jesus von Lübeck" "Johannes de Evangelist" "Jonge Tobias" "Kaiser Barbarossa" "Kaiser Karl der Große"
+	"Kaiserin Augusta" "Kastell Spandau" "Kronprinz van Preußen" "König Albert" "König David" "König von Preußen" "König von Spanien" "König Wilhelm" "Leopoldus Primus"
+	"Lisa von Lübeck" "Littauer Bauer" "Lovise Charlotte" "Lybischer Trotz" "Lübscher Adler" "Maria Catharina" "Markgraf von Brandenburg" "Meve von Churlandt"
+	"Nordischer Löwe" "Peter und Paul" "Peter von Danzig" "Preußischer Adler" "Princess Maria" "Prinz Adalbert" "Prinz Ludwig" "Prinz Philipp" "Prinz von Preußen"
+	"Prinz Wilhelm" "Prinzess Maria" "Prinzess Wilhelm" "Prinzessin von Churlandt" "Prinzregent Luitpold" "Prophet Daniel" "Ritter Sankt Georg" "Roter Hirsch"
+	"Rother Löve" "Sankt Johannes der Täufer" "Sankt Josef" "Sankt Laurens" "Sankt Peter" "Schloss Oranienburg" "Schwarzer Rabe" "Sieben Provinzien" "Stad Emden"
+	"Victoria Louise" "Vogel Greif" "Wapen von Bremen" "Wapen von Hamburg" "Wappen des Herzogs Jacobus" "Wappen von Brandenburg" "Wappen von Bremen"
+	"Wappen von Churlandt" "Wappen von Cleve" "Wappen von Herzoginnen Lovise" "Wappen von Hessen Homburg" "Weißer Löwe" "Wilhelmina Margaretta" "Wilhelmine Margrethe"
+	"Zwei Brüder" Afrikaner Amazone Anna Arminius Barbarossa Basilisk Bayern Beowulf Berlin Bersteinfänger Bielefeld Blitz Blumentopf Bracke Brandenburg Braunschweig
+	Britannia Bulle Bussard Camaeleon Cavalier Churprinz Clementia Cleve Colonia Comet Concordia Condor Constantia Cormoran Crokodil Cyclop Dame Danzig Delphin
+	Derffinger Deutschland Dorothea Drache Eichhorn Elent Elsaß Engel Falke Feuerblase Fidelitas Fortitudo Fortuna Frauenlob Freya Friede Frithjof Fuchs Gabriel
+	Gazelle Gefion Geier Grille Grossfriedrichburg Grönlandfahrer Habicht Hagen Hannover Hansa Hay Heimdall Hela Helgoland Hertha Hessen Hildebrand Hoffning Hyäne
+	Innocentia Invidia Irene Isländer Johannesburg Jupiter Jäger Kaiser Kaiserin Kronprinz Kurprinz Leopard Levitas Lothringen Lux Makarele Maria Mars Mecklenburg
+	Meermann Meerweib Mercurius Merkur Meteor Meve Mohr Mohrian Morian Mummelpot Musquito Nassau Natter Neptun Neptunus Niobe Odin Oldenburg Orpheus Pallas Parsimonia
+	Patienta Pax Pfeil Pierelepomp Pietas Pommern Posen Post Potsdam Preußen Prosperpina Prudentia Rheinland Ringeltaube Roland Rommelpot Roon Rosenfelde Rover Sachsen
+	Salamander Schwalbe Schwann Scientia Seeadler Seemoewe Seeritter Siegfried Spandau Sperber Stralsund Syrig Temperantia Thetis Tiger Undine Vineta Walfisch Wasserhund
+	Weissenburg Wespe Westfalen Wettin Windhund Wittelsbach Wolkensäule Württemberg Wörth Zähringen Ägir
+	"Abbodanza e Ricchezza" "Adria in Pace" "Amazzone Guerriera" "Anna Maria" "Aquila Incoronata" "Aquila Reale" "Aquila Valeria" "Aquila Volante"
+	"Arca di Noè" "Arma di Lech" "Arma di Nassau" "Barza Grande" "Beata Margherita" "Bella Genovese" "Buon Consiglio" "Campo d'Oche" "Capitana Barbarigo"
+	"Capitana Canale" "Capitana dei Mari" "Capitana di Sua Santità" "Capitana Lanterna" "Carli Regolati" "Carlo Duca di Lorena" "Cavalier Angelo"
+	"Cavallo Marino di Candia" "Cavallo Marino" "Cervo d'Oro" "Cristo di Venezia" "Cocha Granda di Comun" "Colomba d'Oro" "Commerce di Genova" "Corona d'Or"
+	"Corriera Veneta" "Costanza Guerriera" "Cristo di Candia" "Cristo di Corfù" "Cristo Resuscitato di Veglia" "Cristo Resuscitato di Venezia" "Cristo Risorto"
+	"Croce d'Oro" "Croce Rossa" "Dama a Cavallo" "David Golia" "Dio Padre e Santa Trinità" "Donna con il Cavallo Armata" "Drago Volante" "Duca di Lorena"
+	"Due Delfini" "Due Leoni" "Due Mani" "Elettore di Colonia" "Ercole Grande" "Ercole Piccolo" "Ercole Vittorioso" "Fama Volante" "Fattor del Zante" "Fede Guerriera"
+	"Fontana d'Oro" "Fortuna Guerriera" "Fortunato Jacob" "Fregata Contarini" "Galeone di San Marco" "Galeone Grande" "Galeone Piccolo" "Galeone Pubblico"
+	"Galera Balbi" "Galera Bembo" "Galera Civran" "Galera Diedo" "Galera Dona" "Galera Gritti" "Galera Magno" "Galera Palma" "Galera Paruta" "Galera Sagredo"
+	"Galera Soranzo" "Giglio d'Oro" "Giove Fulminante" "Gloria Veneta" "Gran Delfino" "Grande Alessandro" "Haute Combe" "I Sette Fratelli" "I Tre Re"
+	"Illuminazione Celeste" "Immacolata Concezione" "Isabella Maria" "La Donna" "Leon Coronato" "Leon d'Oro" "Leon Incoronato" "Leon Negro" "Leone di Candia"
+	"Leone di Capodistria" "Leone e Fenice" "Leone Trionfante" "Lepre Rossa" "Lucien Charles" "Madonna degli Angeli" "Madonna dei Carmine" "Madonna dei Miracoli"
+	"Madonna dei Sette Dolori" "Madonna del Rosario e San Domenico" "Madonna del Rosario" "Madonna dell'Arsenal" "Madonna delle Grazie" "Madonna delle Salute"
+	"Madonna delle Vigne" "Madonna di Loreto e San Paolo" "Madonna di Loreto" "Madonna di Marina" "Marchese Doria" "Maria Teresa" "Mezza Luna" "Monton d'Oro"
+	"Nostra Donna" "Nostra Signora del Rosario" "Nostra Signora del Soccorso" "Nostra Signora delle Vigne" "Nostra Signora di Venezia" "Nostra Signora di Zanti"
+	"Nostra Signora" "Nuova Caparra" "Pace e Abbondanza" "Padre Eterno" "Padrone di Davide Imperiale" "Piramide con Cane" "Principe di Colonia" "Principessa Grande"
+	"Principessa Piccola" "Profeta Elia" "Profeta Samuel" "Re Attila" "Re David" "Redentor del Mondo" "Regina del Mar" "Regina Incoronata" "Regina Isabella"
+	"Rizzo d'Oro" "Rosa Blanca" "Rosa Moceniga" "Ruota con Serpente" "Sacra Lega" "Sacrificio d'Abramo" "San Alvise" "San Andrea" "San Antonio Abate"
+	"San Antonio di Padova" "San Antonio" "San Bartolomeo" "San Bonaventura" "San Brun" "San Carlo Borrome" "San Carlo" "San Cristoforo" "San Demetrio"
+	"San Domenico" "San Ferdinando" "San Filippo" "San Francesco di Paola" "San Gabriele" "San Gaetano" "San Gennaro" "San Giacomo" "San Gioacchino"
+	"San Giorgio" "San Giovanni Battista" "San Giovanni" "San Girolamo" "San Giuseppe" "San Giulian" "San Guiseppe" "San Ignazio" "San Iseppo" "San Jacopo"
+	"San Jose" "San Leopoldo" "San Lorenzo Giustinian" "San Luca" "San Luigi Gonzaga" "San Luigi" "San Marco e San Tito" "San Marco Grande" "San Marco"
+	"San Michele Arcangelo" "San Michele" "San Niccolò" "San Paolo" "San Pasquale" "San Pietro Apostolo" "San Pietro di Alcantara" "San Pietro" "San Pio Quinto"
+	"San Sebastiano" "San Spiridione" "San Teodoro" "San Trifone" "San Vincenzo Ferrer" "San Vittore" "San Vittorio" "San Zaccaria" "Santa Amalia"
+	"Santa Anna" "Santa Barbara" "Santa Caterina" "Santa Chiara" "Santa Dorotea" "Santa Elena" "Santa Elisabetta" "Santa Francisco" "Santa Lucia" "Santa Maddalena"
+	"Santa Margherita" "Santa Maria Torre di Mar" "Santa Maria" "Santa Michele Arcangelo" "Santa Teresa" "Santa Virginia" "Sant'Alessandro" "Sant'Andrea" "Sant'Angelo"
+	"Sant'Eufemia" "Santissima Annunziata" "Santissima Concezione" "Santissima Trinità" "Santissimo Crocefisso" "Scala di Giacob" "Scudo della Fede" "Sibilla Europa"
+	"Signora del Belvedere" "Sol d'Oro" "Stella Maris" "Tomaso Francesco" "Toro Negro" "Tre Mani" "Tre Re" "Uomo Armato" "Uomo di Mare" "Valor Coronato"
+	"Venezia Trionfante" "Vergine Santa" "Virgo Potens" "Vittorio Emanuele" Achille Agile Aguila Alceste Aletto Amalia Amazzone Angelo Aquila Archimede Aretusa
+	Armellino Aurora Azzardo Azzardoso Baccana Barzotto Bastarda Bechignana Bellona Beroldo Braccio Brava Bucintoro Cacciatore Capitana Capri Caracciolo Carlo
+	Felice Carloforte Carolana Cerere Cigno Cingana Colombo Concezione Concordia Confidenzia Constanza Corona Costanza Cristina Cristo Croce Cupido Daino Determinada
+	Diamante Diana Diligenza Donzella Doria Ecate Elbigina Enea Eolo Ercole Eridano Etna Euridice Europa Falco Falcone Fama Fede Fedeltà Fenice Ferme Fiamma Fiorenza
+	Flora Fortuna Forza Fulmine Fuoco Furia Galantuomo Galatea Galatea Generoso Gerusalemme Giano Giasone Gioacchino Gioia Giove Giuditta Giustizia Gloria Grifona Gru
+	Guerriera Guiditta Guiscardo Gusmana Hardie Idra Idra Intrepido Invidia Ira Iride Jupiter Ketianana Lampreda Leone Leonessa Letiza Levriero Libertà Liguria Lomellina
+	Luna Lupa Maddalena Madonna Marchesa Margherita Medea Medusa Megera Mendoza Mercurio Minerva Monagina Monarca Mondo Mongibello Montagna Natività Nave Negrona
+	Neireide Nettuno Nino Ocasion Oliva Oltremare Pace Padrona Pallade Palma Partenope Passaro Patrona Perla Piemontese Pilastro Piramide Pisana Polonia Postiglione
+	Prima Pugliese Pylades Pynele Raggia Regina Roccafortis Rodi Roma Rondinella Rosa Ruggiero Sagittaria Samnita Scala Seconda Serena Sibilla Sicilia Signora
+	Simplon Sirena Sole Sparviero Speranza Stabia Staffetta Stromboli Suprema Tancredi Taranto Temperanza Terana Tigre Tirsi Torre Toscana Totusmundus Trionfo Tritone
+	Tronco Turca Urania Valor Veloce Vendicatore Venere Venetia Vesuvio Vigilante Vigilanza Vittoria Volpe Vulcano Zeffiro
+}
+
+army_names = {
+	"Armée royale" "Armée des Flandres" "Armée du Nord" "Armée de l'Est" "Armée du Jura" "Armée du Lyonnais" "Armée des Alpes"
+	"Armée du Midi" "Armée des Pyrénées" "Armée de l'Atlantique" "Armée de Bretagne" "Armée d'Italie" "Armée de $PROVINCE$"
+	"Armee von $PROVINCE$" 
+	"Armata di $PROVINCE$"
+}
+
+fleet_names = {
+	"Escadre de la Manche" "Escadre de l'Atlantique" "Escadre de Méditerranée" "Escadre de Gascogne" "Escadre Bleue" "Escadre Rouge" "Escadre Blanche"
+}

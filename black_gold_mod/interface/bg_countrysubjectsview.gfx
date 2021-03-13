@@ -1,0 +1,23 @@
+spriteTypes = {
+	
+	
+	spriteType = {
+		name = "GFX_subject_gercon_icon"
+		texturefile = "gfx//interface//subject_gercon_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_subject_geremp_icon"
+		texturefile = "gfx//interface//subject_geremp_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_subject_italea_icon"
+		texturefile = "gfx//interface//subject_italea_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_dominion_icon"
+		texturefile = "gfx//interface//GFX_dominion_icon.dds"
+	}
+}

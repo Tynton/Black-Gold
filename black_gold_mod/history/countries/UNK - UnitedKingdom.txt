@@ -1,0 +1,10 @@
+government = monarchy
+add_government_reform = english_monarchy
+add_government_reform = democratic_reform
+primary_culture = english
+religion = protestant
+technology_group = western
+capital = 236 # London
+national_focus = DIP
+historical_friend = FRR
+historical_friend = USA

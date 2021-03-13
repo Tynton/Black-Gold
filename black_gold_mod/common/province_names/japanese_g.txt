@@ -1,0 +1,59 @@
+1090 = "Shidoni"
+2734 = "Kyanbera"
+1087 = "Meroborun"
+
+134 = "Win"
+
+92 = "Buryusseru"
+973 = "Bankuba"
+
+266 = "Puragu"
+
+361 = "Kairo"
+358 = "Arekusandoria"
+
+203 = "Riyon"
+183 = "Pari"
+87 = "Dankeruku"
+
+50 = "Berurin"
+85 = "Kerun"
+1876 = "Furankufuruto"
+44 = "Hamburuku"
+65 = "Myunhen"
+
+146 = "Atene"
+163 = "Kureta"
+
+561 = "Korukata"
+
+373 = "Daburin"
+
+379 = "Erusaremu"
+
+112 = "Benetsya"
+104 = "Mirano"
+121 = "Napori"
+118 = "Roma"
+
+4383 = "Hagu"
+97 = "Amusuterudamu"
+
+227 = "Risubon"
+
+33 = "Sankutopeteruburugu"
+295 = "Mosukuwa"
+
+385 = "Mekka"
+384 = "Medina"
+392 = "Riyado"
+
+213 = "Baruserona"
+217 = "Madorido"
+224 = "Sebiria"
+
+151 = "Isutanburu"
+
+236 = "Rondon"
+248 = "Edinbara"
+245 = "Yoku"

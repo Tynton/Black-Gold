@@ -1,0 +1,181 @@
+namespace = italianspainconquest
+
+province_event = {
+	id = italianspainconquest.1
+	title = "italianspainconquest.n.1"
+	desc = "italianspainconquest.d.1"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = castillian
+			owner = {
+				culture_group = latin
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		owner = {
+			stability = 1
+			full_idea_group = expansion_ideas
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "italianspainconquest.1.a"
+		change_culture = castigliano
+	}
+}
+
+province_event = {
+	id = italianspainconquest.2
+	title = "italianspainconquest.n.2"
+	desc = "italianspainconquest.d.2"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = catalan
+			owner = {
+				culture_group = latin
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		owner = {
+			stability = 1
+			full_idea_group = expansion_ideas
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "italianspainconquest.2.a"
+		change_culture = catalano
+	}
+}
+
+province_event = {
+	id = italianspainconquest.3
+	title = "italianspainconquest.n.3"
+	desc = "italianspainconquest.d.3"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = galician
+			owner = {
+				culture_group = latin
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		owner = {
+			stability = 1
+			full_idea_group = expansion_ideas
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "italianspainconquest.3.a"
+		change_culture = galiziano
+	}
+}
+
+province_event = {
+	id = italianspainconquest.4
+	title = "italianspainconquest.n.4"
+	desc = "italianspainconquest.d.4"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = portugese
+			owner = {
+				culture_group = latin
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		owner = {
+			stability = 1
+			full_idea_group = expansion_ideas
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "italianspainconquest.4.a"
+		change_culture = portoghese
+	}
+}
+
+province_event = {
+	id = italianspainconquest.5
+	title = "italianspainconquest.n.5"
+	desc = "italianspainconquest.d.5"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = aragonese
+			owner = {
+				culture_group = latin
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		owner = {
+			stability = 1
+			full_idea_group = expansion_ideas
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "italianspainconquest.5.a"
+		change_culture = latin_aragonese
+	}
+}
+
+province_event = {
+	id = italianspainconquest.6
+	title = "italianspainconquest.n.6"
+	desc = "italianspainconquest.d.6"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = leonese
+			owner = {
+				culture_group = latin
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		owner = {
+			stability = 1
+			full_idea_group = expansion_ideas
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "italianspainconquest.6.a"
+		change_culture = latin_leonese
+	}
+}

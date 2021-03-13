@@ -1,0 +1,10 @@
+type = infantry
+unit_type = modern_german
+
+maneuver = 1
+offensive_morale = 12
+defensive_morale = 12
+offensive_fire = 11
+defensive_fire = 11
+offensive_shock = 13
+defensive_shock = 13

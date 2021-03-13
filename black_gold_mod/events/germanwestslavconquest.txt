@@ -1,0 +1,174 @@
+namespace = germanwestslavconquest
+
+province_event = {
+	id = germanwestslavconquest.1
+	title = "germanwestslavconquest.n.1"
+	desc = "germanwestslavconquest.d.1"
+	picture = HRE_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {
+			OR = {
+				culture = czech
+			}
+			owner = {
+				culture_group = germanic
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		OR = {
+			owner = {
+				ai = no
+				government_rank = 3
+			}
+		}
+		NOT = {
+			OR = {
+				AND = {
+					local_autonomy = 5
+					unrest = 1
+				}
+				has_province_modifier = nationalism_unrest_bgm
+			}
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+		
+		modifier = {
+			factor = 0.5
+			
+			any_neighbor_province = { 
+				culture_group = germanic
+			} 
+		}
+	}
+	
+	option = {
+		name = "germanwestslavconquest.1.a"
+		change_culture = tschechisch
+	}
+}
+
+province_event = {
+	id = germanwestslavconquest.2
+	title = "germanwestslavconquest.n.2"
+	desc = "germanwestslavconquest.d.2"
+	picture = HRE_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {	
+			culture = sorbian
+			owner = {
+				culture_group = germanic
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		OR = {
+			owner = {
+				ai = no
+				government_rank = 3
+			}
+		}
+		NOT = {
+			OR = {
+				AND = {
+					local_autonomy = 5
+					unrest = 1
+				}
+				has_province_modifier = nationalism_unrest_bgm
+			}
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+		
+		modifier = {
+			factor = 0.5
+			
+			any_neighbor_province = { 
+				culture_group = germanic
+			} 
+		}
+	}
+	
+	option = {
+		name = "germanwestslavconquest.2.a"
+		change_culture = sorbisch
+	}
+}
+
+province_event = {
+	id = germanwestslavconquest.3
+	title = "germanwestslavconquest.n.3"
+	desc = "germanwestslavconquest.d.3"
+	picture = HRE_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {	
+			culture = schlesian
+			owner = {
+				culture_group = germanic
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		OR = {
+			owner = {
+				ai = no
+				government_rank = 3
+			}
+		}
+		NOT = {
+			OR = {
+				AND = {
+					local_autonomy = 5
+					unrest = 1
+				}
+				has_province_modifier = nationalism_unrest_bgm
+			}
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+		
+		modifier = {
+			factor = 0.5
+			
+			any_neighbor_province = { 
+				culture_group = germanic
+			} 
+		}
+	}
+	
+	option = {
+		name = "germanwestslavconquest.3.a"
+		change_culture = schlesisch
+	}
+}

@@ -1,0 +1,1358 @@
+industrial_government = {
+	potential = {
+		has_institution = industrialization
+	}
+
+	trigger = {
+		has_institution = industrialization
+	}
+
+	free_policy = 1
+	possible_policy = 1
+}
+
+
+modern_top_power = {
+	potential = {
+		has_institution = electrification
+		
+		NOT = {
+			great_power_rank = 2
+		}
+	}
+
+	trigger = {
+		has_institution = electrification
+		
+		NOT = {
+			great_power_rank = 2
+		}
+	}
+
+	diplomatic_upkeep = 4
+}
+
+modern_great_power = {
+	potential = {
+		has_institution = electrification
+		
+		is_great_power = yes
+	}
+
+	trigger = {
+		has_institution = electrification
+		
+		is_great_power = yes
+	}
+
+	diplomatic_upkeep = 2
+}
+
+
+modern_government = {
+	potential = {
+		has_institution = electrification
+	}
+
+	trigger = {
+		has_institution = electrification
+	}
+
+	free_policy = 1
+}
+
+no_futurism = {
+	potential = {
+		has_reform = democratic_mechanic
+		
+		NOT = {
+			has_global_flag = futurist_manifesto_written
+		}
+	}
+
+	trigger = {
+		has_reform = democratic_mechanic
+		
+		NOT = {
+			has_global_flag = futurist_manifesto_written
+		}
+	}
+
+	dm_nationalist_influence = -1.0
+}
+
+dem_at_peace = {
+	potential = {
+		is_at_war = no
+		militarised_society = 0
+	}
+	
+	trigger = {
+		is_at_war = no
+		militarised_society = 0
+	}
+	
+	monthly_militarized_society = -5.0
+}
+
+war_time = {
+	potential = {
+		current_age = age_of_great_wars
+		is_at_war = yes
+	}
+	
+	trigger = {
+		current_age = age_of_great_wars
+		is_at_war = yes
+	}
+	
+	monthly_militarized_society = 2.0
+}
+
+industrial_medicine = {
+	potential = {
+		adm_tech = 37
+	}
+	trigger = {
+		adm_tech = 37
+	}
+	
+	monarch_lifespan = 0.05
+	manpower_recovery_speed = 0.05
+	global_manpower_modifier = 0.05
+}
+
+industrial_medicine_ii = {
+	potential = {
+		adm_tech = 39
+	}
+	trigger = {
+		adm_tech = 39
+	}
+	
+	monarch_lifespan = 0.05
+	production_efficiency = 0.05
+	manpower_recovery_speed = 0.05
+	global_manpower_modifier = 0.05
+}
+
+industrial_medicine_iii = {
+	potential = {
+		adm_tech = 41
+	}
+	trigger = {
+		adm_tech = 41
+	}
+	
+	monarch_lifespan = 0.05
+	production_efficiency = 0.05
+	manpower_recovery_speed = 0.1
+	global_manpower_modifier = 0.1
+}
+
+modern_medicine = {
+	potential = {
+		adm_tech = 43
+	}
+	trigger = {
+		adm_tech = 43
+	}
+	
+	monarch_lifespan = 0.05
+	production_efficiency = 0.05
+	manpower_recovery_speed = 0.15
+	global_manpower_modifier = 0.15
+}
+
+modern_medicine_ii = {
+	potential = {
+		adm_tech = 45
+	}
+	trigger = {
+		adm_tech = 45
+	}
+	
+	monarch_lifespan = 0.05
+	production_efficiency = 0.1
+	manpower_recovery_speed = 0.15
+	global_manpower_modifier = 0.15
+}
+
+modern_medicine_iii = {
+	potential = {
+		adm_tech = 47
+	}
+	trigger = {
+		adm_tech = 47
+	}
+	
+	monarch_lifespan = 0.1
+	production_efficiency = 0.1
+	manpower_recovery_speed = 0.15
+	global_manpower_modifier = 0.15
+}
+
+government_one = {
+	potential = {
+		adm_tech = 29
+	}
+	trigger = {
+		adm_tech = 29
+	}
+	
+	reform_progress_growth = 2.0
+	core_creation = -0.1
+	inflation_action_cost = -0.1 
+}
+
+government_two = {
+	potential = {
+		adm_tech = 31
+	}
+	trigger = {
+		adm_tech = 31
+	}
+	
+	reform_progress_growth = 6.0
+	core_creation = -0.1
+	inflation_action_cost = -0.1 
+}
+
+government_three = {
+	potential = {
+		adm_tech = 33
+	}
+	trigger = {
+		adm_tech = 33
+	}
+	
+	reform_progress_growth = 12.0
+	core_creation = -0.1
+	inflation_action_cost = -0.1 
+}
+
+tanks_i = {
+	potential = {
+		mil_tech = 39
+	}
+	trigger = {
+		mil_tech = 39
+	}
+	
+	cavalry_cost = 0.5
+	cavalry_power = 0.25
+	
+}
+
+tanks_ii = {
+	potential = {
+		mil_tech = 41
+	}
+	trigger = {
+		mil_tech = 41
+	}
+	
+	cavalry_cost = 0.3
+	cavalry_power = 0.25
+	cavalry_flanking = 0.2
+}
+
+tanks_iii = {
+	potential = {
+		mil_tech = 45
+	}
+	trigger = {
+		mil_tech = 45
+	}
+	
+	cavalry_cost = 0.5
+	cavalry_power = 0.35
+	cavalry_flanking = 0.4
+}
+
+america_exclusive = {
+	potential = {
+		ai = yes
+		OR = {
+			culture_group = iberian
+			culture_group = portugese_g
+		}
+		OR = {
+			current_age = age_of_reformation
+			current_age = age_of_absolutism
+		}
+	}
+	trigger = {
+		ai = yes
+		OR = {
+			culture_group = iberian
+			culture_group = portugese_g
+		}
+		OR = {
+			current_age = age_of_reformation
+			current_age = age_of_absolutism
+		}
+	}
+	
+	range = -0.7
+}
+
+#multicontinental_empire = {
+#	potential = {
+#	
+#		overseas_provinces_percentage = 0.4
+#	
+#		total_development = 1400
+#		
+#		num_of_owned_provinces_with = {
+#			value = 1
+#			has_owner_accepted_culture = no
+#			NOT = { culture = root }
+#			is_overseas = no
+#		}
+#	}
+#	trigger = {
+#	
+#		overseas_provinces_percentage = 0.4
+#		
+#		total_development = 1400
+#		
+#		num_of_owned_provinces_with = {
+#			value = 1
+#			has_owner_accepted_culture = no
+#			NOT = { culture = root }
+#			is_overseas = no
+#		}
+#	}
+#	
+#	global_unrest = 3
+#	stability_cost_modifier = 0.75
+#}
+
+#multicontinental_empire_decolonization = {
+#	potential = {
+#	
+#		overseas_provinces_percentage = 0.2
+#	
+#		any_country = {
+#			adm_tech = 45
+#		}
+#	
+#		total_development = 1400
+#		
+#		num_of_owned_provinces_with = {
+#			value = 1
+#			has_owner_accepted_culture = no
+#			NOT = { culture = root }
+#			is_overseas = no
+#		}
+#	}
+#	trigger = {
+#	
+#		overseas_provinces_percentage = 0.2
+#	
+#		any_country = {
+#			adm_tech = 45
+#		}
+#	
+#		total_development = 1400
+#		
+#		num_of_owned_provinces_with = {
+#			value = 1
+#			has_owner_accepted_culture = no
+#			NOT = { culture = root }
+#			is_overseas = no
+#		}
+#	}
+#	
+#	global_unrest = 8
+#	global_trade_goods_size_modifier = -0.4
+#	global_tax_modifier = -0.15
+#	stability_cost_modifier = 0.6
+#}
+
+large_empire = {
+	potential = {
+		total_development = 1800
+	}
+	
+	trigger = {
+		total_development = 1800
+	}
+	
+	global_unrest = 2
+	technology_cost = -0.025
+	idea_cost = -0.025
+	advisor_pool = 1 
+	global_trade_power = 0.05
+	embargo_efficiency = 0.1
+	global_trade_goods_size_modifier = -0.15
+	land_forcelimit_modifier = -0.1
+	stability_cost_modifier = 0.05 
+}
+
+#large_empire_unstable = {
+#	potential = {
+#		total_development = 2000
+#		NOT = {
+#			stability = 0
+#		}
+#	}
+#	
+#	trigger = {
+#		total_development = 2000
+#		NOT = {
+#			stability = 0
+#		}
+#	}
+#	
+#	global_unrest = 4
+#	global_tax_modifier = -0.15
+#	stability_cost_modifier = 0.2
+#}
+
+#large_empire_very_unstable = {
+#	potential = {
+#		total_development = 2000
+#		NOT = {
+#			stability = -1
+#		}
+#	}
+#	
+#	trigger = {
+#		total_development = 2000
+#		NOT = {
+#			stability = -1
+#		}
+#	}
+#	
+#	global_unrest = 4
+#	global_tax_modifier = -0.15
+#	stability_cost_modifier = 0.4
+#}
+
+massive_empire = {
+	potential = {
+		total_development = 2800
+	}
+	
+	trigger = {
+		total_development = 2800
+	}
+	
+	technology_cost = -0.025
+	idea_cost = -0.05
+	advisor_pool = 1 
+	global_trade_power = 0.025
+	embargo_efficiency = 0.15
+	global_trade_goods_size_modifier = -0.15
+	land_forcelimit_modifier = -0.2
+	stability_cost_modifier = 0.1
+}
+
+colossal_empire = {
+	potential = {
+		total_development = 4000
+	}
+	
+	trigger = {
+		total_development = 4000
+	}
+	
+	technology_cost = -0.025
+	idea_cost = -0.1
+	advisor_pool = 1 
+	global_trade_power = 0.025
+	embargo_efficiency = 0.15
+	global_trade_goods_size_modifier = -0.3
+	land_forcelimit_modifier = -0.2
+	stability_cost_modifier = 0.1
+}
+
+super_state = {
+	potential = {
+		total_development = 6000
+	}
+	
+	trigger = {
+		total_development = 6000
+	}
+	
+	global_unrest = 4
+	technology_cost = -0.025
+	idea_cost = -0.05
+	advisor_pool = 1 
+	embargo_efficiency = 0.2
+	global_trade_goods_size_modifier = -0.3
+	land_forcelimit_modifier = -0.2
+	stability_cost_modifier = 0.2
+}
+
+large_super_state = {
+	potential = {
+		total_development = 8000
+	}
+	
+	trigger = {
+		total_development = 8000
+	}
+	
+	global_unrest = 4
+	production_efficiency = -0.6
+	land_forcelimit_modifier = -0.2
+	stability_cost_modifier = 0.4
+}
+
+leader_of_german_nations = {
+	potential = {
+		OR = {
+			german_confederation_member = 1
+			german_empire_member = 1
+			has_country_flag = gercon_leader
+			has_country_flag = geremp_leader
+			tag = GER
+		}
+	}
+	
+	trigger = {
+		OR = {
+			german_confederation_member = 1
+			german_empire_member = 1
+			has_country_flag = gercon_leader
+			has_country_flag = geremp_leader
+			tag = GER
+		}
+	}
+	
+	technology_cost = -0.025
+	idea_cost = -0.05
+	advisor_pool = 1 
+	diplomatic_annexation_cost = -0.5
+	land_forcelimit_modifier = 0.2
+	manpower_recovery_speed = 0.2
+	governing_capacity = 1000
+}
+
+chinese_statehood = {
+	potential = {
+		OR = {
+			AND = {
+				culture_group = east_asian
+				total_development = 850
+			}
+			AND = {
+				tag = ROC
+				OR = {
+					current_age = age_of_great_wars
+					current_age = age_of_industrialization
+				}
+			}
+			AND = {
+				tag = PRC
+				OR = {
+					current_age = age_of_great_wars
+					current_age = age_of_industrialization
+				}
+			}
+		}
+	}
+	
+	trigger = {
+		OR = {
+			AND = {
+				culture_group = east_asian
+				total_development = 850
+			}
+			AND = {
+				tag = ROC
+				OR = {
+					current_age = age_of_great_wars
+					current_age = age_of_industrialization
+				}
+			}
+			AND = {
+				tag = PRC
+				OR = {
+					current_age = age_of_great_wars
+					current_age = age_of_industrialization
+				}
+			}
+		}
+	}
+	
+	technology_cost = -0.025
+	idea_cost = -0.05
+	manpower_recovery_speed = 0.5
+	infantry_cost = -0.5
+	land_forcelimit_modifier = 0.5
+	global_manpower_modifier = 0.5
+	advisor_pool = 1 
+	prestige = 2
+	governing_capacity = 1000
+	governing_capacity_modifier = 0.75
+}
+
+land_of_opportunity = {
+	potential = {
+		AND = {
+			OR = {
+				has_reform = pro_enlightenment_reform
+				has_reform = democratic_mechanic
+				tag = USA
+			}
+			OR = {
+				religion = anglican
+				religion = protestant
+				religion = reformed
+			}
+		}
+		stability = 2
+		is_former_colonial_nation = yes
+	}
+	
+	trigger = {
+		AND = {
+			OR = {
+				has_reform = pro_enlightenment_reform
+				has_reform = democratic_mechanic
+				tag = USA
+			}
+			OR = {
+				religion = anglican
+				religion = protestant
+				religion = reformed
+			}
+		}
+		stability = 2
+		is_former_colonial_nation = yes
+	}
+	
+	technology_cost = -0.025
+	idea_cost = -0.05
+	advisor_pool = 1 
+	diplomatic_annexation_cost = -0.5
+	embargo_efficiency = 0.15
+	trade_goods_size_modifier = 0.05
+	global_tax_modifier = 0.05
+	production_efficiency = 0.2
+	governing_capacity_modifier = 0.3
+}
+
+no_air_force = {
+	potential = {
+		mil_tech = 39
+		OR = {
+			NOT = {
+				has_country_modifier = air_force_tierone
+				has_country_modifier = air_force_tiertwo
+				has_country_modifier = air_force_tierthree
+				has_country_modifier = air_force_tierfour
+				has_country_modifier = air_force_tierfive
+				has_country_modifier = air_force_tiersix
+				has_country_modifier = air_force_tierseven
+			}
+		}
+	}
+	
+	trigger = {
+		mil_tech = 39
+		OR = {
+			NOT = {
+				has_country_modifier = air_force_tierone
+				has_country_modifier = air_force_tiertwo
+				has_country_modifier = air_force_tierthree
+				has_country_modifier = air_force_tierfour
+				has_country_modifier = air_force_tierfive
+				has_country_modifier = air_force_tiersix
+				has_country_modifier = air_force_tierseven
+			}
+		}
+	}
+	
+	shock_damage = -0.1
+}
+
+allied_air = {
+	potential = {
+		any_ally = { 
+			has_country_modifier = air_force_tierone
+			is_at_war = yes 
+		} 
+		NOT = {
+			has_country_modifier = air_force_tierone
+		}
+		is_at_war = yes
+	}
+	trigger = {
+		any_ally = { 
+			has_country_modifier = air_force_tierone
+			is_at_war = yes 
+		} 
+		NOT = {
+			has_country_modifier = air_force_tierone
+		}
+		is_at_war = yes 
+	}
+	fire_damage_received = -0.025
+	shock_damage_received = -0.025
+	fire_damage = 0.025
+	shock_damage = 0.025
+}
+
+no_space_others_do = {
+	potential = {
+		any_country = {
+			has_country_modifier = space_program
+		} 
+		NOT = {
+			has_country_modifier = space_program
+		}
+	}
+	trigger = {
+		any_country = {
+			has_country_modifier = space_program
+		} 
+		NOT = {
+			has_country_modifier = space_program
+		}
+	}
+	prestige_decay = 0.02
+	prestige = -0.5
+}
+
+#age ability tech
+
+import_tech = {
+	potential = {
+		has_age_ability = ab_tech_import
+		any_country = {
+			tech_difference = 1
+		}
+	}
+	
+	trigger = {
+		has_age_ability = ab_tech_import
+		any_country = {
+			tech_difference = 1
+		}
+	}
+	
+	technology_cost = -0.2
+}
+
+import_tech_2 = {
+	potential = {
+		has_age_ability = ab_tech_import
+		any_country = {
+			tech_difference = 2
+		}
+	}
+	
+	trigger = {
+		has_age_ability = ab_tech_import
+		any_country = {
+			tech_difference = 2
+		}
+	}
+	
+	technology_cost = -0.3
+}
+
+import_tech_3 = {
+	potential = {
+		has_age_ability = ab_tech_import
+		any_country = {
+			tech_difference = 3
+		}
+	}
+	
+	trigger = {
+		has_age_ability = ab_tech_import
+		any_country = {
+			tech_difference = 3
+		}
+	}
+	
+	technology_cost = -0.4
+}
+
+modernization_of_tax_administration = {
+	potential = {
+		tax_center = 5
+	}
+	
+	trigger = {
+		tax_center = 5
+	}
+	global_tax_modifier = 0.05
+	global_unrest = -0.5
+	inflation_reduction = 0.05
+}
+
+military_industrial_complex = {
+	potential = {
+		factory_infrastructure = 10
+		full_idea_group = quantity_ideas
+	}
+	
+	trigger = {
+		factory_infrastructure = 10
+		full_idea_group = quantity_ideas
+	}
+	
+	land_maintenance_modifier = -0.1
+}
+
+industrial_building_sector = {
+	potential = {
+		factory_infrastructure = 10
+	}
+	
+	trigger = {
+		factory_infrastructure = 10
+	}
+	production_efficiency = 0.05
+	development_cost = -0.05
+}
+
+#industrial_mil_complexity = {
+#	potential = {
+#		mil_tech = 30
+#		NOT = {
+#			OR = {
+#				development = 150
+#				technology_group = western 
+#				technology_group = modern_german
+#				technology_group = modern_soviet
+#				technology_group = modern_german_nuke
+#				technology_group = modern_soviet_nuke
+#				technology_group = modern_nuke
+#			}
+#		}
+#	}
+#	
+#	trigger = {
+#		mil_tech = 30
+#		NOT = {
+#			OR = {
+#				development = 150
+#				technology_group = western 
+#				technology_group = modern_german
+#				technology_group = modern_soviet
+#				technology_group = modern_german_nuke
+#				technology_group = modern_soviet_nuke
+#				technology_group = modern_nuke
+#			}
+#		}
+#	}
+#	
+#	mil_tech_cost_modifier = 0.05
+#}
+
+#industrial_dip_complexity = {
+#	potential = {
+#		dip_tech = 30
+#		NOT = {
+#			OR = {
+#				development = 150
+#				technology_group = western 
+#				technology_group = modern_german
+#				technology_group = modern_soviet
+#				technology_group = modern_german_nuke
+#				technology_group = modern_soviet_nuke
+#				technology_group = modern_nuke
+#			}
+#		}
+#	}
+#	
+#	trigger = {
+#		dip_tech = 30
+#		NOT = {
+#			OR = {
+#				development = 150
+#				technology_group = western 
+#				technology_group = modern_german
+#				technology_group = modern_soviet
+#				technology_group = modern_german_nuke
+#				technology_group = modern_soviet_nuke
+#				technology_group = modern_nuke
+#			}
+#		}
+#	}
+#	
+#	dip_tech_cost_modifier = 0.05
+#}
+
+#industrial_adm_complexity = {
+#	potential = {
+#		adm_tech = 30
+#		NOT = {
+#			OR = {
+#				development = 150
+#				technology_group = western 
+#				technology_group = modern_german
+#				technology_group = modern_soviet
+#				technology_group = modern_german_nuke
+#				technology_group = modern_soviet_nuke
+#				technology_group = modern_nuke
+#			}
+#		}
+#	}
+#	
+#	trigger = {
+#		adm_tech = 30
+#		NOT = {
+#			OR = {
+#				development = 150
+#				technology_group = western 
+#				technology_group = modern_german
+#				technology_group = modern_soviet
+#				technology_group = modern_german_nuke
+#				technology_group = modern_soviet_nuke
+#				technology_group = modern_nuke
+#			}
+#		}
+#	}
+#	
+#	adm_tech_cost_modifier = 0.05
+#}
+
+#modern_mil_complexity = {
+#	potential = {
+#		mil_tech = 34
+#		NOT = {
+#			OR = {
+#				development = 150
+#				technology_group = western 
+#				technology_group = modern_german
+#				technology_group = modern_soviet
+#				technology_group = modern_german_nuke
+#				technology_group = modern_soviet_nuke
+#				technology_group = modern_nuke
+#			}
+#		}
+#	}
+#	
+#	trigger = {
+#		mil_tech = 34
+#	}
+#	
+#	mil_tech_cost_modifier = 0.05
+#}
+
+#modern_dip_complexity = {
+#	potential = {
+#		dip_tech = 34
+#		NOT = {
+#			OR = {
+#				development = 150
+#				technology_group = western 
+#				technology_group = modern_german
+#				technology_group = modern_soviet
+#				technology_group = modern_german_nuke
+#				technology_group = modern_soviet_nuke
+#				technology_group = modern_nuke
+#			}
+#		}
+#	}
+#	
+#	trigger = {
+#		dip_tech = 34
+#		NOT = {
+#			OR = {
+#				development = 150
+#				technology_group = western 
+#				technology_group = modern_german
+#				technology_group = modern_soviet
+#				technology_group = modern_german_nuke
+#				technology_group = modern_soviet_nuke
+#				technology_group = modern_nuke
+#			}
+#		}
+#	}
+#	
+#	dip_tech_cost_modifier = 0.05
+#}
+
+#modern_adm_complexity = {
+#	potential = {
+#		adm_tech = 34
+#		NOT = {
+#			OR = {
+#				development = 150
+#				technology_group = western 
+#				technology_group = modern_german
+#				technology_group = modern_soviet
+#				technology_group = modern_german_nuke
+#				technology_group = modern_soviet_nuke
+#				technology_group = modern_nuke
+#			}
+#		}
+#	}
+#	
+#	trigger = {
+#		adm_tech = 34
+#		NOT = {
+#			OR = {
+#				development = 150
+#				technology_group = western 
+#				technology_group = modern_german
+#				technology_group = modern_soviet
+#				technology_group = modern_german_nuke
+#				technology_group = modern_soviet_nuke
+#				technology_group = modern_nuke
+#			}
+#		}
+#	}
+#	
+#	adm_tech_cost_modifier = 0.05
+#}
+
+#industrial_monarchist_politics = {
+#	potential = {
+#		has_parliament = no
+#		government = monarchy
+#		current_age = age_of_industrialization
+#	}
+#	
+#	trigger = {
+#		has_parliament = no
+#		current_age = age_of_industrialization
+#		government = monarchy
+#	}
+#	
+#	global_unrest = 5
+#}
+
+industrial_society = { 
+	potential = {
+		num_of_owned_provinces_with = {
+			value = 3
+			development = 70
+		}
+		OR = {
+			current_age = age_of_industrialization
+			current_age = age_of_great_wars
+		}
+	}
+	
+	trigger = {
+		num_of_owned_provinces_with = {
+			value = 3
+			development = 70
+		}
+		OR = {
+			current_age = age_of_industrialization
+			current_age = age_of_great_wars
+		}
+	}
+	
+	prestige = 0.25
+	global_tax_modifier = 0.05
+	technology_cost = -0.05
+	idea_cost = -0.05
+}
+
+empire_china = {
+	potential = {
+		OR = {
+			is_emperor_of_china = yes 
+			tag = ROC
+			tag = PRC
+		}
+		OR = {
+			total_development = 700
+			num_of_subjects = 5
+		}
+	}
+	
+	trigger = {
+		OR = {
+			is_emperor_of_china = yes 
+			tag = ROC
+			tag = PRC
+		}
+		OR = {
+			total_development = 700
+			num_of_subjects = 5
+		}
+	}
+	
+	technology_cost = -0.05
+	idea_cost = -0.05
+	global_institution_spread = 0.3
+}
+
+industrial_empire = {
+	potential = {
+		OR = {
+			current_age = age_of_industrialization
+			current_age = age_of_great_wars
+		}
+		government_rank = 3
+	}
+	
+	trigger = {
+		OR = {
+			current_age = age_of_industrialization
+			current_age = age_of_great_wars
+		}
+		government_rank = 3
+	}
+	
+	diplomatic_upkeep = 4
+}
+
+computing_technology = {
+	potential = {
+		electronics = 2
+	}
+	
+	trigger = {
+		electronics = 2
+	}
+	
+	technology_cost = -0.1
+}
+
+naval_industry = {
+	potential = {
+		naval_equipment = 4
+	}
+	
+	trigger = {
+		naval_equipment = 4
+	}
+	
+	naval_forcelimit_modifier = 0.2
+	naval_maintenance_modifier = -0.1
+}
+
+#secular_ethos = { 
+#	potential = {
+#		humanist_ideas = 7
+#		religion_group = atheist_group
+#	}
+#	
+#	trigger = {
+#		humanist_ideas = 7
+#		religion_group = atheist_group
+#	}
+#	
+#	missionaries = -6
+#	idea_cost = -0.05
+#	technology_cost = -0.05
+#}
+
+#agrarian_society = { 
+#	potential = {
+#		NOT = {
+#			OR = {
+#				civil_factory = 5
+#				early_factory = 5
+#			}
+#		}
+#		OR = {
+#			current_age = age_of_industrialization
+#			current_age = age_of_great_wars
+#		}
+#	}
+#	
+#	trigger = {
+#		NOT = {
+#			OR = {
+#				civil_factory = 5
+#				early_factory = 5
+#			}
+#		}
+#		OR = {
+#			current_age = age_of_industrialization
+#			current_age = age_of_great_wars
+#		}
+#	}
+#	
+#	development_cost = 0.2
+#	production_efficiency = -0.2
+#}
+
+illiberal_society = { 
+	potential = {
+		OR = {
+			NOT = {
+				has_reform = democratic_mechanic
+			}
+			is_revolutionary = no
+		}
+	}
+	
+	trigger = {
+		OR = {
+			NOT = {
+				has_reform = democratic_mechanic
+			}
+			is_revolutionary = no
+		}
+	}
+	
+	pl_social_conservative_influence = 0.025
+	stability_cost_modifier = -0.1
+}
+
+liberal_society = { 
+	potential = {
+		has_reform = parliamentary_reform
+		has_reform = pro_enlightenment_reform
+	}
+	
+	trigger = {
+		has_reform = parliamentary_reform
+		has_reform = pro_enlightenment_reform
+	}
+	
+	pl_social_liberal_influence = 0.1
+	technology_cost = -0.05
+	idea_cost = -0.05
+	global_tax_modifier = 0.05
+}
+
+separation_of_powers_tech_modifier = {
+	potential = {
+		adm_tech = 26
+		has_reform = parliamentary_reform
+	}
+	
+	trigger = {
+		adm_tech = 26
+		has_reform = parliamentary_reform
+	}
+	
+	prestige = 0.25
+	pl_social_liberal_influence = 0.15
+	reform_progress_growth = 2
+}
+
+rights_of_man_tech_modifier = {
+	potential = {
+		adm_tech = 29
+		has_parliament = yes
+	}
+	
+	trigger = {
+		adm_tech = 29
+		has_parliament = yes
+	}
+	
+	prestige = 0.25
+	pl_social_liberal_influence = 0.15
+	reform_progress_growth = 4
+}
+
+usa_liberty = {
+	potential = {
+		#exists = USA
+		any_country = {
+			is_former_colonial_nation = yes
+		}
+		colony = 1
+		has_parliament = no
+	}
+	
+	trigger = {
+		#exists = USA
+		any_country = {
+			is_former_colonial_nation = yes
+		}
+		colony = 1
+		has_parliament = no
+	}
+	
+	liberty_desire_from_subject_development = 1.0
+}
+
+soviet_mobilization = {
+	potential = {
+		tag = SVU
+		OR = {
+			war_with = RUS
+			war_with = GER
+			AND = {
+				is_at_war = yes
+				has_global_flag = world_war_ongoing
+			}
+		}
+	}
+	
+	trigger = {
+		tag = SVU
+		OR = {
+			war_with = RUS
+			war_with = GER
+			AND = {
+				is_at_war = yes
+				has_global_flag = world_war_ongoing
+			}
+		}
+	}
+	
+	manpower_recovery_speed = 1.0
+	land_morale = 0.25
+	global_unrest = -6
+	land_maintenance_modifier = -0.5
+	land_forcelimit_modifier = 1.5
+	land_attrition = -0.35
+}
+
+industrial_ottoman_instability = {
+	potential = {
+		has_country_flag = ottoman_decadence
+		tag = TUR
+		NOT = {
+			stability = 3
+		}
+	}
+	
+	trigger = {
+		has_country_flag = ottoman_decadence
+		tag = TUR
+		NOT = {
+			stability = 3
+		}
+	}
+	
+	global_unrest = 12
+	manpower_recovery_speed = -0.10
+	global_manpower_modifier = -0.15
+	min_autonomy = 30
+}
+
+#western_technology = {
+#	potential = {
+#		technology_group = western
+#		OR = {
+#			current_age = age_of_industrialization
+#			current_age = age_of_great_wars
+#		}
+#	}
+#	
+#	trigger = {
+#		technology_group = western
+#		OR = {
+#			current_age = age_of_industrialization
+#			current_age = age_of_great_wars
+#		}
+#	}
+#	
+#	technology_cost = -0.1
+#}
+
+#cheat_reform = {
+#	potential = {
+#		adm_tech = 1
+#	}
+#
+#	trigger = {
+#		adm_tech = 1
+#	}
+#
+#	reform_progress_growth = 100000000000000.00
+#}

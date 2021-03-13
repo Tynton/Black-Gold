@@ -1,0 +1,79 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_military_factory"
+		texturefile = "gfx//interface//buildings//military_factory.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_factory_infrastructure"
+		texturefile = "gfx//interface//buildings//factory_infrastructure.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_civil_factory"
+		texturefile = "gfx//interface//buildings//civil_factory.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_tax_center"
+		texturefile = "gfx//interface//buildings//tax_center.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_military_base"
+		texturefile = "gfx//interface//buildings//military_base.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_mil_harborr"
+		texturefile = "gfx//interface//buildings//mil_harbor.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_oil_drills"
+		texturefile = "gfx//interface//buildings//oil_drills.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_aluminium_smelter"
+		texturefile = "gfx//interface//buildings//aluminium_smelter.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_uranium_mine"
+		texturefile = "gfx//interface//buildings//uranium_mine.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_tungsten_mine"
+		texturefile = "gfx//interface//buildings//tungsten_mine.dds"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_railroad"
+		texturefile = "gfx//interface//buildings//railroad.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_nuclear_reactor"
+		texturefile = "gfx//interface//buildings//nuclear_reactor.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_coal_plant"
+		texturefile = "gfx//interface//buildings//coal_plant.dds"
+		loadType = "INGAME"
+	}
+}

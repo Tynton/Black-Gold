@@ -1,0 +1,239 @@
+namespace = italyunity
+
+#initial italian revolt
+
+country_event = {
+	id = italyunity.1
+	title = "italyunity.n.1"
+	desc = "italyunity.d.1"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1815
+		AND = {
+			any_owned_province = {
+				culture_group = latin
+			}
+			capital_scope = {
+				continent = europe
+			}
+			NOT = {
+				exists = ITA
+				tag = ITA
+				stability = 1
+				culture_group = latin
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "italyunity.1.a"
+		release = ITA
+		ITA = {
+			change_government = monarchy
+			add_government_reform = autocracy_reform
+			add_government_reform = parliamentary_reform
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_independence_war
+			}
+		}
+	}
+	
+	option = {
+		name = "italyunity.1.b"
+		release = ITA
+		ITA = {
+			change_government = monarchy
+			add_government_reform = autocracy_reform
+			add_government_reform = parliamentary_reform
+			create_alliance = ROOT
+		}
+	}
+}
+
+
+#cores
+
+country_event = {
+	id = italyunity.2
+	title = "italyunity.n.2"
+	desc = "italyunity.d.2"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		is_year = 1810
+		any_core_province = {
+			culture_group = latin
+		}
+		
+		NOT = {
+			any_country = {
+				has_country_flag = has_italian_ambition
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "italyunity.2.a"
+		every_province = {
+			limit = {
+				region = italy_region
+			}
+			add_core = ITA
+		}
+	}
+}
+
+#province revolt
+
+province_event = {
+	id = italyunity.3
+	title = "italyunity.n.3"
+	desc = "italyunity.d.3"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		NOT = {
+			current_age = age_of_great_wars
+		}
+		NOT = {
+			devastation = 1
+		}
+		culture_group = latin
+		is_core = ITA
+		owner = {
+			NOT = {
+				culture_group = latin
+			}
+			NOT = {
+				prestige = 65
+			}
+		}
+		exists = ITA
+		continent = europe
+		unrest = -2
+	}	
+
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "italyunity.3.a"
+		spawn_rebels = {
+			type = nationalist_rebels
+			size = 5
+			friend = ITA
+		}
+		add_devastation = 15
+	}
+	option = {
+		name = "italyunity.3.b"
+		cede_province = ITA
+		add_core = ITA
+	}
+}
+
+#nations join italy
+
+country_event = {
+	id = italyunity.4
+	title = "italyunity.n.4"
+	desc = "italyunity.d.4"
+	picture = ANGRY_MOB_eventPicture
+	
+	#fire_only_once = yes
+
+	trigger = {
+		exists = ITA
+		ai = yes 
+		culture_group = latin
+		has_institution = nationalism_institution
+		NOT = {
+			num_of_cities = 45
+		}
+		NOT = {
+			truce_with = ITA
+		}
+		OR = {
+			is_subject = no
+			is_subject_of = ITA
+		}
+		capital_scope = {
+			continent = europe
+		}
+		
+	}	
+
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "italyunity.4.a"
+		ITA = {
+			inherit = ROOT
+			ROOT = {
+				every_owned_province = {
+					add_core = ITA
+				}
+			}
+		}
+	}
+}
+
+#nation becomes italy
+country_event = {
+	id = italyunity.5
+	title = "italyunity.n.5"
+	desc = "italyunity.d.5"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+
+	major = yes
+	
+	trigger = {
+		is_year = 1850
+		culture_group = latin
+		NOT = {
+			exists = ITA
+			ai = no
+		}
+		OR = {
+			capital = 112
+			capital = 118
+			capital = 116
+			capital = 101
+			num_of_cities = 15
+		}
+		total_development = 400
+	}	
+
+	mean_time_to_happen = {
+		months = 36
+	}
+	
+	option = {
+		name = "italyunity.5.a"
+		change_tag = ITA
+		change_government = monarchy
+		add_government_reform = autocracy_reform
+		add_government_reform = parliamentary_reform
+	}
+}

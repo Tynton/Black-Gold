@@ -1,0 +1,206 @@
+namespace = spainunity
+
+#initial spanish revolt
+
+country_event = {
+	id = spainunity.1
+	title = "spainunity.n.1"
+	desc = "spainunity.d.1"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		is_year = 1815
+		AND = {
+			any_owned_province = {
+				region = iberia_region
+			}
+			any_owned_province = {
+				culture_group = iberian
+			}
+			NOT = {
+				stability = 1
+				exists = SPA
+				tag = SPA
+				OR = {
+					culture_group = iberian
+					culture_group = portugese_g
+				}
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "spainunity.1.a"
+		release = SPA
+		SPA = {
+			change_government = monarchy
+			add_government_reform = autocracy_reform
+			add_government_reform = parliamentary_reform
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_independence_war
+			}
+		}
+	}
+	
+	option = {
+		name = "spainunity.1.b"
+		release = SPA
+		SPA = {
+			change_government = monarchy
+			add_government_reform = autocracy_reform
+			add_government_reform = parliamentary_reform
+			create_alliance = ROOT
+		}
+	}
+}
+
+
+#cores
+
+country_event = {
+	id = spainunity.2
+	title = "spainunity.n.2"
+	desc = "spainunity.d.2"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		is_year = 1810
+		AND = {
+			NOT = {
+				culture_group = iberian
+			}
+			NOT = {
+				exists = SPA
+			}
+			capital_scope = {
+				continent = europe
+			}
+			any_owned_province = {
+				culture_group = iberian
+				NOT = {
+					culture = portugese
+				}
+			}
+			NOT = {
+				tag = SPA
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "spainunity.2.a"
+		every_province = {
+			limit = {
+				region = iberia_region
+			}
+			add_core = SPA
+		}
+	}
+}
+
+#province revolt
+
+province_event = {
+	id = spainunity.3
+	title = "spainunity.n.3"
+	desc = "spainunity.d.3"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		is_year = 1815
+		NOT = {
+			current_age = age_of_great_wars
+		}
+		NOT = {
+			devastation = 1
+		}
+		culture_group = iberian
+		is_core = SPA
+		owner = {
+			NOT = {
+				culture_group = iberian
+			}
+			NOT = {
+				prestige = 65
+			}
+		}
+		any_neighbor_province = {
+			tag = SPA
+		} 
+		exists = SPA
+		unrest = -2
+	}	
+
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "spainunity.3.a"
+		spawn_rebels = {
+			type = nationalist_rebels
+			size = 5
+			friend = SPA
+		}
+		add_devastation = 15
+	}
+	option = {
+		name = "spainunity.3.b"
+		cede_province = SPA
+		add_core = SPA
+	}
+}
+
+#nations join spain (NOT PORTUGAL)
+
+country_event = {
+	id = spainunity.4
+	title = "spainunity.n.4"
+	desc = "spainunity.d.4"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		is_year = 1815
+		ai = yes
+		NOT = {
+			current_age = age_of_great_wars
+		}
+		exists = SPA
+		is_subject = no
+		continent = europe
+		culture_group = iberian
+	}	
+
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "spainunity.4.a"
+		SPA = {
+			inherit = ROOT
+			ROOT = {
+				every_owned_province = {
+					add_core = SPA
+				}
+			}
+		}
+	}
+}

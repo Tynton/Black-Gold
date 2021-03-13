@@ -1,0 +1,9 @@
+government = republic
+add_government_reform = consolidation_of_power_reform
+add_government_reform = socialist_reform
+primary_culture = russian
+religion = atheism
+technology_group = western
+capital = 295 # Moscow
+national_focus = MIL
+historical_rival = USA

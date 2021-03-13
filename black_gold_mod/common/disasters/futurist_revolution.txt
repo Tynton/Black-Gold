@@ -1,0 +1,150 @@
+futurist_revolution = {
+	potential = {
+		NOT = {
+			#has_flag = had_futurist_revolution
+			#religion_group = muslim
+		}
+		is_subject = no
+		NOT = {
+			has_country_modifier = victorious_against_revolution
+			
+			OR = {
+				has_reform = celestial_empire 
+				has_reform = futurist_mechanic
+				has_reform = socialist_mechanic
+				has_reform = fascist_mechanic
+			}
+		}
+		has_global_flag = futurist_manifesto_written
+		OR = {
+			culture_group = latin
+			culture_group = french
+			culture_group = east_slavic
+			any_country = {
+				has_reform = futurist_mechanic
+			}
+		}
+	}
+	
+	
+	can_start = {
+		OR = {
+			NOT = {
+				innovativeness = 40
+			}
+			AND = {
+				num_of_loans = 8
+				inflation = 6
+			}
+		}
+		OR = {
+			war_exhaustion = 12
+			NOT = { stability = -1 }
+		}
+		OR = {
+			NOT = {
+				manpower_percentage = 0.2
+				prestige = -15
+			}
+		}
+		has_any_disaster = no
+	}
+	
+	can_stop = { 
+		OR = {
+			has_any_disaster = yes
+		}
+	}
+	
+	
+	progress = {
+		modifier = {
+			factor = 1
+			NOT = { prestige = 0 }
+		}
+		modifier = {
+			factor = 4
+			war_exhaustion = 15
+		} 
+		modifier = {
+			factor = 2
+			num_of_loans = 1
+			NOT = { num_of_loans = 4 }
+		}	
+		modifier = {
+			factor = 1
+			absolutism = 70
+		}
+		modifier = {
+			factor = 2
+			absolutism = 80
+		}
+		modifier = {
+			factor = 3
+			num_of_loans = 4
+		}
+		modifier = {
+			factor = 4
+			is_bankrupt = yes
+		}	
+		modifier = {
+			factor = 4
+			revolution_target_exists = yes
+		}
+		modifier = {
+			factor = -2
+			OR = {
+				religion = protestant
+				religion = reformed
+			}
+		}
+		modifier = {
+			factor = -1
+			OR = {
+				religion = catholic
+				religion = orthodox
+				religion = shinto
+			}
+		}
+		modifier = {
+			factor = -1
+			religion = secular
+		}
+		modifier = {
+			factor = -1
+			has_parliament = yes
+		}
+		modifier = {
+			factor = -1
+			religion_group = muslim
+		}
+	}
+	
+	can_end = {
+		stability = 1
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+	}
+	
+
+	modifier = {
+		global_unrest = 40
+		stability_cost_modifier = 0.5
+		defensiveness = -0.5
+	}	
+	
+	
+	on_start = futurist_revolution.1
+	on_end = futurist_revolution.20
+	
+	on_monthly = {
+		events = {
+			futurist_revolution.10
+			futurist_revolution.15
+		}
+		random_events = { 
+			1000 = 0
+			100 = futurist_revolution.3
+		}
+	}
+}
+

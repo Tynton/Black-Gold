@@ -1,0 +1,403 @@
+futurist_mechanic = {
+	basic_reform = yes
+	republican_name = yes
+	royal_marriage = no
+	republic = yes
+	claim_states = yes
+	start_territory_to_estates = 0
+	basic_reform = yes # = invisible/does not take up a slot
+	valid_for_nation_designer = no
+	#revolutionary = yes
+	custom_attributes = {
+		enables_aristocratic_idea_group = yes
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		militarised_society = yes
+	}
+}
+
+futurist_government_reform = {
+	icon = "futurism"
+	queen = no
+	heir = no
+	royal_marriage = no
+	allow_normal_conversion = yes
+	legacy_equivalent = republican_dictatorship
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	potential = {
+		NOT = {
+			is_subject_of_type = personal_union
+		}
+	}
+	modifiers = {
+		adm_tech_cost_modifier = -0.05
+		dip_tech_cost_modifier = -0.05
+		mil_tech_cost_modifier = -0.1
+		idea_cost = -0.1
+		
+		female_advisor_chance = 0.25
+	}
+}
+
+futurist_empire = {
+	icon = "eagle_empire"
+	monarchy = yes
+	queen = yes
+	heir = yes
+	royal_marriage = yes
+	potential = {
+		absolutism = 90
+		NOT = {
+			full_idea_group = innovative_ideas
+		}
+	}
+	republican_name = no
+	allow_normal_conversion = yes
+	legacy_equivalent = republican_dictatorship
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		adm_tech_cost_modifier = -0.05
+		dip_tech_cost_modifier = -0.1
+		mil_tech_cost_modifier = -0.05
+		idea_cost = -0.1
+		
+		yearly_absolutism = 0.5
+	}
+	fixed_rank = 3
+}
+
+technocracy = {
+	icon = "technocracy_gfx"
+	monarchy = no
+	queen = no
+	heir = no
+	royal_marriage = no
+	potential = {
+		NOT = {
+			is_subject_of_type = personal_union
+		}
+	}
+	allow_normal_conversion = yes
+	legacy_equivalent = republican_dictatorship
+	valid_for_nation_designer = no
+	modifiers = {
+		adm_tech_cost_modifier = -0.1
+		dip_tech_cost_modifier = -0.05
+		mil_tech_cost_modifier = -0.05
+		idea_cost = -0.1
+		land_forcelimit_modifier = 0.25
+		global_manpower_modifier = 0.25
+	}
+}
+
+#####################################futurist_ethics#####################################
+
+futurist_acceleration = {
+	icon = "fist_in_air"
+	potential = {
+		NOT = { 
+			OR = {
+				has_reform = national_socialism
+			}
+		}
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		idea_cost = -0.15
+	}
+}
+
+futurist_nationalism = {
+	icon = "paper_with_seal"
+	potential = {
+		NOT = {
+			OR = {
+				has_reform = national_socialism
+			}
+		}
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		global_unrest = -1
+		land_morale = 0.1
+	}
+}
+
+#####################################futurist_foreign_policy#####################################
+
+futurist_radicalism_reform = {
+	icon = "revolutionary_republic"
+	allow_normal_conversion = yes
+	modifiers = {
+		land_maintenance_modifier = -0.2
+		global_manpower_modifier = 0.5
+		land_morale = 0.15
+		ae_impact = 0.2 
+	}
+}
+
+futurist_protectionism_reform = {
+	icon = "man_and_children"
+	allow_normal_conversion = yes
+	modifiers = {
+		fort_maintenance_modifier = -0.2
+		naval_morale = 0.1
+		land_morale = 0.1
+	}
+}
+
+#####################################futurist_head_of_state#####################################
+
+futurist_dictator = {
+	icon = "man_on_podium"
+	trigger = {
+		NOT = {
+			OR = {
+				has_reform = futurist_republican_leader
+				has_reform = futurist_empire
+				has_reform = auth_monarchism
+			}
+		}
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		yearly_absolutism = 0.5
+	}
+}
+
+futurist_republican_leader = {
+	icon = "ballot_box"
+	potential = {
+		NOT = {
+			OR = {
+				has_reform = futurist_empire
+				has_reform = auth_monarchism
+			}
+		}
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		republican_tradition = 0.5
+		global_unrest = -0.5
+	}
+	duration = 4
+	has_term_election = yes
+}
+
+futurist_minister_monarchy = {
+	icon = "king_2"
+	potential = {
+		has_reform = futurist_empire
+	}
+	trigger = {
+		OR = {
+			has_reform = futurist_empire
+			has_reform = auth_monarchism
+		}
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		advisor_cost = -0.1
+	}
+}
+
+#####################################deliberative_assembly#####################################
+
+futurist_parliament = {
+	icon = "ballot_box"
+	allow_normal_conversion = yes
+	modifiers = {
+		stability_cost_modifier = -0.15
+		max_absolutism = -10
+	}
+}
+
+futurist_dictatorial_dominance = {
+	icon = "man_on_podium"
+	trigger = {
+		NOT = { 
+			OR = {
+				has_reform = futurist_republican_leader
+				has_reform = futurist_empire
+			}
+		}
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		max_absolutism = 10
+		global_missionary_strength = 0.01
+	}
+}
+
+futurist_monarchist_autocracy = {
+	icon = "king_2"
+	potential = {
+		has_reform = futurist_empire
+	}
+	trigger = {
+		OR = {
+			has_reform = futurist_empire
+		}
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		heir_chance = 0.25
+	}
+}
+
+#####################################futurist_economy#####################################
+
+futurist_syndicalism = {
+	icon = "rioting_burning"
+	potential = {
+		NOT = {
+			OR = {
+				has_reform = italian_fascism
+				has_reform = futurist_empire
+			}
+		}
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		state_maintenance_modifier = -0.25
+		stability_cost_modifier = -0.25
+	}
+}
+
+futurist_corporatism = {
+	icon = "paper_money_map"
+	allow_normal_conversion = yes
+	modifiers = {
+		trade_efficiency = 0.1
+	}
+}
+
+#####################################futurist_admin#####################################
+
+#####################################electorate (really stupid but aight)#####################################
+
+council_assembly_reform = {
+	icon = "states_general"
+	allow_normal_conversion = yes
+	trigger = {
+		NOT = {
+			has_reform = futurist_empire
+		}
+	}
+	modifiers = {
+		advisor_pool = 2
+		advisor_cost = -0.1
+	}
+}
+
+popular_electorate = {
+	icon = "people_walking"
+	allow_normal_conversion = yes
+	trigger = {
+		has_reform = futurist_republican_leader
+	}
+	modifiers = {
+		global_unrest = -2
+		prestige_decay = 0.01
+	}
+}
+
+no_electorate = {
+	icon = "king"
+	trigger = {
+		NOT = { has_reform = futurist_republican_leader }
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		max_absolutism = 10
+		global_missionary_strength = 0.01
+	}
+}
+
+#####################################propaganda#####################################
+
+political_propaganda = {
+	icon = "futurist_government_gold"
+	allow_normal_conversion = yes
+	modifiers = {
+		yearly_absolutism = 5
+		tolerance_own = 1
+		global_missionary_strength = 0.03
+		stability_cost_modifier = -0.25
+	}
+}
+
+war_propaganda = {
+	icon = "soldiers_2"
+	allow_normal_conversion = yes
+	modifiers = {
+		land_morale = 0.1
+		defensiveness = 0.1
+		naval_morale = 0.1
+	}
+}
+
+#economic_propaganda = {
+#	icon = "paper_with_seal_3"
+#	allow_normal_conversion = yes
+#	modifiers = {
+#		num_accepted_cultures = 1
+#	}
+#}
+
+#####################################question_of_foreign_cultures#####################################
+
+purge_foreigners_reform = {
+	icon = "purge_foreign_culture"
+	potential = {
+		NOT = {
+			has_reform = revolutionary_socialism
+		}
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		culture_conversion_cost = -0.95
+		global_missionary_strength = 0.08
+		years_of_nationalism = -20
+	}
+}
+
+futurist_intolerance_reform = {
+	icon = "futurist_government"
+	potential = {
+		NOT = {
+			has_reform = revolutionary_socialism
+		}
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		culture_conversion_cost = -0.1
+		years_of_nationalism = -5
+	}
+}
+
+futurist_egalitarian_reform = {
+	icon = "man_and_children"
+	allow_normal_conversion = yes
+	modifiers = {
+		promote_culture_cost = -0.25
+		advisor_pool = 1
+	}
+}
+
+#####################################policing_campaigns#####################################
+
+abolish_secret_police = {
+	icon = "futurist_government"
+	allow_normal_conversion = yes
+	modifiers = {
+		land_maintenance_modifier = -0.15
+		naval_maintenance_modifier = -0.15
+		
+		hostile_attrition = 2
+		garrison_size = 0.2
+	}
+}

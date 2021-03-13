@@ -1,0 +1,168 @@
+namespace = GENERIC_futurist_governments
+
+#land value tax acquisition
+
+country_event = {
+	id = GENERIC_futurist_governments.1
+	title = "GENERIC_futurist_governments.t.1"
+	desc = "GENERIC_futurist_governments.d.1"
+	picture = BUREAU_eventPicture
+	
+	trigger = {
+		has_reform = futurist_mechanic
+		#has_country_flag = recently_established_state
+		
+		NOT = {
+			years_of_income = 2.0
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 48
+	}
+	
+	option = {
+		name = "GENERIC_futurist_governments.1.a"
+		add_years_of_income = 0.3
+		
+		ai_chance = { factor = 1 }
+	}
+}
+
+#State-raised children
+
+country_event = {
+	id = GENERIC_futurist_governments.2
+	title = "GENERIC_futurist_governments.t.2"
+	desc = "GENERIC_futurist_governments.d.2"
+	picture = FUTURISM_eventPicture
+	
+	trigger = {
+		has_reform = futurist_mechanic
+		#has_country_flag = recently_established_state
+		
+		NOT = {
+			manpower_percentage = 0.95
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "GENERIC_futurist_governments.2.a"
+		add_yearly_manpower = 0.15
+		
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Federalization
+
+country_event = {
+	id = GENERIC_futurist_governments.3
+	title = "GENERIC_futurist_governments.t.3"
+	desc = "GENERIC_futurist_governments.d.3"
+	picture = BUREAU_eventPicture
+	
+	trigger = {
+		has_reform = futurist_mechanic
+		
+		NOT = {
+			has_country_modifier = futurist_federalization
+		}
+		NOT = {
+			OR = {
+				has_reform = futurist_empire
+				has_reform = futurist_dictator
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 180
+	}
+	
+	option = {
+		name = "GENERIC_futurist_governments.3.a"
+		add_country_modifier = { 
+			name = futurist_federalization
+			duration = 5475
+		}
+		
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Celebration of Violence
+
+country_event = {
+	id = GENERIC_futurist_governments.4
+	title = "GENERIC_futurist_governments.t.4"
+	desc = "GENERIC_futurist_governments.d.4"
+	picture = FUTURISM_eventPicture
+	
+	trigger = {
+		has_reform = futurist_mechanic
+		
+		NOT = {
+			has_country_modifier = futurist_violence
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 180
+		
+		modifier = {
+			factor = 0.15
+			is_at_war = yes
+		}
+		
+		modifier = {
+			factor = 0.5
+			has_reform = futurist_radicalism
+		}
+	}
+	
+	option = {
+		name = "GENERIC_futurist_governments.4.a"
+		add_country_modifier = { 
+			name = futurist_violence
+			duration = 5475
+		}
+		
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Artistic State
+
+country_event = {
+	id = GENERIC_futurist_governments.5
+	title = "GENERIC_futurist_governments.t.5"
+	desc = "GENERIC_futurist_governments.d.5"
+	picture = FUTURISM_eventPicture
+	
+	trigger = {
+		has_reform = futurist_mechanic
+		
+		NOT = {
+			has_country_modifier = artistic_state
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 180
+	}
+	
+	option = {
+		name = "GENERIC_futurist_governments.5.a"
+		add_country_modifier = { 
+			name = artistic_state
+			duration = 9125
+		}
+		
+		ai_chance = { factor = 1 }
+	}
+}

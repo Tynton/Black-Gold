@@ -1,0 +1,320 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_faction_window_bg"	
+		texturefile = "gfx//interface//china_bg.tga"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_faction_arrow"	
+		texturefile = "gfx//interface//china_arrow.tga"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_faction_circle_bg"	
+		texturefile = "gfx//interface//china_circle_bg.tga"
+		noOfFrames = 2
+	}
+
+	# Pirate factions
+
+	spriteType = {
+		name = "GFX_faction_pr_buccaneers"	
+		texturefile = "gfx//interface//pr_faction_buccaneers.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_pr_buccaneers"	
+		texturefile = "gfx//interface//faction_purple_frame.tga"
+		transparencecheck = yes
+	}	
+	
+	spriteType = {
+		name = "GFX_faction_pr_smugglers"	
+		texturefile = "gfx//interface//pr_faction_smugglers.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_pr_smugglers"	
+		texturefile = "gfx//interface//faction_blue_frame.tga"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_faction_pr_captains"	
+		texturefile = "gfx//interface//pr_faction_captains.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_pr_captains"	
+		texturefile = "gfx//interface//faction_red_frame.tga"
+		transparencecheck = yes
+	}
+	
+
+	# Celestial Empire
+	spriteType = {
+		name = "GFX_faction_bg_temples"	
+		texturefile = "gfx//interface//faction_blue_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_temples"	
+		texturefile = "gfx//interface//china_temple.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_enuchs"	
+		texturefile = "gfx//interface//faction_purple_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_enuchs"	
+		texturefile = "gfx//interface//china_eunuch.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_bureaucrats"	
+		texturefile = "gfx//interface//faction_red_frame.tga"
+		transparencecheck = yes
+	}		
+	spriteType = {
+		name = "GFX_faction_bureaucrats"	
+		texturefile = "gfx//interface//china_bureaucrat.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_enuchs"	
+		texturefile = "gfx//interface//china_eunuch.tga"
+	}
+	
+	# Merchant Republics
+	
+	spriteType = {
+		name = "GFX_faction_bg_mr_guilds"	
+		texturefile = "gfx//interface//faction_blue_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_mr_guilds"	
+		texturefile = "gfx//interface//guilds_icon.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_mr_traders"	
+		texturefile = "gfx//interface//faction_blue_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_mr_traders"	
+		texturefile = "gfx//interface//traders_icon.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_mr_aristocrats"	
+		texturefile = "gfx//interface//faction_blue_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_mr_aristocrats"	
+		texturefile = "gfx//interface//aristocrats_icon.tga"
+	}
+	
+	# Revolutionary Republics
+	
+	spriteType = {
+		name = "GFX_faction_bg_rr_jacobins"	
+		texturefile = "gfx//interface//faction_blue_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_rr_jacobins"	
+		texturefile = "gfx//interface//jacobins_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_rr_royalists"
+		texturefile = "gfx//interface//faction_purple_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_rr_royalists"	
+		texturefile = "gfx//interface//imperials_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_rr_girondists"	
+		texturefile = "gfx//interface//faction_red_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_rr_girondists"	
+		texturefile = "gfx//interface//girondists_icon.tga"
+	}	
+	
+	#parliament
+	
+	spriteType = {
+		name = "GFX_faction_bg_pl_social_liberal"	
+		texturefile = "gfx//interface//faction_blue_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_pl_social_liberal"	
+		texturefile = "gfx//interface//pl_social_liberal.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_pl_social_conservative"
+		texturefile = "gfx//interface//faction_purple_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_pl_social_conservative"	
+		texturefile = "gfx//interface//pl_social_conservative.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_faction_bg_dm_social_liberal"	
+		texturefile = "gfx//interface//faction_blue_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_dm_social_liberal"	
+		texturefile = "gfx//interface//dm_social_liberal.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_dm_social_conservative"
+		texturefile = "gfx//interface//faction_purple_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_dm_social_conservative"	
+		texturefile = "gfx//interface//dm_social_conservative.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_dm_social_democrat"	
+		texturefile = "gfx//interface//faction_red_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_dm_social_democrat"	
+		texturefile = "gfx//interface//dm_social_democrat.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_dm_communist"	
+		texturefile = "gfx//interface//faction_red_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_dm_communist"	
+		texturefile = "gfx//interface//dm_communist.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_dm_nationalist"
+		texturefile = "gfx//interface//faction_purple_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_dm_nationalist"	
+		texturefile = "gfx//interface//dm_nationalist.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_dm_fascist"
+		texturefile = "gfx//interface//faction_purple_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_dm_fascist"	
+		texturefile = "gfx//interface//dm_fascist.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_dm_monarchist"
+		texturefile = "gfx//interface//faction_purple_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_dm_monarchist"	
+		texturefile = "gfx//interface//dm_monarchist.dds"
+	}
+	
+	#fascist
+	
+	spriteType = {
+		name = "GFX_faction_bg_fr_monarchist"
+		texturefile = "gfx//interface//faction_purple_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_fr_monarchist"	
+		texturefile = "gfx//interface//fr_monarchist.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_fr_fascist_revolutionaries"
+		texturefile = "gfx//interface//faction_purple_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_fr_fascist_revolutionaries"	
+		texturefile = "gfx//interface//fr_fascist_revolutionaries.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_fr_national_socialists"
+		texturefile = "gfx//interface//faction_purple_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_fr_national_socialists"	
+		texturefile = "gfx//interface//fr_national_socialists.dds"
+	}
+	
+	#communist
+	
+	spriteType = {
+		name = "GFX_faction_bg_cr_bolshevists"
+		texturefile = "gfx//interface//faction_red_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_cr_bolshevists"	
+		texturefile = "gfx//interface//cr_bolshevists.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_cr_mensheviks"
+		texturefile = "gfx//interface//faction_red_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_cr_mensheviks"	
+		texturefile = "gfx//interface//cr_mensheviks.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_cr_stalinists"
+		texturefile = "gfx//interface//faction_red_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_cr_stalinists"	
+		texturefile = "gfx//interface//cr_stalinists.dds"
+	}
+	
+	#authoritarian
+	
+	spriteType = {
+		name = "GFX_faction_bg_at_dictatorial"
+		texturefile = "gfx//interface//faction_red_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_at_dictatorial"	
+		texturefile = "gfx//interface//at_dictatorial.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_at_republicanist"	
+		texturefile = "gfx//interface//faction_blue_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_at_republicanist"	
+		texturefile = "gfx//interface//at_republicanist.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_at_monarchist"	
+		texturefile = "gfx//interface//faction_purple_frame_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_at_monarchist"	
+		texturefile = "gfx//interface//at_monarchist.dds"
+	}
+
+}

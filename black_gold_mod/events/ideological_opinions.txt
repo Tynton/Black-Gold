@@ -1,0 +1,333 @@
+namespace = ideological_opinions
+
+#DEMOCRACY, ENEMY
+
+country_event = {
+	id = ideological_opinions.1
+	title = "ideological_opinions.n.1"
+	desc = "ideological_opinions.d.1"
+	picture = MILITARY_CAMP_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		has_reform = democratic_mechanic
+		
+		any_country = {
+			OR = {
+				has_reform = socialist_mechanic
+				has_reform = fascist_mechanic
+				has_reform = futurist_mechanic
+			}
+			NOT = {
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = diff_ideology
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "ideological_opinions.1.a"
+		
+		every_country = {
+			limit = {
+				has_reform = socialist_mechanic
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = diff_ideology
+			}
+		}
+		
+		every_country = {
+			limit = {
+				has_reform = fascist_mechanic
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = diff_ideology
+			}
+		}
+		
+		every_country = {
+			limit = {
+				has_reform = futurist_mechanic
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = diff_ideology
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ideological_opinions.2
+	title = "ideological_opinions.n.2"
+	desc = "ideological_opinions.d.2"
+	picture = MILITARY_CAMP_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		has_reform = democratic_mechanic
+		
+		any_country = {
+			has_reform = democratic_mechanic
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = diff_ideology
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+
+		modifier = {
+			factor = 0.001
+			is_revolution_target = yes
+		}
+	}
+
+	option = {
+		name = "ideological_opinions.2.a"
+		
+		every_country = {
+			limit = {
+			has_reform = democratic_mechanic
+			}
+			remove_opinion = {
+				who = ROOT
+				modifier = diff_ideology
+			}
+		}
+	}
+}
+
+#DEMOCRACY, FRIENDLY
+
+country_event = {
+	id = ideological_opinions.3
+	title = "ideological_opinions.n.3"
+	desc = "ideological_opinions.d.3"
+	picture = MILITARY_CAMP_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		has_reform = democratic_mechanic
+		
+		any_country = {
+			has_reform = democratic_mechanic
+			NOT = {
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = fellow_democracy
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "ideological_opinions.3.a"
+		
+		every_country = {
+			limit = {
+				has_reform = democratic_mechanic
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = fellow_democracy
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ideological_opinions.4
+	title = "ideological_opinions.n.4"
+	desc = "ideological_opinions.d.4"
+	picture = MILITARY_CAMP_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		has_reform = democratic_mechanic
+		
+		any_country = {
+			NOT = {
+				has_reform = democratic_mechanic
+			}
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = fellow_democracy
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+
+		modifier = {
+			factor = 0.001
+			is_revolution_target = yes
+		}
+	}
+
+	option = {
+		name = "ideological_opinions.4.a"
+		
+		every_country = {
+			limit = {
+				has_reform = democratic_mechanic
+			}
+			remove_opinion = {
+				who = ROOT
+				modifier = fellow_democracy
+			}
+		}
+	}
+}
+
+
+
+#AUTHORITARIAN, ENEMY
+
+country_event = {
+	id = ideological_opinions.5
+	title = "ideological_opinions.n.5"
+	desc = "ideological_opinions.d.5"
+	picture = MILITARY_CAMP_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			has_reform = socialist_mechanic
+			has_reform = fascist_mechanic
+			has_reform = futurist_mechanic
+		}
+		
+		any_country = {
+			has_reform = democratic_mechanic
+			NOT = {
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = authoritarian_opinion
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "ideological_opinions.5.a"
+
+		every_country = {
+			limit = {
+				has_reform = democratic_mechanic
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = authoritarian_opinion
+			}
+		}
+		
+		every_country = {
+			limit = {
+				has_reform = democratic_mechanic
+			}
+			add_trust = {
+				who = ROOT
+				value = -50
+				mutual = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ideological_opinions.6
+	title = "ideological_opinions.n.6"
+	desc = "ideological_opinions.d.6"
+	picture = MILITARY_CAMP_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			has_reform = socialist_mechanic
+			has_reform = fascist_mechanic
+			has_reform = futurist_mechanic
+		}
+		
+		any_country = {
+			OR = {
+				has_reform = socialist_mechanic
+				has_reform = fascist_mechanic
+				has_reform = futurist_mechanic
+			}
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = authoritarian_opinion
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+
+		modifier = {
+			factor = 0.001
+			is_revolution_target = yes
+		}
+	}
+
+	option = {
+		name = "ideological_opinions.6.a"
+
+		every_country = {
+			limit = {
+				has_reform = socialist_mechanic
+			}
+			remove_opinion = {
+				who = ROOT
+				modifier = authoritarian_opinion
+			}
+		}
+		
+		every_country = {
+			limit = {
+				has_reform = fascist_mechanic
+			}
+			remove_opinion = {
+				who = ROOT
+				modifier = authoritarian_opinion
+			}
+		}
+		
+		every_country = {
+			limit = {
+				has_reform = futurist_mechanic
+			}
+			remove_opinion = {
+				who = ROOT
+				modifier = authoritarian_opinion
+			}
+		}
+	}
+}

@@ -1,0 +1,339 @@
+namespace = frenchgermanyconquest
+
+province_event = {
+	id = frenchgermanyconquest.1
+	title = "frenchgermanyconquest.n.1"
+	desc = "frenchgermanyconquest.d.1"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = swabian
+			owner = {
+				culture_group = french
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 60
+				full_idea_group = expansion_ideas
+			}
+			government_rank = 3
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "frenchgermanyconquest.1.a"
+		change_culture = souabe
+	}
+}
+
+province_event = {
+	id = frenchgermanyconquest.2
+	title = "frenchgermanyconquest.n.2"
+	desc = "frenchgermanyconquest.d.2"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = hannoverian
+			owner = {
+				culture_group = french
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 60
+				full_idea_group = expansion_ideas
+			}
+			government_rank = 3
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "frenchgermanyconquest.2.a"
+		change_culture = westphalien
+	}
+}
+
+province_event = {
+	id = frenchgermanyconquest.3
+	title = "frenchgermanyconquest.n.3"
+	desc = "frenchgermanyconquest.d.3"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = hessian
+			owner = {
+				culture_group = french
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 60
+				full_idea_group = expansion_ideas
+			}
+			government_rank = 3
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "frenchgermanyconquest.3.a"
+		change_culture = du_rhin
+	}
+}
+
+province_event = {
+	id = frenchgermanyconquest.4
+	title = "frenchgermanyconquest.n.4"
+	desc = "frenchgermanyconquest.d.4"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = bavarian
+			owner = {
+				culture_group = french
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 60
+				full_idea_group = expansion_ideas
+			}
+			government_rank = 3
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "frenchgermanyconquest.4.a"
+		change_culture = bavarois
+	}
+}
+
+province_event = {
+	id = frenchgermanyconquest.5
+	title = "frenchgermanyconquest.n.5"
+	desc = "frenchgermanyconquest.d.5"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = saxon
+			owner = {
+				culture_group = french
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 60
+				full_idea_group = expansion_ideas
+			}
+			government_rank = 3
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "frenchgermanyconquest.5.a"
+		change_culture = saxonne
+	}
+}
+
+province_event = {
+	id = frenchgermanyconquest.6
+	title = "frenchgermanyconquest.n.6"
+	desc = "frenchgermanyconquest.d.6"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = pommeranian
+			owner = {
+				culture_group = french
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 60
+				full_idea_group = expansion_ideas
+			}
+			government_rank = 3
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "frenchgermanyconquest.6.a"
+		change_culture = pomeranien
+	}
+}
+
+province_event = {
+	id = frenchgermanyconquest.7
+	title = "frenchgermanyconquest.n.7"
+	desc = "frenchgermanyconquest.d.7"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = prussian
+			owner = {
+				culture_group = french
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 60
+				full_idea_group = expansion_ideas
+			}
+			government_rank = 3
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "frenchgermanyconquest.7.a"
+		change_culture = prussien
+	}
+}
+
+province_event = {
+	id = frenchgermanyconquest.8
+	title = "frenchgermanyconquest.n.8"
+	desc = "frenchgermanyconquest.d.8"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = lower_saxon
+			owner = {
+				culture_group = french
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 60
+				full_idea_group = expansion_ideas
+			}
+			government_rank = 3
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "frenchgermanyconquest.8.a"
+		change_culture = saxonne
+	}
+}
+
+country_event = {
+	id = frenchgermanyconquest.9
+	title = "frenchgermanyconquest.n.9"
+	desc = "frenchgermanyconquest.d.9"
+	picture = HRE_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+	
+	trigger = {
+		government_rank = 3
+		
+		culture_group = french
+		
+		development_in_provinces = {
+			value = 250
+			culture_group = germanic
+		}
+		
+	}	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "frenchgermanyconquest.9.a"
+		
+		change_primary_culture = franco_german
+		
+		every_owned_province = {
+			limit = {
+				culture = ROOT
+			}
+			change_culture = franco_german
+		}
+		
+		france_region = {
+			add_permanent_claim = ROOT
+		}
+		
+		add_accepted_culture = lower_saxon
+		add_accepted_culture = saxon
+		add_accepted_culture = prussian
+		add_accepted_culture = pommeranian
+		add_accepted_culture = bavarian
+		add_accepted_culture = hessian
+		add_accepted_culture = hannoverian
+		add_accepted_culture = swabian
+		add_accepted_culture = austrian
+	}
+	
+	option = {
+		name = "frenchgermanyconquest.9.b"
+	}
+}

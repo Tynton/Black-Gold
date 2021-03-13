@@ -1,0 +1,229 @@
+namespace = airforce
+
+#STRATBOMBING, GENERIC
+
+country_event = {
+	id = airforce.1
+	title = "airforce.t.1"
+	desc = "airforce.d.1"
+	picture = AIRFORCE_eventPicture
+	
+	trigger = {
+		any_country = {
+			war_with = ROOT
+			OR = {
+				has_country_modifier = air_force_tiertwo
+				has_country_modifier = air_force_tierthree
+				has_country_modifier = air_force_tierfour
+				has_country_modifier = air_force_tierfive
+				has_country_modifier = air_force_tiersix
+				has_country_modifier = air_force_tierseven
+			}
+			war_score = -15
+		}
+		any_owned_province = {
+			NOT = {
+				devastation = 1
+			}
+			development = 25
+		}
+		
+		any_country = {
+			war_with = ROOT
+			
+			border_distance = {
+				who = ROOT
+				distance = 500
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+		
+		modifier = {
+			factor = 0.85
+			any_country = {
+				war_with = ROOT
+				has_country_modifier = air_force_tiertwo
+			}
+		}
+		
+		modifier = {
+			factor = 0.85
+			any_country = {
+				war_with = ROOT
+				has_country_modifier = air_force_tierthree
+			}
+		}
+		
+		modifier = {
+			factor = 0.9
+			any_country = {
+				war_with = ROOT
+				has_country_modifier = air_force_tierfour
+			}
+		}
+		
+		modifier = {
+			factor = 0.9
+			any_country = {
+				war_with = ROOT
+				has_country_modifier = air_force_tierfive
+			}
+		}
+		
+		modifier = {
+			factor = 0.9
+			any_country = {
+				war_with = ROOT
+				has_country_modifier = air_force_tiersix
+			}
+		}
+		
+		modifier = {
+			factor = 0.95
+			any_country = {
+				war_with = ROOT
+				has_country_modifier = air_force_tierseven
+			}
+		}
+	}
+	
+	option = {
+		name = "airforce.1.a"
+		
+		random_owned_province = {
+			add_devastation = 35
+		}
+		
+		add_war_exhaustion = 0.5
+		add_prestige = -2
+		
+		every_country = { 
+			limit = {
+				war_with = ROOT
+			}
+			country_event = {
+				id = airforce.3
+			}
+		}
+	}
+}
+
+#FIREBOMBING
+
+country_event = {
+	id = airforce.2
+	title = "airforce.t.2"
+	desc = "airforce.d.2"
+	picture = BOMBING_eventPicture
+	
+	trigger = {
+		any_country = {
+			war_with = ROOT
+			OR = {
+				has_country_modifier = air_force_tierthree
+				has_country_modifier = air_force_tierfour
+				has_country_modifier = air_force_tierfive
+				has_country_modifier = air_force_tiersix
+				has_country_modifier = air_force_tierseven
+			}
+			war_score = -15
+		}
+		any_owned_province = {
+			NOT = {
+				devastation = 1
+			}
+			development = 25
+		}
+		
+		any_country = {
+			war_with = ROOT
+			
+			border_distance = {
+				who = ROOT
+				distance = 500
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 10
+		
+		modifier = {
+			factor = 0.75
+			any_country = {
+				war_with = ROOT
+				has_country_modifier = air_force_tierfour
+			}
+		}
+		
+		modifier = {
+			factor = 0.75
+			any_country = {
+				war_with = ROOT
+				has_country_modifier = air_force_tierfive
+			}
+		}
+		
+		modifier = {
+			factor = 0.75
+			any_country = {
+				war_with = ROOT
+				has_country_modifier = air_force_tiersix
+			}
+		}
+		
+		modifier = {
+			factor = 0.75
+			any_country = {
+				war_with = ROOT
+				has_country_modifier = air_force_tierseven
+			}
+		}
+	}
+	
+	option = {
+		name = "airforce.2.a"
+		
+		random_owned_province = {
+			limit = { 
+				development = 25
+			}
+			add_devastation = 50
+			
+			add_base_tax = -1
+			add_base_production = -1
+			add_base_manpower = -1
+		}
+		
+		add_war_exhaustion = 0.75
+		add_prestige = -5
+		
+		every_country = { 
+			limit = {
+				war_with = ROOT
+			}
+			country_event = {
+				id = airforce.3
+			}
+		}
+	}
+}
+
+country_event = {
+	id = airforce.3
+	title = "airforce.t.3"
+	desc = "airforce.d.3"
+	picture = BOMBING_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "airforce.3.a"
+		
+		add_war_exhaustion = -0.5
+		add_prestige = 5
+	}
+}

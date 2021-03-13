@@ -1,0 +1,471 @@
+namespace = frenchitalyconquest
+
+province_event = {
+	id = frenchitalyconquest.1
+	title = "frenchitalyconquest.n.1"
+	desc = "frenchitalyconquest.d.1"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {
+			culture = tuscan
+			owner = {
+				culture_group = french
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 50
+			}
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "frenchitalyconquest.1.a"
+		change_culture = toscan
+	}
+}
+
+province_event = {
+	id = frenchitalyconquest.2
+	title = "frenchitalyconquest.n.2"
+	desc = "frenchitalyconquest.d.2"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {
+			culture = lombard
+			owner = {
+				culture_group = french
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 50
+			}
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "frenchitalyconquest.2.a"
+		change_culture = french_lombard
+	}
+}
+
+province_event = {
+	id = frenchitalyconquest.3
+	title = "frenchitalyconquest.n.3"
+	desc = "frenchitalyconquest.d.3"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {
+			culture = sardinian
+			owner = {
+				culture_group = french
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 50
+			}
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "frenchitalyconquest.3.a"
+		change_culture = sarde
+	}
+}
+
+province_event = {
+	id = frenchitalyconquest.4
+	title = "frenchitalyconquest.n.4"
+	desc = "frenchitalyconquest.d.4"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {
+			culture = romagnan
+			owner = {
+				culture_group = french
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 50
+			}
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "frenchitalyconquest.4.a"
+		change_culture = romain
+	}
+}
+
+province_event = {
+	id = frenchitalyconquest.5
+	title = "frenchitalyconquest.n.5"
+	desc = "frenchitalyconquest.d.5"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {
+			culture = ligurian
+			owner = {
+				culture_group = french
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 50
+			}
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "frenchitalyconquest.5.a"
+		change_culture = ligure
+	}
+}
+
+province_event = {
+	id = frenchitalyconquest.6
+	title = "frenchitalyconquest.n.6"
+	desc = "frenchitalyconquest.d.6"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {
+			OR = {
+				culture = venetian
+			}
+			owner = {
+				culture_group = french
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 50
+			}
+		}
+		has_owner_accepted_culture = no
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "frenchitalyconquest.6.a"
+		change_culture = venitien
+	}
+}
+
+province_event = {
+	id = frenchitalyconquest.7
+	title = "frenchitalyconquest.n.7"
+	desc = "frenchitalyconquest.d.7"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {
+			culture = neapolitan
+			owner = {
+				culture_group = french
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 50
+			}
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "frenchitalyconquest.7.a"
+		change_culture = napolitain
+	}
+}
+
+province_event = {
+	id = frenchitalyconquest.8
+	title = "frenchitalyconquest.n.8"
+	desc = "frenchitalyconquest.d.8"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {
+			culture = piedmontese
+			owner = {
+				culture_group = french
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 50
+			}
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "frenchitalyconquest.8.a"
+		change_culture = piemontais
+	}
+}
+
+province_event = {
+	id = frenchitalyconquest.9
+	title = "frenchitalyconquest.n.9"
+	desc = "frenchitalyconquest.d.9"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {
+			culture = umbrian
+			owner = {
+				culture_group = french
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 50
+			}
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "frenchitalyconquest.9.a"
+		change_culture = ombrien
+	}
+}
+
+province_event = {
+	id = frenchitalyconquest.10
+	title = "frenchitalyconquest.n.10"
+	desc = "frenchitalyconquest.d.10"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {
+			culture = sicilian
+			owner = {
+				culture_group = french
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 50
+			}
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "frenchitalyconquest.10.a"
+		change_culture = sicilien
+	}
+}
+
+province_event = {
+	id = frenchitalyconquest.11
+	title = "frenchitalyconquest.n.11"
+	desc = "frenchitalyconquest.d.11"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {
+			culture = maltese
+			owner = {
+				culture_group = french
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 50
+			}
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "frenchitalyconquest.11.a"
+		change_culture = maltais
+	}
+}
+
+province_event = {
+	id = frenchitalyconquest.12
+	title = "frenchitalyconquest.n.12"
+	desc = "frenchitalyconquest.d.12"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {
+			OR = {
+				culture = dalmatian
+			}
+			owner = {
+				culture_group = french
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 50
+			}
+		}
+		has_owner_accepted_culture = no
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "frenchitalyconquest.12.a"
+		change_culture = dalmatien
+	}
+}

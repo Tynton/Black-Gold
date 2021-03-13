@@ -1,0 +1,138 @@
+
+#ALBANIA
+
+4174 = "Dhyrrákhio"
+143 = "Avlónas"
+4750 = "Króia"
+
+#AUSTRIA
+
+134 = "Viénni"
+
+#BELGIUM
+
+92 = "Vryxélles"
+1744 = "Amvérsa"
+90 = "Bryz"
+93 = "Liégi"
+1865 = "Ghándhi"
+
+#BULGARIA
+
+1764 = "Pýrgos"
+2750 = "Filippúpoli"
+
+#CROATIA
+
+137 = "Ragúsa"
+136 = "Aspálathos"
+131 = "Ágrano"
+
+#CZECHIA
+
+266 = "Prága"
+
+#DENMARK
+
+12 = "Kopenkhági"
+14 = "Fionía"
+
+#FRANCE
+
+102 = "Níkaia"
+172 = "Nándi"
+183 = "Parísioi"
+89 = "Pikardía"
+186 = "Réímoi"
+75 = "Strasvúrgo"
+196 = "Tulúzi"
+
+#GERMANY
+
+1878 = "Akyísgrano"
+1868 = "Avgústa"
+50 = "Verolíno"
+1874 = "Vrémi"
+85 = "Kolonía"
+61 = "Drésdi"
+63 = "Erfúrti"
+1876 = "Frankfúrti"
+44 = "Amvúrgo"
+52 = "Magdevúrgo"
+78 = "Magendía"
+65 = "Mónakho"
+67 = "Nyremvérgi"
+2957 = "Ratisvóni"
+70 = "Stutgárdhi"
+82 = "Vestfalía"
+1761 = "Vormatía"
+
+#IRELAND
+
+373 = "Duvlíno"
+
+#ITALY
+
+119 = "Ankóna"
+118 = "Romi"
+116 = "Florendía"
+101 = "Génova"
+104 = "Miláno"
+121 = "Neápoli"
+4729 = "Pádova"
+125 = "Pánormos"
+115 = "Píza"
+103 = "Turíno"
+112 = "Venetía"
+4738 = "Tergésti"
+
+#NETHERLAND
+
+4383 = "Khági"
+96 = "Zilandhía"
+98 = "Utrékhti"
+
+#POLAND
+
+
+
+#PORTUGAL
+
+
+
+#RUSSIA
+
+
+
+#SERB
+
+
+
+#SPAIN
+
+
+
+#SWEDEN
+
+
+
+#SWITZERLAND
+
+
+
+
+#UKRAINE
+
+
+
+
+#UK
+
+236 = "Londhíno"
+248 = "Edimvúrgo"
+237 = "Oxfórdi"
+
+#USA
+
+968 = "Vostóni"
+96 = "Néa Yórki"

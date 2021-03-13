@@ -1,0 +1,90 @@
+estate_industrialist = {
+	icon = 13
+
+	# If true, country will get estate
+	trigger = {
+	
+		has_institution = industrialization
+		adm_tech = 32
+		
+		is_revolutionary = no
+		
+		NOT = {
+			has_reform = socialist_mechanic
+		}
+	}
+
+	country_modifier_happy = {
+		trade_efficiency = 0.1
+		global_trade_power = 0.1
+	}
+	country_modifier_neutral = {
+		trade_efficiency = 0.05
+	}	
+	country_modifier_angry = {
+		trade_efficiency = -0.1
+		global_trade_power = -0.1
+	}
+	land_ownership_modifier = {
+		#nobles_loyalty_modifier = 0.2
+	}
+
+	province_independence_weight = {
+		factor = 0
+	}
+
+	# Influence modifiers
+	base_influence = 35
+	
+	influence_modifier = {
+		desc = EST_IND_EGAL
+		trigger = {
+			has_reform = bgm_egalite_reform
+		}	
+		influence = -15
+	}
+	
+	influence_modifier = {
+		desc = EST_IND_LIBERTY
+		trigger = {
+			has_reform = pro_enlightenment_reform
+		}	
+		influence = 10
+	}
+	
+	influence_modifier = {
+		desc = EST_IND_FRATERNITE
+		trigger = {
+			has_reform = anti_enlightenment_reform
+		}	
+		influence = 5
+	}
+	
+	# Influence modifiers from Events:
+	influence_modifier = {
+		desc = EST_PROLE_DEMANDS_MET
+		trigger = {
+			has_country_modifier = social_welfare_program
+		}
+		influence = -10
+	}
+	
+	#LOYALTY MODIFIERS
+	loyalty_modifier = {
+		desc = EST_IND_EGAL
+		trigger = {
+			has_reform = bgm_egalite_reform
+		}
+		loyalty = -5
+	}
+	color = { 25 100 25 }
+	
+	privileges = {
+		#TO_DO
+	}
+
+	agendas = {
+	}
+	
+	influence_from_dev_modifier = 1.0
+}

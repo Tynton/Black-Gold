@@ -1,0 +1,110 @@
+namespace = red_planet
+
+
+	#SOCIALIST ENDGAME
+
+	country_event = {
+		id = red_planet.1
+		title = "red_planet.t.1"
+		desc = "red_planet.d.1"
+		picture = EARTH_eventPicture
+		
+		fire_only_once = yes
+		
+		major = yes
+
+		trigger = {
+			adm_tech = 43
+			dip_tech = 43
+			mil_tech = 43
+			
+			has_reform = socialist_mechanic
+			
+			is_hegemon = yes 
+			
+			total_development = 13000
+			
+			all_country = {
+				NOT = {
+					is_rival = ROOT
+				}
+			}
+		}	
+
+		mean_time_to_happen = {
+			days = 1
+		}
+	
+		option = {
+			name = "red_planet.1.a"
+			add_country_modifier = {
+				name = "red_planet_modifier"
+				duration = -1
+			}
+			
+			add_prestige = 200
+			add_stability = 6
+			
+			every_country = {
+				limit = {
+					NOT = { is_subject_of = ROOT }
+					NOT = { tag = ROOT }
+				}
+				country_event = { 
+					id = red_planet.2
+				}
+			}
+			
+			every_subject_country = {
+				add_opinion = {
+					who = ROOT
+					modifier = red_planet_overlord
+				}
+			}
+		}
+	}
+	
+	country_event = {
+		id = red_planet.2
+		title = "red_planet.t.2"
+		desc = "red_planet.d.2"
+		picture = EARTH_eventPicture
+		
+		#major = yes
+
+		is_triggered_only = yes
+	
+		option = {
+			name = "red_planet.2.a"
+			
+			add_prestige = -200
+			
+			add_stability = -2
+		}
+	}
+	
+	#province_event = {
+	#	id = red_planet.3
+	#	title = "red_planet.t.3"
+	#	desc = "red_planet.d.3"
+	#	picture = EARTH_eventPicture
+	#	
+	#	hidden = yes
+	#
+	#	trigger = {
+	#		owner = {
+	#			has_country_modifier = red_planet_modifier
+	#		}
+	#		has_owner_religion = yes 
+	#		has_owner_culture = no
+	#	}
+	#
+	#	option = {
+	#		name = "red_planet.3.a"
+	#		
+	#		add_culture_construction = {
+	#			speed = 0.1
+	#			cost = 0.0
+	#		}
+	#	}
+	#}

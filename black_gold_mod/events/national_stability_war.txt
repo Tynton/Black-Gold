@@ -1,0 +1,91 @@
+namespace = national_stability_war
+
+
+#collapse initial
+
+country_event = {
+	id = national_stability_war.1
+	title = "national_stability_war.n.1"
+	desc = "national_stability_war.d.1"
+	picture = BUREAU_eventPicture
+	
+	major = yes
+	
+	trigger = {
+		has_institution = nationalism_institution
+		
+		is_at_war = yes
+		
+		OR = {
+			total_development = 800
+			num_of_cities = 35
+		}
+		
+		NOT = {
+			has_country_modifier = national_collapse
+		}
+		
+		OR = {
+			revolt_percentage = 0.25
+			overextension_percentage = 0.5
+			NOT = {
+				manpower_percentage = 0.25
+			}
+		}
+		NOT = {
+			war_score = -50
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	#we cant control the territories
+	
+	option = {
+		name = "national_stability_war.1.a"
+		
+		add_country_modifier = { 
+			name = national_collapse
+			duration = 365
+		}
+		
+		random_owned_province = {
+			create_revolt = 5
+		}
+		
+		random_owned_province = {
+			create_revolt = 5
+		}
+		
+		random_owned_province = {
+			create_revolt = 5
+		}
+		
+		random_owned_province = {
+			create_revolt = 5
+		}
+		
+		random_owned_province = {
+			create_revolt = 5
+		}
+	}
+	
+	#police them anyway
+	
+	option = {
+		name = "national_stability_war.1.b"
+		
+		add_country_modifier = { 
+			name = national_collapse
+			duration = 3650
+		}
+		
+		random_owned_province = {
+			create_revolt = 4
+		}
+		
+		ai_chance = { factor = 1 }
+	}
+}

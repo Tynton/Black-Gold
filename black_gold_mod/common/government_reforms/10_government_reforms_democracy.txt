@@ -1,0 +1,466 @@
+democratic_mechanic = {
+	basic_reform = yes
+	republican_name = yes
+	royal_marriage = no
+	republic = no
+	claim_states = yes
+	start_territory_to_estates = 0
+	basic_reform = yes # = invisible/does not take up a slot
+	valid_for_nation_designer = no
+	custom_attributes = {
+		enables_aristocratic_idea_group = no
+		enables_plutocratic_idea_group = yes
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		militarised_society = yes
+	}
+}
+
+parliamentary_republic_reform = {
+	icon = "parliamentary_republicanism"
+	allow_normal_conversion = yes
+	republican_name = yes
+	republic = yes
+	legacy_equivalent = republican_dictatorship
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	potential = {
+		NOT = {
+			is_subject_of_type = personal_union
+		}
+	}
+	trigger = {
+		NOT = { has_reform = parliamentary_monarchism }
+	}
+	modifiers = {
+		land_forcelimit_modifier = 0.2
+	}
+	duration = 4
+	has_term_election = yes
+}
+
+parliamentary_monarchism = {
+	icon = "parliamentary_monarchism"
+	monarchy = yes
+	queen = yes
+	heir = yes
+	royal_marriage = yes
+	republican_name = no
+	allow_normal_conversion = yes
+	legacy_equivalent = constitutional_monarchy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	trigger = {
+		NOT = { has_reform = parliamentary_republic_reform }
+	}
+	modifiers = {
+		yearly_absolutism = 0.5
+	}
+}
+
+liberal_dictatorship = {
+	icon = "liberal_dictatorship"
+	potential = {
+		absolutism = 80
+	}
+	allow_normal_conversion = yes
+	dictatorship = yes
+	legacy_equivalent = republican_dictatorship
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	trigger = {
+		NOT = { 
+			OR = {
+				has_reform = parliamentary_monarchism
+				has_reform = parliamentary_republic_reform 
+			}
+		}
+	}
+	modifiers = {
+		land_forcelimit_modifier = 0.3
+	}
+}
+
+#####################################democratic_ethics#####################################
+
+democratic_populism = {
+	icon = "fist_in_air"
+	trigger = {
+		NOT = { has_reform = parliamentary_monarchism }
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		global_unrest = -2
+	}
+}
+
+democratic_nationalism = {
+	icon = "feuillant_reform"
+	allow_normal_conversion = yes
+	modifiers = {
+		republican_tradition = 0.25
+		legitimacy = 0.5
+	}
+}
+
+democratic_internationalism = {
+	icon = "map_2"
+	trigger = {
+		
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		global_unrest = -1
+		land_morale = 0.1
+	}
+}
+
+#####################################democratic_foreign_policy#####################################
+
+dem_isolationism_reform = {
+	icon = "peasants"
+	allow_normal_conversion = yes
+	trigger = {
+		NOT = {
+			has_reform = democratic_internationalism
+		}
+	}
+	modifiers = {
+		global_trade_power = 0.1
+		production_efficiency = 0.1
+		stability_cost_to_declare_war = 1
+	}
+}
+
+dem_soi_expansionism_reform = {
+	icon = "map"
+	allow_normal_conversion = yes
+	trigger = {
+		has_reform = democratic_internationalism
+	}
+	modifiers = {
+		land_maintenance_modifier = -0.2
+		global_manpower_modifier = 0.5
+		land_forcelimit_modifier = 0.5
+		ae_impact = 0.2
+	}
+}
+
+dem_protectionism_reform = {
+	icon = "man_and_children"
+	allow_normal_conversion = yes
+	modifiers = {
+		trade_efficiency = 0.2
+		defensiveness = 0.10
+		global_manpower_modifier = 0.1
+		ae_impact = 0.2
+	}
+}
+
+#####################################democratic_head_of_state#####################################
+
+liberal_dictator = {
+	icon = "man_on_podium"
+	potential = {
+		NOT = {
+			OR = {
+				has_reform = parliamentary_monarchism
+				has_reform = parliamentary_republic_reform
+			}
+		}
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		yearly_absolutism = 0.5
+	}
+}
+
+democratic_prime_minister = {
+	icon = "nobleman"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = {
+			has_reform = liberal_dictatorship
+		}
+	}
+	trigger = {
+		NOT = { has_reform = parliamentary_monarchism }
+	}
+	modifiers = {
+		advisor_cost = -0.2
+	}
+}
+
+democratic_minister_monarchy = {
+	icon = "crown"
+	potential = {
+		NOT = {
+			has_reform = liberal_dictatorship
+		}
+	}
+	trigger = {
+		has_reform = parliamentary_monarchism
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		stability_cost_modifier = -0.15
+		advisor_cost = -0.1
+	}
+}
+
+democratic_president = {
+	icon = "ballot_box"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = {
+			has_reform = liberal_dictatorship
+		}
+	}
+	trigger = {
+		NOT = { has_reform = parliamentary_monarchism }
+	}
+	modifiers = {
+		prestige = 1
+		advisor_cost = -0.05
+	}
+}
+
+#####################################deliberative_assembly#####################################
+
+democratic_parliamentarism = {
+	icon = "parliament_hall"
+	has_parliament = yes 
+	allow_normal_conversion = yes
+	modifiers = {
+		max_absolutism = -40
+		global_unrest = -6
+	}
+	
+	factions = {
+		dm_social_conservative
+		dm_social_liberal
+		dm_social_democrat
+		dm_nationalist
+		dm_fascist
+		dm_communist
+		dm_monarchist
+	}
+}
+
+provisional_committee = {
+	icon = "generic_people"
+	potential = {
+		has_reform = liberal_dictatorship
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		same_culture_advisor_cost = -0.25
+		advisor_cost = -0.1
+	}
+}
+
+#####################################democratic_economy#####################################
+
+democratic_socialism = {
+	icon = "paper_with_seal_3"
+	potential = {
+		NOT = {
+			OR = {
+				has_reform = italian_fascism
+				has_reform = fascist_monarchism
+			}
+		}
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		global_tax_modifier = 0.2
+		global_trade_goods_size_modifier = 0.1
+		trade_efficiency = -0.3
+	}
+}
+
+democratic_regulationism = {
+	icon = "paper_with_seal"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_tax_modifier = 0.05
+	}
+}
+
+democratic_capitalism = {
+	icon = "paper_money_map"
+	allow_normal_conversion = yes
+	modifiers = {
+		trade_efficiency = 0.1
+	}
+}
+
+#####################################democratic_administration#####################################
+
+regulative_bureaucracy = {
+	icon = "revolutionary_republic"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_tax_modifier = 0.05
+		inflation_action_cost = -0.1
+	}
+}
+
+dem_small_bureaucracy_reform = {
+	icon = "paper_with_seal"
+	allow_normal_conversion = yes
+	trigger = {
+		NOT = { has_reform = democratic_socialism }
+	}
+	modifiers = {
+		production_efficiency = 0.15
+		trade_efficiency = 0.05
+	}
+}
+
+dem_large_bureaucracy = {
+	icon = "paper_with_seal"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_tax_modifier = -0.15
+		inflation_action_cost = -0.1
+		global_trade_goods_size_modifier = 0.1
+	}
+}
+
+#####################################democratic_electorate#####################################
+
+provisional_electing_council = {
+	icon = "states_general"
+	allow_normal_conversion = yes
+	potential = {
+		has_reform = liberal_dictatorship
+	}
+	modifiers = {
+		yearly_absolutism = 0.5
+	}
+}
+
+ruling_class_electorate = {
+	icon = "people_walking"
+	allow_normal_conversion = yes
+	modifiers = {
+		stability_cost_modifier = 0.1
+		prestige = 0.5
+		same_culture_advisor_cost = -0.25
+	}
+}
+
+egalitarian_electorate = {
+	icon = "equal_electorate_reform"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_unrest = -2
+		years_of_nationalism = -5
+	}
+}
+
+#####################################press_culture#####################################
+
+deregulated_press = {
+	icon = "three_classes_reform"
+	allow_normal_conversion = yes
+	trigger = {
+		NOT = { has_reform = liberal_dictatorship }
+	}
+	modifiers = {
+		global_unrest = -4
+	}
+}
+
+regulated_press_culture = {
+	icon = "states_general"
+	allow_normal_conversion = yes
+	potential = {
+		has_reform = liberal_dictatorship
+	}
+	modifiers = {
+		land_morale = 0.1
+		defensiveness = 0.1
+		naval_morale = 0.1
+	}
+}
+
+#####################################question_of_foreign_cultures#####################################
+
+dem_intolerance_reform = {
+	icon = "mission_to_civilize_reform"
+	potential = {
+		NOT = {
+			has_reform = revolutionary_socialism
+		}
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		culture_conversion_cost = -0.1
+		years_of_nationalism = -5
+	}
+}
+
+dem_liberal_reform = {
+	icon = "man_and_children"
+	allow_normal_conversion = yes
+	modifiers = {
+		num_accepted_cultures = 2
+		ae_impact = -0.1
+	}
+}
+
+#####################################international_reputation#####################################
+
+commercial_nation = {
+	icon = "paper_money_map"
+	allow_normal_conversion = yes
+	trigger = {
+		NOT = { has_reform = democratic_socialism }
+	}
+	modifiers = {
+		improve_relation_modifier = 0.2
+		diplomatic_reputation = 1
+		trade_efficiency = 0.2
+	}
+}
+
+vanguard_of_democracy = {
+	icon = "articles_of_agreement"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_spy_defence = 0.15
+		republican_tradition = 0.25
+	}
+}
+
+diplomatic_isolationism = {
+	icon = "free_city"
+	allow_normal_conversion = yes
+	trigger = {
+		NOT = { has_reform = democratic_internationalism }
+	}
+	modifiers = {
+		global_spy_defence = 0.25
+		fabricate_claims_cost = 10.0
+		#diplomatic_upkeep = -99
+		diplomatic_reputation = -99
+		stability_cost_to_declare_war = 2
+		improve_relation_modifier = 0.5
+	}
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = SWI
+					tag = NED
+					has_reform = dem_isolationism_reform
+				}
+			}
+		}
+	}
+}

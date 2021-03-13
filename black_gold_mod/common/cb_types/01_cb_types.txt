@@ -1,0 +1,44 @@
+
+cb_regime_change = {
+	ai_peace_desire = -50
+	valid_for_subject = no
+	
+	prerequisites = {
+		ROOT = {
+			has_reform = democratic_mechanic
+		}
+		
+		FROM = {
+			NOT = {
+				has_reform = democratic_mechanic
+			}
+		}
+		
+		current_age = age_of_great_wars
+	}
+	
+	attacker_disabled_po = {
+		po_transfer_vassals
+	}
+
+	war_goal = war_goal_regime_change
+}
+
+cb_world_war = {
+	ai_peace_desire = -50
+	valid_for_subject = no
+	
+	prerequisites = {
+		ROOT = {
+			is_great_power = yes 
+		}
+		
+		current_age = age_of_great_wars
+		
+		FROM = {
+			is_great_power = yes
+		}
+	}
+
+	war_goal = superiority_world_war
+}

@@ -1,0 +1,41 @@
+namespace = foreign_intervention
+
+country_event = {
+	id = foreign_intervention.1
+	title = "foreign_intervention.n.1"
+	desc = "foreign_intervention.d.1"
+	picture = BUREAU_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	#to war
+	
+	option = {
+		name = "foreign_intervention.1.a"
+		declare_war = FROM
+		ai_chance = { factor = 15 }
+	}
+	
+	#settle peacefully
+	
+	option = {
+		name = "foreign_intervention.1.b"
+	
+		ai_chance = { factor = 3 }
+	}
+}
+
+#######################END OF WW1#######################
+
+country_event = {
+	id = foreign_intervention.6
+	
+	hidden = yes
+	
+	option = {
+		name = "foreign_intervention.4.a"
+		clr_global_flag = world_war_ongoing
+	}
+}

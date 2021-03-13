@@ -1,0 +1,111 @@
+namespace = nationalism_age_unrest
+
+province_event = {
+	id = nationalism_age_unrest.1
+	title = "nationalism_age_unrest.n.1"
+	desc = "nationalism_age_unrest.d.1"
+	picture = ANGRY_MOB_eventPicture
+	
+	
+	hidden = yes
+
+	trigger = {
+		OR = {
+			is_institution_enabled = nationalism_institution
+			owner = {
+				adm_tech = 33
+			}
+		}
+		#is_overseas = no
+		owner = {
+			NOT = {
+				culture_group = ROOT
+			}
+		}
+		
+		NOT = {
+			owner = {
+				OR = {
+					has_reform = fascist_mechanic
+					has_reform = socialist_mechanic
+					has_reform = futurist_mechanic
+				}
+			}
+		}
+		
+		NOT = {
+			has_province_modifier = nationalism_unrest_bgm
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 64
+		
+		modifier = {
+			factor = 0.001
+			owner = {
+				has_institution = nationalism_institution
+			}
+		}
+	}
+	
+	option = {
+		name = "nationalism_age_unrest.1.a"
+
+		add_province_modifier = {
+			name = nationalism_unrest_bgm
+			duration = -1
+		}
+	}
+}
+
+province_event = {
+	id = nationalism_age_unrest.2
+	title = "nationalism_age_unrest.n.2"
+	desc = "nationalism_age_unrest.d.2"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		OR = {
+			is_institution_enabled = nationalism_institution
+			owner = {
+				adm_tech = 33
+			}
+		}
+		
+		#is_overseas = no
+		OR = {
+			owner = {
+				culture_group = ROOT
+			}
+			owner = {
+				OR = {
+					has_reform = fascist_mechanic
+					has_reform = socialist_mechanic
+					has_reform = futurist_mechanic
+				}
+			}
+		}
+		
+		has_province_modifier = nationalism_unrest_bgm
+	}	
+
+	mean_time_to_happen = {
+		months = 64
+		
+		modifier = {
+			factor = 0.001
+			owner = {
+				has_institution = nationalism_institution
+			}
+		}
+	}
+	
+	option = {
+		name = "nationalism_age_unrest.2.a"
+		
+		remove_province_modifier = nationalism_unrest_bgm
+	}
+}

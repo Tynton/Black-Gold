@@ -1,0 +1,212 @@
+country_decisions = {
+
+	establish_republic = {
+	
+		major = yes
+	
+		potential = {
+			OR = {
+				faction_in_power = dm_social_liberal
+				faction_in_power = at_republicanist
+				faction_in_power = dm_social_democrat
+				faction_in_power = dm_communist
+			}
+			NOT = { government = republic }
+		}
+		allow = {
+			OR = {
+				faction_in_power = dm_social_liberal
+				faction_in_power = at_republicanist
+				faction_in_power = dm_social_democrat
+				faction_in_power = dm_communist
+			}
+			stability = 1
+			is_at_war = no
+		}
+		effect = {
+			add_government_reform = parliamentary_republic_reform
+			
+			add_stability = -3
+		}
+		ai_will_do = {
+			factor = 0
+			
+			modifier = {
+				factor = 1
+				
+				dip = 4
+			}
+		}
+	}
+	
+	#establish_dictatorship = {
+	#
+	#	major = yes
+	#
+	#	potential = {
+	#		OR = {
+	#			faction_in_power = at_dictatorial
+	#			faction_in_power = dm_communist
+	#		}
+	#	}
+	#	allow = {
+	#		OR = {
+	#			faction_in_power = at_dictatorial
+	#			faction_in_power = dm_communist
+	#		}
+	#		stability = 1
+	#	}
+	#	effect = {
+	#		change_government = socialist_government
+	#		add_government_reform = presidential_dictator_reform
+	#		add_government_reform = presidential_reform
+	#		add_stability = -3
+	#	}
+	#	ai_will_do = {
+	#		factor = 0
+	#		
+	#		modifier = {
+	#			factor = 1
+	#			
+	#			absolutism = 60
+	#		}
+	#	}
+	#}
+	
+	establish_monarchy = {
+	
+		major = yes
+	
+		potential = {
+			OR = {
+				faction_in_power = at_monarchist
+				faction_in_power = dm_fascist
+				faction_in_power = dm_nationalist
+				faction_in_power = dm_monarchist
+			}
+			NOT = { government = monarchy }
+		}
+		allow = {
+			OR = {
+				faction_in_power = at_monarchist
+				faction_in_power = dm_fascist
+				faction_in_power = dm_nationalist
+				faction_in_power = dm_monarchist
+			}
+			stability = 1
+			is_at_war = no
+		}
+		effect = {
+			change_government = authoritarian_government
+			add_government_reform = auth_monarchism
+			add_stability = -3
+		}
+		ai_will_do = {
+				factor = 0
+				
+			modifier = {
+				factor = 1
+				
+				absolutism = 65
+				adm = 3
+			}
+		}
+	}
+	
+	establish_communism = {
+	
+		major = yes
+	
+		potential = {
+			OR = {
+				faction_in_power = dm_communist
+				faction_in_power = at_dictatorial
+			}
+			has_global_flag = communist_manifesto_written
+		}
+		allow = {
+			OR = {
+				faction_in_power = dm_communist
+				faction_in_power = at_dictatorial
+			}
+			stability = 1
+		}
+		effect = {
+			change_government = socialist_government
+			add_stability = -3
+		}
+		ai_will_do = {
+			factor = 0
+			
+			modifier = {
+				factor = 1
+				
+				absolutism = 65
+				adm = 3
+			}
+		}	
+	}	
+	establish_fascism = {
+	
+		major = yes
+	
+		potential = {
+			OR = {
+				faction_in_power = dm_fascist
+				faction_in_power = at_dictatorial
+			}
+			current_age = age_of_great_wars
+		}
+		allow = {
+			OR = {
+				faction_in_power = dm_fascist
+				faction_in_power = at_dictatorial
+			}
+			is_at_war = no
+			stability = 1
+		}
+		effect = {
+			change_government = fascist_government
+			add_stability = -3
+		}
+		ai_will_do = {
+			factor = 0
+			
+			modifier = {
+				factor = 1
+				
+				absolutism = 65
+				adm = 3
+			}
+		}
+	}
+	
+	establish_futurism = {
+	
+		major = yes
+	
+		potential = {
+			faction_in_power = dm_nationalist
+			current_age = age_of_great_wars
+		}
+		allow = {
+			faction_in_power = dm_nationalist
+			is_at_war = no
+			stability = 1
+		}
+		effect = {
+			change_government = futurist_government
+			add_stability = -3
+		}
+		ai_will_do = {
+			factor = 0
+			
+			modifier = {
+				factor = 1
+				
+				absolutism = 65
+				adm = 3
+			}
+		}
+	}
+}

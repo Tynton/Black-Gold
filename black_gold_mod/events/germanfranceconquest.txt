@@ -1,0 +1,449 @@
+namespace = germanfranceconquest
+
+province_event = {
+	id = germanfranceconquest.1
+	title = "germanfranceconquest.n.1"
+	desc = "germanfranceconquest.d.1"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {
+			culture = cosmopolitan_french
+			owner = {
+				culture_group = germanic
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		OR = {
+			owner = {
+				ai = no
+				government_rank = 3
+			}
+		}
+		NOT = {
+			OR = {
+				AND = {
+					local_autonomy = 5
+					unrest = 1
+				}
+				has_province_modifier = nationalism_unrest_bgm
+			}
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "germanfranceconquest.1.a"
+		change_culture = franzosisch
+	}
+}
+
+province_event = {
+	id = germanfranceconquest.2
+	title = "germanfranceconquest.n.2"
+	desc = "germanfranceconquest.d.2"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {	
+			culture = normand
+			owner = {
+				culture_group = germanic
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		OR = {
+			owner = {
+				ai = no
+				government_rank = 3
+			}
+		}
+		NOT = {
+			OR = {
+				AND = {
+					local_autonomy = 5
+					unrest = 1
+				}
+				has_province_modifier = nationalism_unrest_bgm
+			}
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "germanfranceconquest.2.a"
+		change_culture = normannisch
+	}
+}
+
+province_event = {
+	id = germanfranceconquest.3
+	title = "germanfranceconquest.n.3"
+	desc = "germanfranceconquest.d.3"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {	
+			culture = wallonian
+			owner = {
+				culture_group = germanic
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		OR = {
+			owner = {
+				ai = no
+				government_rank = 3
+			}
+		}
+		NOT = {
+			OR = {
+				AND = {
+					local_autonomy = 5
+					unrest = 1
+				}
+				has_province_modifier = nationalism_unrest_bgm
+			}
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "germanfranceconquest.3.a"
+		change_culture = wallonisch
+	}
+}
+
+province_event = {
+	id = germanfranceconquest.4
+	title = "germanfranceconquest.n.4"
+	desc = "germanfranceconquest.d.4"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {	
+			culture = burgundian
+			owner = {
+				culture_group = germanic
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		OR = {
+			owner = {
+				ai = no
+				government_rank = 3
+			}
+		}
+		NOT = {
+			OR = {
+				AND = {
+					local_autonomy = 5
+					unrest = 1
+				}
+				has_province_modifier = nationalism_unrest_bgm
+			}
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "germanfranceconquest.4.a"
+		change_culture = burgunder
+	}
+}
+
+province_event = {
+	id = germanfranceconquest.5
+	title = "germanfranceconquest.n.5"
+	desc = "germanfranceconquest.d.5"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {	
+			culture = breton
+			owner = {
+				culture_group = germanic
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		OR = {
+			owner = {
+				ai = no
+				government_rank = 3
+			}
+		}
+		NOT = {
+			OR = {
+				AND = {
+					local_autonomy = 5
+					unrest = 1
+				}
+				has_province_modifier = nationalism_unrest_bgm
+			}
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "germanfranceconquest.5.a"
+		change_culture = bretonisch
+	}
+}
+
+province_event = {
+	id = germanfranceconquest.6
+	title = "germanfranceconquest.n.6"
+	desc = "germanfranceconquest.d.6"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {	
+			culture = gascon
+			owner = {
+				culture_group = germanic
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		OR = {
+			owner = {
+				ai = no
+				government_rank = 3
+			}
+		}
+		NOT = {
+			OR = {
+				AND = {
+					local_autonomy = 5
+					unrest = 1
+				}
+				has_province_modifier = nationalism_unrest_bgm
+			}
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "germanfranceconquest.6.a"
+		change_culture = gasconisch
+	}
+}
+
+province_event = {
+	id = germanfranceconquest.7
+	title = "germanfranceconquest.n.7"
+	desc = "germanfranceconquest.d.7"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {	
+			culture = occitain
+			owner = {
+				culture_group = germanic
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		OR = {
+			owner = {
+				ai = no
+				government_rank = 3
+			}
+		}
+		NOT = {
+			OR = {
+				AND = {
+					local_autonomy = 5
+					unrest = 1
+				}
+				has_province_modifier = nationalism_unrest_bgm
+			}
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "germanfranceconquest.7.a"
+		change_culture = okzitanisch
+	}
+}
+
+province_event = {
+	id = germanfranceconquest.8
+	title = "germanfranceconquest.n.8"
+	desc = "germanfranceconquest.d.8"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {	
+			culture = arpitan
+			owner = {
+				culture_group = germanic
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		OR = {
+			owner = {
+				ai = no
+				government_rank = 3
+			}
+		}
+		NOT = {
+			OR = {
+				AND = {
+					local_autonomy = 5
+					unrest = 1
+				}
+				has_province_modifier = nationalism_unrest_bgm
+			}
+		}
+		owner = {
+			OR = {
+				stability = 1
+				prestige = 50
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "germanfranceconquest.8.a"
+		change_culture = romandisch
+	}
+}
+
+country_event = {
+	id = germanfranceconquest.9
+	title = "germanfranceconquest.n.9"
+	desc = "germanfranceconquest.d.9"
+	picture = HRE_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+	
+	trigger = {
+		government_rank = 3
+		
+		culture_group = germanic
+		
+		development_in_provinces = {
+			value = 250
+			region = france_region
+		}
+		
+	}	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "germanfranceconquest.9.a"
+		
+		change_primary_culture = germano_french
+		
+		every_owned_province = {
+			limit = {
+				culture = ROOT
+			}
+			change_culture = germano_french
+		}
+		
+		france_region = {
+			add_permanent_claim = ROOT
+		}
+		
+		add_accepted_culture = cosmopolitan_french
+		add_accepted_culture = gascon
+		add_accepted_culture = normand
+		add_accepted_culture = aquitaine
+		add_accepted_culture = burgundian
+		add_accepted_culture = occitain
+		add_accepted_culture = wallonian
+		add_accepted_culture = breton
+	}
+	
+	option = {
+		name = "germanfranceconquest.9.b"
+	}
+}

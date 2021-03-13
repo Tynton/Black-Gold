@@ -1,0 +1,188 @@
+atheist_group = {
+	flag_emblem_index_range = { 110 110 }
+	atheism = {
+		icon = 31
+		color = { 15 15 15 }
+		province = {
+			local_missionary_strength = 0.0
+		}
+		country = {
+			max_absolutism = 15
+		}
+		country_as_secondary = {
+			global_unrest = 2
+		}
+		
+		heretic = { SECULAR AGNOSTIC }
+		
+		crusade_name = HOLY_WAR
+	}
+	
+	secular = {
+		icon = 32
+		color = { 125 125 125 }
+		province = {
+			local_missionary_strength = 0.0
+		}
+		country = {
+			tolerance_heretic = 4
+			tolerance_heathen = 6 
+			legitimacy = 0.25
+			republican_tradition = 0.125
+			global_missionary_strength = -100.0
+			idea_cost = -0.1
+			global_tax_modifier = 0.05
+			development_cost = -0.075
+		}
+		country_as_secondary = {
+			global_unrest = 0
+		}
+		
+		heretic = { SECULAR AGNOSTIC }
+		
+		crusade_name = HOLY_WAR
+	}
+}
+
+
+revolutionary_group = {
+	flag_emblem_index_range = { 1 2 }
+	flag_emblem_index_range = { 110 110 }
+	cult_of_reason = {
+		icon = 30
+		color = { 133 23 23 }
+		province = {
+			local_missionary_strength = 0.0
+		}
+		country = {
+			technology_cost = -0.1
+			global_missionary_strength = 0.03 
+		}
+		country_as_secondary = {
+			technology_cost = -0.1 
+		}
+		
+		heretic = { SECULAR AGNOSTIC }
+		
+		crusade_name = HOLY_WAR
+	}
+	
+	cult_of_the_supreme_being = {
+		icon = 29
+		color = { 23 133 23 }
+		province = {
+			local_missionary_strength = 0.0
+		}
+		country = {
+			global_unrest = -2
+			global_missionary_strength = 0.03
+		}
+		country_as_secondary = {
+			technology_cost = -0.1
+			global_missionary_strength = 0.03
+		}
+		
+		heretic = { SECULAR AGNOSTIC }
+		
+		crusade_name = HOLY_WAR
+	}
+}
+
+fictitious_futurismus = {
+	autoritat_futurismus = {
+		icon = 33
+		color = { 255 255 255 }
+		province = {
+			local_missionary_strength = 0.0
+		}
+		country = {
+			technology_cost = -0.15
+			idea_cost = -0.3
+		}
+		country_as_secondary = {
+			technology_cost = -0.1 
+		}
+		
+		heretic = { SECULAR AGNOSTIC }
+		
+		crusade_name = HOLY_WAR
+	}
+	
+	wegbarische_futurismus = {
+		icon = 33
+		color = { 95 30 15 }
+		province = {
+			local_missionary_strength = 0.0
+		}
+		country = {
+			technology_cost = -0.1
+			global_missionary_strength = 0.03 
+		}
+		country_as_secondary = {
+			technology_cost = -0.1 
+		}
+		
+		heretic = { SECULAR AGNOSTIC }
+		
+		crusade_name = HOLY_WAR
+	}
+}
+
+futurist_group = {
+	flag_emblem_index_range = { 110 110 }
+	futurism = {
+		icon = 33
+		color = { 255 220 50 }
+		province = {
+			local_missionary_strength = 0.0
+		}
+		country = {
+			innovativeness_gain = 3.0
+			technology_cost = -0.1
+		}
+		country_as_secondary = {
+			global_unrest = 2
+		}
+		
+		heretic = { SECULAR AGNOSTIC }
+		
+		crusade_name = HOLY_WAR
+	}
+	
+	machine_worship = {
+		icon = 34
+		color = { 75 0 0 }
+		province = {
+			local_missionary_strength = 0.0
+		}
+		country = {
+			technology_cost = -0.4
+		}
+		country_as_secondary = {
+			global_unrest = 0
+		}
+		
+		heretic = { SECULAR AGNOSTIC }
+		
+		crusade_name = HOLY_WAR
+	}
+	
+	transhumanism = {
+		icon = 35
+		color = { 175 225 255 }
+		province = {
+			local_missionary_strength = 0.0
+		}
+		country = {
+			monarch_lifespan = 2.0
+			prestige = 0.5
+		}
+		country_as_secondary = {
+			global_unrest = 0
+		}
+		
+		heretic = { SECULAR AGNOSTIC }
+		
+		crusade_name = HOLY_WAR
+	}
+}

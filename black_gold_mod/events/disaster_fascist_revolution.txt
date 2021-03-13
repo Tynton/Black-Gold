@@ -1,0 +1,209 @@
+namespace = fascist_revolution
+
+# Revolution
+country_event = {
+	id = fascist_revolution.1
+	title = "fascist_revolution.1.t"
+	desc = "fascist_revolution.1.d"
+	picture = FASC_REV_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+
+	immediate = {
+		random_owned_province = { 
+			limit = {
+				development = 8
+			}
+			spawn_rebels = {
+				type = fascist_rebels
+				size = 3		
+				win = yes
+				unrest = 10
+			}
+			
+		}
+		add_stability = -4
+		
+		set_country_flag = had_fascist_revolution
+	}
+	
+	option = {
+		name = "fascist_revolution.1.a"			# Dire times are ahead of us
+		add_prestige = -10
+	}
+	
+	option = {
+		name = "fascist_revolution.1.b"			# Dire times are ahead of us
+		add_prestige = -50
+		
+		change_government = fascist_government
+		
+		
+		end_disaster = fascist_revolution
+		
+		disband_rebels = socialist_rebels
+		disband_rebels = fascist_rebels
+		disband_rebels = revolutionary_rebels
+		
+		add_stability = 3
+	}
+}
+
+# Industry leaders
+country_event = {
+	id = fascist_revolution.3
+	title = "fascist_revolution.3.t"
+	desc = "fascist_revolution.3.d"
+	picture = FASC_REV_eventPicture
+	
+	trigger = {
+		NOT = { has_country_modifier = restrict_industry_leaders }
+	}
+	
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	#immediate = {
+	#	set_country_flag = industry_leaders
+	#}
+	
+	option = {
+		name = "fascist_revolution.3.a"			# Restrict industry_leaders
+		ai_chance = { factor = 30 }
+		if = {
+			limit = {
+				has_disaster = fascist_revolution
+			}
+			add_country_modifier = {
+				name = "restrict_industry_leaders"
+				duration = -1
+				desc = "END_OF_REVOLUTION"
+			}
+		}
+	}
+	option = {
+		name = "fascist_revolution.3.b"			# do so with force
+		ai_chance = { factor = 70 }
+		random_owned_province = { fascist_rebels = 1 }
+		add_stability_or_adm_power = yes
+		if = {
+			limit = {
+				has_disaster = fascist_revolution
+			}
+			add_country_modifier = {
+				name = "industry_leader_support"
+				duration = -1
+				desc = "END_OF_REVOLUTION"
+			}
+		}
+	}
+}
+
+#####Revolution Events######
+
+country_event = {
+	id = fascist_revolution.10
+	title = "fascist_revolution.10.t"
+	desc = "fascist_revolution.10.d"
+	picture = FASC_REV_eventPicture
+	
+	major = yes
+	
+	trigger = {
+		capital_scope = {
+			controlled_by = REB
+		} 
+		num_of_cities = 10
+		NOT = { 
+			OR = {
+				has_reform = fascist_government_reform
+				has_reform = revolutionary_fascism
+				has_reform = national_socialism
+				has_reform = strasserist_fascism
+				has_reform = futurism
+				has_reform = italian_fascism
+			}
+		}
+		OR = {
+			has_disaster = fascist_revolution
+			has_dlc = "Art of War"
+		}
+	}
+	
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "fascist_revolution.10.a"
+		disband_rebels = fascist_rebels
+		add_mercantilism = 5
+		#country_event = { id = fascist_revolution.20 }
+		add_stability_or_adm_power = yes
+		
+		change_government = fascist_government
+		
+		
+		end_disaster = fascist_revolution
+		
+		disband_rebels = socialist_rebels
+		disband_rebels = fascist_rebels
+		disband_rebels = revolutionary_rebels
+		
+		add_stability = 4
+		add_years_of_income = 2.0
+		add_adm_power = 100
+	}
+}
+
+country_event = {
+	id = fascist_revolution.15
+	title = fascist_revolution.15.t
+	desc = fascist_revolution.15.d
+	picture = FASC_REV_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = fascist_revolution.15.a
+		
+	}
+}
+
+country_event = {
+	id = fascist_revolution.20
+	title = fascist_revolution.20.t
+	desc = fascist_revolution.20.d
+	picture = FASC_REV_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = fascist_revolution.20.a
+		end_disaster = fascist_revolution
+
+
+		clr_country_flag = restrict_industry_leaders
+		remove_country_modifier = restrict_industry_leaders
+		remove_country_modifier = industry_leader_support
+		
+		disband_rebels = socialist_rebels
+		disband_rebels = fascist_rebels
+		disband_rebels = revolutionary_rebels
+		
+		add_stability = 4
+		add_years_of_income = 2.0
+		add_adm_power = 100
+	}
+}
+

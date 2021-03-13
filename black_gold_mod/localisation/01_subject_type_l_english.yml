@@ -1,0 +1,51 @@
+﻿l_english:
+ dominion_title:0 "Dominion"
+ dominion_title_plural:0 "Dominions"
+ dominion_long_desc:0 "Dominions are former colonies that have signed agreements to their overlord which will slowly guarantee their sovereignty."
+ dominion_is_our:0 "$NAME|Y$ is our Dominion."
+ 
+ german_confederation_member_title:0 "Member of the German Confederation"
+ german_confederation_member_title_plural:0 "Members of the German Confederation"
+ german_confederation_member_long_desc:0 "German Confederation Members are duchies, kingdoms and republics who have survived the onslaughts leading to the demise of the Holy Roman Empire (at least in real history). Following the end of the Holy Roman Empire, the German States agreed to the founding of a German Confederation. Eventually this is guaranteed to unite in some form or another."
+ german_confederation_member_is_our:0 "$NAME|Y$ is a member of the German Confederation."
+ german_confederation_member_overlord_title:0 "Leader of the German Confederation"
+ 
+ german_empire_member_title:0 "Member of the German Empire"
+ german_empire_member_title_plural:0 "Members of the German Empire"
+ german_empire_member_long_desc:0 "German Empire Members are duchies, kingdoms and republics who have survived the onslaughts leading to the demise of the Holy Roman Empire (at least in real history). Following the end of the Holy Roman Empire, the German States agreed to the founding of a German Empire. Eventually this is guaranteed to unite in some form or another."
+ german_empire_member_is_our:0 "$NAME|Y$ is a member of the German Empire."
+ german_empire_member_overlord_title:0 "Leader of the German Empire"
+ 
+ italic_league_member_title:0 "Member of the Italic League"
+ italic_league_member_title_plural:0 "Members of the Italic League"
+ italic_league_member_long_desc:0 "Italic League Members are Italian nations who have agreed to a political pact in the defense of the Italian region from foreign invasion - most notably from France. Although it has failed in reality to unite the Italian people, it could have done so had some reforms taken place."
+ italic_league_is_our:0 "$NAME|Y$ is a member of the Italic League."
+ italic_league_overlord_title:0 "Leader of the Italic League"
+ 
+ italic_league_member_overlord_title:0 "Italic League Leader"
+ german_confederation_member_overlord_title:0 "German Confederation Leader"
+ german_empire_member_overlord_title:0 "German Emperor"
+ 
+ old_world_colony_title:0 "Old-World Colony"
+ old_world_colony_title_plural:0 "Old-World Colonies"
+ old_world_colony_long_desc:0 "Dominions are former colonies that have signed agreements to their overlord which will slowly guarantee their sovereignty."
+ old_world_colony_is_our:0 "$NAME|Y$ is our Colony."
+ 
+ 
+ subject_only_fight_same_overlord:0 "As a $MYSUBJECTTYPE$, we may only fight $THEIRSUBJECTTYPES$ under the same overlord"
+ subject_only_fight_other_overlord:0 "As a $MYSUBJECTTYPE$, we may only fight $THEIRSUBJECTTYPES$ under a different overlord"
+ subject_only_rival_same_overlord:0 "As a $MYSUBJECTTYPE$, we may only rival $THEIRSUBJECTTYPES$ under the same overlord"
+ subject_only_rival_other_overlord:0 "As a $MYSUBJECTTYPE$, we may only rival $THEIRSUBJECTTYPES$ under a different overlord"
+ subject_only_ally_same_overlord:0 "As a $MYSUBJECTTYPE$, we may only ally $THEIRSUBJECTTYPES$ under the same overlord"
+ subject_only_ally_other_overlord:0 "As a $MYSUBJECTTYPE$, we may only ally $THEIRSUBJECTTYPES$ under a different overlord"
+ subject_only_marry_same_overlord:0 "As a $MYSUBJECTTYPE$, we may only marry $THEIRSUBJECTTYPES$ under the same overlord"
+ subject_only_marry_other_overlord:0 "As a $MYSUBJECTTYPE$, we may only marry $THEIRSUBJECTTYPES$ under a different overlord"
+ personal_union_no_overlord_dow:0 "You cannot declare war on a country with which you have a Union."
+ colony_no_overlord_dow:0 "You can't declare war on your colonies."
+ protectorate_no_overlord_dow:0 "You can't declare war on your protectorates."
+ relation_fight:0 "declare war on"
+ relation_rival:0 "rival"
+ relation_ally:0 "ally"
+ relation_marry:0 "have a Royal Marriage with"
+ THEIR_SUBJECT_TYPE_NO_ALLOW:0 "They are a $SUBJECTTYPE$."
+ 

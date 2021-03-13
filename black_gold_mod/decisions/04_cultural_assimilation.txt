@@ -1,0 +1,55 @@
+country_decisions = {
+
+	fund_cultural_assimilation = {
+		potential = {
+			NOT = { has_country_modifier = funding_cultural_assimilation }
+			OR = {
+				adm_tech = 17
+				adm = 6
+			}
+			ai = no
+		}
+		allow = {
+			OR = {
+				NOT = { has_reform = democratic_reform }
+				NOT = { has_country_modifier = funding_cultural_assimilation }
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "funding_cultural_assimilation"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			
+			modifier = {
+				factor = 1
+				years_of_income = 1.0
+			}
+		}
+	}
+	stop_funding_cultural_assimilation = {
+		potential = {
+			has_country_modifier = funding_cultural_assimilation
+		}
+		
+		allow = {
+			has_country_modifier = funding_cultural_assimilation
+		}
+		
+		effect = {
+			remove_country_modifier = funding_cultural_assimilation
+		}
+		
+		ai_will_do = {
+			factor = 0
+			
+			modifier = {
+				factor = 1
+				num_of_loans = 2
+			}
+		}
+	}
+}

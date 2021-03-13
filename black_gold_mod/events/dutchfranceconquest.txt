@@ -1,0 +1,361 @@
+namespace = dutchfranceconquest
+
+province_event = {
+	id = dutchfranceconquest.1
+	title = "dutchfranceconquest.n.1"
+	desc = "dutchfranceconquest.d.1"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = cosmopolitan_french
+			owner = {
+				culture_group = benelux
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 50
+			}
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+		
+		modifier = {
+			factor = 0.5
+			
+			any_neighbor_province = { 
+				culture_group = benelux
+			} 
+		}
+	}
+	
+	option = {
+		name = "dutchfranceconquest.1.a"
+		change_culture = frans
+	}
+}
+
+province_event = {
+	id = dutchfranceconquest.2
+	title = "dutchfranceconquest.n.2"
+	desc = "dutchfranceconquest.d.2"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {	
+			culture = normand
+			owner = {
+				culture_group = benelux
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 50
+			}
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+		
+		modifier = {
+			factor = 0.5
+			
+			any_neighbor_province = { 
+				culture_group = benelux
+			} 
+		}
+	}
+	
+	option = {
+		name = "dutchfranceconquest.2.a"
+		change_culture = normandier
+	}
+}
+
+province_event = {
+	id = dutchfranceconquest.3
+	title = "dutchfranceconquest.n.3"
+	desc = "dutchfranceconquest.d.3"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {	
+			culture = wallonian
+			owner = {
+				culture_group = benelux
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 50
+			}
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+		
+		modifier = {
+			factor = 0.5
+			
+			any_neighbor_province = { 
+				culture_group = benelux
+			} 
+		}
+	}
+	
+	option = {
+		name = "dutchfranceconquest.3.a"
+		change_culture = waals
+	}
+}
+
+province_event = {
+	id = dutchfranceconquest.4
+	title = "dutchfranceconquest.n.4"
+	desc = "dutchfranceconquest.d.4"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {	
+			culture = burgundian
+			owner = {
+				culture_group = benelux
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 50
+			}
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+		
+		modifier = {
+			factor = 0.5
+			
+			any_neighbor_province = { 
+				culture_group = benelux
+			} 
+		}
+	}
+	
+	option = {
+		name = "dutchfranceconquest.4.a"
+		change_culture = bourgondisch
+	}
+}
+
+province_event = {
+	id = dutchfranceconquest.5
+	title = "dutchfranceconquest.n.5"
+	desc = "dutchfranceconquest.d.5"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {	
+			culture = breton
+			owner = {
+				culture_group = benelux
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 50
+			}
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+		
+		modifier = {
+			factor = 0.5
+			
+			any_neighbor_province = { 
+				culture_group = benelux
+			} 
+		}
+	}
+	
+	option = {
+		name = "dutchfranceconquest.5.a"
+		change_culture = dutchbreton
+	}
+}
+
+province_event = {
+	id = dutchfranceconquest.6
+	title = "dutchfranceconquest.n.6"
+	desc = "dutchfranceconquest.d.6"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {	
+			culture = gascon
+			owner = {
+				culture_group = benelux
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 50
+			}
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+		
+		modifier = {
+			factor = 0.5
+			
+			any_neighbor_province = { 
+				culture_group = benelux
+			} 
+		}
+	}
+	
+	option = {
+		name = "dutchfranceconquest.6.a"
+		change_culture = gasconjer
+	}
+}
+
+province_event = {
+	id = dutchfranceconquest.7
+	title = "dutchfranceconquest.n.7"
+	desc = "dutchfranceconquest.d.7"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {	
+			culture = occitain
+			owner = {
+				culture_group = benelux
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 50
+			}
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+		
+		modifier = {
+			factor = 0.5
+			
+			any_neighbor_province = { 
+				culture_group = benelux
+			} 
+		}
+	}
+	
+	option = {
+		name = "dutchfranceconquest.7.a"
+		change_culture = occitaans
+	}
+}
+
+province_event = {
+	id = dutchfranceconquest.8
+	title = "dutchfranceconquest.n.8"
+	desc = "dutchfranceconquest.d.8"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {	
+			culture = arpitan
+			owner = {
+				culture_group = benelux
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		NOT = {
+			local_autonomy = 5
+			unrest = 1
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 50
+			}
+		}
+		has_owner_accepted_culture = no
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+		
+		modifier = {
+			factor = 0.5
+			
+			any_neighbor_province = { 
+				culture_group = benelux
+			} 
+		}
+	}
+	
+	option = {
+		name = "dutchfranceconquest.8.a"
+		change_culture = francoprovencaals
+	}
+}

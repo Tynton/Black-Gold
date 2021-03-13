@@ -1,0 +1,1630 @@
+﻿l_english:
+ americanindependence.n.1:0 "Hypocritical Overlord's Economic Policies"
+ americanindependence.d.1:0 "Our colonial overlord has enacted policies that enrich themselves at our expense. A new idea of independence is becoming popular among our population."
+ americanindependence.1.a:0 "That sounds interesting!"
+ americanindependence.n.2:0 "High Tariffs on Us"
+ americanindependence.d.2:0 "Our colonial overlord has placed unfairly high tariffs on us. They have not bothered to aid in our economic situation either, which further fuels the flames of American Independence."
+ americanindependence.2.a:0 "A revolution may be the only viable option for us."
+ americanindependence.n.3:0 "Intolerable Acts!"
+ americanindependence.d.3:0 "Our colonial overlord has now enacted punitive acts, known as the Intolerable Acts, to punish citizens of our nation for infringing on the sovereignty of our overlord. This does not bode well for our government or citizens."
+ americanindependence.3.a:0 "It sounds like we need to become our own overlords, then. A young America it must be!"
+ americanindependence.n.4:0 "The American Nation"
+ americanindependence.d.4:0 "-AWAITING LOCALIZATION-"
+ americanindependence.n.5:0 "The American Revolution!"
+ americanindependence.d.5:0 "-AWAITING LOCALIZATION-"
+
+ britainunity.n.1:0 "England Declares its Independence!"
+ britainunity.1.a:0 "Destroy them!"
+ britainunity.1.b:0 "Seek an amicable conclusion."
+ britainunity.n.2:0 "English Nationalism"
+ britainunity.n.4:0 "Scotland Declares its Independence!"
+ britainunity.d.4:0 "-AWAITING LOCALIZATION-"
+ britainunity.4.a:0 "Destroy them!"
+ britainunity.4.b:0 "Seek an amicable conclusion."
+ 
+ britainunity.n.5:0 "The Scottish Nation"
+ britainunity.d.5:0 "-AWAITING LOCALIZATION-"
+ britainunity.5.a:0 "Okay."
+ 
+ germanyunity.n.1:0 "Germany Declares Independence!"
+ germanyunity.d.1:0 "Germany Declares Independence!"
+ germanyunity.1.a:0 "Destroy them!"
+ germanyunity.1.b:0 "We should consider an amicable process."
+ germanyunity.n.2:0 "The German Nation"
+ germanyunity.d.2:0 "For some time now Germany had been united under the Holy Roman Empire. Seeing as that it is largely decentralized, it would not logically suit the needs of a united Germany. A concept, unique from the Empire has emerged: Deutschland."
+ germanyunity.2.a:0 "The balance of power in Europe will soon be disturbed."
+ germanyunity.n.3:0 "German Province Revolt!"
+ germanyunity.d.3:0 "German Province Revolt"
+ germanyunity.3.a:0 "Crush them!"
+ germanyunity.3.b:0 "Leave them to their own devices."
+ germanyunity.n.4:0 "Referendum to Join Germany"
+ germanyunity.d.4:0 "Calls of unity have been given ever since the proclamation of a united German nation. The population is demanding a referendum be held."
+ germanyunity.4.a:0 "Our fate is with our brethren!"
+ germanyunity.n.5:0 "The Formation of Germany"
+ germanyunity.d.5:0 "Answering to demands for a united Germany, a new regime is now present with the ambition to unite the German-speaking realms present on the European continent. It is very likely other smaller German nations will unite under its wing."
+ germanyunity.5.a:0 "We are on the path to greatness!"
+ germanyunity.n.6:0 "The Question of Austrian Swabia"
+ germanyunity.d.6:0 "Answering to demands for a united Germany, a new regime is now present with the ambition to unite the German-speaking realms present on the European continent. Swabia has been considered a domain within the newfound German State."
+ germanyunity.6.a:0 "Allow them to take it."
+ 
+ germanyunity.n.7:0 "The Annexation of Austria"
+ germanyunity.d.7:0 "Answering to demands for a united Germany, a new regime is now present with the ambition to unite the German-speaking realms present on the European continent. Austria has been considered a domain within German statehood."
+ germanyunity.7.a:0 "Our destiny is with the other Germans."
+ germanyunity.7.b:0 "Austria stands united on its own!"
+ 
+ REVOLUTIONARY_UNITY.n.1:0 "The German Ambition"
+ REVOLUTIONARY_UNITY.d.1:0 "Revolutionaries in $COUNTRY$ have sought the creation of a liberal German nation. It is quite truly ambitious, as it seems fellow revolutionaries may need to be convinced to join our nation's cause, and those that are not liberal, they must be brought into the fold by force."
+ REVOLUTIONARY_UNITY.1.a:0 "We can attain greatness, the likes of which have yet to be seen!"
+ 
+ REVOLUTIONARY_UNITY.n.2:0 "Revolutionary Movements Embrace German Nation"
+ REVOLUTIONARY_UNITY.d.2:0 "Revolutionaries in $COUNTRY$ have sought the creation of a liberal German nation. A potential heartland for our new nation has been decided and the nationalist majority have decided our government must embrace a united Germany."
+ REVOLUTIONARY_UNITY.2.a:0 "A true fortress of liberalism will be built today."
+ 
+ 
+ REVOLUTIONARY_UNITY.n.4:0 "The Italian Ambition"
+ REVOLUTIONARY_UNITY.d.4:0 "Revolutionaries in $COUNTRY$ have sought the creation of a liberal Italian nation. It is quite truly ambitious, as it seems fellow revolutionaries may need to be convinced to join our nation's cause, and those that are not liberal, they must be brought into the fold by force."
+ REVOLUTIONARY_UNITY.4.a:0 "We can attain greatness, the likes of which have yet to be seen!"
+ 
+ REVOLUTIONARY_UNITY.n.5:0 "Revolutionary Movements Embrace Italian Nation"
+ REVOLUTIONARY_UNITY.d.5:0 "Revolutionaries in $COUNTRY$ have sought the creation of a liberal Italian nation. A potential heartland for our new nation has been decided and the nationalist majority have decided our government must embrace a united Germany."
+ REVOLUTIONARY_UNITY.5.a:0 "A true fortress of liberalism will be built today."
+ 
+ 
+ japanunity.n.2:0 "The Japanese Nation"
+ japanunity.d.2:0 "-AWAITING LOCALIZATION-"
+ japanunity.2.a:0 "Okay."
+ 
+ GENERIC_futurist_governments.t.1:0 "Land Tax Revenue"
+ GENERIC_futurist_governments.d.1:0 "As per the land value taxation program, on occasion the state collects taxes and makes corrections on the aforementioned basis. Today we have finalized a new fiscal period and have calculated the revenues."
+ GENERIC_futurist_governments.1.a:0 "Okay."
+ 
+ GENERIC_futurist_governments.t.2:0 "Patriotic Children of the State"
+ GENERIC_futurist_governments.d.2:0 "One important program of any futurist state is a democracy in which abolition of old traditions - marriage and family - must take place. Instead of raising children through family, the state; the nation must take the responsibility. We have raised a new nationalist generation ready to spread the nationalist, futurist cause."
+ GENERIC_futurist_governments.2.a:0 "Wonderful."
+ 
+ GENERIC_futurist_governments.t.3:0 "Democratic Federalization"
+ GENERIC_futurist_governments.d.3:0 "An important policy in traditional Futurist ideology is federalization and democracy without parties. Significant power and responsibility is delegated to local governments against the centralized authority. This helps the central government in that it does not need to bear the administrative burden of its component territories."
+ GENERIC_futurist_governments.3.a:0 "Okay."
+ 
+ GENERIC_futurist_governments.t.4:0 "Celebration of Violence"
+ GENERIC_futurist_governments.d.4:0 "Filippo Tommaso Marinetti wrote that his futurist ideology intends to promote violence as a purifying, hygenic force. Naturally our state must emphasize and espouse this ideal, as it is only logical that through conflict, the nation is purified of pacifistic, weakened ideology."
+ GENERIC_futurist_governments.4.a:0 "We truly must always remain free of flaws."
+ 
+ GENERIC_futurist_governments.t.5:0 "The Artistic State"
+ GENERIC_futurist_governments.d.5:0 "Futurist politics expanded out from the futurist artistic movement, one of the predecessors to fascist ideology. They are incorrect to denounce Futurism as a degenerate ideology, for we are further capable of accepting that the path to progress lies not in tradition, but in youth as well as the force of violence. Our nation has produced new talented art to express our ideals to transcend language barriers and speak to the innate human."
+ GENERIC_futurist_governments.5.a:0 "Truly, beautiful."
+ 
+ westeurope.n.7:0 "Pan-Germanism"
+ westeurope.d.7:0 "The new reactionary German regime has decided to embark on a campaign of Pan-Germanism. Its ambitions are clear: to unite not just the German speaking realms, but also the Dutch and Scandinavian regions and enact Lebensraum."
+ westeurope.7.a:0 "This is delightful for us."
+ 
+ enemy_sabotage.t.1:0 "Enemies Subverted"
+ enemy_sabotage.d.1:0 "Our spy network in $FROMCOUNTRY$ has grown to a degree that their agents are in important government positions. This may subvert their society, so they may no longer attempt to damage other nations' interests."
+ enemy_sabotage.1.a:0 "This is delightful for us."
+ 
+ 
+ italyunity.n.1:0 "Italy Declares Independence!"
+ italyunity.d.1:0 "-AWAITING LOCALIZATION-"
+ italyunity.1.a:0 "Destroy their rebellions!"
+ italyunity.1.b:0 "Release and align with them."
+ italyunity.n.2:0 "Pan-Italian Nationalism"
+ italyunity.d.2:0 "-AWAITING LOCALIZATION-"
+ italyunity.2.a:0 "Okay."
+ italyunity.n.3:0 "Italian Province Revolt!"
+ italyunity.d.3:0 "Italian Province Revolt"
+ italyunity.3.a:0 "Crush them!"
+ italyunity.3.b:0 "Leave them to their own devices."
+ italyunity.n.4:0 "Referendum to Join Italy"
+ italyunity.d.4:0 "Referendum to Join Italy"
+ italyunity.4.a:0 "Our fate is with our brethren!"
+ italyunity.n.5:0 "The Formation of Italy"
+ italyunity.d.5:0 "The Formation of Italy"
+ italyunity.5.a:0 "We are on the path to greatness!"
+ 
+ franceunity.n.1:0 "France Unites under One Government"
+ franceunity.n.2:0 "French Nationalism"
+ 
+ franceunity.n.3:0 "Province Defection to the Kingdom of France"
+ franceunity.d.3:0 "-AWAITING LOCALIZATION-"
+ franceunity.3.a:0 "They cannot defect to France."
+ franceunity.3.b:0 "Allow them."
+ 
+ franceunity.n.4:0 "Province Defection to Republican France"
+ franceunity.d.4:0 "-AWAITING LOCALIZATION-"
+ franceunity.4.a:0 "They cannot defect to France."
+ franceunity.4.b:0 "Allow them."
+ 
+ franceunity.n.5:0 "Province Defection to Imperial France"
+ franceunity.d.5:0 "-AWAITING LOCALIZATION-"
+ franceunity.5.a:0 "They cannot defect to France."
+ franceunity.5.b:0 "Allow them."
+ 
+ franceunity.n.6:0 "Referendum to Join France"
+ franceunity.d.6:0 "Referendum to Join France"
+ franceunity.6.a:0 "Our fate is with our brethren!"
+ 
+ franceunity.n.7:0 "Referendum to Join France"
+ franceunity.d.7:0 "Referendum to Join France"
+ franceunity.7.a:0 "Our fate is with our brethren!"
+ 
+ franceunity.n.8:0 "Referendum to Join France"
+ franceunity.d.8:0 "Referendum to Join France"
+ franceunity.8.a:0 "Our fate is with our brethren!"
+ 
+ spainunity.n.1:0 "Spanish Revolt!"
+ spainunity.d.1:0 "-AWAITING LOCALIZATION-"
+ spainunity.1.a:0 "Destroy them!"
+ spainunity.1.b:0 "Acknowledge their sovereignty."
+ 
+ ukrainecore.n.1:0 "The Ukrainian Nation"
+ ukrainecore.d.1:0 "-AWAITING LOCALIZATION-"
+ 
+ republics.9.b:0 "Find and kill the suspects!"
+ trade.8.b:0 "If they refuse to work, then they will be made to!"
+ trade.11.b:0 "Then put restrictions on them."
+ 
+ 
+ 
+ african_nations_decol.n.1:0 "Zairean Revolt"
+ african_nations_decol.d.1:0 "-AWAITING LOCALIZATION-"
+ african_nations_decol.1.a:0 "We do not support a Zairean nation!"
+ african_nations_decol.1.b:0 "We will support their independence."
+ 
+ african_nations_decol.n.2:0 "A Congolese Nation"
+ african_nations_decol.d.2:0 "-AWAITING LOCALIZATION-"
+ african_nations_decol.2.a:0 "Okay."
+ 
+ african_nations_decol.n.3:0 "South African Revolt"
+ african_nations_decol.d.3:0 "-AWAITING LOCALIZATION-"
+ african_nations_decol.3.a:0 "We do not support a South African nation!"
+ african_nations_decol.3.b:0 "We will support their independence."
+ 
+ african_nations_decol.n.4:0 "The South African Nation"
+ african_nations_decol.d.4:0 "-AWAITING LOCALIZATION-"
+ african_nations_decol.4.a:0 "Okay."
+ 
+ african_nations_decol.n.5:0 "South African Dominionship"
+ african_nations_decol.d.5:0 "-AWAITING LOCALIZATION-"
+ african_nations_decol.5.a:0 "We will support their dominionship."
+ african_nations_decol.5.b:0 "We do not support a South African dominion!"
+ 
+ african_nations_decol.n.6:0 "Congolese Dominionship"
+ african_nations_decol.d.6:0 "-AWAITING LOCALIZATION-"
+ african_nations_decol.6.a:0 "We will support their dominionship."
+ african_nations_decol.6.b:0 "We do not support a Congolese dominion!"
+ 
+ african_nations_decol.n.7:0 "The Egyptian Nation"
+ african_nations_decol.d.7:0 "-AWAITING LOCALIZATION-"
+ african_nations_decol.7.a:0 "Okay."
+ 
+ african_nations_decol.n.8:0 "The Abyssinian Nation"
+ african_nations_decol.d.8:0 "-AWAITING LOCALIZATION-"
+ african_nations_decol.8.a:0 "Okay."
+ 
+ african_nations_decol.n.9:0 "The Sudanese Nation"
+ african_nations_decol.d.9:0 "-AWAITING LOCALIZATION-"
+ african_nations_decol.9.a:0 "Okay."
+ 
+ dominions_africa_tooltip:0 "Over time, African nationalism will manifest in requests for dominionship or demands for independence in the mid to late 20th century. Addressing this is important, though it can usually only be slowed down."
+ 
+ 
+ italianfranceconquest.n.9:0 "Proto-Roman Resurrection"
+ italianfranceconquest.d.9:0 "We have a sizeable domain in the French region and it is not likely that the remaining French states will mount enough resistance to contest our domain there. With the two most powerful parts of a potential neo-Roman Empire now united, we may consider starting down the path back to Romanness."
+ italianfranceconquest.9.a:0 "We should start by consolidating a powerful union!"
+ italianfranceconquest.9.b:0 "We don't need that."
+ 
+ 
+ waldensian.1.t:0 "The Waldensian Faith"
+ waldensian.1.d:0 "The Waldensians are a Protestant precursor movement founded by Peter Waldo in the late 12th century. Initially the Catholic Church only took issue to Waldo and his followers' not having a formal Church license for proselytizing. As time went on the rift between Waldensians and the Catholic Church grew greater until hostilities emerged that would last for centuries. Later, though, the Waldensians were mostly (though not entirely) absorbed into Protestant denominations. They were mostly secretive on the basis of religious persecution."
+ waldensian.1.a:0 "We will consider their ideas!"
+ waldensian.1.b:0 "There will be permitted no perversion of Christendom."
+ 
+ waldensian.2.t:0 "Waldensian Homeland of Lyons"
+ waldensian.2.d:0 "Peter Waldo was initially a merchant based in Lyons, but he believed in voluntary poverty after a series of events in his life. He was inspired by a sermon in Saint Alexius, his rejection of Transubstantiation, and the sudden death of a friend. These convinced Waldo to live a devoted Christian life, of which he sold most of his belongings and preached his own religious interpretations."
+ waldensian.2.a:0 "Take Lyons in the name of our founder!"
+ waldensian.2.b:0 "There is no point in claiming Lyons."
+ 
+ waldensian.3.t:0 "Conquest of Lyons"
+ waldensian.3.d:0 "The homeland of the Waldensian faith has been liberated! Our nation will operate as a homeland and safe haven for Waldensian Novellani and of all its followers. There is no doubt the Catholic Church will make a severe condemnation for this, but we must be prepared for a potential intervention on their part. Church property has been appropriated for the use of our new denomination."
+ waldensian.3.a:0 "We will build a lasting legacy."
+ 
+ fascist_revolution.1.t:0 "Reactionary Coup d'Etat"
+ fascist_revolution.1.d:0 "Reactionaries around $COUNTRY$ are upset over the abandoning of tradition. They want to return to the old ways, even if this means force. They will not stop until they have what they want. We must either concede to their demands or fight them to the death."
+ fascist_revolution.1.a:0 "Destroy them!"
+ fascist_revolution.1.b:0 "We are fighting a lost cause; there is no choice."
+ 
+ futurist_revolution.1.t:0 "Futurist Coup d'Etat"
+ futurist_revolution.1.d:0 "Futurists from around the country have gathered in $CAPITAL$ to air their grievances with the status quo. Many have came armed and ready to riot or revolt. They demand for a government under the guidance of Futurist ideology and nothing less, seeing that the current state of affairs can no longer be tolerated. They want youth, and blood."
+ futurist_revolution.1.a:0 "Destroy them!"
+ futurist_revolution.1.b:0 "We are fighting a lost cause; there is no choice."
+ 
+ futurist_revolution.10.t:0 "Futurist Victory"
+ futurist_revolution.10.d:0 "After some time of vigorous conflict, the Futurists have claimed victory. They break from conventional fascism in that they do not espouse conservative, traditionalist social policy, but instead seek as an alternative to all of the other ideologies. Nevertheless, our nation's path will be dictated by these leaders."
+ futurist_revolution.10.a:0 "There is no other way out."
+ 
+ GENERIC_socialist_governments.t.1:0 "Dekulakization and seizure of Old Properties"
+ GENERIC_socialist_governments.d.1:0 "Since the establishment of our state we have needed to redistribute the national wealth from those hoarding large sums of resources from the masses. Some kulaks may arise from time to time if the bureaucrats have been unable to detect and correct their abundances. Now we have detected inequality in wealth, and our moral imperative is to appropriate these resources for the people."
+ GENERIC_socialist_governments.1.a:0 "We will need their resources."
+ GENERIC_socialist_governments.1.b:0 "That isn't necessary."
+ 
+ GENERIC_socialist_governments.t.2:0 "Agricultural Collectivization"
+ GENERIC_socialist_governments.d.2:0 "Rich laborers and elites are most likely to keep for themselves the crops their farms have yielded. For us, this is unacceptable. We should collectivize farming practices and make agriculture a joint enterprise. We need to implement new policies on the matter."
+ GENERIC_socialist_governments.2.a:0 "Let us do so!"
+ GENERIC_socialist_governments.2.b:0 "That isn't necessary."
+ 
+ GENERIC_socialist_governments.t.3:0 "Socialist Industrialization"
+ GENERIC_socialist_governments.d.3:0 "The Old Regime has focused on religious institutions - ones that contribute to old myths. This is a waste of space and money, and we can introduce a more effective usage of that space: Factories. Local bureaucrats have presented us with an initiative to destroy the religious institutions present in some of our lands and construct factories to employ the masses."
+ GENERIC_socialist_governments.3.a:0 "Let us do so!"
+ GENERIC_socialist_governments.3.b:0 "That isn't necessary."
+ 
+ GENERIC_socialist_governments.t.4:0 "GULAG Labor Facilities"
+ GENERIC_socialist_governments.d.4:0 "We have posed an opportunity for those rejecting the valid philosophy of socialism. They will be sent to rehabilitation and labor facilities built in remote areas of our nation, known as gulags. This may be unpopular with some, but for a truly popular society, those standing against the peoples' prosperity need to be rehabilitated, or eradicated."
+ GENERIC_socialist_governments.4.a:0 "We need to enact these plans."
+ GENERIC_socialist_governments.4.b:0 "That isn't necessary."
+ 
+ GENERIC_socialist_governments.t.5:0 "State Policing Agencies"
+ GENERIC_socialist_governments.d.5:0 "To protect the peoples' will, we have proposed a state policing division in the name of the protection of our population from those of the old elite, most notably bourgeois sympathizers. This agency will be important to securing loyalty within the army and nation at large."
+ GENERIC_socialist_governments.5.a:0 "This is imperative to the peoples' safety."
+ GENERIC_socialist_governments.5.b:0 "That isn't necessary."
+ 
+ GENERIC_socialist_governments.t.6:0 "Students' Revolt in $COUNTRY$"
+ GENERIC_socialist_governments.d.6:0 "It seems from time to time that there are people in the nation that, no matter how hard we try, cannot be appeased. One such ungrateful group has risen to demonstrate in the capital. This is unacceptable."
+ GENERIC_socialist_governments.6.a:0 "Destroy them!"
+ GENERIC_socialist_governments.6.b:0 "We may need to reform."
+ 
+ GENERIC_socialist_governments.t.7:0 "Peasants' Revolt in $COUNTRY$"
+ GENERIC_socialist_governments.d.7:0 "It seems from time to time that there are people in the nation that, no matter how hard we try, cannot be appeased. One such ungrateful group has risen in resistance to our popular policymaking. This is unacceptable."
+ GENERIC_socialist_governments.7.a:0 "Those laborers should know what is good for them!"
+ GENERIC_socialist_governments.7.b:0 "We may need to reform."
+ 
+ GENERIC_fascist_governments.t.1:0 "Seizure of Property from the Undesirables"
+ GENERIC_fascist_governments.d.1:0 "Since the establishment of our state we have needed to redistribute the national wealth from those hoarding large sums of resources from the rightful claimants. Some properties may arise from time to time if the bureaucrats have been unable to detect and correct their abundances. Now we have detected inequality in state resources, and our moral imperative is to appropriate these resources for the master peoples."
+ GENERIC_fascist_governments.1.a:0 "We will need their resources."
+ GENERIC_fascist_governments.1.b:0 "That isn't necessary."
+ 
+ GENERIC_fascist_governments.t.2:0 "Corporatization"
+ GENERIC_fascist_governments.d.2:0 "One somewhat common aspect of reactionary and fascist ideology is corporatism. The well being of the nation's economy hinges on its capitalism, so we need to ensure that, as reactionaries to the modern order, we maintain autarky and order."
+ GENERIC_fascist_governments.2.a:0 "Let us do so!"
+ GENERIC_fascist_governments.2.b:0 "That isn't necessary."
+ 
+ GENERIC_fascist_governments.t.3:0 "Reactionary Industrialization"
+ GENERIC_fascist_governments.d.3:0 "The Old Regime has focused on religious institutions - ones that contribute to old myths. This is a waste of space and money, and we can introduce a more effective usage of that space: Factories. Local bureaucrats have presented us with an initiative to destroy the religious institutions present in some of our lands and construct factories to employ the masses."
+ GENERIC_fascist_governments.3.a:0 "Let us do so!"
+ GENERIC_fascist_governments.3.b:0 "That isn't necessary."
+ 
+ GENERIC_fascist_governments.t.4:0 "Labor Facilities"
+ GENERIC_fascist_governments.d.4:0 "We have posed an opportunity for those rejecting the valid philosophy of reactionary ideology. They will be sent to labor facilities built in remote areas of our nation. This may be unpopular with a few - suspicious people for sure, but for a truly stable society, those standing against the prosperity of the highest order of people need to be eradicated."
+ GENERIC_fascist_governments.4.a:0 "We need to enact these plans."
+ GENERIC_fascist_governments.4.b:0 "That isn't necessary."
+ 
+ GENERIC_fascist_governments.t.5:0 "State Policing Agencies"
+ GENERIC_fascist_governments.d.5:0 "To protect the will of our populace, we have proposed a state policing division in the name of the protection of our population from those of the Marxist class. This agency will be important to securing loyalty within the army and nation at large."
+ GENERIC_fascist_governments.5.a:0 "This is imperative to the national welfare."
+ GENERIC_fascist_governments.5.b:0 "That isn't necessary."
+ 
+ GENERIC_fascist_governments.t.6:0 "Students' Revolt in $COUNTRY$"
+ GENERIC_fascist_governments.d.6:0 "It seems from time to time that there are people in the nation that, no matter how hard we try, cannot be appeased. One such ungrateful group has risen to demonstrate in the capital. This is unacceptable."
+ GENERIC_fascist_governments.6.a:0 "Destroy them!"
+ GENERIC_fascist_governments.6.b:0 "We may need to reform."
+ 
+ 
+ 
+ GENERIC_liberal_governments.t.1:0 "Legislative Disunity"
+ GENERIC_liberal_governments.d.1:0 "Part of the benefit of being a democratic nation is that most opinions are recognized and acknowledged. It becomes a problem to our country's progress when our legislative assembly cannot come to a consensus about what to do over a rather important piece of legislation."
+ GENERIC_liberal_governments.1.a:0 "Let them take care of it on their own."
+ GENERIC_liberal_governments.1.b:0 "We should bribe enough members to support a side."
+ 
+ GENERIC_liberal_governments.t.2:0 "Unity of the Nation"
+ GENERIC_liberal_governments.d.2:0 "We have demonstrated recently our ability to come together and unite in the democratic system. There are always differences between people, but we understand that to achieve progress, we must make compromises and work together."
+ GENERIC_liberal_governments.2.a:0 "It is a wonderful day for democracy!"
+ 
+ GENERIC_liberal_governments.t.3:0 "Volunteers for Liberty"
+ GENERIC_liberal_governments.d.3:0 "Our nation is currently at war with foreigners who may wish to impede on our rights. The masses acknowledge this fact and some have decided to join the ranks of the army in defense of liberty."
+ GENERIC_liberal_governments.3.a:0 "May they serve as the vanguard for our future!"
+ 
+ GENERIC_liberal_governments.t.4:0 "Scandal within the Ruling Party"
+ GENERIC_liberal_governments.d.4:0 "On occasion there would be scandals that may erupt even in democracies. Sometimes they were over sexual misconduct, other times election interference, and other times possibly abuse of authority. It seems the opposition party has gotten a hold on some information that could result in disaster for our own ranks."
+ GENERIC_liberal_governments.4.a:0 "Ask for their resignation."
+ GENERIC_liberal_governments.4.b:0 "This needs to be concealed before it gets out of hand!"
+ 
+ GENERIC_liberal_governments.t.5:0 "Scandal within the Opposition Party"
+ GENERIC_liberal_governments.d.5:0 "On occasion there would be scandals that may erupt even in democracies. Sometimes they were over sexual misconduct, other times election interference, and sometimes other subjects. It seems we have gotten a hold on some information that could result in disaster for our opposition party."
+ GENERIC_liberal_governments.5.a:0 "We may need to press charges, if applicable."
+ GENERIC_liberal_governments.5.b:0 "This is a cause for celebration! Have them humiliated."
+ 
+ 
+ 
+ GENERIC_liberal_governments.t.6:0 "Supreme Judiciary Ruling - Suffragette Rights"
+ GENERIC_liberal_governments.d.6:0 "In the late 19th and early 20th centuries, first wave feminism was on the rise in non-revolutionary, non-reactionary nations, such as the United Kingdom and United States. Some engaged in civil disobedience, and some others attempted to vote. At the time that would have been illegal, but a civil rights court case has made its way to our supreme judiciary. The justices have ruled:"
+ GENERIC_liberal_governments.6.a:0 "The suffragettes will be pardoned and granted their voting rights."
+ GENERIC_liberal_governments.6.b:0 "The suffragette movement has not proven that they are deserving of these privileges."
+ 
+ GENERIC_liberal_governments.t.7:0 "Supreme Judiciary Ruling - Minority Rights"
+ GENERIC_liberal_governments.d.7:0 "In the 20th century, sentiments in favor of minority rights were on the rise in progressive countries. It appears that today a case has been brought to our highest tier judiciary. The justices have ruled:"
+ GENERIC_liberal_governments.7.a:0 "That the minorities will receive their rights."
+ GENERIC_liberal_governments.7.b:0 "That the minorities do not deserve their rights."
+ 
+ GENERIC_liberal_governments.t.8:0 "Supreme Judiciary Ruling - Minority Rights for Political Offices"
+ GENERIC_liberal_governments.d.8:0 "In the 20th century, opinions in liberal countries shifted in favor of the right for minorities - ethnic, racial, etc. - to be allowed to run for political office for a political party of their choice. It appears that today a case has been brought to our highest national court. The justices have ruled:"
+ GENERIC_liberal_governments.8.a:0 "They are allowed to run for office."
+ GENERIC_liberal_governments.8.b:0 "They are not allowed to run for office."
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ march_on_rome.1.t:0 "The March on $CAPITAL$"
+ march_on_rome.1.d:0 "Following an era of what the italians considered betrayals and denial of their true destiny, they have taken it upon themselves to coronate a new government. Historically led by Mussolini and his philosophers, most notably Giovanni Gentile, they have secured a government through a coup. Here, however, we have to make our decision. Submit to Italian Fascism, or fight it to maintain the status quo."
+ march_on_rome.1.a:0 "Destroy them!"
+ march_on_rome.1.b:0 "We are fighting a lost cause; there is no choice."
+ 
+ fascist_revolution.10.t:0 "The Reactionaries are Successful"
+ fascist_revolution.10.d:0 "The Reactionaries have taken $CAPITAL$. They have held it and have proclaimed a new government without enough resistance from the old one. The old regime has gone into hiding as the new Reactonary state of $COUNTRY$ has been proclaimed."
+ fascist_revolution.10.a:0 "Oh dear.."
+ 
+ fascist_revolution.20.t:0 "The Reactionaries have Failed"
+ fascist_revolution.20.d:0 "The current government has managed to put down the reactionary demagogues and agitators. At the moment conspirators are being arrested and tried for sedition. Long Live $COUNTRY$!"
+ fascist_revolution.20.a:0 "The world has dodged a bullet."
+ 
+ socialist_revolution.1.t:0 "Collectivist Coup d'Etat"
+ socialist_revolution.1.d:0 "Angered with $MONARCH$'s inability to appease the demands of the Collectivist faction in $COUNTRY$, they have decided to take matters into their own hand and spill blood in open revolt. Collectivists are marching around our nation and more are likely to join if they become emboldened."
+ socialist_revolution.1.a:0 "Destroy them!"
+ socialist_revolution.1.b:0 "We are fighting a lost cause; there is no choice."
+ 
+ socialist_revolution.10.t:0 "The Collectivists are Successful"
+ socialist_revolution.10.d:0 "The Collectivists have taken $CAPITAL$. They have held it and have proclaimed a new government without enough resistance from the old one. The old regime has gone into hiding as the new Socialist state of $COUNTRY$ has been proclaimed."
+ socialist_revolution.10.a:0 "Oh dear.."
+ 
+ socialist_revolution.20.t:0 "The Collectivists have Failed"
+ socialist_revolution.20.d:0 "The current government has managed to put down the collectivist traitors. At the moment conspirators are being arrested and tried for sedition. Long Live $COUNTRY$!"
+ socialist_revolution.20.a:0 "The world has dodged a bullet."
+ 
+ 
+ soviet_revolution.1.t:0 "Soviet Coup d'Etat"
+ soviet_revolution.1.d:0 "-AWAITING LOCALIZATION-"
+ soviet_revolution.1.a:0 "Destroy them!"
+ soviet_revolution.1.b:0 "We are fighting a lost cause; there is no choice."
+ 
+ soviet_revolution.10.t:0 "The Soviets are Successful"
+ soviet_revolution.10.d:0 "-AWAITING LOCALIZATION-"
+ soviet_revolution.10.a:0 "Oh dear.."
+ 
+ soviet_revolution.20.t:0 "The Soviets have Failed"
+ soviet_revolution.20.d:0 "-AWAITING LOCALIZATION-"
+ soviet_revolution.20.a:0 "The world has dodged a bullet."
+ 
+ 
+ 
+ 
+ 
+ airforce.t.1:0 "Hostile Strategic Bombing Campaigns"
+ airforce.d.1:0 "For some time the enemy managed to gain air superiority in the current conflict. As a direct consequence they have been emboldened to launch air raids into $PROVINCENAME$. We must make progress on their territory if we are to stop these air raids from continuing."
+ airforce.1.a:0 "This may be a loss for us but the war rages on."
+ 
+ airforce.t.2:0 "Hostile Firebombings"
+ airforce.d.2:0 "For some time the enemy managed to gain air superiority in the current conflict. As a direct consequence they have been emboldened to launch firebombing attacks into $PROVINCENAME$. We must make progress on their territory if we are to stop these air raids from continuing."
+ airforce.2.a:0 "This may be a loss for us but the war rages on."
+ 
+ airforce.t.3:0 "Successes in the Air Front"
+ airforce.d.3:0 "With air superiority in our favor, our faction's air force has decided to launch attacks into enemy territory. It appears a city that one of our adversaries currently possesses has been damaged by one such attack. This is, quite clearly, a success for us and tales of the heroes are already circulating in newspapers across the nation."
+ airforce.3.a:0 "Simply wonderful."
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ red_planet.t.1:0 "THE RED PLANET"
+ red_planet.d.1:0 "Earth has been united. A task once thought impossible, has now been attained. Although there may yet be vestiges of resistance, the almighty $COUNTRY$ may yet move to silence even those nations. All there is left is $COUNTRY$, and hopeless resistance movements. The Utopia is a reality, and no one can better shape it than $MONARCH$. Socialism dominates the planet now."
+ red_planet.1.a:0 "All there is left, is socialism."
+ 
+ red_planet.t.2:0 "THE RED PLANET"
+ red_planet.d.2:0 "Earth has been united. A task once thought impossible, has now been attained. All there is left, are the hopeless and $FROMCOUNTRY$. We must dig in and prepare for what is likely an inevitable invasion, and protect not just our nations but our lives."
+ red_planet.2.a:0 "Only maybe, all is lost."
+ 
+ 
+ 
+ westeurope.n.4:0 "The Foundation of Austria-Hungary"
+ westeurope.d.4:0 "Answering to demands across Austria and its component territories, the rulership has decided to enact policies granting representation to the Hungarians within the empire. Austria-Hungary will be administered as a dual-monarchy instead of being ruled, solely, from $CAPITAL$."
+ westeurope.4.a:0 "Truly wonderful."
+ 
+ westeurope.n.5:0 "The Reformation into the United Kingdom"
+ westeurope.d.5:0 "The French Revolutionaries were obviously quite influential in european politics. A proposition has been forwarded to recognize the Irish in the Kingdom of Great Britain, and with it form a new United Kingdom."
+ westeurope.5.a:0 "Glorious times ahead!"
+ 
+ uk_form_tooltip:0 "The United Kingdom will receive cores on all provinces in the region of the British Isles."
+ 
+ westeurope.n.6:0 "THE COMMUNIST MANIFESTO"
+ westeurope.d.6:0 "The Communist Manifesto (Manifest der Kommunistischen Partei) was a pamphlet commissioned by socialist revolutionary movements in Germany during the Revolutions of 1848. Karl Marx was the author, creating an influential though short reading material to formalize the revolutions into Marxist philosophies. Now that Marxism has been invented, communist revolutions may become more prevalent in the world's politics."
+ westeurope.6.a:0 "Okay."
+ 
+ westeurope.n.8:0 "The Futurist Manifesto"
+ westeurope.d.8:0 "The Manifesto of Futurism (Italian: Manifesto del Futurismo) is a manifesto written by the Italian poet Filippo Tommaso Marinetti and published in 1909. Marinetti expresses an artistic philosophy called Futurism that was a rejection of the past and a celebration of speed, machinery, violence, youth and industry. It also advocated the modernization and cultural rejuvenation of Italy. In addition, the Futurist Political Party was founded, though was defunct two years later and Futurism was never to return in any meaningful capacity, anywhere in Europe."
+ westeurope.8.a:0 "Okay."
+ 
+ futurist_manifesto_tooltip:0 "Futurist Revolutionaries can now rise in some nations with dissatisfied populaces."
+ 
+ communist_manifesto_tooltip:0 "Communist Revolution disasters may now happen to the world's nations which present a disenfranchised populace."
+ 
+ foreign_intervention.n.1:0 "$COUNTRY$ intervenes in independence struggle against $FROMCOUNTRY$"
+ foreign_intervention.d.1:0 "A minor nation has began a struggle of independence against $FROMCOUNTRY$. It would be foolish of us to not intervene, this is an important affair and opportunity to weaken the enemy."
+ foreign_intervention.1.a:0 "We must aid in the struggle for independence."
+ foreign_intervention.1.b:0 "We cannot risk that."
+ 
+ entente_cordiale.n.1:0 "The Entente Cordiale"
+ entente_cordiale.d.1:0 "-AWAITING LOCALIZATION-"
+ entente_cordiale.1.a:0 "-AWAITING LOCALIZATION-"
+ 
+ spaceprogram.t.1:0 "-Moon Landing-"
+ spaceprogram.d.1:0 "After years of trials and tribulations, tests, failures and successes, we have landed men on a celestial object other than the Earth. The astronauts on this mission have been immortalized in history, and they have made one of the greatest leaps in human history. Our nation's flag has been planted on the Moon, and the astronauts will conclude their mission after numerous experiments have been prepared and the results returned for analysis."
+ spaceprogram.1.a:0 "One small step for a man, one giant leap for Mankind."
+ 
+ spaceprogram.t.2:0 "Satellite program in $COUNTRY$"
+ spaceprogram.d.2:0 "We have initiated a satellite program as a part of our nation's space program. It is likely that now we will - with enough Delta V - launch missions to other objects in the solar system; it is a matter of time, in fact."
+ spaceprogram.2.a:0 "We are breaching into the final frontier!"
+ 
+ spaceprogram.t.3:0 "Space program in $COUNTRY$"
+ spaceprogram.d.3:0 "We have initiated a space program branching off of our ballistic missile program, starting with a primitive satellite that returns signals to signal receptacles on the Earth. Obviously, the implications of this are enormous, but we should plan our next actions. It's in our best interest to maintain our space-scientific programs."
+ spaceprogram.3.a:0 "This will be wonderful."
+ 
+ spaceprogram.t.4:0 "Lunar Mission Launch"
+ spaceprogram.d.4:0 "Over the course of several months prior to now we have been making preparations - training, material, and other important matters all had to be taken care of, leading to these moments. We will now launch a mission to the Moon."
+ spaceprogram.4.a:0 "Launch now!"
+ 
+ spaceprogram.t.5:0 "Lunar Mission Launch - Failure"
+ spaceprogram.d.5:0 "During initial ascent the rocket carrying astronauts as well as a landing and lunar transfer vehicle has been destroyed. At the moment it is unclear - though unlikely - that the astronauts have successfully ejected from the rocket via emergency launch safety measures. All that is immediately clear is that the mission has failed."
+ spaceprogram.5.a:0 "This is a tragedy."
+ 
+ spaceprogram.t.6:0 "Lunar Mission Launch - Success"
+ spaceprogram.d.6:0 "The rocket with our payload - astronauts, lunar transfer vehicle and lunar lander - has successfully taken off and made orbit. It will take roughly a week to transfer out of Earth orbit and into a Lunar orbit, then land."
+ spaceprogram.6.a:0 "We may make history very soon."
+ 
+ spaceprogram.t.7:0 "Space Station Launch"
+ spaceprogram.d.7:0 "Over the course of several months prior to now we have been making preparations - training, material, and other important matters all had to be taken care of, leading to these moments. We will now launch a space station. Its purpose is scienctific in nature - but that cannot be its only purpose. It will prove a testament to our nation's engineering abilities."
+ spaceprogram.7.a:0 "Launch now!"
+ 
+ spaceprogram.t.8:0 "Space Station Launch - Failure"
+ spaceprogram.d.8:0 "During initial ascent the rocket carrying the space station has been destroyed. We will have to try again someday."
+ spaceprogram.8.a:0 "This is a tragedy."
+ 
+ spaceprogram.t.9:0 "Space Station Launch - Success"
+ spaceprogram.d.9:0 "The rocket with our space station has successfully taken off and made orbit."
+ spaceprogram.9.a:0 "We may make history very soon."
+ 
+ spaceprogram.t.10:0 "Lunar Orbiter"
+ spaceprogram.d.10:0 "As a benchmark to our space program, we need to ensure that we can orbit the moon. For the risk-averse in our space agency, we have decided to act in favor of sending a probe to orbit the Moon and scan for potential landing areas."
+ spaceprogram.10.a:0 "We may make history very soon."
+ 
+ 
+ dominionhood_colonies.n.1:0 "Application for Dominionship"
+ dominionhood_colonies.d.1:0 "Many of our citizens feel as if they are disenfranchised as a colonial subject. As a result a new concept has been drafted: Dominionship. There will be a local parliament for the ex-colony so internal affairs can be managed, but foreign affairs cannot."
+ dominionhood_colonies.1.a:0 "We will submit a request to our colonial leadership."
+ dominionhood_colonies.1.b:0 "We will not at this time."
+ 
+ dominionhood_colonies.n.2:0 "Colony asks for Dominionship"
+ dominionhood_colonies.d.2:0 "One of our colonies has approached us with the offer to increase their autonomy in exchange for continued fealty. Dominions are given full autonomy in all areas of governance except for foreign policy. Should we accept their offer?"
+ dominionhood_colonies.2.a:0 "We approve of their requests."
+ dominionhood_colonies.2.b:0 "We will not support it."
+ 
+ 
+ 
+ dominionhood_colonies.n.4:0 "Referendum for Independence"
+ dominionhood_colonies.d.4:0 "The logical conclusion of being a dominion is usually implied to be total independence. Enough public demand has brought us to hold a referendum on this matter. The results are:"
+ dominionhood_colonies.4.a:0 "We will grant ourselves independence on the overlord's behest."
+ dominionhood_colonies.4.b:0 "We will remain a dominion."
+ 
+ dominionhood_colonies.n.5:0 "Dominion asks for Independence"
+ dominionhood_colonies.d.5:0 "One of our dominions has held a referendum in favor of independence. It ultimately comes to us for now what should be done about it. If we disagree with it we will draw the condemnation from the local governments and populace at large."
+ dominionhood_colonies.5.a:0 "We approve of their requests."
+ dominionhood_colonies.5.b:0 "We will not support it."
+ 
+ 
+ americangovt.n.2:0 "Manifest Destiny"
+ americangovt.d.2:0 "-AWAITING LOCALIZATION-"
+ americangovt.2.a:0 "Delightful."
+ 
+ americangovt.n.3:0 "The Louisiana Purchase - Proposition"
+ americangovt.d.3:0 "-AWAITING LOCALIZATION-"
+ americangovt.3.a:0 "Yes."
+ americangovt.3.b:0 "No."
+ 
+ loupurch_accept:0 "Any nation with territory in the Louisiana region will receive an event option to sell it to you; be prepared to spend many ducats!"
+ loupurch_deny:0 "There will not be another opportunity to purchase the Louisiana territory."
+ 
+ native_conquests_bgm:0 "Any native american provinces currently owned by us will be assimilated."
+ 
+ 
+ 
+ germanyunity.n.8:0 "The $CAPITAL$ Parliament"
+ germanyunity.d.8:0 "The $CAPITAL$ Parliament was the first freely elected parliament for all of Germany, including the German-populated areas of Austria-Hungary, elected in $YEAR$. The session was held in the Paulskirche at $CAPITAL$. Its existence was both part of and the result of the 'March Revolution' within the states of the German Confederation."
+ germanyunity.8.a:0 "We may unite the masses of the Deutschland under one banner."
+ 
+ 
+ americangovt.n.4:0 "The Louisiana Purchase - Annexation"
+ americangovt.d.4:0 "-AWAITING LOCALIZATION-"
+ americangovt.4.a:0 "Yes."
+ americangovt.4.b:0 "No."
+ americangovt.4.c:0 "Okay."
+ americangovt.4.d:0 "Forward it to the overlord."
+ 
+ americangovt.n.5:0 "The Louisiana Purchase - Annexation (Overlord)"
+ americangovt.d.5:0 "-AWAITING LOCALIZATION-"
+ americangovt.5.a:0 "Yes."
+ americangovt.5.b:0 "No."
+ 
+ americangovt.n.6:0 "The Louisiana Purchase - Annexation (Colony)"
+ americangovt.d.6:0 "-AWAITING LOCALIZATION-"
+ americangovt.6.a:0 "Oh hell."
+ 
+ americangovt.n.7:0 "The Confederate Nation"
+ americangovt.d.7:0 "-AWAITING LOCALIZATION-"
+ americangovt.7.a:0 "Oh.."
+ 
+ americangovt.n.8:0 "Confederate States Revolt!"
+ americangovt.d.8:0 "-AWAITING LOCALIZATION-"
+ americangovt.8.a:0 "Purge their leadership!"
+ 
+ chinaunity.n.2:0 "The Chinese Nation"
+ chinaunity.d.2:0 "-AWAITING LOCALIZATION-"
+ chinaunity.2.a:0 "Okay."
+ 
+ chinaunity.n.3:0 "Province Defection to China"
+ chinaunity.d.3:0 "-AWAITING LOCALIZATION-"
+ chinaunity.3.a:0 "They cannot defect to China."
+ chinaunity.3.b:0 "Allow them."
+ 
+ chinaunity.n.4:0 "Referendum to Join China"
+ chinaunity.d.4:0 "Referendum to Join China"
+ chinaunity.4.a:0 "Our fate is with our brethren!"
+ 
+ chinaunity.n.5:0 "The Formation of the Chinese Statehood"
+ chinaunity.d.5:0 "Answering to demands for a united China, a new regime is now present with the ambition to unite the Chinese-speaking realms present on the Asian continent. It is very likely other smaller Chinese nations will unite under its wing."
+ chinaunity.5.a:0 "We are on the path to greatness!"
+ 
+ 
+ tech_catchup.n.1:0 "Importation of Technologies"
+ tech_catchup.d.1:0 "Our nation is currently importing new technological innovations off of the world market. Those certified across the nation are currently making use of these new technologies and by now our nation is more sophisticated than it has been prior."
+ tech_catchup.1.a:0 "Okay."
+ 
+ 
+ asia_colony.n.1:0 "Establishment of the Raj Colony"
+ asia_colony.d.1:0 "-AWAITING LOCALIZATION-"
+ asia_colony.1.a:0 "Yes."
+ asia_colony.1.b:0 "No."
+ 
+ asia_colony.n.2:0 "Establishment of an Independent India"
+ asia_colony.d.2:0 "-AWAITING LOCALIZATION-"
+ asia_colony.2.a:0 "Okay."
+ 
+ form_raj:0 "This forms the Raj Colony in all provinces in the India region that you currently posess. (THIS WILL LAG THE GAME FOR A MOMENT WHILE PROCESSING)"
+ form_raj_later:0 "You can form the Raj Colony later in the decisions tab, should you choose to do so."
+ 
+ louisiana_purchase_tooltip:0 "This gives all owned provinces in the Colonial Louisiana region to the United States. (THIS WILL LAG THE GAME FOR A MOMENT WHILE PROCESSING)"
+ 
+ moderniz_tool:0 "The nation will be forced to make concessions to satisfy economic demands throughout the 19th century. These can be done in the decisions tab or whenever policy preparation events are fired, then."
+ 
+ 
+ minoreasteurope.n.1:0 "The Belarusian Nation"
+ minoreasteurope.d.1:0 "-AWAITING LOCALIZATION-"
+ minoreasteurope.1.a:0 "Okay."
+ minoreasteurope.n.3:0 "Belarusian Revolts"
+ minoreasteurope.d.3:0 "-AWAITING LOCALIZATION-"
+ minoreasteurope.3.a:0 "Purge them!"
+ minoreasteurope.2.b:0 "Seek an amicable result."
+ minoreasteurope.n.4:0 "The Polish Nation"
+ minoreasteurope.d.4:0 "-AWAITING LOCALIZATION-"
+ minoreasteurope.4.a:0 "Okay."
+ minoreasteurope.n.5:0 "The November Revolt"
+ minoreasteurope.d.5:0 "The November Uprising (1830–31), also known as the Polish–Russian War 1830–31 or the Cadet Revolution, was an armed rebellion in the heartland of partitioned Poland against the Russian Empire. The uprising began on 29 November 1830 in Warsaw when the young Polish officers from the local Army of the Congress Poland's military academy revolted, led by lieutenant Piotr Wysocki. Large segments of the peoples of Lithuania, Belarus, and the Right-bank Ukraine soon joined the uprising. Although the insurgents achieved local successes, a numerically superior Imperial Russian Army under Ivan Paskevich eventually crushed the uprising."
+ minoreasteurope.5.a:0 "Purge them!"
+ minoreasteurope.5.b:0 "Seek an amicable result."
+ minoreasteurope.n.6:0 "The Nation of Latvia"
+ 
+ sovietrevolution.n.1:0 "The Soviet Revolt!"
+ sovietrevolution.d.1:0 "-AWAITING LOCALIZATION-"
+ sovietrevolution.n.2:0 "Russian Civil Unrest"
+ sovietrevolution.d.2:0 "-AWAITING LOCALIZATION-"
+ sovietrevolution.n.3:0 "Soviets Win Revolution"
+ sovietrevolution.d.3:0 "-AWAITING LOCALIZATION-"
+ 
+ belgiumindependence.n.1:0 "The Revolt of Belgium"
+ belgiumindependence.d.1:0 "-AWAITING LOCALIZATION-"
+ belgiumindependence.1.a:0 "We will not see a Belgian nation!"
+ belgiumindependence.1.b:0 "Release them as an ally."
+ belgiumindependence.n.2:0 "Belgian Nationalism"
+ belgiumindependence.d.2:0 "-AWAITING LOCALIZATION-"
+ belgiumindependence.2.a:0 "Okay."
+ 
+ revolutionaryreligion.n.1:0 "The Cult of Reason"
+ revolutionaryreligion.d.1:0 "The Cult of Reason"
+ revolutionaryreligion.1.a:0 "We will institute the Cult of Reason."
+ revolutionaryreligion.1.b:0 "We will not institute a 'Cult of Reason'."
+ 
+ africa_colonization.n.2:0 "Algerie France"
+ africa_colonization.d.2:0 "-AWAITING LOCALIZATION-"
+ africa_colonization.2.a:0 "We will not claim Algeria."
+ africa_colonization.2.b:0 "We will claim Algeria."
+ 
+ 
+ africa_colonization.n.1:0 "The Scramble For Africa"
+ africa_colonization.d.1:0 "-AWAITING LOCALIZATION-"
+ africa_colonization.1.a:0 "We will refrain from new claims."
+ africa_colonization.1.b:0 "We will claim Egypt."
+ africa_colonization.1.c:0 "We will claim Somalia."
+ africa_colonization.1.d:0 "We will claim Somaliland."
+ africa_colonization.1.e:0 "We will claim the Kongo."
+ africa_colonization.1.f:0 "We will claim Madagascar."
+ africa_colonization.1.g:0 "We will claim Mozambique."
+ africa_colonization.1.h:0 "We will claim Kenya."
+ africa_colonization.1.i:0 "We will claim Tanzania."
+ africa_colonization.1.j:0 "We will claim Nigeria."
+ africa_colonization.1.k:0 "We will claim Algeria."
+ africa_colonization.1.l:0 "We will claim West Africa."
+ africa_colonization.1.m:0 "We will claim Ethiopia and Eritrea."
+ africa_colonization.1.n:0 "We will claim Morocco."
+ africa_colonization.1.o:0 "We will claim Tunisia and Libya."
+ 
+ league_of_nations.n.1:0 "The League of Nations"
+ league_of_nations.d.1:0 "During and following the first World War many nations in the west considered potential solutions to prevent another war of similar scale. The most prominent, tested (and eventually failed) institution was the League of Nations. It was created by the former Allies of the first World War although the United States failed to join it. Instead it was headed by Britain and France up until its dissolution over the Second World War. It was replaced by the United Nations."
+ league_of_nations.1.a:0 "We need to create such a system."
+ league_of_nations.1.b:0 "We will not devise it."
+ 
+ league_of_nations.n.2:0 "Invitation to the League of Nations"
+ league_of_nations.d.2:0 "During and following the first World War many nations in the west considered potential solutions to prevent another war of similar scale. The most prominent, tested (and eventually failed) institution was the League of Nations. It was created by the former Allies of the first World War although the United States failed to join it. Instead it was headed by Britain and France up until its dissolution over the Second World War. It was replaced by the United Nations."
+ league_of_nations.2.a:0 "We will join the League of Nations."
+ league_of_nations.2.b:0 "We will not."
+ 
+ pariscommune.n.1:0 "The Paris Commune"
+ pariscommune.d.1:0 "The Paris Commune happened in part as a consequence of the Franco-Prussian War (1870-1871) as Paris was under siege. Disgruntled radicals opted to begin an insurrection in Paris (at the time Tours was a provisional capital) and the radicals governed the city for several months until the French Army moved in to restore French governance."
+ pariscommune.1.a:0 "Crush them!"
+ 
+ 
+ german_confederation.n.1:0 "The Secularization of the Holy Roman Empire"
+ german_confederation.d.1:0 "With the ever-growing institutions of secularism and the Enlightenment, the concept of the Holy Roman Empire loses its legitimacy. As a successor idea to the original Roman Empire, the Holy Roman Empire based its legitimacy originally on the Papacy. It seems by the will of the people, this is no longer the case, and alternatives are to be considered."
+ german_confederation.1.a:0 "We will abolish the Holy Roman Empire, though we will work toward something greater still."
+ german_confederation.1.b:0 "We will not abolish the Holy Roman Empire over some revolutionaries!"
+ 
+ german_confederation.n.2:0 "The Secularization of the Holy Roman Empire"
+ german_confederation.d.2:0 "With the ever-growing institutions of secularism and the Enlightenment, the concept of the Holy Roman Empire loses its legitimacy. As a successor idea to the original Roman Empire, the Holy Roman Empire based its legitimacy originally on the Papacy. It seems by the will of the people, this is no longer the case, and alternatives are to be considered."
+ german_confederation.2.a:0 "We accept the offer to found a new German Confederation."
+ german_confederation.2.b:0 "We deny the offer to join the German Confederation."
+ 
+ german_confederation.n.3:0 "The German Confederation"
+ german_confederation.d.3:0 "After some time we have devised an alternative to the old Holy Roman Empire. This new German Confederation cannot claim to be Rome in any capacity, but with newfound German nationalism the sentiment for a unified Germany in some capacity is quite important at this time. We need to institute some sort of union, of course."
+ german_confederation.3.a:0 "Let us do so!"
+ 
+ german_confederation.n.4:0 "Invitation to the German Confederation"
+ german_confederation.d.4:0 "After some time an alternative to the old Holy Roman Empire has been created. This new German Confederation cannot claim to be Rome in any capacity, but with newfound German nationalism the sentiment for a unified Germany in some capacity is quite important at this time. We are best to be part of some sort of union, of course."
+ german_confederation.4.a:0 "Let us join!"
+ german_confederation.4.b:0 "We will not elect to join this 'Confederation'."
+ german_confederation.4.c:0 "We will lead our people to glory!"
+ 
+ german_confederation.n.5:0 "Unification of the German Confederation"
+ german_confederation.d.5:0 "The German Confederation has been a disparate union of autonomous German states for a while already. As the leader of this union it has been our objective to bring these states together into one union. May that day be today!"
+ german_confederation.5.a:0 "The path to greatness lies ahead."
+ 
+ german_confederation.n.6:0 "Unification of the German Confederation"
+ german_confederation.d.6:0 "The German Confederation has been a disparate union of autonomous German states for a while already. As a member of this union it has been important to seek the protection of the Confederation, now it seems to be unification that matters most."
+ german_confederation.6.a:0 "We are one with Germany."
+ german_confederation.6.b:0 "Our destiny is with our own!"
+ 
+ german_confederation.n.7:0 "The German Confederation"
+ german_confederation.d.7:0 "After some time we have devised an alternative to the old Holy Roman Empire. This new German Confederation cannot claim to be Rome in any capacity, but with newfound German nationalism the sentiment for a unified Germany in some capacity is quite important at this time. We need to institute some sort of union, of course."
+ german_confederation.7.a:0 "Let us do so!"
+ 
+ german_confederation.n.8:0 "The German Empire"
+ german_confederation.d.8:0 "After some time we have devised an alternative to the old Holy Roman Empire. This new German Empire cannot claim to be Rome in any capacity, but with newfound German nationalism the sentiment for a unified Germany in some capacity is quite important at this time. We need to institute some sort of union, of course."
+ german_confederation.8.a:0 "Let us do so!"
+ 
+ german_confederation.n.9:0 "Invitation to the German Empire"
+ german_confederation.d.9:0 "After some time an alternative to the old Holy Roman Empire has been created. This new German Empire cannot claim to be Rome in any capacity, but with newfound German nationalism the sentiment for a unified Germany in some capacity is quite important at this time. We are best to be part of some sort of union, of course."
+ german_confederation.9.a:0 "Let us join!"
+ german_confederation.9.b:0 "We will not elect to join."
+ german_confederation.9.c:0 "We will lead our people to glory!"
+ 
+ german_confederation.n.12:0 "Unification of the German Peoples"
+ german_confederation.d.12:0 "A coup has happened in the leadership of the German Confederation. It is inspiring liberal revolutionary revolts across Germany and its satellite states."
+ german_confederation.12.a:0 "We are one with Germany."
+ german_confederation.12.b:0 "Our destiny is with our own!"
+ 
+ 
+ 
+ 
+ 
+ socioeconomicevents.t.1:0 "State Pension Returns"
+ socioeconomicevents.d.1:0 "Today is a date set for the return of state pensions. Some employees have retired and our policies require retirement funds sent to their addresses."
+ socioeconomicevents.1.a:0 "Okay."
+ socioeconomicevents.t.2:0 "State Tax Returns"
+ socioeconomicevents.d.2:0 "Today is a date set for the return of state tax returns. The populations' taxes have been calculated and excess taxes must be returned."
+ socioeconomicevents.2.a:0 "Okay."
+ 
+ societalmodernization.t.1:0 "Demands for a State Welfare System"
+ societalmodernization.d.1:0 "Some influences from the Enlightenment suggest the equality for all. One of the ideas that has manifested is the concept of a social welfare system which the population has considered an attractive prospect."
+ societalmodernization.1.a:0 "Okay."
+ societalmodernization.t.2:0 "Demands for State Workplace Health Management"
+ societalmodernization.d.2:0 "Some influences from the Enlightenment suggest the equality for all. One of the ideas that has manifested is the concept of a state workplace health management system which the population has considered an attractive prospect."
+ societalmodernization.2.a:0 "Okay."
+ societalmodernization.t.3:0 "Demands for State Health Care Project"
+ societalmodernization.d.3:0 "Some influences from the Enlightenment suggest the equality for all. One of the ideas that has manifested is the concept of a state health care system which the population has considered an attractive prospect."
+ societalmodernization.3.a:0 "Okay."
+ societalmodernization.t.4:0 "Demands for Workplace Safety Policies"
+ societalmodernization.d.4:0 "Some influences from the Enlightenment suggest the equality for all. One of the ideas that has manifested is the concept of workplace safety requirements which the population has considered an attractive prospect."
+ societalmodernization.4.a:0 "Okay."
+ societalmodernization.t.5:0 "Demands for Workplace Regulated Work Week"
+ societalmodernization.d.5:0 "Some influences from the Enlightenment suggest the equality for all. One of the ideas that has manifested is the concept of a regulated work week which the population has considered an attractive prospect."
+ societalmodernization.5.a:0 "Okay."
+ societalmodernization.t.6:0 "Demands for Labor Union Rights"
+ societalmodernization.d.6:0 "Some influences from the Enlightenment suggest the equality for all. One of the ideas that has manifested is the concept of the labor unions which the population has considered an attractive prospect."
+ societalmodernization.6.a:0 "Okay."
+ societalmodernization.t.7:0 "Demands for Product Quality Regulations"
+ societalmodernization.d.7:0 "Some influences from the Enlightenment suggest the equality for all. One of the ideas that has manifested is the concept of product quality regulations which the population has considered an attractive prospect."
+ societalmodernization.7.a:0 "Okay."
+ 
+ societalmodernization.t.8:0 "Workplace Safety Policy Prepared"
+ societalmodernization.d.8:0 "Our bureaucrats and lawmakers have finalized a draft for a policy designed to placate the demands of the masses for Workplace Safety regulations. As it stands, this policy will most likely harm the economy but some populists and socialists generally agree that this policy will satisfy their demands. Of course, only for now. This policy will possibly upset the conservative factions."
+ societalmodernization.8.a:0 "Enact the policies now!"
+ societalmodernization.8.b:0 "We will wait to place them in effect."
+ 
+ societalmodernization.t.9:0 "Social Welfare Policy Prepared"
+ societalmodernization.d.9:0 "Our bureaucrats and lawmakers have finalized a draft for a policy designed to placate the demands of the masses for a Social Welfare program. As it stands, this policy will most likely harm the economy but some populists and socialists generally agree that this policy will satisfy their demands. Of course, only for now. This policy will possibly upset the conservative factions."
+ societalmodernization.9.a:0 "Enact the policies now!"
+ societalmodernization.9.b:0 "We will wait to place them in effect."
+ 
+ societalmodernization.t.10:0 "Workplace Health Regulation Policy Prepared"
+ societalmodernization.d.10:0 "Our bureaucrats and lawmakers have finalized a draft for a policy designed to placate the demands of the masses for Workplace Health regulations. As it stands, this policy will most likely harm the economy but some populists and socialists generally agree that this policy will satisfy their demands. Of course, only for now. This policy will possibly upset the conservative factions."
+ societalmodernization.10.a:0 "Enact the policies now!"
+ societalmodernization.10.b:0 "We will wait to place them in effect."
+ 
+ societalmodernization.t.11:0 "State Healthcare Policy Prepared"
+ societalmodernization.d.11:0 "Our bureaucrats and lawmakers have finalized a draft for a policy designed to placate the demands of the masses for a State Healthcare program. As it stands, this policy will most likely harm the economy but some populists and socialists generally agree that this policy will satisfy their demands. Of course, only for now. This policy will possibly upset the conservative factions."
+ societalmodernization.11.a:0 "Enact the policies now!"
+ societalmodernization.11.b:0 "We will wait to place them in effect."
+ 
+ societalmodernization.t.12:0 "Work Week Regulative Policy Prepared"
+ societalmodernization.d.12:0 "Our bureaucrats and lawmakers have finalized a draft for a policy designed to placate the demands of the masses for Work Week regulations. As it stands, this policy will most likely harm the economy but some populists and socialists generally agree that this policy will satisfy their demands. Of course, only for now. This policy will possibly upset the conservative factions."
+ societalmodernization.12.a:0 "Enact the policies now!"
+ societalmodernization.12.b:0 "We will wait to place them in effect."
+ 
+ societalmodernization.t.13:0 "Labor Union Policy Prepared"
+ societalmodernization.d.13:0 "Our bureaucrats and lawmakers have finalized a draft for a policy designed to placate the demands of the masses for Labor Union rights. As it stands, this policy will most likely harm the economy but some populists and socialists generally agree that this policy will satisfy their demands. Of course, only for now. This policy will possibly upset the conservative factions."
+ societalmodernization.13.a:0 "Enact the policies now!"
+ societalmodernization.13.b:0 "We will wait to place them in effect."
+ 
+ societalmodernization.t.14:0 "Product Regulation Policy Prepared"
+ societalmodernization.d.14:0 "Our bureaucrats and lawmakers have finalized a draft for a policy designed to placate the demands of the masses for Product Quality regulations. As it stands, this policy will most likely harm the economy but some populists and socialists generally agree that this policy will satisfy their demands. Of course, only for now. This policy will possibly upset the conservative factions."
+ societalmodernization.14.a:0 "Enact the policies now!"
+ societalmodernization.14.b:0 "We will wait to place them in effect."
+ 
+ policy_prepared:0 "Although we will be delaying the effect of our policy for the meantime, we will be able to enact it in full later. Bear in mind though, that unrest will most likely be building up over time if we elect to postpone the aforementioned policy."
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ space_probe_flyby.n.1:0 "Mars Flyby"
+ space_probe_flyby.d.1:0 "As the satellite program in $COUNTRY$ has grown in both funding and knowledge, as well as confidence, so has the ambition. We have successfully flown a probe past Mars and have imaged it and will continue studying it for quite a while longer. It may take generations before we have exhausted all potential exploratory gain from this world. But scientists believe Mars to be the easiest in-solar system candidate for terraformation, something that could be considered later in the future."
+ space_probe_flyby.1.a:0 "We are but one step closer to the stars."
+ 
+ space_probe_flyby.n.2:0 "Venus Flyby"
+ space_probe_flyby.d.2:0 "Mars was the first logical consideration for a probe flyby. Now we should turn our attention inward, to Venus. Although it is the most inhospitable terrestrial planet in the solar system, it still holds significance. For one, its day is comparable in timespan to its year, its lower atmosphere contains caustic material and its surface is the hottest in the solar system. To colonize Venus we should master the art of unconventional space technology, a true mastery to attain."
+ space_probe_flyby.2.a:0 "Perhaps the Unconventional yields one secret to mastering the void."
+ 
+ space_probe_flyby.n.3:0 "Mercury Flyby"
+ space_probe_flyby.d.3:0 "To yet our most distant exploration from the Earth - but not the most distant possibility. Mercury, the first planet in the solar system with a year of only under three months and without atmosphere, is also most reminescent to the Moon around the homeworld. Its daytime is exceptionally hot but its nighttime surface is quite cool. Some could consider Mercury the blandest planet in the solar system but there are some that can find beauty in it nevertheless."
+ space_probe_flyby.3.a:0 "Though closest to the Sun, we still are yet closer to the stars in the night sky."
+ 
+ space_probe_flyby.n.4:0 "Jupiter Flyby"
+ space_probe_flyby.d.4:0 "The Colossal, most masculine object in the solar system, Jupiter. It prevents the formation of a terrestrial planet between Mars and itself due to its impeding gravitational field. It brings with it a concubine of moons. Io, Europa, Ganymede and Callisto are simply the primary Galilean moons but there are many captured asteroids orbiting the solar titan. Also accompanying Jupiter are dark rings and a number of storm systems, most notably the Great Red Spot, an extraterrestrial hurricane noted as far back as even Galileo himself. Now we can explore this mysterious world and unfold the secrets of what may be the most curious planet we currently know near us."
+ space_probe_flyby.4.a:0 "The planet whose surface is but a sky can yet still remain more solid than even the planets closest to the Sun."
+ 
+ space_probe_flyby.n.5:0 "Saturn Flyby"
+ space_probe_flyby.d.5:0 "After Jupiter our probes drift outward to Saturn. It has the most rounded moons of any object in the solar system, from Mimas to Titan - the most exotic moon we know - to Iapetus, and much like Jupiter it carries an army of minor moons both within its vast rings and in its general gravitational influence. Unlike Jupiter its surface appears much smoother with less noticeable cloud bands."
+ space_probe_flyby.5.a:0 "The planet whose surface is but a sky can yet still remain most solid."
+ 
+ space_probe_flyby.n.6:0 "Urauns Flyby"
+ space_probe_flyby.d.6:0 "-AWAITING LOCALIZATION-"
+ space_probe_flyby.6.a:0 "A blue titan of a world, a homage to the oceans of Earth."
+ 
+ space_probe_flyby.n.7:0 "Neptune Flyby"
+ space_probe_flyby.d.7:0 "-AWAITING LOCALIZATION-"
+ space_probe_flyby.7.a:0 "It is strangely reminescent of a star - with its internal heat outmatching the heat from the Sun, though distant."
+ 
+ space_probe_flyby.n.8:0 "Solar Exit"
+ space_probe_flyby.d.8:0 "-AWAITING LOCALIZATION-"
+ space_probe_flyby.8.a:0 "Fly, fly, traverse the stars as humans since time immemorial always had desired!"
+ 
+ 
+ national_stability_war.n.1:0 "National Crisis"
+ national_stability_war.d.1:0 "It would appear that our nation has been stressed to a breaking point. Wars and opportunists have taken the toll on the country and it seems now that nationalists and other malcontents are seeking to establish their ideals over the shattering empire."
+ national_stability_war.1.a:0 "We can't stop them."
+ national_stability_war.1.b:0 "Destroy them all!"
+ 
+ artillery_modernization.t.1:0 "Army Modernization"
+ artillery_modernization.d.1:0 "As the Industrial Revolution continues, new innovations in army equipment have been made. They increase the efficiency of our armies at their primary tasks but at the same time come at the fiscal cost of maintenance."
+ artillery_modernization.1.a:0 "Excellent."
+ artillery_modernization.t.2:0 "Army Modernization"
+ artillery_modernization.d.2:0 "As the Industrial Revolution continues, new innovations in army equipment have been made. They increase the efficiency of our armies at their primary tasks but at the same time come at the fiscal cost of maintenance."
+ artillery_modernization.2.a:0 "Excellent."
+ artillery_modernization.t.3:0 "Army Modernization"
+ artillery_modernization.d.3:0 "As the Industrial Revolution continues, new innovations in army equipment have been made. They increase the efficiency of our armies at their primary tasks but at the same time come at the fiscal cost of maintenance."
+ artillery_modernization.3.a:0 "Excellent."
+ artillery_modernization.t.4:0 "Army Modernization"
+ artillery_modernization.d.4:0 "As the Industrial Revolution continues, new innovations in army equipment have been made. They increase the efficiency of our armies at their primary tasks but at the same time come at the fiscal cost of maintenance."
+ artillery_modernization.4.a:0 "Excellent."
+ artillery_modernization.t.5:0 "Army Modernization"
+ artillery_modernization.d.5:0 "As the Industrial Revolution continues, new innovations in army equipment have been made. They increase the efficiency of our armies at their primary tasks but at the same time come at the fiscal cost of maintenance."
+ artillery_modernization.5.a:0 "Excellent."
+ 
+ governmentadmdev.t.1:0 "Development of Administration"
+ governmentadmdev.d.1:0 "Development of Administration"
+ governmentadmdev.1.a:0 "Excellent."
+ 
+ governmentadmdev.t.2:0 "Development of Administration"
+ governmentadmdev.d.2:0 "Development of Administration"
+ governmentadmdev.2.a:0 "Excellent."
+ 
+ westeurope.n.1:0 "Irish Nationalism"
+ westeurope.d.1:0 "-AWAITING LOCALIZATION-"
+ westeurope.1.a:0 "Okay."
+ 
+ westeurope.n.2:0 "Revolutions of 1848 in $COUNTRY$"
+ westeurope.d.2:0 "-AWAITING LOCALIZATION-"
+ westeurope.2.a:0 "We will not!"
+ westeurope.2.b:0 "There is no choice but to submit; create a parliament."
+ westeurope.2.c:0 "We must cave to their demands."
+ westeurope.2.d:0 "We should take the lead to bring an end to the old order!"
+ 
+ INDUSTRIAL_REVOLUTION_EVENTS.t.1:0 "Demand for Parliamentary Representation"
+ INDUSTRIAL_REVOLUTION_EVENTS.d.1:0 "Something which became more common over the course of the 18th and 19th centuries - especially with the advent of things such as the American and French Republics, was the revolutionary concept of parliamentarism. Though parliamentarism has been around in one form or another for nearly as long as civilization, enlightenment philosophers popularized it throughout the 1600's and 1700's. It became commonplace as more countries expanded their influences and through conquest, and yielded many new republics in their wakes."
+ INDUSTRIAL_REVOLUTION_EVENTS.1.a:0 "There is no choice, we must accept their demands."
+ INDUSTRIAL_REVOLUTION_EVENTS.1.b:0 "We will not yield to the revolutionaries."
+ 
+ INDUSTRIAL_REVOLUTION_EVENTS.t.2:0 "The Revolutions of 1848"
+ INDUSTRIAL_REVOLUTION_EVENTS.d.2:0 "The climax of popular demand for governmental representation could arguably be considered in the Revolutions of 1848. In it, another French Republic was created and many other nations made way to accomodate for constitutionalism and parliamentarism."
+ INDUSTRIAL_REVOLUTION_EVENTS.2.a:0 "There is no choice, we must accept their demands."
+ INDUSTRIAL_REVOLUTION_EVENTS.2.b:0 "We will not yield to the revolutionaries."
+ INDUSTRIAL_REVOLUTION_EVENTS.2.c:0 "Let's embrace their ideas in full!"
+ 
+ 
+ 
+ 
+ meiji.n.1:0 "Beginning the Meiji Restoration"
+ meiji.d.1:0 "-AWAITING LOCALIZATION-"
+ meiji.1.a:0 "We must begin a transition; Japan must be reborn."
+ meiji.1.b:0 "Never will Japan become corrupted by the foreigner."
+ 
+ meiji.n.2:0 "Importation of Foreign Technology"
+ meiji.d.2:0 "-AWAITING LOCALIZATION-"
+ meiji.2.a:0 "There will be a renaissance."
+ 
+ tradegoods.n.1:0 "Production of Industrial Equipment"
+ tradegoods.d.1:0 "Through expansion of industrial production infrastructure, $PROVINCE$ has managed to alter its economy to such an extent that its primary export has changed to industrial materials."
+ tradegoods.1.a:0 "Wonderful."
+ 
+ tradegoods.n.2:0 "Production of Naval Equipment"
+ tradegoods.d.2:0 "Through expansion of industrial production infrastructure, $PROVINCE$ has managed to alter its economy to such an extent that its primary export has changed to naval assets."
+ tradegoods.2.a:0 "Wonderful."
+ 
+ tradegoods.n.3:0 "Production of Electronics"
+ tradegoods.d.3:0 "Through expansion of industrial production infrastructure, $PROVINCE$ has managed to alter its economy to such an extent that its primary export has changed to electronic products."
+ tradegoods.3.a:0 "Wonderful."
+ 
+ tradegoods.n.4:0 "Mass Electrification"
+ tradegoods.d.4:0 "-AWAITING LOCALIZATION-"
+ tradegoods.4.a:0 "Wonderful."
+ 
+ tradegoods.n.5:0 "Industrial Coal-powered Technology"
+ tradegoods.d.5:0 "-AWAITING LOCALIZATION-"
+ tradegoods.5.a:0 "Wonderful."
+ 
+ tradegoods.n.6:0 "Electronics"
+ tradegoods.d.6:0 "-AWAITING LOCALIZATION-"
+ tradegoods.6.a:0 "Wonderful."
+ 
+ tradegoods.n.7:0 "Industrial Refrigeration"
+ tradegoods.d.7:0 "-AWAITING LOCALIZATION-"
+ tradegoods.7.a:0 "Wonderful."
+ 
+ tradegoods.n.8:0 "Military Dependency for Industrial Materials"
+ tradegoods.d.8:0 "As the Industrial Revolution accelerates, it is practically guaranteed that over time many aspects of life would change to its demand. The military is no exemption, it too has changed. The fuel of warfare is no longer simply food, but it is also coal and the black gold known to be oil. Not only this, but metals have also seen a rise in demand to create new weapons and assets of war."
+ tradegoods.8.a:0 "Wonderful."
+ 
+ tradegoods.n.9:0 "Modern Architecture"
+ tradegoods.d.9:0 "-AWAITING LOCALIZATION-"
+ tradegoods.9.a:0 "Wonderful."
+ 
+ tradegoods.n.10:0 "Growth of the Automobile Industry"
+ tradegoods.d.10:0 "-AWAITING LOCALIZATION-"
+ tradegoods.10.a:0 "Wonderful."
+ 
+ tradegoods.n.11:0 "Expansion of the Cinematic Industry"
+ tradegoods.d.11:0 "-AWAITING LOCALIZATION-"
+ tradegoods.11.a:0 "Wonderful."
+ 
+ tradegoods.n.12:0 "The Second Industrial Revolution"
+ tradegoods.d.12:0 "-AWAITING LOCALIZATION-"
+ tradegoods.12.a:0 "Wonderful."
+ 
+ tradegoods.n.13:0 "The Cotton Gin"
+ tradegoods.d.13:0 "-AWAITING LOCALIZATION-"
+ tradegoods.13.a:0 "Wonderful."
+ 
+ tradegoods.n.14:0 "Artificial Silks"
+ tradegoods.d.14:0 "-AWAITING LOCALIZATION-"
+ tradegoods.14.a:0 "Very useful."
+ 
+ tradegoods.n.15:0 "Artificial Sweeteners"
+ tradegoods.d.15:0 "-AWAITING LOCALIZATION-"
+ tradegoods.15.a:0 "Interesting."
+ 
+ tradegoods.n.16:0 "Milk Chococlate"
+ tradegoods.d.16:0 "-AWAITING LOCALIZATION-"
+ tradegoods.16.a:0 "Interesting innovations."
+ 
+ tradegoods.n.17:0 "Birth of the $COUNTRY$ Media Industry"
+ tradegoods.d.17:0 "-AWAITING LOCALIZATION-"
+ tradegoods.17.a:0 "This will be important."
+ 
+ nuclearevents.n.1:0 "Nuclear Detonation in $PROVINCENAME$"
+ nuclearevents.d.1:0 "Some time today our enemies have launched a mission to use a nuclear device in $PROVINCENAME$. Unfortunately their aerospace superiority has made their detonation a successful one, evading all countermeasures. Many thousands are already dead and within several weeks more will follow."
+ nuclearevents.1.a:0 "Something needs to be done about this!"
+ 
+ nuclearevents.n.2:0 "Nuclear Weapons Program Complete in $COUNTRY$"
+ nuclearevents.d.2:0 "For many years already the concept of manipulating the atom has remained but a mystery relegated to the minds of science-fiction writers. This is no longer the case, as $COUNTRY$ has managed to construct its first functioning atomic weapon. For years the military science agencies have labored, attempting to create the ultimate weapon of our time. Now we get to reap the reward."
+ nuclearevents.2.a:0 "With these, we can attain true dominance!"
+ nuclearevents.2.b:0 "With these, we can attain true dominance!"
+ nuclearevents.2.c:0 "With these, we can attain true dominance!"
+ 
+ societalliberalization.t.1:0 "Demands for Child Labor Abolition"
+ societalliberalization.d.1:0 "-AWAITING LOCALIZATION-"
+ societalliberalization.1.a:0 "Okay."
+ 
+ societalliberalization.t.2:0 "Demands for Womens' Rights"
+ societalliberalization.d.2:0 "-AWAITING LOCALIZATION-"
+ societalliberalization.2.a:0 "Okay."
+ 
+ societalliberalization.t.3:0 "Demands for Social Minority Rights"
+ societalliberalization.d.3:0 "-AWAITING LOCALIZATION-"
+ societalliberalization.3.a:0 "Okay."
+ 
+ spainunity.n.2:0 "The Spanish Nation"
+ spainunity.d.2:0 "-AWAITING LOCALIZATION-"
+ spainunity.2.a:0 "Okay."
+ 
+ alt_center_rev.n.1:0 "Liberal Philosophers gather in $PROVINCENAME$"
+ alt_center_rev.d.1:0 "The parliamentary nation of $OWNERNAME$ has found itself to be a haven for liberal philosophers. They are inspiring liberal values in the nearby population, something disastrous for reactionary nations. Nevertheless this will probably lead to a new wave of revolutions if not dealt with."
+ alt_center_rev.1.a:0 "Okay."
+
+ alt_center_rev.n.2:0 "The Aging Revolution"
+ alt_center_rev.d.2:0 "The Revolution has started and reached its climax in the previous century. The regimes of the Revolution are aging, and are bound to embrace the ideological progenies of the Enlightenment. Socialism, Liberalism, or Reactionary ideologies will make their way to the forefront in the next century most likely."
+ alt_center_rev.2.a:0 "Okay."
+ 
+ alt_center_rev.n.3:0 "The Aging Revolution"
+ alt_center_rev.d.3:0 "The Revolution has started and reached its climax in the previous century. The regimes of the Revolution are aging, and are bound to embrace the ideological progenies of the Enlightenment. Socialism, Liberalism, or Reactionary ideologies will make their way to the forefront in the next century most likely."
+ alt_center_rev.3.a:0 "Okay."
+ 
+ colonial_assimilation.n.1:0 "Overlord Culture"
+ colonial_assimilation.d.1:0 "-AWAITING LOCALIZATION-"
+ colonial_assimilation.1.a:0 "Okay."
+ 
+ societalliberalization.t.4:0 "Demands for Adequate Living Standards"
+ societalliberalization.d.4:0 "-AWAITING LOCALIZATION-"
+ societalliberalization.4.a:0 "Okay."
+ 
+ new_institution_events.2.t:0 "The Institution of Imperialism"
+ new_institution_events.2.d:0 "Our nation is home to a new sentiment, known as global imperialism. Our nation calls for glory, to expand outward, and new innovations in this age of revolution have made it so."
+ new_institution_events.2.a:0 "Glorious!"
+ new_institution_events.200.d:0 "Some new innovations and sentiments are spreading throughout the world, known as Global Imperialism. Our nation calls for glory, to expand outward, and new innovations in this age of revolution have made it so."
+ new_institution_events.2.a.tt:0 "Countries that have not yet fully §YEmbraced§! the §YGlobal Imperialism§! Institution will receive an increasing technology cost penalty of §R1%§! per year up to at most §R25%§!."
+ 
+ new_institution_events.3.t:0 "Industrialization"
+ new_institution_events.3.d:0 "Our nation is home to a new revolutionary institution, known mostly as Industrialization. While it does sound very appealing, some philosophers may suggest it has its own drawbacks."
+ new_institution_events.3.a:0 "It sounds wonderful!"
+ new_institution_events.300.d:0 "A new institution is spreading throughout our nation, known as Industrialization. It sounds only appropriate that we embrace it to keep with the ever-changing times."
+ new_institution_events.3.a.tt:0 "Countries that have not yet fully §YEmbraced§! the §YIndustrialization§! Institution will receive an increasing technology cost penalty of §R1%§! per year up to at most §R200%§!."
+ 
+ new_institution_events.4.t:0 "Nationalism"
+ new_institution_events.4.d:0 "Our nation is home to a new revolutionary institution, known as Nationalism. Although Nationalism has already existed in differing brands, this one is more interested in altering the popular governing doctrine."
+ new_institution_events.4.a:0 "Interesting."
+ new_institution_events.400.a:0 "Interesting."
+ new_institution_events.401.a:0 "Interesting."
+ new_institution_events.400.d:0 "A new institution is spreading throughout our nation, known as Nationalism. Although Nationalism has already existed in differing brands, this one seems more interested in the popular governing doctrine."
+ new_institution_events.401.d:0 "A new institution is spreading throughout the world, known as Nationalism. Although Nationalism has already existed in differing brands, this one seems more interested in the popular governing doctrine."
+ new_institution_events.4.a.tt:0 "Countries that have not yet fully §YEmbraced§! the §YNationalism§! Institution will receive an increasing technology cost penalty of §R1%§! per year up to at most §R200%§!."
+ 
+ new_institution_events.5.t:0 "Compulsory Education"
+ new_institution_events.5.d:0 "Our nation is home to a new liberal institution, known as Compulsory Education. It is an institution considered widely popular by our population, and we'd do well to embrace it ourselves."
+ new_institution_events.5.a:0 "It sounds useful!"
+ new_institution_events.500.d:0 "A new institution is spreading throughout our nation, known as Compulsory Education. It is an institution considered widely popular by our population, and we'd do well to embrace it ourselves."
+ new_institution_events.51.d:0 "A new institution is spreading throughout our nation, known as Compulsory Education. It is an institution considered widely popular by our population, and we'd do well to embrace it ourselves."
+ new_institution_events.51.a.tt:0 "Countries that have not yet fully §YEmbraced§! the §YCompulsory Education§! Institution will receive an increasing technology cost penalty of §R1%§! per year up to at most §R200%§!."
+ 
+ new_institution_events.6.t:0 "Electrification"
+ new_institution_events.6.d:0 "Our nation is home to a new technological institution, known as Electrification. An institution certainly universally important, to keep up with the times we should embrace and utilize this institution to its fullest extent."
+ new_institution_events.6.a:0 "Very important!"
+ new_institution_events.600.d:0 "A new institution is spreading throughout our nation, known as Electrification. An institution certainly universally important, to keep up with the times we should embrace and utilize this institution to its fullest extent."
+ new_institution_events.6.a.tt:0 "Countries that have not yet fully §YEmbraced§! the §YElectrification§! Institution will receive an increasing technology cost penalty of §R1%§! per year up to at most §R200%§!."
+ 
+ new_institution_events.7.t:0 "Mass Media"
+ new_institution_events.7.d:0 "Our nation is home to a new cultural institution, known as Mass Media. It is an institution considered extremely popular by our population, and we'd do well to embrace it ourselves, especially for our political gains."
+ new_institution_events.7.a:0 "It sounds useful!"
+ new_institution_events.700.d:0 "A new institution is spreading throughout our nation, known as Compulsory Education. It is an institution considered extremely popular by our population, and we'd do well to embrace it ourselves, especially for our political gains."
+ new_institution_events.7.a.tt:0 "Countries that have not yet fully §YEmbraced§! the §YMass Media§! Institution will receive an increasing technology cost penalty of §R1%§! per year up to at most §R200%§!."
+ 
+ new_institution_events.8.t:0 "Informational Infrastructure"
+ new_institution_events.8.d:0 "Our nation is home to a new government/militaristic institution, known as Informational Infrastructure. It is an institution considered extremely useful by our government."
+ new_institution_events.8.a:0 "It sounds useful!"
+ new_institution_events.800.d:0 "A new institution is spreading throughout our government, known as Informational Infrastructure. It is an institution considered extremely useful by our state, information control is imperative."
+ new_institution_events.8.a.tt:0 "Countries that have not yet fully §YEmbraced§! the §YInformational Infrastructure§! Institution will receive an increasing technology cost penalty of §R1%§! per year up to at most §R200%§!."
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ frenchitalyconquest.n.1:0 "Province Assimilation"
+ frenchitalyconquest.d.1:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ frenchitalyconquest.1.a:0 "Okay."
+ frenchitalyconquest.n.2:0 "Province Assimilation"
+ frenchitalyconquest.d.2:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ frenchitalyconquest.2.a:0 "Okay."
+ frenchitalyconquest.n.3:0 "Province Assimilation"
+ frenchitalyconquest.d.3:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ frenchitalyconquest.3.a:0 "Okay."
+ frenchitalyconquest.n.4:0 "Province Assimilation"
+ frenchitalyconquest.d.4:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ frenchitalyconquest.4.a:0 "Okay."
+ frenchitalyconquest.n.5:0 "Province Assimilation"
+ frenchitalyconquest.d.5:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ frenchitalyconquest.5.a:0 "Okay."
+ frenchitalyconquest.n.6:0 "Province Assimilation"
+ frenchitalyconquest.d.6:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ frenchitalyconquest.6.a:0 "Okay."
+ frenchitalyconquest.n.7:0 "Province Assimilation"
+ frenchitalyconquest.d.7:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ frenchitalyconquest.7.a:0 "Okay."
+ frenchitalyconquest.n.8:0 "Province Assimilation"
+ frenchitalyconquest.d.8:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ frenchitalyconquest.8.a:0 "Okay."
+ frenchitalyconquest.n.9:0 "Province Assimilation"
+ frenchitalyconquest.d.9:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ frenchitalyconquest.9.a:0 "Okay."
+ frenchitalyconquest.n.10:0 "Province Assimilation"
+ frenchitalyconquest.d.10:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ frenchitalyconquest.10.a:0 "Okay."
+ frenchitalyconquest.n.11:0 "Province Assimilation"
+ frenchitalyconquest.d.11:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ frenchitalyconquest.11.a:0 "Okay."
+ 
+ germanitalyconquest.n.1:0 "Province Assimilation"
+ germanitalyconquest.d.1:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germanitalyconquest.1.a:0 "Okay."
+ germanitalyconquest.n.2:0 "Province Assimilation"
+ germanitalyconquest.d.2:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germanitalyconquest.2.a:0 "Okay."
+ germanitalyconquest.n.3:0 "Province Assimilation"
+ germanitalyconquest.d.3:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germanitalyconquest.3.a:0 "Okay."
+ germanitalyconquest.n.4:0 "Province Assimilation"
+ germanitalyconquest.d.4:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germanitalyconquest.4.a:0 "Okay."
+ germanitalyconquest.n.5:0 "Province Assimilation"
+ germanitalyconquest.d.5:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germanitalyconquest.5.a:0 "Okay."
+ germanitalyconquest.n.6:0 "Province Assimilation"
+ germanitalyconquest.d.6:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germanitalyconquest.6.a:0 "Okay."
+ germanitalyconquest.n.7:0 "Province Assimilation"
+ germanitalyconquest.d.7:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germanitalyconquest.7.a:0 "Okay."
+ germanitalyconquest.n.8:0 "Province Assimilation"
+ germanitalyconquest.d.8:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germanitalyconquest.8.a:0 "Okay."
+ germanitalyconquest.n.9:0 "Province Assimilation"
+ germanitalyconquest.d.9:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germanitalyconquest.9.a:0 "Okay."
+ germanitalyconquest.n.10:0 "Province Assimilation"
+ germanitalyconquest.d.10:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germanitalyconquest.10.a:0 "Okay."
+ germanitalyconquest.n.11:0 "Province Assimilation"
+ germanitalyconquest.d.11:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germanitalyconquest.11.a:0 "Okay."
+ 
+ germandutchconquest.n.1:0 "Province Assimilation"
+ germandutchconquest.d.1:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germandutchconquest.1.a:0 "Okay."
+ germandutchconquest.n.2:0 "Province Assimilation"
+ germandutchconquest.d.2:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germandutchconquest.2.a:0 "Okay."
+ germandutchconquest.n.3:0 "Province Assimilation"
+ germandutchconquest.d.3:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germandutchconquest.3.a:0 "Okay."
+ 
+ frenchenglandconquest.n.1:0 "Province Assimilation"
+ frenchenglandconquest.d.1:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ frenchenglandconquest.1.a:0 "Okay."
+ frenchenglandconquest.n.2:0 "Province Assimilation"
+ frenchenglandconquest.d.2:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ frenchenglandconquest.2.a:0 "Okay."
+ 
+ frenchgermanyconquest.n.1:0 "Province Assimilation"
+ frenchgermanyconquest.d.1:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ frenchgermanyconquest.1.a:0 "Okay."
+ frenchgermanyconquest.n.2:0 "Province Assimilation"
+ frenchgermanyconquest.d.2:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ frenchgermanyconquest.2.a:0 "Okay."
+ frenchgermanyconquest.n.3:0 "Province Assimilation"
+ frenchgermanyconquest.d.3:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ frenchgermanyconquest.3.a:0 "Okay."
+ frenchgermanyconquest.n.4:0 "Province Assimilation"
+ frenchgermanyconquest.d.4:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ frenchgermanyconquest.4.a:0 "Okay."
+ frenchgermanyconquest.n.5:0 "Province Assimilation"
+ frenchgermanyconquest.d.5:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ frenchgermanyconquest.5.a:0 "Okay."
+ frenchgermanyconquest.n.6:0 "Province Assimilation"
+ frenchgermanyconquest.d.6:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ frenchgermanyconquest.6.a:0 "Okay."
+ frenchgermanyconquest.n.7:0 "Province Assimilation"
+ frenchgermanyconquest.d.7:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ frenchgermanyconquest.7.a:0 "Okay."
+ frenchgermanyconquest.n.8:0 "Province Assimilation"
+ frenchgermanyconquest.d.8:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ frenchgermanyconquest.8.a:0 "Okay."
+ 
+ frenchgermanyconquest.n.9:0 "Union of the French and German Peoples"
+ frenchgermanyconquest.d.9:0 "We have spent monumental efforts for the longest of times to create a union of France and Germany. Now we have committed ourselves to the cause such that the masses would naturally intermingle, and a new culture would be formed. The French are most likely to adopt germanic traits, as the same can be said in reverse. A cultural union is bound, although possibly difficult to maintain if not done properly."
+ frenchgermanyconquest.9.a:0 "Delightful!"
+ frenchgermanyconquest.9.b:0 "We will not let our kind be diluted by the Germans!"
+ 
+ frenchspainconquest.n.1:0 "Province Assimilation"
+ frenchspainconquest.d.1:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ frenchspainconquest.1.a:0 "Okay."
+ frenchspainconquest.n.2:0 "Province Assimilation"
+ frenchspainconquest.d.2:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ frenchspainconquest.2.a:0 "Okay."
+ frenchspainconquest.n.3:0 "Province Assimilation"
+ frenchspainconquest.d.3:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ frenchspainconquest.3.a:0 "Okay."
+ frenchspainconquest.n.4:0 "Province Assimilation"
+ frenchspainconquest.d.4:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ frenchspainconquest.4.a:0 "Okay."
+ frenchspainconquest.n.5:0 "Province Assimilation"
+ frenchspainconquest.d.5:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ frenchspainconquest.5.a:0 "Okay."
+ frenchspainconquest.n.6:0 "Province Assimilation"
+ frenchspainconquest.d.6:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ frenchspainconquest.6.a:0 "Okay."
+ 
+ 
+ germanfranceconquest.n.1:0 "Province Assimilation"
+ germanfranceconquest.d.1:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germanfranceconquest.1.a:0 "Okay."
+ germanfranceconquest.n.2:0 "Province Assimilation"
+ germanfranceconquest.d.2:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germanfranceconquest.2.a:0 "Okay."
+ germanfranceconquest.n.3:0 "Province Assimilation"
+ germanfranceconquest.d.3:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germanfranceconquest.3.a:0 "Okay."
+ germanfranceconquest.n.4:0 "Province Assimilation"
+ germanfranceconquest.d.4:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germanfranceconquest.4.a:0 "Okay."
+ germanfranceconquest.n.5:0 "Province Assimilation"
+ germanfranceconquest.d.5:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germanfranceconquest.5.a:0 "Okay."
+ germanfranceconquest.n.6:0 "Province Assimilation"
+ germanfranceconquest.d.6:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germanfranceconquest.6.a:0 "Okay."
+ germanfranceconquest.n.7:0 "Province Assimilation"
+ germanfranceconquest.d.7:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germanfranceconquest.7.a:0 "Okay."
+ germanfranceconquest.n.8:0 "Province Assimilation"
+ germanfranceconquest.d.8:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germanfranceconquest.8.a:0 "Okay."
+ 
+ germanfranceconquest.n.9:0 "Union of the French and German Peoples"
+ germanfranceconquest.d.9:0 "We have spent monumental efforts for the longest of times to create a union of France and Germany. Now we have committed ourselves to the cause such that the masses would naturally intermingle, and a new culture would be formed. The French are most likely to adopt germanic traits, as the same can be said in reverse. A cultural union is bound, although possibly difficult to maintain if not done properly."
+ germanfranceconquest.9.a:0 "Delightful!"
+ germanfranceconquest.9.b:0 "We will not let our kind be diluted by the French!"
+ 
+ 
+ englishfranceconquest.n.1:0 "Province Assimilation"
+ englishfranceconquest.d.1:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ englishfranceconquest.1.a:0 "Okay."
+ englishfranceconquest.n.2:0 "Province Assimilation"
+ englishfranceconquest.d.2:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ englishfranceconquest.2.a:0 "Okay."
+ englishfranceconquest.n.3:0 "Province Assimilation"
+ englishfranceconquest.d.3:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ englishfranceconquest.3.a:0 "Okay."
+ englishfranceconquest.n.4:0 "Province Assimilation"
+ englishfranceconquest.d.4:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ englishfranceconquest.4.a:0 "Okay."
+ englishfranceconquest.n.5:0 "Province Assimilation"
+ englishfranceconquest.d.5:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ englishfranceconquest.5.a:0 "Okay."
+ englishfranceconquest.n.6:0 "Province Assimilation"
+ englishfranceconquest.d.6:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ englishfranceconquest.6.a:0 "Okay."
+ englishfranceconquest.n.7:0 "Province Assimilation"
+ englishfranceconquest.d.7:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ englishfranceconquest.7.a:0 "Okay."
+ englishfranceconquest.n.8:0 "Province Assimilation"
+ englishfranceconquest.d.8:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ englishfranceconquest.8.a:0 "Okay."
+ 
+ englishfranceconquest.n.9:0 "Union of France and England"
+ englishfranceconquest.d.9:0 "We have spent monumental efforts for the longest of times to create a union of France and England. Now we have committed ourselves to the cause such that the masses would naturally intermingle, and a new culture would be formed. The French are most likely to adopt anglic traits, as the same can be said in reverse. A linguistic union is bound, although possibly difficult to maintain if not done properly."
+ englishfranceconquest.9.a:0 "Delightful!"
+ englishfranceconquest.9.b:0 "We will not let our kind be diluted by the mainlanders of Europe!"
+ 
+ italianfranceconquest.n.1:0 "Province Assimilation"
+ italianfranceconquest.d.1:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ italianfranceconquest.1.a:0 "Okay."
+ italianfranceconquest.n.2:0 "Province Assimilation"
+ italianfranceconquest.d.2:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ italianfranceconquest.2.a:0 "Okay."
+ italianfranceconquest.n.3:0 "Province Assimilation"
+ italianfranceconquest.d.3:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ italianfranceconquest.3.a:0 "Okay."
+ italianfranceconquest.n.4:0 "Province Assimilation"
+ italianfranceconquest.d.4:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ italianfranceconquest.4.a:0 "Okay."
+ italianfranceconquest.n.5:0 "Province Assimilation"
+ italianfranceconquest.d.5:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ italianfranceconquest.5.a:0 "Okay."
+ italianfranceconquest.n.6:0 "Province Assimilation"
+ italianfranceconquest.d.6:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ italianfranceconquest.6.a:0 "Okay."
+ italianfranceconquest.n.7:0 "Province Assimilation"
+ italianfranceconquest.d.7:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ italianfranceconquest.7.a:0 "Okay."
+ italianfranceconquest.n.8:0 "Province Assimilation"
+ italianfranceconquest.d.8:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ italianfranceconquest.8.a:0 "Okay."
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ dutchgermanyconquest.n.1:0 "Province Assimilation"
+ dutchgermanyconquest.d.1:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ dutchgermanyconquest.1.a:0 "Okay."
+ dutchgermanyconquest.n.2:0 "Province Assimilation"
+ dutchgermanyconquest.d.2:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ dutchgermanyconquest.2.a:0 "Okay."
+ dutchgermanyconquest.n.3:0 "Province Assimilation"
+ dutchgermanyconquest.d.3:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ dutchgermanyconquest.3.a:0 "Okay."
+ dutchgermanyconquest.n.4:0 "Province Assimilation"
+ dutchgermanyconquest.d.4:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ dutchgermanyconquest.4.a:0 "Okay."
+ dutchgermanyconquest.n.5:0 "Province Assimilation"
+ dutchgermanyconquest.d.5:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ dutchgermanyconquest.5.a:0 "Okay."
+ dutchgermanyconquest.n.6:0 "Province Assimilation"
+ dutchgermanyconquest.d.6:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ dutchgermanyconquest.6.a:0 "Okay."
+ dutchgermanyconquest.n.7:0 "Province Assimilation"
+ dutchgermanyconquest.d.7:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ dutchgermanyconquest.7.a:0 "Okay."
+ dutchgermanyconquest.n.8:0 "Province Assimilation"
+ dutchgermanyconquest.d.8:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ dutchgermanyconquest.8.a:0 "Okay."
+ dutchgermanyconquest.n.9:0 "Province Assimilation"
+ dutchgermanyconquest.d.9:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ dutchgermanyconquest.9.a:0 "Okay."
+ 
+ dutchfranceconquest.n.1:0 "Province Assimilation"
+ dutchfranceconquest.d.1:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ dutchfranceconquest.1.a:0 "Okay."
+ dutchfranceconquest.n.2:0 "Province Assimilation"
+ dutchfranceconquest.d.2:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ dutchfranceconquest.2.a:0 "Okay."
+ dutchfranceconquest.n.3:0 "Province Assimilation"
+ dutchfranceconquest.d.3:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ dutchfranceconquest.3.a:0 "Okay."
+ dutchfranceconquest.n.4:0 "Province Assimilation"
+ dutchfranceconquest.d.4:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ dutchfranceconquest.4.a:0 "Okay."
+ dutchfranceconquest.n.5:0 "Province Assimilation"
+ dutchfranceconquest.d.5:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ dutchfranceconquest.5.a:0 "Okay."
+ dutchfranceconquest.n.6:0 "Province Assimilation"
+ dutchfranceconquest.d.6:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ dutchfranceconquest.6.a:0 "Okay."
+ dutchfranceconquest.n.7:0 "Province Assimilation"
+ dutchfranceconquest.d.7:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ dutchfranceconquest.7.a:0 "Okay."
+ dutchfranceconquest.n.8:0 "Province Assimilation"
+ dutchfranceconquest.d.8:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ dutchfranceconquest.8.a:0 "Okay."
+ 
+ dutchenglandconquest.n.1:0 "Province Assimilation"
+ dutchenglandconquest.d.1:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ dutchenglandconquest.1.a:0 "Okay."
+ dutchenglandconquest.n.2:0 "Province Assimilation"
+ dutchenglandconquest.d.2:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ dutchenglandconquest.2.a:0 "Okay."
+ 
+ 
+ 
+ 
+ 
+ germanenglandconquest.n.1:0 "Province Assimilation"
+ germanenglandconquest.d.1:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germanenglandconquest.1.a:0 "Okay."
+ germanenglandconquest.n.2:0 "Province Assimilation"
+ germanenglandconquest.d.2:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germanenglandconquest.2.a:0 "Okay."
+ 
+ germanitalyconquest.n.1:0 "Province Assimilation"
+ germanitalyconquest.d.1:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germanitalyconquest.1.a:0 "Okay."
+ germanitalyconquest.n.2:0 "Province Assimilation"
+ germanitalyconquest.d.2:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germanitalyconquest.2.a:0 "Okay."
+ germanitalyconquest.n.3:0 "Province Assimilation"
+ germanitalyconquest.d.3:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germanitalyconquest.3.a:0 "Okay."
+ germanitalyconquest.n.4:0 "Province Assimilation"
+ germanitalyconquest.d.4:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germanitalyconquest.4.a:0 "Okay."
+ germanitalyconquest.n.5:0 "Province Assimilation"
+ germanitalyconquest.d.5:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germanitalyconquest.5.a:0 "Okay."
+ germanitalyconquest.n.6:0 "Province Assimilation"
+ germanitalyconquest.d.6:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germanitalyconquest.6.a:0 "Okay."
+ germanitalyconquest.n.7:0 "Province Assimilation"
+ germanitalyconquest.d.7:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germanitalyconquest.7.a:0 "Okay."
+ germanitalyconquest.n.8:0 "Province Assimilation"
+ germanitalyconquest.d.8:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germanitalyconquest.8.a:0 "Okay."
+ germanitalyconquest.n.9:0 "Province Assimilation"
+ germanitalyconquest.d.9:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germanitalyconquest.9.a:0 "Okay."
+ germanitalyconquest.n.10:0 "Province Assimilation"
+ germanitalyconquest.d.10:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germanitalyconquest.10.a:0 "Okay."
+ germanitalyconquest.n.11:0 "Province Assimilation"
+ germanitalyconquest.d.11:0 "Some time has passed since we initially passed initiatives to alter the cultural demographics of other populations. It seems some fruit was born of it, and now the dominant culture in a province has became a hybrid - though loyal - culture."
+ germanitalyconquest.11.a:0 "Okay."
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ netherlandunity.n.1:0 "Netherlands Declares Independence!"
+ netherlandunity.d.1:0 "-AWAITING LOCALIZATION-"
+ netherlandunity.1.a:0 "Destroy their rebellions!"
+ netherlandunity.1.b:0 "Release and align with them."
+ netherlandunity.n.2:0 "Dutch Nationalism"
+ netherlandunity.d.2:0 "-AWAITING LOCALIZATION-"
+ netherlandunity.2.a:0 "Okay."
+ netherlandunity.n.3:0 "Dutch Province Revolt!"
+ netherlandunity.d.3:0 "Dutch Province Revolt"
+ netherlandunity.3.a:0 "Crush them!"
+ netherlandunity.3.b:0 "Leave them to their own devices."
+ netherlandunity.n.4:0 "Referendum to Join The Netherlands"
+ netherlandunity.d.4:0 "Referendum to Join The Netherlands"
+ netherlandunity.4.a:0 "Our fate is with our brethren!"
+ netherlandunity.n.5:0 "The Formation of The Netherlands"
+ netherlandunity.d.5:0 "-AWAITING LOCALIZATION-"
+ netherlandunity.5.a:0 "We are on the path to greatness!"
+ 
+ native_american_conquests_euro.n.1:0 "Native Province Assimilation"
+ native_american_conquests_euro.d.1:0 "With the colonization of the Americas, europeans have brought new things such as advanced weaponry (at the time comparative to the natives), traditions and new diseases. A combination of these yields disastrous results for those not inoculated to european diseases, the most notorious of which was smallpox. Some interbreeding may also cause hybridizations as well as assimilation into the culture of the colonizer."
+ native_american_conquests_euro.1.a:0 "This will bring us national unity."
+ 
+ monroe_doctrine.n.1:0 "Call to Arms from American Nation"
+ monroe_doctrine.d.1:0 "As per the Monroe Doctrine, the United States is obligated to the defense of american-based nations against conquests by non-american nations. It seems a war meets the criteria for our commitment to this cause. If we betray this ideal, we will suffer some dire social consequences, both domestically and abroad."
+ monroe_doctrine.1.a:0 "We should honor our anti-imperialist heritage!"
+ 
+ monroe_doctrine.n.2:0 "Monroe Doctrine - Defense"
+ monroe_doctrine.d.2:0 "As per the Monroe Doctrine, the United States is obligated to the defense of american-based nations against conquests by non-american nations. It seems a war meets the criteria for their commitment to this cause. Should we ask for an American intervention?"
+ monroe_doctrine.2.a:0 "Yes."
+ monroe_doctrine.2.b:0 "No."
+ 
+ monroe_doctrine.n.3:0 "The Monroe Doctrine"
+ monroe_doctrine.d.3:0 "The Monroe Doctrine, introduced by then-president James Monroe, is a defensive treaty for all american nations. Its purpose is to deter imperial aggression from non-american powers against american nations."
+ monroe_doctrine.3.a:0 "This will be vital to our independence."
+ 
+ world_war_events.n.1:0 "Diplomatic Mission"
+ world_war_events.d.1:0 "Due to the rising tensions around the world, our ministers have concluded that we should be building a powerful alliance to deter our enemies. They have selected a target nation they believe will be receptive to such an operation."
+ world_war_events.1.a:0 "We will consider it."
+ world_war_events.1.b:0 "We would not want to obligate ourselves to other nations' interests."
+ 
+ world_war_events.n.2:0 "Diplomatic Mission"
+ world_war_events.d.2:0 "Another nation has expressed interest in a diplomatic arrangement for an alliance, citing concerns with the ever-mounting tensions in the diplomatic landscape of the world. Should we accept?"
+ world_war_events.2.a:0 "We will consider it."
+ world_war_events.2.b:0 "We would not want to obligate ourselves to other nations' interests."
+ 
+ 
+ world_war_events.n.3:0 "Diplomatic Crisis in $COUNTRY$"
+ world_war_events.d.3:0 "Tensions between $COUNTRY$ and one of its enemies have risen over disputes for a while already. The desire for a Balance of Power had broken down and the empires around us seek to enrich themselves at our expense. We need to stand for ourselves and fight!"
+ world_war_events.3.a:0 "We must press on with our inevitable gain."
+ world_war_events.3.b:0 "Such a proposition will only end in disaster!"
+ 
+ world_war_events.n.4:0 "Diplomatic Crisis between $COUNTRY$ and $FROMCOUNTRY$"
+ world_war_events.d.4:0 "Tensions between $COUNTRY$ and $FROMCOUNTRY$ have risen over disputes for a while already. The desire for a Balance of Power had broken down and the empires around us seek to enrich themselves at our expense. We need to stand for ourselves and fight!"
+ world_war_events.4.a:0 "We must bring our disputes to the fields of battle!"
+ world_war_events.4.b:0 "Such a proposition will only end in disaster!"
+ 
+ world_war_events.n.5:0 "WORLD WAR"
+ world_war_events.d.5:0 "A diplomatic crisis between $FROMCOUNTRY$ and $COUNTRY$ has not resulted in a successful mediation. Demand for a war with our enemies has resulted in a World War, only inevitable now. Our nations have mobilized for a duel to the death."
+ world_war_events.5.a:0 "End our enemies once and for all!"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ REVOLUTION_DIPLOMACY.n.3:0 "Crisis of the Revolution"
+ REVOLUTION_DIPLOMACY.d.3:0 "At first the monarchs of our time looked on with glee at a revolution appearing in their adversaries' nations. Now that the revolution has resulted in a fanaticized, confident radical government, they have decided they may intervene, to terminate the Revolution forever."
+ REVOLUTION_DIPLOMACY.3.a:0 "We cannot tolerate their fanaticism."
+ REVOLUTION_DIPLOMACY.3.b:0 "Such a proposition will only end in disaster!"
+ 
+ REVOLUTION_DIPLOMACY.n.4:0 "Crisis of Revolutionary Diplomacy"
+ REVOLUTION_DIPLOMACY.d.4:0 "We were anticipating for some time a potential reprisal from the conservatives. Monarchists, clergymen and conservative countryside citizens from our enemies' nations have decided to join against us, and we must mobilize to stop them. No concessions should be made."
+ REVOLUTION_DIPLOMACY.4.a:0 "Destroy them and tear off the heads of their leaders!"
+ REVOLUTION_DIPLOMACY.4.b:0 "We must make concessions."
+ 
+ REVOLUTION_DIPLOMACY.n.5:0 "WAR OF THE COALITION"
+ REVOLUTION_DIPLOMACY.d.5:0 "It would appear no concessions could be demanded from the Revolutionaries in $FROMCOUNTRY$. Logically, there must be one end to this madness, through blood."
+ REVOLUTION_DIPLOMACY.5.a:0 "End our enemies once and for all!"
+ 
+ REVOLUTION_DIPLOMACY.n.6:0 "The World's Pariah"
+ REVOLUTION_DIPLOMACY.d.6:0 "The problem with installing a revolutionary government is that, for the most part, the old royalists do not appear interested in, for the most part, continuing treaties with us. We should arm as soon as possible."
+ REVOLUTION_DIPLOMACY.6.a:0 "If we cannot make allies peacefully, we will make them by force!"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ OTTOMAN_BALKAN.n.1:0 "Ottoman Decadence"
+ OTTOMAN_BALKAN.d.1:0 "The Ottomans have controlled the balkans for some time now. They were not entirely assimilated into the Turkish ruling class in the empire. Soon they may try for independence."
+ OTTOMAN_BALKAN.1.a:0 "The Empire will soon come to an end."
+ 
+ OTTOMAN_BALKAN.n.3:0 "Serbia Declares Independence"
+ OTTOMAN_BALKAN.d.3:0 "The Ottomans have controlled Serbia for centuries. The Serbs were not entirely assimilated into the Turkish ruling class in the empire and with the advent of modern nationalist sympathies, have decided to act by declaring independence."
+ OTTOMAN_BALKAN.3.a:0 "Destroy them!"
+ OTTOMAN_BALKAN.3.b:0 "We must not alienate them."
+ 
+ OTTOMAN_BALKAN.n.4:0 "Bosnia Declares Independence"
+ OTTOMAN_BALKAN.d.4:0 "The Ottomans have controlled Bosnia for centuries. The Bosnians were not entirely assimilated into the Turkish ruling class in the empire and with the advent of modern nationalist sympathies, have decided to act by declaring independence."
+ OTTOMAN_BALKAN.4.a:0 "Destroy them!"
+ OTTOMAN_BALKAN.4.b:0 "We must not alienate them."
+ 
+ OTTOMAN_BALKAN.n.5:0 "Bulgaria Declares Independence"
+ OTTOMAN_BALKAN.d.5:0 "The Ottomans have controlled Bulgaria for centuries. The Bulgarians were not entirely assimilated into the Turkish ruling class in the empire and with the advent of modern nationalist sympathies, have decided to act by declaring independence."
+ OTTOMAN_BALKAN.5.a:0 "Destroy them!"
+ OTTOMAN_BALKAN.5.b:0 "We must not alienate them."
+ 
+ OTTOMAN_BALKAN.n.6:0 "Croatia Declares Independence"
+ OTTOMAN_BALKAN.d.6:0 "The Ottomans have controlled Croatia for centuries. The Croatians were not entirely assimilated into the Turkish ruling class in the empire and with the advent of modern nationalist sympathies, have decided to act by declaring independence."
+ OTTOMAN_BALKAN.6.a:0 "Destroy them!"
+ OTTOMAN_BALKAN.6.b:0 "We must not alienate them."
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ japanunity.n.5:0 "The Claimant to the Chrysanthemum Throne"
+ japanunity.d.5:0 "For centuries, Japan has been loosely united under a disparate union of daimyo states who answer to the Shogunate government. An Emperor has made his claim to Japan, aided by the relatively recent institution of nationalism. Their ambitions are clear: to unite the Japanese under one banner."
+ japanunity.5.a:0 "We travel on the road to grandeur."
+ 
+ japanunity.n.3:0 "Province Revolt"
+ japanunity.d.3:0 "The institution of Nationalism has brought a number of implications, both beneficial and detrimental. We should try to maintain our empire at all costs, but there are some instances where this may not be unrealistic. One of our provinces has decided to take matters into their own hands and make an attempt for independence."
+ japanunity.3.a:0 "Crush them!"
+ japanunity.3.b:0 "Leave them to their own devices."
+ 
+ britainunity.n.3:0 "Province Revolt"
+ britainunity.d.3:0 "The institution of Nationalism has brought a number of implications, both beneficial and detrimental. We should try to maintain our empire at all costs, but there are some instances where this may not be unrealistic. One of our provinces has decided to take matters into their own hands and make an attempt for independence."
+ britainunity.3.a:0 "Crush them!"
+ britainunity.3.b:0 "Leave them to their own devices."
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ italic_league.n.3:0 "The Italic League"
+ italic_league.d.3:0 "The Italic League or Most Holy League was an international agreement concluded in Venice on 30 August 1454, between the Papal States, the Republic of Venice, the Duchy of Milan, the Republic of Florence and the Kingdom of Naples, following the Treaty of Lodi a few months previously."
+ italic_league.3.a:0 "Send messages to all of the Italian states!"
+ 
+ italic_league.n.4:0 "Invitation to the Italic League"
+ italic_league.d.4:0 "The dangers to our east and west call for a time of Italian unity. France may very well be eyeing up Italy for unification. Austria may consider bringing it back into the fold. One thing is certain: Italy must prepare to defend."
+ italic_league.4.a:0 "Let us join!"
+ italic_league.4.b:0 "We will not elect to join their union. It compromises our sovereignty!"
+ italic_league.4.c:0 "We will lead our people to glory!"
+ 
+ italic_league.n.5:0 "Fate of the Italic League"
+ italic_league.d.5:0 "The Italic League was initially created as a defensive arrangement and political union between major Italian states. Over time its initial supporters have since passed, and a new generation has to decide whether the Italic League should continue or be dismantled."
+ italic_league.5.a:0 "The path to greatness lies in unity!"
+ italic_league.5.b:0 "The Italic League is no longer necessitated."
+ 
+ italic_league.n.6:0 "Unification of the Italic League"
+ italic_league.d.6:0 "The German Confederation has been a disparate union of autonomous German states for a while already. As a member of this union it has been important to seek the protection of the Confederation, now it seems to be unification that matters most."
+ italic_league.6.a:0 "We are one with Germany."
+ italic_league.6.b:0 "Our destiny is with our own!"
+ 
+ 

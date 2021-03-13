@@ -1,0 +1,8 @@
+government = republic
+add_government_reform = consolidation_of_power_reform
+add_government_reform = socialist_reform
+primary_culture = english
+religion = secular
+technology_group = western
+capital = 236 # London
+national_focus = MIL

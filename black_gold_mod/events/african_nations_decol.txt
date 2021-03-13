@@ -1,0 +1,445 @@
+namespace = african_nations_decol
+
+#initial congolese revolt
+
+country_event = {
+	id = african_nations_decol.1
+	title = "african_nations_decol.n.1"
+	desc = "african_nations_decol.d.1"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		is_year = 1950
+		NOT = {
+			culture_group = kongo_group
+		}
+		NOT = {
+			exists = DRC
+		}
+		development_in_provinces = {
+			value = 85
+			culture_group = kongo_group
+		}
+		NOT = {
+			tag = DRC
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "african_nations_decol.1.a"
+		release = DRC
+		DRC = {
+			change_government = republic
+			add_government_reform = oligarchy_reform
+			add_government_reform = parliamentary_reform
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_independence_war
+			}
+		}
+	}
+	
+	option = {
+		name = "african_nations_decol.1.b"
+		release = DRC
+		DRC = {
+			change_government = republic
+			add_government_reform = oligarchy_reform
+			add_government_reform = parliamentary_reform
+			create_alliance = ROOT
+		}
+	}
+}
+
+
+#cores
+
+country_event = {
+	id = african_nations_decol.2
+	title = "african_nations_decol.n.2"
+	desc = "african_nations_decol.d.2"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		is_year = 1890
+		any_owned_province = {
+			culture_group = kongo_group
+		}
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = asia
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = "african_nations_decol.2.a"
+		every_province = {
+			limit = {
+				culture_group = kongo_group
+			}
+			add_core = DRC
+		}
+	}
+}
+
+########################SOUTHAFRICA
+
+country_event = {
+	id = african_nations_decol.3
+	title = "african_nations_decol.n.3"
+	desc = "african_nations_decol.d.3"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		is_year = 1895
+		AND = {
+			NOT = {
+				culture_group = south_africa_region
+			}
+			NOT = {
+				exists = SAF
+			}
+			any_owned_province = {
+				culture_group = south_africa_region
+			}
+			NOT = {
+				tag = SAF
+			}
+			continent = asia
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "african_nations_decol.3.a"
+		release = SAF
+		SAF = {
+			change_government = republic
+			add_government_reform = oligarchy_reform
+			add_government_reform = parliamentary_reform
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_independence_war
+			}
+		}
+	}
+	
+	option = {
+		name = "african_nations_decol.3.b"
+		release = SAF
+		SAF = {
+			change_government = republic
+			add_government_reform = oligarchy_reform
+			add_government_reform = parliamentary_reform
+			create_alliance = ROOT
+		}
+	}
+}
+
+
+#cores
+
+country_event = {
+	id = african_nations_decol.4
+	title = "african_nations_decol.n.4"
+	desc = "african_nations_decol.d.4"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		OR = {
+			current_age = age_of_industrialization
+			current_age = age_of_great_wars
+		}
+		any_owned_province = {
+			region = south_africa_region
+		}
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = asia
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = "african_nations_decol.4.a"
+		every_province = {
+			limit = {
+				region = south_africa_region
+			}
+			add_core = SAF
+		}
+	}
+}
+
+country_event = {
+	id = african_nations_decol.5
+	title = "african_nations_decol.n.5"
+	desc = "african_nations_decol.d.5"
+	picture = ANGRY_MOB_eventPicture
+	
+	#fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		OR = {
+			current_age = age_of_industrialization
+			current_age = age_of_great_wars
+		}
+		NOT = {
+			exists = SAF
+		}
+		development_in_provinces = {
+			value = 75
+			region = south_africa_region
+		}
+		any_owned_province = {
+			is_core = SAF
+		}
+		NOT = {
+			tag = SAF
+		}
+		capital_scope = {
+			NOT = {
+				continent = africa
+			}
+		}
+		has_parliament = yes
+	}	
+
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "african_nations_decol.5.a"
+		release = SAF
+		SAF = {
+			change_government = republic
+			add_government_reform = oligarchy_reform
+			add_government_reform = parliamentary_reform
+			change_religion = secular
+		}
+		create_subject = {
+			subject_type = dominion
+			subject = SAF
+		}
+	}
+	
+	option = {
+		name = "african_nations_decol.5.b"
+		custom_tooltip = dominions_africa_tooltip
+	}
+}
+
+country_event = {
+	id = african_nations_decol.6
+	title = "african_nations_decol.n.6"
+	desc = "african_nations_decol.d.6"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		is_year = 1895
+		NOT = {
+			exists = DRC
+		}
+		development_in_provinces = {
+			value = 200
+			culture_group = kongo_group
+		}
+		any_owned_province = {
+			core_claim = DRC
+		}
+		NOT = {
+			tag = DRC
+		}
+		capital_scope = {
+			NOT = {
+				continent = africa
+			}
+		}
+		has_parliament = yes
+	}	
+
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "african_nations_decol.6.a"
+		release = DRC
+		DRC = {
+			change_government = republic
+			add_government_reform = oligarchy_reform
+			add_government_reform = parliamentary_reform
+			change_religion = secular
+			create_subject = {
+				subject_type = dominion
+				subject = DRC
+			}
+		}
+	}
+	
+	option = {
+		name = "african_nations_decol.6.b"
+		custom_tooltip = dominions_africa_tooltip
+	}
+}
+
+#cores, egypt
+
+country_event = {
+	id = african_nations_decol.7
+	title = "african_nations_decol.n.7"
+	desc = "african_nations_decol.d.7"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		is_year = 1890
+		any_owned_province = {
+			culture = al_misr_arabic
+		}
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = asia
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = "african_nations_decol.7.a"
+		every_province = {
+			limit = {
+				culture = al_misr_arabic
+			}
+			add_core = EGY
+		}
+	}
+}
+
+#abyssinia
+
+country_event = {
+	id = african_nations_decol.8
+	title = "african_nations_decol.n.8"
+	desc = "african_nations_decol.d.8"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		is_year = 1895
+		any_owned_province = {
+			culture = cushitic
+		}
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = asia
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = "african_nations_decol.8.a"
+		every_province = {
+			limit = {
+				culture = cushitic
+			}
+			add_core = ABY
+		}
+	}
+}
+
+#sudan
+
+country_event = {
+	id = african_nations_decol.9
+	title = "african_nations_decol.n.9"
+	desc = "african_nations_decol.d.9"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		is_year = 1895
+		any_owned_province = {
+			culture = sudanese
+		}
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = asia
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = "african_nations_decol.9.a"
+		every_province = {
+			limit = {
+				culture = sudanese
+			}
+			add_core = SUD
+		}
+	}
+}

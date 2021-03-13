@@ -1,0 +1,55 @@
+country_decisions = {
+
+	adopt_soviet_techs = {
+		potential = {
+			tag = SVU
+			mil_tech = 39
+			NOT = {
+				OR = {
+					technology_group = modern_soviet
+					technology_group = modern_soviet_nuke
+				}
+			}
+		}
+		allow = {
+			tag = SVU
+			mil_tech = 40
+		}
+		effect = {
+			change_technology_group = modern_soviet
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	adopt_german_techs = {
+		potential = {
+			tag = GER
+			mil_tech = 39
+			NOT = {
+				OR = {
+					technology_group = modern_german
+					technology_group = modern_nuke
+					technology_group = modern_german_nuke
+				}
+			}
+		}
+		allow = {
+			tag = GER
+			mil_tech = 40
+			NOT = {
+				OR = {
+					technology_group = modern_german
+					technology_group = modern_nuke
+					technology_group = modern_german_nuke
+				}
+			}
+		}
+		effect = {
+			change_technology_group = modern_german
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

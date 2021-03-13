@@ -1,0 +1,324 @@
+country_decisions = {
+
+	claims_for_italy = {
+	
+		major = yes
+	
+		potential = {
+			adm_tech = 21
+			culture_group = latin
+			NOT = { has_country_modifier = "uniting_culture_group" }
+			NOT = { has_country_modifier = "intention_to_unite" }
+			NOT = { has_country_flag = uniting_home_nation }
+			is_colonial_nation = no
+		}
+		allow = {
+			adm_tech = 22
+			culture_group = latin
+			NOT = { has_country_modifier = "uniting_culture_group" }
+			NOT = { has_country_modifier = "intention_to_unite" }
+			NOT = { exists = ITA }
+			is_at_war = no
+		}
+		effect = {
+		
+			add_prestige = 25
+			
+			add_country_modifier = {
+				name = "uniting_culture_group"
+				duration = 5475
+			}
+			
+			set_country_flag = uniting_home_nation
+			
+			every_province = {
+				limit = {
+					region = italy_region
+				}
+				add_claim = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	claims_for_germany = {
+	
+		major = yes
+	
+		potential = {
+			adm_tech = 21
+			culture_group = germanic
+			NOT = { has_country_modifier = "uniting_culture_group" }
+			NOT = { has_country_modifier = "intention_to_unite" }
+			NOT = { has_country_flag = uniting_home_nation }
+			is_colonial_nation = no
+		}
+		allow = {
+			adm_tech = 22
+			culture_group = germanic
+			NOT = { has_country_modifier = "uniting_culture_group" }
+			NOT = { has_country_modifier = "intention_to_unite" }
+			NOT = { exists = GER }
+			is_at_war = no
+		}
+		effect = {
+		
+			add_prestige = 25
+			
+			add_country_modifier = {
+				name = "uniting_culture_group"
+				duration = 5475
+			}
+			add_country_modifier = {
+				name = "intention_to_unite"
+				duration = -1
+			}
+			
+			north_german_region = {
+				add_claim = ROOT
+			}
+			south_german_region = {
+				add_claim = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	########################COLONIES########################
+	
+	unite_india = {
+	
+		major = yes
+	
+		potential = {
+			has_institution = global_imperialism
+			capital_scope = {
+				NOT = {
+					superregion = india_superregion
+				}
+			}
+			development_in_provinces = {
+				value = 10
+				superregion = india_superregion
+			}
+			NOT = {
+				india_superregion = {
+					is_permanent_claim = ROOT 
+				}
+			}
+		}
+		allow = {
+			has_institution = global_imperialism
+			capital_scope = {
+				NOT = {
+					superregion = india_superregion
+				}
+			}
+			development_in_provinces = {
+				value = 10
+				superregion = india_superregion
+			}
+		}
+		effect = {
+			add_prestige = 5
+			every_province = {
+				limit = {
+					superregion = india_superregion
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	
+	colonize_china = {
+	
+		major = yes
+	
+		potential = {
+			has_institution = global_imperialism
+			capital_scope = {
+				NOT = {
+					superregion = china_superregion
+				}
+			}
+			development_in_provinces = {
+				value = 10
+				superregion = china_superregion
+			}
+			NOT = {
+				china_superregion = {
+					is_permanent_claim = ROOT 
+				}
+			}
+		}
+		allow = {
+			has_institution = global_imperialism
+			capital_scope = {
+				NOT = {
+					superregion = china_superregion
+				}
+			}
+			development_in_provinces = {
+				value = 10
+				superregion = china_superregion
+			}
+		}
+		effect = {
+			add_prestige = 5
+			every_province = {
+				limit = {
+					superregion = china_superregion
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	
+	colonize_burma = {
+	
+		major = yes
+	
+		potential = {
+			has_institution = global_imperialism
+			capital_scope = {
+				NOT = {
+					region = burma_region
+				}
+			}
+			development_in_provinces = {
+				value = 10
+				region = burma_region
+			}
+			NOT = {
+				burma_region = {
+					is_permanent_claim = ROOT 
+				}
+			}
+		}
+		allow = {
+			has_institution = global_imperialism
+			capital_scope = {
+				NOT = {
+					region = burma_region
+				}
+			}
+			development_in_provinces = {
+				value = 10
+				region = burma_region
+			}
+		}
+		effect = {
+			add_prestige = 5
+			every_province = {
+				limit = {
+					region = burma_region
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	
+	colonize_indochina_decision = {
+	
+		major = yes
+	
+		potential = {
+			has_institution = global_imperialism
+			capital_scope = {
+				NOT = {
+					region = indo_china_region
+				}
+			}
+			development_in_provinces = {
+				value = 10
+				region = indo_china_region
+			}
+			NOT = {
+				indo_china_region = {
+					is_permanent_claim = ROOT 
+				}
+			}
+		}
+		allow = {
+			has_institution = global_imperialism
+			capital_scope = {
+				NOT = {
+					region = indo_china_region
+				}
+			}
+			development_in_provinces = {
+				value = 10
+				region = indo_china_region
+			}
+		}
+		effect = {
+			add_prestige = 5
+			every_province = {
+				limit = {
+					region = indo_china_region
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+}
+
+
+
+
+##########################culture-difference nations##########################
+
+
+
+
+	#french_spain = {
+	#
+	#	major = yes
+	#
+	#	potential = {
+	#		adm_tech = 10
+	#		culture_group = french
+	#		OR = {
+	#			owns_core_province = 217
+	#			owns_core_province = 219
+	#			owns_core_province = 213
+	#			owns_core_province = 206
+	#			owns_core_province = 224
+	#			owns_core_province = 220
+	#		}
+	#	}
+	#	allow = {
+	#		adm_tech = 10
+	#		culture_group = french
+	#		OR = {
+	#			owns_core_province = 217
+	#			owns_core_province = 219
+	#			owns_core_province = 213
+	#			owns_core_province = 206
+	#			owns_core_province = 224
+	#			owns_core_province = 220
+	#		}
+	#		is_at_war = no
+	#	}
+	#	effect = {
+	#		change_tag = RES
+	#	}
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#}

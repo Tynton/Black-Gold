@@ -1,0 +1,22 @@
+#
+# Example mercenary companies
+#
+
+mountaineers = {
+    regiments_per_development = 0.025
+    cavalry_weight = 0.1
+    artillery_weight = 0.8
+    cavalry_cap = 2
+    cost_modifier = 0.75
+    trigger = {
+        any_owned_province = {
+			has_terrain = mountains
+		}
+		current_age = age_of_great_wars
+    }
+	modifier = {
+		siege_ability = 0.5
+		shock_damage_received = -0.15
+	}
+    # No home province means local mercenary company
+}

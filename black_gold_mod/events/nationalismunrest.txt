@@ -1,0 +1,31 @@
+namespace = nationalismunrest
+
+province_event = {
+	id = nationalismunrest.1
+	title = "nationalismunrest.n.1"
+	desc = "nationalismunrest.d.1"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = english
+			owner = {
+				culture_group = iberian
+				has_country_modifier = funding_cultural_assimilation
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "nationalismunrest.1.a"
+		add_province_modifier = {
+			name = nationalism_unrest
+			duration = 9125
+			desc = nationalism_unrest_tooltip
+		}
+	}
+}

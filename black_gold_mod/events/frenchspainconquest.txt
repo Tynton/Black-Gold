@@ -1,0 +1,205 @@
+namespace = frenchspainconquest
+
+province_event = {
+	id = frenchspainconquest.1
+	title = "frenchspainconquest.n.1"
+	desc = "frenchspainconquest.d.1"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = castillian
+			owner = {
+				culture_group = french
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 60
+				full_idea_group = expansion_ideas
+			}
+			government_rank = 3
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "frenchspainconquest.1.a"
+		change_culture = castillan
+	}
+}
+
+province_event = {
+	id = frenchspainconquest.2
+	title = "frenchspainconquest.n.2"
+	desc = "frenchspainconquest.d.2"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = catalan
+			owner = {
+				culture_group = french
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 60
+				full_idea_group = expansion_ideas
+			}
+			government_rank = 3
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "frenchspainconquest.2.a"
+		change_culture = catalane
+	}
+}
+
+province_event = {
+	id = frenchspainconquest.3
+	title = "frenchspainconquest.n.3"
+	desc = "frenchspainconquest.d.3"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = galician
+			owner = {
+				culture_group = french
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 60
+				full_idea_group = expansion_ideas
+			}
+			government_rank = 3
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "frenchspainconquest.3.a"
+		change_culture = galicien
+	}
+}
+
+province_event = {
+	id = frenchspainconquest.4
+	title = "frenchspainconquest.n.4"
+	desc = "frenchspainconquest.d.4"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = portugese
+			owner = {
+				culture_group = french
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 60
+				full_idea_group = expansion_ideas
+			}
+			government_rank = 3
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "frenchspainconquest.4.a"
+		change_culture = portugais
+	}
+}
+
+province_event = {
+	id = frenchspainconquest.5
+	title = "frenchspainconquest.n.5"
+	desc = "frenchspainconquest.d.5"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = aragonese
+			owner = {
+				culture_group = french
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 60
+				full_idea_group = expansion_ideas
+			}
+			government_rank = 3
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "frenchspainconquest.5.a"
+		change_culture = aragonais
+	}
+}
+
+province_event = {
+	id = frenchspainconquest.6
+	title = "frenchspainconquest.n.6"
+	desc = "frenchspainconquest.d.6"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = leonese
+			owner = {
+				culture_group = french
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		owner = {
+			OR = {
+				stability = 2
+				prestige = 60
+				full_idea_group = expansion_ideas
+			}
+			government_rank = 3
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "frenchspainconquest.6.a"
+		change_culture = french_leonese
+	}
+}

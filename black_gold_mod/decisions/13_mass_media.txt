@@ -1,0 +1,71 @@
+country_decisions = {
+
+	subsidize_mass_media_industry = {
+		potential = {
+			dip_tech = 39
+			NOT = {
+				has_country_modifier = mass_media
+			}
+		}
+		allow = {
+			dip_tech = 40
+			years_of_income = 0.25
+			NOT = {
+				has_country_modifier = mass_media
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "subsidizing_media"
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = "mass_media"
+				duration = -1
+			}
+			add_years_of_income = -0.25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	subsidize_institutional_media = {
+		potential = {
+			NOT = {
+				has_institution = mass_media
+			}
+			any_neighbor_country = {
+				has_institution = mass_media
+			}
+		}
+		allow = {
+			years_of_income = 0.025
+			NOT = {
+				has_institution = mass_media
+			}
+			any_neighbor_country = {
+				has_institution = mass_media
+			}
+			NOT = {
+				any_neighbor_country = {
+					tech_difference = 1
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "institutional_media"
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = "mass_media"
+				duration = -1
+			}
+			add_years_of_income = -0.025
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

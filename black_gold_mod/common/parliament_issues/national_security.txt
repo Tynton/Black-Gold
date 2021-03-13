@@ -1,0 +1,41 @@
+national_security = {
+
+	category = 2
+
+	allow = {
+		OR = {
+			current_age = age_of_revolutions
+			current_age = age_of_industrialization
+			current_age = age_of_great_wars
+		}
+	}
+	
+	effect = {
+		add_stability = 1
+	}
+	
+	modifier = {
+		global_spy_defence = 0.25
+		stability_cost_modifier = -0.2
+	}
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			colony = 2
+		}
+		modifier = {
+			factor = 2
+			colony = 3
+		}
+		modifier = {
+			factor = 2
+			colony = 4
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}	
+}

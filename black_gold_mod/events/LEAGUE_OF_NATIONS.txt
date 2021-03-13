@@ -1,0 +1,94 @@
+namespace = league_of_nations
+
+#FOUNDATION OF THE LEAGUE OF NATIONS
+
+country_event = {
+	id = league_of_nations.1
+	title = "league_of_nations.n.1"
+	desc = "league_of_nations.d.1"
+	picture = LON_eventPicture
+	
+	major = yes
+
+	trigger = { 
+		OR = {
+			#current_age = age_of_industrialization
+			current_age = age_of_great_wars
+		}
+		has_global_flag = world_war_happened
+		ROOT = {
+			NOT = {
+				great_power_rank = 4
+			}
+			has_parliament = yes
+			has_reform = democratic_mechanic
+		}
+		NOT = {
+			OR = {
+				has_global_flag = LON_EXIST
+				has_global_flag = NO_LON
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "league_of_nations.1.a"
+		
+		ROOT = {
+			add_country_modifier = {
+				name = "head_of_LoN"
+				duration = -1
+			}
+			set_global_flag = LON_EXIST
+		}
+		
+		every_country = {
+			limit = {
+				has_reform = democratic_mechanic
+			}
+			country_event = {
+				id = league_of_nations.2
+			}
+		}
+		
+		
+	}
+	
+	option = {
+		name = "league_of_nations.1.b"
+		
+		set_global_flag = NO_LON
+	}
+}
+
+country_event = {
+	id = league_of_nations.2
+	title = "league_of_nations.n.2"
+	desc = "league_of_nations.d.2"
+	picture = ANGRY_MOB_eventPicture
+	
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "league_of_nations.2.a"
+		
+		ROOT = {
+			add_country_modifier = {
+				name = "LoN_member"
+				duration = -1
+			}
+		}
+	}
+	
+	option = {
+		name = "league_of_nations.2.b"
+		
+		set_country_flag = not_join_LoN
+	}
+}

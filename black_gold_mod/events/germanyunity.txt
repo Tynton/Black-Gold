@@ -1,0 +1,521 @@
+namespace = germanyunity
+
+#initial german revolt
+
+country_event = {
+	id = germanyunity.1
+	title = "germanyunity.n.1"
+	desc = "germanyunity.d.1"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		is_year = 1845
+		any_owned_province = {
+			core_claim = GER
+			culture_group = germanic
+		}
+		capital_scope = {
+			continent = europe
+		}
+		NOT = {
+			exists = GER
+			exists = GRC
+			tag = GER
+			stability = 1
+			culture_group = germanic
+		}
+		any_country = {
+			has_country_flag = gercon_leader
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "germanyunity.1.a"
+		release = GER
+		GER = {
+			change_government = republic
+			add_government_reform = oligarchy_reform
+			add_government_reform = parliamentary_reform
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_independence_war
+			}
+		}
+	}
+	
+	option = {
+		name = "germanyunity.1.b"
+		release = GER
+		GER = {
+			change_government = republic
+			add_government_reform = oligarchy_reform
+			add_government_reform = parliamentary_reform
+			create_alliance = ROOT
+		}
+	}
+}
+
+
+#cores
+
+country_event = {
+	id = germanyunity.2
+	title = "germanyunity.n.2"
+	desc = "germanyunity.d.2"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		is_year = 1840
+		any_core_province = {
+			culture_group = germanic
+		}
+		NOT = {
+			any_country = {
+				total_development = 750
+				has_country_flag = has_german_ambition
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "germanyunity.2.a"
+		thuringia_area = {
+			add_core = GER
+		}
+		neumark_area = {
+			add_core = GER
+		}
+		mittelmark_area = {
+			add_core = GER
+		}
+		vorpommern_area = {
+			add_core = GER
+		}
+		hinter_pommern_area = {
+			add_core = GER
+		}
+		northern_saxony_area = {
+			add_core = GER
+		}
+		braunschweig_area = {
+			add_core = GER
+		}
+		mecklenburg_area = {
+			add_core = GER
+		}
+		westphalia_area = {
+			add_core = GER
+		}
+		hesse_area = {
+			add_core = GER
+		}
+		weser_area = {
+			add_core = GER
+		}
+		lower_rhineland_area = {
+			add_core = GER
+		}
+		north_rhine_area = {
+			add_core = GER
+		}
+		upper_rhineland_area = {
+			add_core = GER
+		}
+		lower_bavaria_area = {
+			add_core = GER
+		}
+		upper_bavaria_area = {
+			add_core = GER
+		}
+		franconia_area = {
+			add_core = GER
+		}
+		lower_swabia_area = {
+			add_core = GER
+		}
+		upper_swabia_area = {
+			add_core = GER
+		}
+		upper_rhineland_area = {
+			add_core = GER
+		}
+		palatinate_area = {
+			add_core = GER
+		}
+		north_rhine_area = {
+			add_core = GER
+		}
+		south_saxony_area = {
+			add_core = GER
+		}
+	}
+}
+
+#province revolt
+
+#province_event = {
+#	id = germanyunity.3
+#	title = "germanyunity.n.3"
+#	desc = "germanyunity.d.3"
+#	picture = ANGRY_MOB_eventPicture
+#
+#	trigger = {
+#		NOT = {
+#			current_age = age_of_great_wars
+#		}
+#		NOT = {
+#			devastation = 1
+#		}
+#		culture_group = germanic
+#		is_core = GER
+#		owner = {
+#			NOT = {
+#				culture_group = germanic
+#			}
+#			NOT = {
+#				prestige = 65
+#			}
+#		}
+#		exists = GER
+#		continent = europe
+#		unrest = -2
+#	}	
+#
+#	mean_time_to_happen = {
+#		months = 18
+#	}
+#	
+#	option = {
+#		name = "germanyunity.3.a"
+#		spawn_rebels = {
+#			type = nationalist_rebels
+#			size = 5
+#			friend = GER
+#		}
+#		add_devastation = 15
+#	}
+#	option = {
+#		name = "germanyunity.3.b"
+#		cede_province = GER
+#		add_core = GER
+#	}
+#}
+
+#nations join germany
+
+country_event = {
+	id = germanyunity.4
+	title = "germanyunity.n.4"
+	desc = "germanyunity.d.4"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		exists = GER
+		OR = {
+			AND = {
+				OR = {
+					culture_group = germanic
+					AND = {
+						culture_group = benelux
+						is_revolutionary = yes
+					}
+				}
+				NOT = {
+					total_development = 500
+				}
+			}
+		}
+		NOT = {
+			has_country_flag = denied_annexation
+		}
+		OR = {
+			is_subject = no
+			is_subject_of = GER
+		}
+		NOT = {
+			truce_with = GER
+		}
+		capital_scope = {
+			continent = europe
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "germanyunity.4.a"
+		GER = {
+			inherit = ROOT
+			ROOT = {
+				every_owned_province = {
+					add_core = GER
+				}
+			}
+		}
+		ai_chance = { 
+			factor = 1 
+			
+			modifier = {
+				factor = 500
+				is_revolutionary = yes
+			}
+		}
+	}
+	
+	option = {
+		name = "germanyunity.4.b"
+		GER = {
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_annex
+			}
+			ROOT = {
+				every_owned_province = {
+					add_core = GER
+				}
+			}
+		}
+		
+		set_country_flag = denied_annexation
+		
+		ai_chance = { 
+			factor = 1 
+			
+			modifier = {
+				factor = 10000
+				OR = {
+					culture = austrian
+					culture = swiss
+				}
+				is_revolutionary = no
+			}
+		}
+	}
+}
+
+#nation becomes germany
+country_event = {
+	id = germanyunity.5
+	title = "germanyunity.n.5"
+	desc = "germanyunity.d.5"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		any_country = {
+			adm_tech = 36
+		}
+		culture_group = germanic
+		NOT = {
+			exists = GER
+		}
+		OR = {
+			capital = 50
+			capital = 65
+			capital = 61
+			capital = 1876
+			capital = 85
+			capital = 134
+			capital = 44
+			capital = 45
+			capital = 1878
+			num_of_cities = 15
+		}
+		capital_scope = {
+			continent = europe
+		}
+		is_subject = no
+		NOT = {
+			is_playing_custom_nation = yes 
+		}
+		total_development = 400
+	}	
+
+	mean_time_to_happen = {
+		months = 36
+	}
+	
+	option = {
+		name = "germanyunity.5.a"
+		change_tag = GER
+		
+		add_stability = -5
+		
+		#GER = {
+		#	change_government = monarchy
+		#	add_government_reform = autocracy_reform
+		#	add_government_reform = parliamentary_reform
+		#}
+	}
+}
+
+#austria surrenders sundgau
+
+country_event = {
+	id = germanyunity.6
+	title = "germanyunity.n.6"
+	desc = "germanyunity.d.6"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		exists = GER
+		tag = HAB
+		HAB = {
+			any_owned_province = { 
+				culture = swabian
+			} 
+		}
+		ai = yes
+	}	
+
+	mean_time_to_happen = {
+		months = 9
+	}
+	
+	option = {
+		name = "germanyunity.6.a"
+		HAB = {
+			every_owned_province = {
+				limit = {
+					culture = swabian
+				}
+				add_core = GER
+				cede_province = GER
+				add_local_autonomy = 10
+			}
+		}
+	}
+}
+
+#AUSTRIA ANNEXED
+
+country_event = {
+	id = germanyunity.7
+	title = "germanyunity.n.7"
+	desc = "germanyunity.d.7"
+	picture = NATIONAL_INSTITUTION_eventPicture
+	
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "germanyunity.7.a"
+		GER = {
+			inherit = ROOT
+			ROOT = {
+				every_owned_province = {
+					add_core = GER
+				}
+			}
+			add_stability = 1
+			add_prestige = 40
+		}
+		ai_chance = { factor = 15 }
+	}
+	
+	option = {
+		name = "germanyunity.7.b"
+		GER = {
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_annex
+			}
+			ROOT = {
+				every_owned_province = {
+					add_core = GER
+				}
+			}
+		}
+		ai_chance = { 
+			factor = 1 
+			
+			modifier = {
+				factor = 10000
+				culture = austrian
+			}
+		}
+	}
+}
+
+#Frankfurt Parliament
+country_event = {
+	id = germanyunity.8
+	title = "germanyunity.n.8"
+	desc = "germanyunity.d.8"
+	picture = HRE_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		has_institution = nationalism_institution
+		culture_group = germanic
+		is_revolutionary = yes
+		NOT = {
+			exists = GER
+		}
+		capital_scope = {
+			continent = europe
+		}
+		is_subject = no
+		NOT = {
+			is_playing_custom_nation = yes 
+		}
+		any_subject_country = {
+			is_subject_of_type = german_confederation_member
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	option = {
+		name = "germanyunity.8.a"
+		change_tag = GER
+		
+		add_stability = -5
+		
+		every_country = {
+			limit = {
+				is_subject_of_type = german_confederation_member
+			}
+			country_event = {
+				id = germanyunity.4
+				days = 30
+			}
+		}
+		
+		north_german_region = {
+			add_core = GER
+		}
+		south_german_region = {
+			add_core = GER
+		}
+	}
+}

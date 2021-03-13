@@ -1,0 +1,12 @@
+government = republic
+add_government_reform = consolidation_of_power_reform
+add_government_reform = fascist_reform
+primary_culture = prussian
+religion = protestant
+technology_group = western
+capital = 50 # Berlin
+national_focus = MIL
+historical_rival = FRA
+historical_friend = ITF
+historical_friend = JAP
+historical_friend = EJA

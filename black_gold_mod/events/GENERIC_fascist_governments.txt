@@ -1,0 +1,305 @@
+namespace = GENERIC_fascist_governments
+
+#seizing unwanted properties
+
+country_event = {
+	id = GENERIC_fascist_governments.1
+	title = "GENERIC_fascist_governments.t.1"
+	desc = "GENERIC_fascist_governments.d.1"
+	picture = GULAG_eventPicture
+	
+	trigger = {
+		has_reform = fascist_mechanic
+		#has_country_flag = recently_established_state
+		
+		NOT = {
+			years_of_income = 2.0
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 48
+	}
+	
+	option = {
+		name = "GENERIC_fascist_governments.1.a"
+		add_years_of_income = 0.3
+		add_mil_power = 10
+		add_adm_power = 25
+		add_dip_power = -10
+		
+		ai_chance = { factor = 1 }
+	}
+	
+	option = {
+		name = "GENERIC_fascist_governments.1.b"
+		add_stability = -1
+		
+		ai_chance = { factor = 0 }
+	}
+}
+
+#CORPORATIZATION
+
+country_event = {
+	id = GENERIC_fascist_governments.2
+	title = "GENERIC_fascist_governments.t.2"
+	desc = "GENERIC_fascist_governments.d.2"
+	picture = GULAG_eventPicture
+	
+	trigger = {
+		has_reform = fascist_mechanic
+		has_reform = fascist_corporatism
+		NOT = { has_country_flag = corporatization }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = "GENERIC_fascist_governments.2.a"
+		
+		set_country_flag = corporatization
+		
+		add_stability = 1
+		
+		add_country_modifier = {
+			name = autarky
+			duration = 1825
+		}
+		
+		ai_chance = { factor = 1 }
+	}
+	
+	option = {
+		name = "GENERIC_fascist_governments.1.b"
+		
+		set_country_flag = corporatization
+		
+		add_adm_power = 50
+		add_dip_power = 50
+		add_mil_power = 50
+		
+		add_stability = -1
+		
+		ai_chance = { factor = 0 }
+	}
+}
+
+#Industrialization
+
+province_event = {
+	id = GENERIC_fascist_governments.3
+	title = "GENERIC_fascist_governments.t.3"
+	desc = "GENERIC_fascist_governments.d.3"
+	picture = FACTORY_eventPicture
+	
+	trigger = {
+		owner = {
+			has_reform = fascist_mechanic
+			religion = atheism
+		}
+		
+		any_owned_province = {
+			OR = {
+				has_building = temple
+				has_building = cathedral
+			}
+			NOT = {
+				has_building = factory_infrastructure
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 80
+	}
+	
+	option = {
+		name = "GENERIC_fascist_governments.3.a"
+			if = {
+				limit = {
+					has_building = temple
+				}
+				remove_building = temple
+			}
+			if = {
+				limit = {
+					has_building = cathedral
+				}
+				remove_building = cathedral
+			}
+			add_building = factory_infrastructure
+		owner = {
+			add_years_of_income = -0.25
+		}
+	}
+}
+
+#Labor Facilities
+
+country_event = {
+	id = GENERIC_fascist_governments.4
+	title = "GENERIC_fascist_governments.t.4"
+	desc = "GENERIC_fascist_governments.d.4"
+	picture = GULAG_eventPicture
+	
+	trigger = {
+		has_reform = fascist_mechanic
+		NOT = { has_country_modifier = labor_facility }
+	}
+
+	mean_time_to_happen = {
+		months = 78
+	}
+	
+	option = {
+		name = "GENERIC_fascist_governments.4.a"
+		
+		add_country_modifier = {
+			name = labor_facility
+			duration = 7300
+		}
+		
+		add_stability = -1
+		
+	}
+	
+	option = {
+		name = "GENERIC_fascist_governments.4.b"
+		
+		add_stability = 1
+		add_adm_power = 75
+	}
+}
+
+#Policing bureau event (purging dissidents)
+
+country_event = {
+	id = GENERIC_fascist_governments.5
+	title = "GENERIC_fascist_governments.t.5"
+	desc = "GENERIC_fascist_governments.d.5"
+	picture = BUREAU_eventPicture
+	
+	trigger = {
+		has_reform = fascist_mechanic
+		
+		NOT = {
+			OR = {
+				has_country_modifier = policing_division	
+				has_country_modifier = no_policing_division
+				has_reform = large_policing_bureaucracy
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 68
+	}
+	
+	option = {
+		name = "GENERIC_fascist_governments.5.a"
+		
+		add_country_modifier = {
+			name = policing_division
+			duration = 7300
+		}
+		
+		add_government_reform = large_policing_bureaucracy
+		
+		ai_chance = { factor = 1 }
+	}
+	
+	option = {
+		name = "GENERIC_fascist_governments.5.b"
+		
+		add_country_modifier = {
+			name = no_policing_division
+			duration = 7300
+		}
+		
+		ai_chance = { factor = 0 }
+	}
+}
+
+#Students Revolt
+
+country_event = {
+	id = GENERIC_fascist_governments.6
+	title = "GENERIC_fascist_governments.t.6"
+	desc = "GENERIC_fascist_governments.d.6"
+	picture = BUREAU_eventPicture
+	
+	trigger = {
+		has_reform = fascist_mechanic
+	}
+
+	mean_time_to_happen = {
+		months = 120
+		
+		modifier = {
+			factor = 1.25
+			stability = 1
+		}
+		modifier = {
+			factor = 2.5
+			stability = 2
+		}
+		modifier = {
+			factor = 5.0
+			stability = 3
+		}
+		modifier = {
+			factor = 2.5
+			has_country_modifier = policing_division
+		}
+		modifier = {
+			factor = 2.5
+			has_reform = socialist_large_policing_bureaucracy
+		}
+	}
+	
+	option = {
+		name = "GENERIC_fascist_governments.6.a"
+		capital_scope = {
+			democratic_rebels = 1
+		}
+	}
+	
+	option = {
+		name = "GENERIC_fascist_governments.6.b"
+		add_stability = -1
+	}
+}
+
+#undoing liberal policies
+
+country_event = {
+	id = GENERIC_fascist_governments.7
+	title = "GENERIC_fascist_governments.t.7"
+	desc = "GENERIC_fascist_governments.d.7"
+	picture = GULAG_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		has_reform = fascist_mechanic
+		OR = {
+			has_country_modifier = womens_suffrage_demands_met
+			has_country_modifier = minority_rights
+			has_country_modifier = minorities_can_hold_office
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "GENERIC_fascist_governments.7.a"
+		remove_country_modifier = womens_suffrage_demands_met
+		remove_country_modifier = minority_rights
+		remove_country_modifier = minorities_can_hold_office
+	}
+}

@@ -1,0 +1,115 @@
+namespace = province_industrialization
+
+province_event = {
+	id = province_industrialization.1
+	title = "province_industrialization.n.1"
+	desc = "province_industrialization.d.1"
+	picture = ANGRY_MOB_eventPicture
+
+	hidden = yes
+	
+	trigger = {
+		owner = {
+			adm_tech = 34
+			
+			is_bankrupt = no
+		}
+		
+		is_prosperous = yes 
+		
+		NOT = {
+			has_province_modifier = provincial_railroad
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 900
+		
+		modifier = {
+			factor = 0.7
+			has_terrain = farmlands
+		}
+		
+		modifier = {
+			factor = 0.75
+			has_terrain = grasslands
+		}
+		
+		modifier = {
+			factor = 0.775
+			has_terrain = woods
+		}
+		
+		modifier = {
+			factor = 1.1
+			has_terrain = forest
+		}
+		
+		modifier = {
+			factor = 1.1
+			OR = {
+				has_terrain = hills
+				has_terrain = coastline
+				has_terrain = drylands
+			}
+		}
+		
+		modifier = {
+			factor = 1.25
+			is_subject = yes
+		}
+		
+		modifier = {
+			factor = 1.2
+			has_terrain = highlands
+		}
+		
+		modifier = {
+			factor = 1.3
+			OR = {
+				has_terrain = marsh
+				has_terrain = savannah
+			}
+		}
+		
+		modifier = {
+			factor = 0.85
+			OR = {
+				highest_value_trade_node = yes
+			}
+		}
+		
+		modifier = {
+			factor = 1.35
+			OR = {
+				has_terrain = mountain
+				has_terrain = jungle
+				has_terrain = desert
+				has_terrain = coastal_desert
+				has_terrain = glacier
+			}
+		}
+		
+		modifier = {
+			factor = 0.8
+			OR = {
+				province_has_center_of_trade_of_level = 2
+			}
+		}
+		
+		modifier = {
+			factor = 0.8
+			OR = {
+				current_age = age_of_great_wars
+			}
+		}
+	}
+	
+	option = {
+		name = "province_industrialization.1.a" 
+		add_province_modifier = {
+			name = provincial_railroad
+			duration = -1
+		}
+	}
+}

@@ -1,0 +1,12 @@
+4175 = "Lježa"
+4174 = "Drac"
+
+183 = "Pariz"
+102 = "Nica"
+
+4738 = "Trst"		# Trieste
+118 = "Rim"
+121 = "Napulj"
+116 = "Firenca"
+112 = "Venecija"
+114 = "Ravena"

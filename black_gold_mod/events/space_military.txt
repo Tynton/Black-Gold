@@ -1,0 +1,30 @@
+namespace = space_military
+
+country_event = {
+	id = space_military.1
+	title = "space_military.n.1"
+	desc = "space_military.d.1"
+	picture = SATELLITE_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		any_country = {
+			war_with = ROOT
+			OR = {
+				has_country_modifier = satellite
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "space_military.1.a"
+		every_enemy_country = { 
+			remove_fow = 120
+		} 
+	}
+}

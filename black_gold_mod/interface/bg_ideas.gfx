@@ -1,0 +1,49 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_modern_administrative_ideas"
+		texturefile = "gfx//interface//ideas//idea_modern_administrative_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_modern_socialist_ideas"
+		texturefile = "gfx//interface//ideas//idea_modern_socialist_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_modern_trade_ideas"
+		texturefile = "gfx//interface//ideas//idea_modern_trade_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_modern_strategy_ideas"
+		texturefile = "gfx//interface//ideas//idea_modern_strategy_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_modern_navy_ideas"
+		texturefile = "gfx//interface//ideas//idea_modern_navy_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_modern_espionage_ideas"
+		texturefile = "gfx//interface//ideas//idea_modern_espionage_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+}

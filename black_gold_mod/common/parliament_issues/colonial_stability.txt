@@ -1,0 +1,43 @@
+colonial_stability = {
+
+	category = 2
+
+	allow = {
+		colony = 1
+	}
+	
+	effect = {
+		add_stability = 1
+	}
+	
+	modifier = {
+		liberty_desire_from_subject_development = -0.25
+		stability_cost_modifier = -0.25
+	}
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2.0
+			any_subject_country = { 
+				liberty_desire = 40
+			} 
+		}
+		modifier = {
+			factor = 4
+			any_subject_country = { 
+				liberty_desire = 50
+			} 
+		}
+		modifier = {
+			factor = 8
+			any_subject_country = { 
+				liberty_desire = 75
+			} 
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}	
+}

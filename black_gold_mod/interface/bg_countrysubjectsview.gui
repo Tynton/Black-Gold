@@ -1,0 +1,16 @@
+guiTypes = {
+
+	### SUBJECT
+	windowType = {
+		name = "subject_item"
+		position = { x=0 y=0 }
+		size = { x=500 y=30 }
+		moveable = 0
+		Orientation = "UPPER_LEFT"
+
+		iconType = {
+			name ="subject_type_icon"
+			spriteType = "GFX_subject_gercon_icon"
+			position = { x= 13 y = 5 }
+		}
+	}

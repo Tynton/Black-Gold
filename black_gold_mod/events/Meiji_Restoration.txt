@@ -1,0 +1,110 @@
+namespace = meiji
+
+
+#Begin the Restoration
+
+country_event = {
+	id = meiji.1
+	title = "meiji.n.1"
+	desc = "meiji.d.1"
+	picture = UNIVERSITY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		current_age = age_of_industrialization
+		culture_group = japanese_g
+		
+		NOT = {
+			has_country_flag = no_meiji
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 200
+		
+		modifier = {
+			factor = 0.15
+			tag = JAP
+		}
+	}
+	
+	option = {
+		name = "meiji.1.a"
+		add_splendor = 800
+		
+		add_country_modifier = { 
+			name = meiji_politics
+			duration = -1
+		}
+		
+		set_country_flag = undergoing_restoration
+		
+		ai_chance = { 
+			factor = 25
+		}
+	}
+	
+	option = {
+		name = "meiji.1.b"
+		set_country_flag = no_meiji
+		
+		ai_chance = { 
+			factor = 1 
+			
+			modifier = {
+				factor = 2
+				adm_tech = 38
+			}
+		}
+	}
+}
+
+#Importation of Foreign Tech
+
+country_event = {
+	id = meiji.2
+	title = "meiji.n.2"
+	desc = "meiji.d.2"
+	picture = UNIVERSITY_eventPicture
+	
+	trigger = {
+		has_age_ability = ab_japanese_westernization
+		culture_group = japanese_g
+		
+		NOT = {
+			has_country_flag = no_meiji
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 64
+		
+		modifier = {
+			factor = 0.6
+			stability = 3
+		}
+		
+		modifier = {
+			factor = 0.8
+			stability = 2
+		}
+		
+		modifier = {
+			factor = 0.9
+			stability = 1
+		}
+	}
+	
+	option = {
+		name = "meiji.2.a"
+		add_splendor = 150
+		
+		every_owned_province = {
+			limit = {
+				development = 25
+			}
+			add_next_institution_embracement = 20
+		}
+	}
+}

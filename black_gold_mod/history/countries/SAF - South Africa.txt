@@ -1,0 +1,6 @@
+government = republic
+primary_culture = khoisan
+religion = secular
+technology_group = western
+unit_type = sub_saharan
+capital = 1177 #cape

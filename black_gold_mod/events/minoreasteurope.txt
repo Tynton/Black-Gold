@@ -1,0 +1,267 @@
+namespace = minoreasteurope
+
+#belarus
+
+country_event = {
+	id = minoreasteurope.1
+	title = "minoreasteurope.n.1"
+	desc = "minoreasteurope.d.1"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	hidden = yes
+
+	trigger = {
+		is_year = 1850
+		NOT = {
+			culture = byelorussian
+		}
+		any_owned_province = {
+			culture = byelorussian
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "minoreasteurope.1.a"
+		every_province = {
+			limit = {
+				culture = byelorussian
+			}
+			add_core = BLR
+		}
+	}
+}
+
+#initial belarusian revolt
+
+country_event = {
+	id = minoreasteurope.3
+	title = "minoreasteurope.n.3"
+	desc = "minoreasteurope.d.3"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1895
+		AND = {
+			NOT = {
+				OR = {
+					culture_group = east_slavic
+					culture_group = west_slavic
+				}
+			}
+			NOT = {
+				exists = BLR
+			}
+			any_owned_province = {
+				culture = byelorussian
+			}
+			NOT = {
+				tag = BLR
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "minoreasteurope.3.a"
+		release = BLR
+		BLR = {
+			change_government = monarchy
+			add_government_reform = autocracy_reform
+			add_government_reform = parliamentary_reform
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_independence_war
+			}
+		}
+	}
+	
+	option = {
+		name = "minoreasteurope.3.b"
+		release = BLR
+		BLR = {
+			change_government = monarchy
+			add_government_reform = autocracy_reform
+			add_government_reform = parliamentary_reform
+			create_alliance = ROOT
+		}
+	}
+}
+
+#poland
+
+country_event = {
+	id = minoreasteurope.4
+	title = "minoreasteurope.n.4"
+	desc = "minoreasteurope.d.4"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	hidden = yes
+
+	trigger = {
+		is_year = 1820
+		NOT = {
+			culture = polish
+		}
+		any_owned_province = {
+			culture = polish
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "minoreasteurope.4.a"
+		every_province = {
+			limit = {
+				culture = polish
+			}
+			add_core = POL
+		}
+	}
+}
+
+#NOVEMBER UPRISING, POLAND
+
+country_event = {
+	id = minoreasteurope.5
+	title = "minoreasteurope.n.5"
+	desc = "minoreasteurope.d.5"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1825
+		AND = {
+			NOT = {
+				culture_group = west_slavic
+			}
+			NOT = {
+				exists = POL
+			}
+			development_in_provinces = {
+				value = 200
+				culture = polish
+			}
+			NOT = {
+				tag = POL
+			}
+			NOT = {
+				stability = 1
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "minoreasteurope.5.a"
+		release = POL
+		POL = {
+			change_government = monarchy
+			add_government_reform = autocracy_reform
+			add_government_reform = parliamentary_reform
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_independence_war
+			}
+		}
+	}
+	
+	option = {
+		name = "minoreasteurope.5.b"
+		release = POL
+		POL = {
+			change_government = monarchy
+			add_government_reform = autocracy_reform
+			add_government_reform = parliamentary_reform
+			create_alliance = ROOT
+		}
+	}
+}
+
+#latvia
+
+country_event = {
+	id = minoreasteurope.6
+	title = "minoreasteurope.n.6"
+	desc = "minoreasteurope.d.6"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1855
+		NOT = {
+			culture = latvian
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "minoreasteurope.6.a"
+		every_province = {
+			limit = {
+				culture = latvian
+			}
+			add_core = LAT
+		}
+	}
+}
+
+#ottomans
+
+country_event = {
+	id = minoreasteurope.7
+	title = "minoreasteurope.n.7"
+	desc = "minoreasteurope.d.7"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	hidden = yes
+
+	trigger = {
+		is_year = 1850
+		NOT = {
+			culture = turkish
+		}
+		any_owned_province = {
+			culture = turkish
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "minoreasteurope.7.a"
+		every_province = {
+			limit = {
+				culture = turkish
+			}
+			add_core = OTF
+		}
+	}
+}

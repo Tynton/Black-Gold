@@ -1,0 +1,37 @@
+naval_hegemon = {
+	allow = {
+		is_great_power = yes
+		naval_forcelimit = 450
+		NOT = { any_other_great_power = { num_of_heavy_ship = root } }
+		NOT = { has_country_modifier = lost_hegemony }
+	}
+	
+	base = {
+		global_spy_defence = 0.25
+		spy_offence = 0.15
+		war_exhaustion = -0.1
+		province_warscore_cost = -0.3
+		prestige = 2.0
+		ae_impact = 0.5
+		dip_tech_cost_modifier = -0.075
+		technology_cost = -0.05
+		all_power_cost = -0.05
+		advisor_pool = 1 
+	}
+	
+	# At max 100% tickup.
+	scale = {
+		liberty_desire_from_subject_development = -0.35
+		global_sailors_modifier = 2.0
+		blockade_efficiency = 2.0
+	}
+	
+	max = {
+		light_ship_cost = -0.3
+		heavy_ship_power = 0.15
+		naval_morale = 0.1
+		advisor_pool = 1 
+		naval_maintenance_modifier = -0.3
+	}
+	
+}

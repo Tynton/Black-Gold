@@ -1,0 +1,440 @@
+namespace = franceunity
+
+#initial french revolt
+
+country_event = {
+	id = franceunity.1
+	title = "franceunity.n.1"
+	desc = "franceunity.d.1"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		is_year = 1815
+		AND = {
+			any_owned_province = {
+				OR = {
+					core_claim = FRA
+					core_claim = FRR
+					core_claim = FRE
+				}
+			}
+			NOT = {
+				culture_group = french
+				exists = FRA
+				stability = 1
+				OR = {
+					tag = FRA
+					tag = FRR
+					tag = FRE
+				}
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "franceunity.1.a"
+		random_list = {
+			10 = { 
+			release = FRA
+				FRA = {
+					change_government = monarchy
+					add_government_reform = autocracy_reform
+					declare_war_with_cb = {
+						who = ROOT
+						casus_belli = cb_independence_war
+					}
+				}
+			}
+		}
+		random_list = {
+			45 = { 
+			release = FRR
+				FRR = {
+					change_government = republic
+					add_government_reform = parliamentary_reform
+					declare_war_with_cb = {
+						who = ROOT
+						casus_belli = cb_independence_war
+					}
+					set_government_rank = 3 
+				}
+			}
+		}
+		random_list = {
+			45 = { 
+			release = FRE
+				FRE = {
+					change_government = monarchy
+					add_government_reform = parliamentary_reform
+					declare_war_with_cb = {
+						who = ROOT
+						casus_belli = cb_independence_war
+					}
+					set_government_rank = 3 
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "franceunity.1.b"
+		random_list = {
+			10 = { 
+			release = FRA
+				FRA = {
+					change_government = monarchy
+					add_government_reform = autocracy_reform
+					create_alliance = ROOT
+				}
+			}
+		}
+		random_list = {
+			45 = { 
+			release = FRR
+				FRR = {
+					change_government = republic
+					add_government_reform = parliamentary_reform
+					create_alliance = ROOT
+					set_government_rank = 3 
+				}
+			}
+		}
+		random_list = {
+			45 = { 
+			release = FRE
+				FRE = {
+					change_government = monarchy
+					add_government_reform = parliamentary_reform
+					create_alliance = ROOT
+					set_government_rank = 3 
+				}
+			}
+		}
+	}
+}
+
+
+#cores
+
+#country_event = {
+#	id = franceunity.2
+#	title = "franceunity.n.2"
+#	desc = "franceunity.d.2"
+#	picture = ANGRY_MOB_eventPicture
+#	
+#	fire_only_once = yes
+#	
+#	major = yes
+#
+#	trigger = {
+#		is_year = 1840
+#		culture_group = french
+#	}	
+#
+#	mean_time_to_happen = {
+#		months = 6
+#	}
+#	
+#	option = {
+#		name = "franceunity.2.a"
+#		every_province = {
+#			limit = {
+#				culture_group = french
+#			}
+#			add_core = FRR
+#		}
+#	}
+#}
+
+#province revolt
+
+province_event = {
+	id = franceunity.3
+	title = "franceunity.n.3"
+	desc = "franceunity.d.3"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		is_year = 1815
+		NOT = {
+			current_age = age_of_great_wars
+		}
+		NOT = {
+			devastation = 1
+		}
+		
+		has_owner_accepted_culture = no
+		
+		culture_group = french
+		is_core = FRA
+		owner = {
+			NOT = {
+				culture_group = french
+			}
+			NOT = {
+				prestige = 65
+			}
+		}
+		exists = FRA
+		unrest = -2
+	}	
+
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "franceunity.3.a"
+		spawn_rebels = {
+			type = nationalist_rebels
+			size = 5
+			friend = FRA
+		}
+		add_devastation = 15
+	}
+	option = {
+		name = "franceunity.3.b"
+		cede_province = FRA
+		add_core = FRA
+	}
+}
+
+#province revolt (republic)
+
+province_event = {
+	id = franceunity.4
+	title = "franceunity.n.4"
+	desc = "franceunity.d.4"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		is_year = 1815
+		NOT = {
+			current_age = age_of_great_wars
+		}
+		NOT = {
+			devastation = 1
+		}
+		
+		has_owner_accepted_culture = no
+		
+		culture_group = french
+		is_core = FRR
+		owner = {
+			NOT = {
+				culture_group = french
+			}
+			NOT = {
+				prestige = 65
+			}
+		}
+		exists = FRR
+	}	
+
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "franceunity.4.a"
+		spawn_rebels = {
+			type = nationalist_rebels
+			size = 5
+			friend = FRR
+		}
+		add_devastation = 15
+	}
+	option = {
+		name = "franceunity.4.b"
+		cede_province = FRR
+		add_core = FRR
+	}
+}
+
+#province revolt (empire)
+
+province_event = {
+	id = franceunity.5
+	title = "franceunity.n.5"
+	desc = "franceunity.d.5"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		is_year = 1815
+		NOT = {
+			current_age = age_of_great_wars
+		}
+		NOT = {
+			devastation = 1
+		}
+		
+		has_owner_accepted_culture = no
+		
+		culture_group = french
+		is_core = FRE
+		owner = {
+			NOT = {
+				culture_group = french
+			}
+			NOT = {
+				prestige = 65
+			}
+		}
+		exists = FRE
+	}	
+
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "franceunity.5.a"
+		spawn_rebels = {
+			type = nationalist_rebels
+			size = 5
+			friend = FRE
+		}
+		add_devastation = 15
+	}
+	option = {
+		name = "franceunity.5.b"
+		cede_province = FRE
+		add_core = FRE
+	}
+}
+
+#nations join france (NOT BELGIUM OR BURGUNDY)
+
+country_event = {
+	id = franceunity.6
+	title = "franceunity.n.6"
+	desc = "franceunity.d.6"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		is_year = 1815
+		ai = yes 
+		NOT = {
+			current_age = age_of_great_wars
+		}
+		exists = FRA
+		culture_group = french
+		is_subject = no
+		continent = europe
+		NOT = {
+			OR = {
+				development = 650
+				tag = BEL
+				#tag = BUR
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "franceunity.6.a"
+		FRA = {
+			inherit = ROOT
+			ROOT = {
+				every_owned_province = {
+					add_core = FRA
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = franceunity.7
+	title = "franceunity.n.7"
+	desc = "franceunity.d.7"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		is_year = 1815
+		ai = yes 
+		NOT = {
+			current_age = age_of_great_wars
+		}
+		exists = FRR
+		culture_group = french
+		is_subject = no
+		continent = europe
+		NOT = {
+			OR = {
+				development = 650
+				tag = BEL
+				#tag = BUR
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "franceunity.7.a"
+		FRR = {
+			inherit = ROOT
+			ROOT = {
+				every_owned_province = {
+					add_core = FRR
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = franceunity.8
+	title = "franceunity.n.8"
+	desc = "franceunity.d.8"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		is_year = 1815
+		ai = yes 
+		NOT = {
+			current_age = age_of_great_wars
+		}
+		exists = FRE
+		culture_group = french
+		is_subject = no
+		continent = europe
+		NOT = {
+			OR = {
+				development = 650
+				tag = BEL
+				#tag = BUR
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "franceunity.8.a"
+		FRE = {
+			inherit = ROOT
+			ROOT = {
+				every_owned_province = {
+					add_core = FRE
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,26 @@
+country_decisions = {
+
+	grant_the_vatican = {
+		potential = {
+			owns_core_province = 118
+			religion = catholic
+			NOT = { tag = PAP }
+			NOT = { has_country_modifier = sovereignty_vatican }
+		}
+		allow = {
+			owns_core_province = 118
+			religion = catholic
+			NOT = { tag = PAP }
+			NOT = { has_country_modifier = sovereignty_vatican }
+		}
+		effect = {
+			add_country_modifier = {
+				name = "sovereignty_vatican"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,714 @@
+namespace = german_confederation
+
+#abolition of the HRE | OBSOLETE
+#country_event = {
+#	id = german_confederation.1
+#	title = "german_confederation.n.1"
+#	desc = "german_confederation.d.1"
+#	picture = HRE_eventPicture
+#	
+#	major = yes
+#	
+#	is_triggered_only = yes
+#
+#	trigger = {
+#		current_age = age_of_industrialization
+#		current_age = age_of_revolutions
+#		
+#		#just to make this event impossible to receive as it is obsolete and replaced with the third event in this file
+#		
+#		any_country = {
+#			adm_tech = 32
+#		}
+#		
+#		is_emperor = yes
+#		
+#		num_of_foreign_hre_provinces = 8
+#		
+#		NOT = {
+#			hre_heretic_religion = ROOT
+#		}
+#		
+#		NOT = {
+#			hre_size = 45
+#		}
+#		
+#		#check_variable = {
+#		#	which = secular
+#		#	value = 6
+#		#}
+#	}
+#
+#	mean_time_to_happen = {
+#		months = 74
+#		
+#		modifier = {
+#			factor = 0.9
+#			num_of_foreign_hre_provinces = 3
+#		}
+#		
+#		modifier = {
+#			factor = 0.8
+#			num_of_foreign_hre_provinces = 5
+#		}
+#		
+#		modifier = {
+#			factor = 0.7
+#			num_of_foreign_hre_provinces = 7
+#		}
+#		
+#		modifier = {
+#			factor = 0.6
+#			num_of_foreign_hre_provinces = 9
+#		}
+#		
+#		modifier = {
+#			factor = 0.5
+#			num_of_foreign_hre_provinces = 10
+#		}
+#	}
+#	
+#	
+#	option = {
+#		name = "german_confederation.1.a"
+#		
+#		all_country = {
+#			limit = {
+#				is_part_of_hre = yes
+#			}
+#			country_event = {
+#				id = german_confederation.2
+#			}
+#		}
+#		
+#		set_country_flag = former_hre_emperor
+#		
+#		dismantle_hre = yes
+#		
+#	}
+#}
+
+country_event = {
+	id = german_confederation.2
+	title = "german_confederation.n.2"
+	desc = "german_confederation.d.2"
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "german_confederation.2.a"
+		
+		set_country_flag = former_hre_member
+	}
+}
+
+
+############################################CREATION OF THE GERMAN CONFEDERATION############################################
+
+country_event = {
+	id = german_confederation.3
+	title = "german_confederation.n.3"
+	desc = "german_confederation.d.3"
+	picture = HRE_eventPicture
+	
+	major = yes
+	
+	fire_only_once = yes
+
+	trigger = {
+		any_country = {
+			adm_tech = 30
+		}
+		
+		NOT = {
+			OR = {
+				any_country = {
+					is_subject_of_type = german_empire_member
+				}
+				any_country = {
+					is_subject_of_type = german_confederation_member
+				}
+			}
+		}
+		
+		OR = {
+			AND = {
+				#all_country = {
+				#	is_part_of_hre = no
+				#}
+				culture_group = germanic
+				total_development = 225
+			}
+			#has_country_flag = former_hre_emperor
+		}
+		#NOT = {
+		#	any_country = {
+		#		has_country_flag = gercon_leader
+		#	}
+		#}
+		NOT = { 
+			OR = {
+				exists = GER 
+				exists = GRF
+				exists = GRS
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 48
+		
+		modifier = {
+			factor = 0.9
+			num_of_foreign_hre_provinces = 3
+		}
+	}
+	
+	
+	option = {
+		name = "german_confederation.3.a"
+		
+		set_government_rank = 3 
+		
+		every_country = {
+			limit = {
+				is_part_of_hre = yes
+			}
+			#total_development = 225
+			country_event = {
+				id = german_confederation.4
+			}
+		}
+		
+		clr_country_flag = former_hre_emperor
+		set_country_flag = gercon_leader
+		
+		dismantle_hre = yes
+	}
+}
+
+
+country_event = {
+	id = german_confederation.4
+	title = "german_confederation.n.4"
+	desc = "german_confederation.d.4"
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "german_confederation.4.a"
+		
+		trigger = {
+			is_subject = no
+			
+			NOT = {
+				OR = {
+					has_country_flag = gercon_leader
+					has_country_flag = german_empire_leader
+				}
+			}
+		}
+		
+		#release_all_subjects = yes
+		
+		FROM = {
+			create_subject = {
+				subject_type = german_confederation_member
+				subject = ROOT
+			}
+		}
+		clr_country_flag = former_hre_member
+		set_country_flag = gercon_member
+		
+		ai_chance = { factor = 1 }
+	}
+	
+	option = {
+		name = "german_confederation.4.b"
+		
+		trigger = {
+			OR = {
+				NOT = {
+					capital_scope = {
+						OR = {
+							region = north_german_region
+							region = south_german_region
+						}
+					}
+				}
+				ai = no
+				tag = SWI
+				is_subject = yes
+			}
+			NOT = {
+				OR = {
+					has_country_flag = gercon_leader
+					has_country_flag = german_empire_leader
+				}
+			}
+		}
+		
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "german_confederation.4.c"
+		
+		trigger = {
+			OR = {
+				has_country_flag = gercon_leader
+				has_country_flag = german_empire_leader
+			}
+		}
+	}
+}
+
+country_event = {
+	id = german_confederation.5
+	title = "german_confederation.n.5"
+	desc = "german_confederation.d.5"
+	picture = HRE_eventPicture
+	
+	trigger = {
+		has_country_flag = gercon_leader
+		
+		german_confederation_member = 1
+		
+		all_subject_country = {
+			NOT = {
+				liberty_desire = 25
+			}
+		} 
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		
+		modifier = {
+			factor = 0.8
+			all_subject_country = {
+				NOT = {
+					liberty_desire = 20
+				}
+			} 
+		}
+		
+		modifier = {
+			factor = 0.8
+			all_subject_country = {
+				NOT = {
+					liberty_desire = 15
+				}
+			} 
+		}
+		
+		modifier = {
+			factor = 0.6
+			all_subject_country = {
+				NOT = {
+					liberty_desire = 10
+				}
+			} 
+		}
+	}
+	
+	major = yes
+	
+	option = {
+		name = "german_confederation.5.a"
+		
+		every_country = {
+			limit = {
+				has_country_flag = gercon_member
+			}
+			country_event = {
+				id = german_confederation.6
+			}
+		}
+		
+		change_tag = GER
+	}
+}
+
+country_event = {
+	id = german_confederation.6
+	title = "german_confederation.n.6"
+	desc = "german_confederation.d.6"
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "german_confederation.6.a"
+		
+		GER = {
+			inherit = ROOT
+			ROOT = {
+				every_owned_province = {
+					add_core = GER
+				}
+			}
+		}
+		clr_country_flag = gercon_member
+	}
+	
+	option = {
+		name = "german_confederation.6.b"
+		grant_independence = yes
+	}
+}
+
+
+
+
+##############################FORMATION, NO HRE##############################
+
+country_event = {
+	id = german_confederation.7
+	title = "german_confederation.n.7"
+	desc = "german_confederation.d.7"
+	picture = HRE_eventPicture
+	
+	major = yes
+	
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			current_age = age_of_industrialization
+			current_age = age_of_revolutions
+			current_age = age_of_enlightenment
+		}
+		
+		NOT = {
+			OR = {
+				any_country = {
+					is_subject_of_type = german_empire_member
+				}
+				any_country = {
+					is_subject_of_type = german_confederation_member
+				}
+			}
+		}
+		NOT = { 
+			OR = {
+				exists = GER 
+				exists = GRF
+				exists = GRS
+			}
+		}
+		culture_group = germanic
+		
+		all_country = {
+			is_part_of_hre = no
+		}
+		
+		OR = {
+			total_development = 500
+			AND = {
+				government_rank = 2
+				total_development = 300
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 64
+		
+		modifier = {
+			factor = 0.1
+			
+			government_rank = 3
+		}
+	}
+	
+	
+	option = {
+		name = "german_confederation.7.a"
+		
+		set_government_rank = 3 
+		
+		set_country_flag = gercon_leader
+		
+		every_country = {
+			limit = {
+				culture_group = germanic
+			}
+			#total_development = 225
+			country_event = {
+				id = german_confederation.4
+			}
+		}
+	}
+}
+
+##############################GERMAN EMPIRE##############################
+
+country_event = {
+	id = german_confederation.8
+	title = "german_confederation.n.8"
+	desc = "german_confederation.d.8"
+	picture = HRE_eventPicture
+	
+	major = yes
+	
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+			current_age = age_of_absolutism
+		}
+		
+		culture_group = germanic
+		
+		all_country = {
+			is_part_of_hre = no
+		}
+		
+		capital_scope = {
+			OR = {
+				region = north_german_region
+				region = south_german_region
+			}
+		}
+		
+		NOT = {
+			any_country = {
+				is_subject_of_type = german_empire_member
+			}
+		}
+		
+		OR = {
+			total_development = 500
+			government_rank = 2
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 64
+		
+		modifier = {
+			factor = 0.1
+			
+			government_rank = 3
+		}
+		
+		modifier = {
+			factor = 0.001
+			
+			any_country = {
+				is_subject_of_type = german_confederation_member
+			}
+		}
+	}
+	
+	
+	option = {
+		name = "german_confederation.8.a"
+		
+		north_german_region = {
+			add_permanent_claim = ROOT
+		}
+		south_german_region = {
+			add_permanent_claim = ROOT
+		}
+		
+		set_country_flag = german_empire_leader
+		
+		set_government_rank = 3 
+		
+		every_country = {
+			limit = {
+				culture_group = germanic
+			}
+			#total_development = 225
+			country_event = {
+				id = german_confederation.9
+			}
+		}
+	}
+}
+
+country_event = {
+	id = german_confederation.9
+	title = "german_confederation.n.9"
+	desc = "german_confederation.d.9"
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "german_confederation.9.a"
+		
+		release_all_subjects = yes
+		
+		FROM = {
+			create_subject = {
+				subject_type = german_empire_member
+				subject = ROOT
+			}
+		}
+		clr_country_flag = former_hre_member
+		set_country_flag = gercon_member
+		
+		ai_chance = { factor = 1 }
+		
+		trigger = {
+			is_subject = no
+			
+			NOT = {
+				OR = {
+					has_country_flag = gercon_leader
+					has_country_flag = german_empire_leader
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "german_confederation.9.b"
+		
+		trigger = {
+			OR = {
+				NOT = {
+					capital_scope = {
+						OR = {
+							region = north_german_region
+							region = south_german_region
+						}
+					}
+					has_country_flag = gercon_leader
+					has_country_flag = german_empire_leader
+				}
+				ai = no
+				tag = SWI
+			}
+			
+			NOT = {
+				OR = {
+					has_country_flag = gercon_leader
+					has_country_flag = german_empire_leader
+				}
+			}
+		}
+		
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "german_confederation.9.c"
+		
+		trigger = {
+			OR = {
+				has_country_flag = gercon_leader
+				has_country_flag = german_empire_leader
+			}
+		}
+	}
+}
+
+country_event = {
+	id = german_confederation.10
+	title = "german_confederation.n.10"
+	desc = "german_confederation.d.10"
+	picture = HRE_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		OR = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+			current_age = age_of_absolutism
+		}
+		
+		any_country = {
+			is_subject_of_type = german_confederation_member
+		}
+		
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = "german_confederation.10.a"
+		
+		set_government_rank = 3 
+		
+		every_country = {
+			limit = {
+				is_subject_of_type = german_confederation_member
+			}
+			grant_independence = yes 
+		}
+	}
+}
+
+country_event = {
+	id = german_confederation.11
+	title = "german_confederation.n.11"
+	desc = "german_confederation.d.11"
+	picture = HRE_eventPicture
+	
+	trigger = {
+		ai = yes
+		is_revolutionary = yes
+		any_country = {
+			is_subject_of_type = german_confederation_member
+		}
+		is_subject = no
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "german_confederation.4.a"
+		FROM = {
+			create_subject = {
+				subject_type = german_confederation_member
+				subject = ROOT
+			}
+		}
+		clr_country_flag = former_hre_member
+		set_country_flag = gercon_member
+	}
+}
+
+country_event = {
+	id = german_confederation.12
+	title = "german_confederation.n.12"
+	desc = "german_confederation.d.12"
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "german_confederation.12.a"
+		
+		GRS = {
+			inherit = ROOT
+			ROOT = {
+				every_owned_province = {
+					add_core = GRS
+				}
+			}
+		}
+		clr_country_flag = gercon_member
+	}
+	
+	option = {
+		name = "german_confederation.12.b"
+		grant_independence = yes
+	}
+}

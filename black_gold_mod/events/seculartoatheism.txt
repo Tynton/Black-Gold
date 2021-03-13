@@ -1,0 +1,26 @@
+namespace = seculartoatheism
+
+province_event = {
+	id = seculartoatheism.1
+	title = "seculartoatheism.n.1"
+	desc = "seculartoatheism.d.1"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		AND = {
+			religion = secular
+		}
+	}	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "seculartoatheism.1.a"
+		change_religion = atheism
+	}
+}
+

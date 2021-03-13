@@ -1,0 +1,286 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new buildings, make sure they are uniquely named.
+
+# cost = x #==> cost in $ to build (subject to other modifiers)
+# time = x #==> number of months to build.
+# modifier = m # a modifier on the province that the building gives
+# trigger = t # an and trigger that needs to be fullfilled to build and keep the building
+# one_per_country = yes/no # if yes, only one of these can exist in a country
+# manufactory = { trade_good trade_good } # list of trade goods that get a production bonus
+# onmap = yes/no # show as a sprite on the map
+
+# FROM = owner
+# ROOT = province
+
+# Building AI is now mainly hard-coded. The AI will estimate how much it gains yearly from each building,
+# convert the value to ducats, and take the building with biggest yearly return as a percentage of the build cost.
+# If lower than 1%, the AI will not consider the yearly return worth it.
+# It will also require higher yearly return if the economy in not in prime shape.
+# Forts' value also get converted to a yearly return based on terrain and strategic position, as well as available budget for fort maintenance.
+
+# AI can still be modded though; it will multiply the yearly return with the value of ai_will_do.
+# If you don't want the AI to build a building at all, make ai_will_do become 0.
+# AI will consider each building to be worth 0.01 ducats per year as a base, so making ai_will_do above cost will have them build it at some point.
+# It will still check whether it can afford a building before doing so though, but may save up to it.
+
+factory_infrastructure = {
+	cost = 800
+	time = 24
+	#make_obsolete = counting_house
+	
+	#trigger = {
+	#	OR = {
+	#		development = 30
+	#		trade_goods = iron
+	#		trade_goods = cloth
+	#		trade_goods = paper
+	#		owner = {
+	#			adm_tech = 34
+	#		}
+	#	}
+	#}
+	
+	modifier = {
+		local_production_efficiency = 2.0
+	}
+	
+	allow_in_gold_provinces = no
+
+	ai_will_do = {
+		factor = 50
+		
+		modifier = {
+			factor = 200
+			owner = {
+				tag = JAP
+			}
+			is_institution_enabled = industrialization
+		}
+	}
+}
+
+#civil_factory = {
+#	cost = 1000
+#	time = 36
+#	make_obsolete = early_factory
+#	modifier = {
+#		local_production_efficiency = 3.0
+#	}
+#	
+#	allow_in_gold_provinces = no
+#
+#	ai_will_do = {
+#		factor = 50
+#	}
+#}
+
+#military_factory = {
+#	cost = 850
+#	time = 36
+#	modifier = {
+#		local_regiment_cost = -0.25 
+#		regiment_recruit_speed = -0.25 
+#	}
+#
+#	ai_will_do = {
+#		factor = 50
+#	}
+#}
+
+tax_center = {
+	cost = 350
+	time = 12
+	modifier = {
+		local_tax_modifier = 1.0
+		local_state_maintenance_modifier = -0.3
+	}
+	
+	ai_will_do = {
+		factor = 50
+		
+		modifier = {
+			factor = 100
+			owner = {
+				has_reform = socialist_mechanic
+			}
+		}
+	}
+}
+
+#military_base = {
+#	cost = 800
+#	time = 36
+#	make_obsolete = training_fields
+#	modifier = {
+#		local_manpower_modifier = 1.5
+#		land_forcelimit = 2
+#		local_defensiveness = 0.35
+#		supply_limit_modifier = 0.4
+#	}
+#	
+#	ai_will_do = {
+#		factor = 50
+#		
+#		modifier = {
+#			factor = 100
+#			owner = {
+#				OR = {
+#					has_reform = fascist_mechanic
+#					is_great_power = yes
+#				}
+#			}
+#		}
+#		
+#		modifier = {
+#			factor = 1000
+#			owner = {
+#				is_hegemon = yes
+#			}
+#		}
+#	}
+#}		
+
+#mil_harbor = {
+#	cost = 300
+#	time = 24
+#	trigger = {
+#		has_port = yes
+#	}
+#	modifier = {
+#		naval_forcelimit = 6
+#		ship_recruit_speed = -0.5
+#		local_ship_repair = 0.5
+#	}
+#	
+#	ai_will_do = {
+#		factor = 1
+#		modifier = {
+#			factor = 105 # Little above build cost
+#			FROM = { navy_size_percentage = 0.95 }
+#		}
+#		modifier = {
+#			factor = 1.1
+#			local_autonomy = 50
+#		}
+#	}
+#}
+
+#oil_drills = {
+#	manufactory = {
+#		oil
+#	}
+#
+#	potential = {
+#		has_dlc = "Rule Britannia"
+#	}
+#
+#	modifier = {
+#		local_production_efficiency = 1.5
+#	}
+#	onmap = no
+#	show_separate = no # Means as a manufactory it will be shown according to the old way
+#	
+#	ai_will_do = {
+#		factor = 1
+#	}
+#}
+
+#aluminium_smelter = {
+#	manufactory = {
+#		aluminium
+#	}
+#
+#	potential = {
+#		has_dlc = "Rule Britannia"
+#	}
+#
+#	modifier = {
+#		local_production_efficiency = 1.0
+#	}
+#	onmap = no
+#	show_separate = no # Means as a manufactory it will be shown according to the old way
+#	
+#	ai_will_do = {
+#		factor = 500
+#	}
+#}
+
+#uranium_mine = {
+#	manufactory = {
+#		uranium
+#	}
+#
+#	potential = {
+#		has_dlc = "Rule Britannia"
+#	}
+#
+#	modifier = {
+#		local_production_efficiency = 0.5
+#	}
+#	onmap = no
+#	show_separate = no # Means as a manufactory it will be shown according to the old way
+#	
+#	ai_will_do = {
+#		factor = 500
+#	}
+#}
+
+#tungsten_mine = {
+#	manufactory = {
+#		tungsten
+#	}
+#
+#	potential = {
+#		has_dlc = "Rule Britannia"
+#	}
+#
+#	modifier = {
+#		local_production_efficiency = 1.0
+#	}
+#	onmap = no
+#	show_separate = no # Means as a manufactory it will be shown according to the old way
+#	
+#	ai_will_do = {
+#		factor = 1
+#	}
+#}
+
+#railroad = {
+#	cost = 120
+#	time = 6
+#	modifier = {
+#		local_friendly_movement_speed = 0.2
+#		province_trade_power_value = 0.25
+#		local_production_efficiency = 0.15
+#		allowed_num_of_buildings = 1
+#	}
+#	
+#	ai_will_do = {
+#		factor = 15
+#	}
+#}
+
+#coal_plant = {
+#	cost = 325
+#	time = 36
+#	trigger = {
+#		trade_goods = coal
+#		development = 15
+#	}
+#	modifier = {
+#		local_development_cost = -0.2
+#		local_production_efficiency = 0.15
+#	}
+#}
+
+#nuclear_reactor = {
+#	cost = 750
+#	time = 36
+#	trigger = {
+#		development = 25
+#	}
+#	modifier = {
+#		local_development_cost = -0.4
+#		local_production_efficiency = 0.3
+#	}
+#}

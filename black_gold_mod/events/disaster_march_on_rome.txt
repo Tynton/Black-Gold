@@ -1,0 +1,55 @@
+namespace = march_on_rome
+
+# Revolution
+country_event = {
+	id = march_on_rome.1
+	title = "march_on_rome.1.t"
+	desc = "march_on_rome.1.d"
+	picture = FASC_REV_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+
+	immediate = {
+		random_owned_province = { 
+			limit = {
+				development = 8
+			}
+			spawn_rebels = {
+				type = fascist_rebels
+				size = 3		
+				win = yes
+				unrest = 10
+			}
+			
+		}
+		add_stability = -4
+		
+		set_country_flag = had_fascist_revolution
+	}
+	
+	option = {
+		name = "fascist_revolution.1.a"			# Dire times are ahead of us
+		add_prestige = -10
+	}
+	
+	option = {
+		name = "fascist_revolution.1.b"			# Dire times are ahead of us
+		add_prestige = -50
+		
+		change_government = fascist_government
+		
+		add_government_reform = italian_fascism
+		
+		
+		end_disaster = fascist_revolution
+		
+		disband_rebels = socialist_rebels
+		disband_rebels = fascist_rebels
+		disband_rebels = revolutionary_rebels
+		
+		add_stability = 3
+	}
+}

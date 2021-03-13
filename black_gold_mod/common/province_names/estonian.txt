@@ -1,0 +1,27 @@
+28 = "Helsingi"
+
+12 = "Kopenhaagen"
+
+183 = "Pariis"
+
+50 = "Berliin"
+
+146 = "Ateena"
+142 = "Korfu"
+
+118 = "Rooma"
+112 = "Veneetsia"
+
+262 = "Krakovi"
+257 = "Varssavi"
+
+227 = "Lissabon"
+
+33 = "Peterburi"
+274 = "Pihkva"
+30 = "Viiburi"
+34 = "Jaanilinn"
+
+25 = "Ojaama"
+
+38 = "Riia"

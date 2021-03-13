@@ -1,0 +1,61 @@
+namespace = italianenglandconquest
+
+province_event = {
+	id = italianenglandconquest.1
+	title = "italianenglandconquest.n.1"
+	desc = "italianenglandconquest.d.1"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = english
+			owner = {
+				culture_group = latin
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		owner = {
+			stability = 1
+			full_idea_group = expansion_ideas
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "italianenglandconquest.1.a"
+		change_culture = inglese
+	}
+}
+
+province_event = {
+	id = italianenglandconquest.2
+	title = "italianenglandconquest.n.2"
+	desc = "italianenglandconquest.d.2"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {	
+			culture = scottish
+			owner = {
+				culture_group = latin
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		owner = {
+			stability = 1
+			full_idea_group = expansion_ideas
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "italianenglandconquest.2.a"
+		change_culture = scozzese
+	}
+}

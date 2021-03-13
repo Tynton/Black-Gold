@@ -1,0 +1,117 @@
+namespace = enforce_subject_ideology
+
+	#FASCISM
+
+	country_event = {
+		id = enforce_subject_ideology.1
+		title = "enforce_subject_ideology.t.1"
+		desc = "enforce_subject_ideology.d.1"
+		picture = ANGRY_MOB_eventPicture
+		
+		hidden = yes
+
+		trigger = {
+			overlord = { 
+				has_reform = fascist_mechanic
+			} 
+			NOT = {
+				has_reform = fascist_mechanic
+			}
+		}	
+
+		mean_time_to_happen = {
+			days = 1
+		}
+	
+		option = {
+			name = "enforce_subject_ideology.1.a"
+			change_government = fascist_government
+		}
+	}
+	
+	#AUTH
+
+	country_event = {
+		id = enforce_subject_ideology.2
+		title = "enforce_subject_ideology.t.2"
+		desc = "enforce_subject_ideology.d.2"
+		picture = ANGRY_MOB_eventPicture
+		
+		hidden = yes
+
+		trigger = {
+			overlord = { 
+				has_reform = authoritarian_mechanic
+			} 
+			NOT = {
+				has_reform = authoritarian_mechanic
+			}
+		}	
+
+		mean_time_to_happen = {
+			days = 1
+		}
+	
+		option = {
+			name = "enforce_subject_ideology.2.a"
+			change_government = auth_government
+		}
+	}
+	
+	#SOCIALISM
+
+	country_event = {
+		id = enforce_subject_ideology.3
+		title = "enforce_subject_ideology.t.3"
+		desc = "enforce_subject_ideology.d.3"
+		picture = ANGRY_MOB_eventPicture
+		
+		hidden = yes
+
+		trigger = {
+			overlord = { 
+				has_reform = socialist_mechanic
+			} 
+			NOT = {
+				has_reform = socialist_mechanic
+			}
+		}	
+
+		mean_time_to_happen = {
+			days = 1
+		}
+	
+		option = {
+			name = "enforce_subject_ideology.3.a"
+			change_government = socialist_government
+		}
+	}
+	
+	#DEMOCRACY
+
+	country_event = {
+		id = enforce_subject_ideology.4
+		title = "enforce_subject_ideology.t.4"
+		desc = "enforce_subject_ideology.d.4"
+		picture = ANGRY_MOB_eventPicture
+		
+		hidden = yes
+
+		trigger = {
+			overlord = { 
+				has_reform = democratic_mechanic
+			} 
+			NOT = {
+				has_reform = democratic_mechanic
+			}
+		}	
+
+		mean_time_to_happen = {
+			days = 1
+		}
+	
+		option = {
+			name = "enforce_subject_ideology.4.a"
+			change_government = democracy_govt
+		}
+	}

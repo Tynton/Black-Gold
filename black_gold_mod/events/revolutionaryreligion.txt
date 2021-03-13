@@ -1,0 +1,32 @@
+namespace = revolutionaryreligion
+
+province_event = {
+	id = revolutionaryreligion.1
+	title = "revolutionaryreligion.n.1"
+	desc = "revolutionaryreligion.d.1"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		has_reform = revolutionary_republic_reform
+	}	
+
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = "revolutionaryreligion.1.a"
+		change_religion = cult_of_reason
+		add_stability = -2
+	}
+	
+	option = {
+		name = "revolutionaryreligion.1.b"
+		add_stability = 1
+	}
+}
+

@@ -1,0 +1,27 @@
+namespace = enemy_sabotage
+
+#ALERT
+
+country_event = {
+	id = enemy_sabotage.1
+	title = "enemy_sabotage.t.1"
+	desc = "enemy_sabotage.d.1"
+	picture = {
+	   trigger = { has_reform = socialist_mechanic }
+	   picture = SOC_SABOTAGE_eventPicture
+	}
+	picture = {
+	   trigger = { has_reform = fascist_mechanic }
+	   picture = FASC_SABOTAGE_eventPicture
+	}
+	picture = {
+	   trigger = { has_reform = futurist_mechanic }
+	   picture = FUT_SABOTAGE_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "enemy_sabotage.1.a"
+	}
+}

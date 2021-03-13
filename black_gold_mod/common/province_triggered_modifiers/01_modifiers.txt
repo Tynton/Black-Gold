@@ -1,0 +1,41 @@
+difficult_colonization_ii = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		all_country = {
+			NOT = {
+				adm_tech = 34
+			}
+		}
+		continent = africa
+		has_port = no
+		OR = {
+			has_province_modifier = tropical
+			has_province_modifier = arid
+			has_terrain = marsh
+			has_terrain = jungle
+			has_terrain = desert
+		}
+		OR = {
+			is_colony = yes
+			is_empty = yes
+		}
+	}
+
+	global_colonial_growth = -200
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}

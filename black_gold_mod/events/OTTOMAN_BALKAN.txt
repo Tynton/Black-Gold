@@ -1,0 +1,393 @@
+namespace = OTTOMAN_BALKAN
+
+#all_cores
+
+country_event = {
+	id = OTTOMAN_BALKAN.1
+	title = "OTTOMAN_BALKAN.n.1"
+	desc = "OTTOMAN_BALKAN.d.1"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			current_age = age_of_industrialization
+			current_age = age_of_great_wars
+			
+			revolution_spread = 0.5
+		}
+		
+		OR = {
+			NOT = {
+				stability = 2
+			}
+			num_of_loans = 2
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 18
+	}
+	
+	option = {
+		name = "OTTOMAN_BALKAN.1.a"
+		every_province = {
+			limit = {
+				culture = serbian
+			}
+			add_core = SER
+		}
+		
+		every_province = {
+			limit = {
+				culture = bosnian
+			}
+			add_core = BOS
+		}
+		
+		every_province = {
+			limit = {
+				culture = croatian
+			}
+			add_core = CRO
+		}
+		
+		every_province = {
+			limit = {
+				culture = bulgarian
+			}
+			add_core = BUL
+		}
+		
+		every_province = {
+			limit = {
+				culture_group = romanian_group
+			}
+			add_core = RMN
+		}
+		
+		set_country_flag = ottoman_decadence
+	}
+}
+
+#serbian revolt
+
+country_event = {
+	id = OTTOMAN_BALKAN.3
+	title = "OTTOMAN_BALKAN.n.3"
+	desc = "OTTOMAN_BALKAN.d.3"
+	picture = MODERN_UNREST_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		ai = yes
+		AND = {
+			tag = TUR
+			any_owned_province = {
+				culture = serbian
+			}
+		}
+		OR = {
+			NOT = {
+				stability = 0
+			}
+			NOT = {
+				prestige = 0
+			}
+		}
+		OR = {
+			current_age = age_of_industrialization
+			current_age = age_of_great_wars
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 48
+		
+		modifier = {
+			factor = 0.5
+			
+			NOT = {
+				stability = -1
+			}
+		}
+	}
+	
+	option = {
+		name = "OTTOMAN_BALKAN.3.a"
+		release = SER
+		SER = {
+			change_government = monarchy
+			add_government_reform = autocracy_reform
+			add_government_reform = parliamentary_reform
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_independence_war
+			}
+		}
+		
+		every_rival_country = {
+			country_event = {
+				id = foreign_intervention.1
+			}
+		}
+		add_stability = -1
+		
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "OTTOMAN_BALKAN.3.b"
+		release = SER
+		SER = {
+			change_government = monarchy
+			add_government_reform = autocracy_reform
+			add_government_reform = parliamentary_reform
+			create_alliance = ROOT
+		}
+		
+		ai_chance = { factor = 10 }
+	}
+}
+
+#bosnian revolt
+
+country_event = {
+	id = OTTOMAN_BALKAN.4
+	title = "OTTOMAN_BALKAN.n.4"
+	desc = "OTTOMAN_BALKAN.d.4"
+	picture = MODERN_UNREST_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		ai = yes
+		AND = {
+			tag = TUR
+			any_owned_province = {
+				culture = bosnian
+			}
+		}
+		OR = {
+			NOT = {
+				stability = 0
+			}
+			NOT = {
+				prestige = 0
+			}
+		}
+		OR = {
+			current_age = age_of_industrialization
+			current_age = age_of_great_wars
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 48
+		
+		modifier = {
+			factor = 0.5
+			
+			NOT = {
+				stability = -1
+			}
+		}
+	}
+	
+	option = {
+		name = "OTTOMAN_BALKAN.4.a"
+		release = BOS
+		BOS = {
+			change_government = monarchy
+			add_government_reform = autocracy_reform
+			add_government_reform = parliamentary_reform
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_independence_war
+			}
+		}
+		
+		every_rival_country = {
+			country_event = {
+				id = foreign_intervention.1
+			}
+		}
+		
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "OTTOMAN_BALKAN.4.b"
+		release = BOS
+		BOS = {
+			change_government = monarchy
+			add_government_reform = autocracy_reform
+			add_government_reform = parliamentary_reform
+			create_alliance = ROOT
+		}
+		
+		ai_chance = { factor = 10 }
+	}
+}
+
+#bulgarian revolt
+
+country_event = {
+	id = OTTOMAN_BALKAN.5
+	title = "OTTOMAN_BALKAN.n.5"
+	desc = "OTTOMAN_BALKAN.d.5"
+	picture = MODERN_UNREST_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		ai = yes
+		AND = {
+			tag = TUR
+			any_owned_province = {
+				culture = bulgarian
+			}
+		}
+		OR = {
+			NOT = {
+				stability = 0
+			}
+			NOT = {
+				prestige = 0
+			}
+		}
+		OR = {
+			current_age = age_of_industrialization
+			current_age = age_of_great_wars
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 48
+		
+		modifier = {
+			factor = 0.5
+			
+			NOT = {
+				stability = -1
+			}
+		}
+	}
+	
+	option = {
+		name = "OTTOMAN_BALKAN.5.a"
+		release = BUL
+		BUL = {
+			change_government = monarchy
+			add_government_reform = autocracy_reform
+			add_government_reform = parliamentary_reform
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_independence_war
+			}
+		}
+		
+		every_rival_country = {
+			country_event = {
+				id = foreign_intervention.1
+			}
+		}
+		
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "OTTOMAN_BALKAN.5.b"
+		release = BUL
+		BUL = {
+			change_government = monarchy
+			add_government_reform = autocracy_reform
+			add_government_reform = parliamentary_reform
+			create_alliance = ROOT
+		}
+		
+		ai_chance = { factor = 10 }
+	}
+}
+
+#croatian revolt
+
+country_event = {
+	id = OTTOMAN_BALKAN.5
+	title = "OTTOMAN_BALKAN.n.5"
+	desc = "OTTOMAN_BALKAN.d.5"
+	picture = MODERN_UNREST_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		ai = yes
+		AND = {
+			tag = TUR
+			any_owned_province = {
+				culture = croatian
+			}
+		}
+		OR = {
+			NOT = {
+				stability = 0
+			}
+			NOT = {
+				prestige = 0
+			}
+		}
+		OR = {
+			current_age = age_of_industrialization
+			current_age = age_of_great_wars
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 48
+		
+		modifier = {
+			factor = 0.5
+			
+			NOT = {
+				stability = -1
+			}
+		}
+	}
+	
+	option = {
+		name = "OTTOMAN_BALKAN.5.a"
+		release = CRO
+		CRO = {
+			change_government = monarchy
+			add_government_reform = autocracy_reform
+			add_government_reform = parliamentary_reform
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_independence_war
+			}
+		}
+		
+		every_rival_country = {
+			country_event = {
+				id = foreign_intervention.1
+			}
+		}
+		
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "OTTOMAN_BALKAN.5.b"
+		release = CRO
+		CRO = {
+			change_government = monarchy
+			add_government_reform = autocracy_reform
+			add_government_reform = parliamentary_reform
+			create_alliance = ROOT
+		}
+		
+		ai_chance = { factor = 10 }
+	}
+}

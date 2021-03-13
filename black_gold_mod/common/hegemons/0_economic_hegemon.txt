@@ -1,0 +1,36 @@
+economic_hegemon = {
+	allow = {
+		is_great_power = yes
+		monthly_income = 600
+		NOT = { any_other_great_power = { monthly_income = root } }
+		NOT = { has_country_modifier = lost_hegemony }
+	}
+	
+	base = {
+		war_exhaustion = -0.1
+		global_spy_defence = 0.25
+		spy_offence = 0.15
+		prestige = 1.5
+		ae_impact = 0.5
+		adm_tech_cost_modifier = -0.075
+		technology_cost = -0.05
+		all_power_cost = -0.05
+		advisor_pool = 1 
+	}
+	
+	# At max 100% tickup.
+	scale = {
+		trade_efficiency = 0.3
+		global_trade_goods_size_modifier = 0.25
+		min_autonomy_in_territories = -0.20
+	}
+	
+	max = {
+		governing_capacity_modifier = 0.05
+		build_cost = -0.1
+		production_efficiency = 0.4
+		development_cost = -0.15
+		advisor_pool = 1
+	}
+	
+}

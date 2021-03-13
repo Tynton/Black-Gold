@@ -1,0 +1,339 @@
+country_decisions = {
+
+	establish_an_air_force = {
+		potential = {
+			mil_tech = 37
+			#has_country_modifier = no_air_force
+			OR = {
+				NOT = {
+					has_country_modifier = air_force_tierone
+					has_country_modifier = air_force_tiertwo
+					has_country_modifier = air_force_tierthree
+					has_country_modifier = air_force_tierfour
+					has_country_modifier = air_force_tierfive
+					has_country_modifier = air_force_tiersix
+					has_country_modifier = air_force_tierseven
+				}
+			}
+		}
+		allow = {
+			mil_tech = 38
+			years_of_income = 0.075
+		}
+		effect = {
+			add_country_modifier = {
+				name = "air_force_tierone"
+				duration = -1
+			}
+			add_years_of_income = -0.075
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	disarm_air_force = {
+		potential = {
+			has_country_modifier = air_force_tierone
+			NOT = {
+				has_country_modifier = air_force_tiertwo
+			}
+		}
+		
+		allow = {
+			has_country_modifier = air_force_tierone
+		}
+		
+		effect = {
+			remove_country_modifier = air_force_tierone
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	upgrade_tier_two = {
+		potential = {
+			mil_tech = 38
+			has_country_modifier = air_force_tierone
+			NOT = {
+				has_country_modifier = air_force_tiertwo
+			}
+		}
+		allow = {
+			mil_tech = 39
+			years_of_income = 0.075
+		}
+		effect = {
+			add_country_modifier = {
+				name = "air_force_tiertwo"
+				duration = -1
+			}
+			add_years_of_income = -0.075
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	downgrade_tier_two = {
+		potential = {
+			has_country_modifier = air_force_tiertwo
+			NOT = {
+				has_country_modifier = air_force_tierthree
+			}
+		}
+		
+		allow = {
+			has_country_modifier = air_force_tiertwo
+		}
+		
+		effect = {
+			remove_country_modifier = air_force_tiertwo
+			add_country_modifier = {
+				name = "air_force_tierone"
+				duration = -1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	upgrade_tier_three = {
+		potential = {
+			mil_tech = 39
+			has_country_modifier = air_force_tiertwo
+			NOT = {
+				has_country_modifier = air_force_tierthree
+			}
+		}
+		allow = {
+			mil_tech = 40
+			years_of_income = 0.075
+		}
+		effect = {
+			add_country_modifier = {
+				name = "air_force_tierthree"
+				duration = -1
+			}
+			add_years_of_income = -0.075
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	downgrade_tier_three = {
+		potential = {
+			has_country_modifier = air_force_tierthree
+			NOT = {
+				has_country_modifier = air_force_tierfour
+			}
+		}
+		
+		allow = {
+			has_country_modifier = air_force_tierthree
+		}
+		
+		effect = {
+			remove_country_modifier = air_force_tierthree
+			add_country_modifier = {
+				name = "air_force_tiertwo"
+				duration = -1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	upgrade_tier_four = {
+		potential = {
+			mil_tech = 40
+			has_country_modifier = air_force_tierthree
+			NOT = {
+				has_country_modifier = air_force_tierfour
+			}
+		}
+		allow = {
+			mil_tech = 41
+			years_of_income = 0.075
+		}
+		effect = {
+			add_country_modifier = {
+				name = "air_force_tierfour"
+				duration = -1
+			}
+			add_years_of_income = -0.075
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	downgrade_tier_four = {
+		potential = {
+			has_country_modifier = air_force_tierfour
+			NOT = {
+				has_country_modifier = air_force_tierfive
+			}
+		}
+		
+		allow = {
+			has_country_modifier = air_force_tierfour
+		}
+		
+		effect = {
+			remove_country_modifier = air_force_tierfour
+			add_country_modifier = {
+				name = "air_force_tierthree"
+				duration = -1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	upgrade_tier_five = {
+		potential = {
+			mil_tech = 41
+			has_country_modifier = air_force_tierfour
+			NOT = {
+				has_country_modifier = air_force_tierfive
+			}
+		}
+		allow = {
+			mil_tech = 42
+			years_of_income = 0.075
+		}
+		effect = {
+			add_country_modifier = {
+				name = "air_force_tierfive"
+				duration = -1
+			}
+			add_years_of_income = -0.075
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	downgrade_tier_five = {
+		potential = {
+			has_country_modifier = air_force_tierfive
+			NOT = {
+				has_country_modifier = air_force_tiersix
+			}
+		}
+		
+		allow = {
+			has_country_modifier = air_force_tierfive
+		}
+		
+		effect = {
+			remove_country_modifier = air_force_tierfive
+			add_country_modifier = {
+				name = "air_force_tierfour"
+				duration = -1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	upgrade_tier_six = {
+		potential = {
+			mil_tech = 42
+			has_country_modifier = air_force_tierfive
+			NOT = {
+				has_country_modifier = air_force_tiersix
+			}
+		}
+		allow = {
+			mil_tech = 43
+			years_of_income = 0.075
+		}
+		effect = {
+			add_country_modifier = {
+				name = "air_force_tiersix"
+				duration = -1
+			}
+			add_years_of_income = -0.075
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	downgrade_tier_six = {
+		potential = {
+			has_country_modifier = air_force_tiersix
+			NOT = {
+				has_country_modifier = air_force_tierseven
+			}
+		}
+		
+		allow = {
+			has_country_modifier = air_force_tiersix
+		}
+		
+		effect = {
+			remove_country_modifier = air_force_tiersix
+			add_country_modifier = {
+				name = "air_force_tierfive"
+				duration = -1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	upgrade_tier_seven = {
+		potential = {
+			mil_tech = 43
+			has_country_modifier = air_force_tiersix
+			NOT = {
+				has_country_modifier = air_force_tierseven
+			}
+		}
+		allow = {
+			mil_tech = 44
+			years_of_income = 0.1
+		}
+		effect = {
+			add_country_modifier = {
+				name = "air_force_tierseven"
+				duration = -1
+			}
+			add_years_of_income = -0.1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	downgrade_tier_seven = {
+		potential = {
+			has_country_modifier = air_force_tierseven
+		}
+		
+		allow = {
+			has_country_modifier = air_force_tierseven
+		}
+		
+		effect = {
+			remove_country_modifier = air_force_tierseven
+			add_country_modifier = {
+				name = "air_force_tiersix"
+				duration = -1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

@@ -1,0 +1,246 @@
+country_decisions = {
+
+	establish_space_program = {
+		potential = {
+			mil_tech = 44
+			NOT = {
+				has_country_modifier = space_program
+			}
+			is_great_power = yes
+		}
+		allow = {
+			mil_tech = 44
+			adm_tech = 44
+			dip_tech = 44
+			years_of_income = 0.25
+			
+			adm_power = 400
+			dip_power = 400
+			mil_power = 400
+			
+			NOT = {
+				has_country_modifier = space_program
+			}
+		}
+		effect = {
+		
+			add_adm_power = -400
+			add_dip_power = -400
+			add_mil_power = -400
+		
+			add_country_modifier = {
+				name = "space_program"
+				duration = -1
+			}
+			add_years_of_income = -0.25
+			
+			random_owned_province = { 
+				add_province_modifier = {
+					name = "space_center"
+					duration = -1
+				}
+			}
+			
+			country_event = {
+				id = spaceprogram.3
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#cancel_space_program = {
+	#	potential = {
+	#		has_country_modifier = space_program
+	#	}
+	#	
+	#	allow = {
+	#		has_country_modifier = space_program
+	#	}
+	#	
+	#	effect = {
+	#		remove_country_modifier = space_program
+	#	}
+	#	
+	#	ai_will_do = {
+	#		factor = 0
+	#		
+	#		modifier = {
+	#			factor = 1
+	#			num_of_loans = 5
+	#		}
+	#	}
+	#}
+	
+	launch_satellite_program = {
+		potential = {
+			has_country_modifier = space_program
+			NOT = { has_country_modifier = satellite }
+		}
+		allow = {
+			
+			adm_power = 500
+			dip_power = 500
+			mil_power = 500
+			
+			has_country_modifier = space_program
+			years_of_income = 0.5
+		}
+		effect = {
+		
+			add_adm_power = -500
+			add_dip_power = -500
+			add_mil_power = -500
+		
+			add_country_modifier = {
+				name = "satellite"
+				duration = -1
+			}
+			add_years_of_income = -0.5
+			country_event = {
+				id = spaceprogram.2
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	launch_lunar_orbiter = {
+		potential = {
+			has_country_modifier = space_program
+			has_country_modifier = satellite
+			
+			NOT = {
+				has_country_flag = lunar_orbiter_launched
+			}
+		}
+		allow = {
+			adm_tech = 45
+			dip_tech = 45
+			mil_tech = 45
+			
+			adm_power = 400
+			dip_power = 400
+			mil_power = 400
+			
+			has_country_modifier = space_program
+			years_of_income = 0.5
+		}
+		effect = {
+			
+			add_adm_power = -400
+			add_dip_power = -400
+			add_mil_power = -400
+			
+			add_years_of_income = -0.5
+			country_event = {
+				id = spaceprogram.10
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	launch_man_in_space = {
+		potential = {
+			has_country_modifier = space_program
+			has_country_modifier = satellite
+			NOT = { has_country_modifier = man_in_space }
+		}
+		allow = {
+			adm_power = 500
+			dip_power = 500
+			mil_power = 500
+			
+			has_country_modifier = satellite
+			years_of_income = 0.5
+		}
+		effect = {
+			add_country_modifier = {
+				name = "man_in_space"
+				duration = -1
+			}
+			add_adm_power = -500
+			add_dip_power = -500
+			add_mil_power = -500
+			add_years_of_income = -0.5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	launch_space_station = {
+		potential = {
+			has_country_modifier = space_program
+			has_country_modifier = man_in_space
+			has_country_modifier = lunar_landing
+			NOT = {
+				has_country_modifier = space_station
+			}
+		}
+		allow = {
+			adm_tech = 46
+			dip_tech = 46
+			mil_tech = 46
+			
+			adm_power = 500
+			dip_power = 500
+			mil_power = 500
+			
+			has_country_modifier = space_program
+			has_country_modifier = man_in_space
+			years_of_income = 0.7
+		}
+		effect = {
+			add_country_modifier = {
+				name = "space_station"
+				duration = -1
+			}
+			add_adm_power = -500
+			add_dip_power = -500
+			add_mil_power = -500
+			add_years_of_income = -0.7
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	launch_lunar_mission = {
+		potential = {
+			has_country_modifier = space_program
+			has_country_modifier = man_in_space
+			has_country_flag = lunar_orbiter_launched
+			NOT = { has_country_modifier = lunar_landing }
+			NOT = { has_country_flag = lunar_landing_launched }
+		}
+		allow = {
+			adm_power = 500
+			dip_power = 500
+			mil_power = 500
+			has_country_modifier = space_program
+			years_of_income = 0.5
+			NOT = {
+				has_country_modifier = preparing_mission
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "preparing_mission"
+				duration = -1
+			}
+			
+			add_adm_power = -500
+			add_dip_power = -500
+			add_mil_power = -500
+			
+			add_years_of_income = -0.5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

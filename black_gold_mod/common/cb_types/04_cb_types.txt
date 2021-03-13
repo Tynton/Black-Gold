@@ -1,0 +1,12 @@
+cb_futurist_puppet = {
+	ai_peace_desire = -50
+	valid_for_subject = no
+	
+	prerequisites = {
+		has_reform = futurist_mechanic
+		
+		current_age = age_of_great_wars
+	}
+
+	war_goal = take_capital_enforce_puppet_futurist
+}

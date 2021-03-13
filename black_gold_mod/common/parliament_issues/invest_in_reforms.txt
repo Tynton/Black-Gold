@@ -1,0 +1,27 @@
+invest_in_reforms = {
+
+	category = 1
+
+	allow = {
+		has_dlc = "Dharma"
+		NOT = {
+			has_completed_all_reforms_trigger = yes
+		}
+	}
+	
+	effect = {
+		change_government_reform_progress = 25
+	}
+	
+	modifier = {
+		reform_progress_growth = 0.5
+	}
+	
+	chance = {
+		factor = 2
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}

@@ -1,0 +1,449 @@
+﻿l_english:
+
+ socialist_government_name:0 "Collectivist Government"
+ socialist_government_desc:0 "Collectivist Government"
+ fascist_government_name:0 "Reactionary Government"
+ fascist_government_desc:0 "Reactionary Government"
+ democracy_govt_name:0 "Liberal Government"
+ democracy_govt_desc:0 "Liberal Government"
+ 
+ fascist_government_reform:0 "Reactionary Government"
+ fascist_monarchism:0 "Reactionary Monarchy"
+ revolutionary_fascism:0 "Revolutionary Fascism"
+ national_socialism:0 "National Socialist Government"
+ strasserist_fascism:0 "Strasserist Government"
+ futurism:0 "Futurist Government"
+ italian_fascism:0 "Italian Fascism"
+ 
+ dem_reform_monarchy:0 "Liberal Monarchism"
+ dem_reform_monarchy_desc:0 "Liberal Monarchism"
+ dem_reform_republic:0 "Liberal Republicanism"
+ dem_reform_republic_desc:0 "Liberal Republicanism"
+ 
+ socialist_government_reform:0 "Socialist Government"
+ socialist_juche:0 "Juche"
+ revolutionary_socialism:0 "Revolutionary Socialism"
+ socialist_republic:0 "Socialist Republic"
+ 
+ national_civic_tolerance_reform:0 "National Civic Tolerance"
+ national_civic_tolerance_reform_desc:0 "National Civic Tolerance"
+ 
+ dem_soi_expansionism_reform:0 "Expansion of Democracy"
+ dem_soi_expansionism_reform_desc:0 "Expansion of Democracy"
+ 
+ parliamentary_republic_reform:0 "Parliamentary Republic"
+ parliamentary_republic_reform_desc:0 "Parliamentary Republic"
+ parliamentary_monarchism:0 "Parliamentary Monarchy"
+ parliamentary_monarchism_desc:0 "Parliamentary Monarchy"
+ liberal_dictatorship:0 "Liberal Dictatorship"
+ liberal_dictatorship_desc:0 "Although we espouse values of egalitarianism and liberty, our nation must foremost protect these rights with an arbiter at the helm. We should establish a hierarchy - although contradictory - we do not consider it mutually exclusive to our rights and values."
+ 
+ democratic_doctrine:0 "Liberal Doctrine"
+ 
+ democratic_ethics:0 "Liberal Ethics"
+ 
+ democratic_populism:0 "Liberal Populism"
+ democratic_populism_desc:0 "Liberal Populism"
+ democratic_nationalism:0 "Liberal Nationalism"
+ democratic_nationalism_desc:0 "Liberal Nationalism"
+ democratic_internationalism:0 "Liberal Internationalism"
+ democratic_internationalism_desc:0 "It is our moral imperative to secure the safety of democratic nations abroad. For this our citizens need to be alerted to the dangers presented by monarchs and dictators alike."
+ 
+ democratic_foreign_policy:0 "Liberal Foreign Policy"
+ 
+ democratic_internationalism:0 "Liberal Internationalism"
+ democratic_internationalism_desc:0 "Liberal Internationalism"
+ dem_isolationism_reform:0 "Liberal Isolationism"
+ dem_isolationism_reform_desc:0 "Liberal Isolationism"
+ dem_protectionism_reform:0 "Liberal Protectionism"
+ dem_protectionism_reform_desc:0 "Although it may be reprehensible to enforce democracy on others without provocation, we consider it appropriate to nevertheless safeguard our liberal state against potential threats that arise, be they overseas or domestic."
+ 
+ democratic_head_of_state:0 "Liberal Head of State"
+ 
+ liberal_dictator:0 "Liberal Dictator"
+ liberal_dictator_desc:0 "Liberal Dictator"
+ democratic_prime_minister:0 "Prime Minister"
+ democratic_prime_minister_desc:0 "Prime Minister"
+ democratic_minister_monarchy:0 "Monarchist Prime Minister"
+ democratic_minister_monarchy_desc:0 "Monarchist Prime Minister"
+ democratic_president:0 "Liberal Presidency"
+ democratic_president_desc:0 "Liberal Presidency"
+ 
+ democratic_deliberative_assembly:0 "Liberal Deliberative Assembly"
+ 
+ democratic_parliamentarism:0 "Liberal Parliamentary Assembly"
+ democratic_parliamentarism_desc:0 "Liberal Parliamentary Assembly"
+ provisional_committee:0 "Provisional Committees"
+ provisional_committee_desc:0 "Provisional Committees"
+ 
+ democratic_economy:0 "Democratic Economics"
+ 
+ democratic_socialism:0 "Democratic Socialism"
+ democratic_socialism_desc:0 "Democratic Socialism"
+ democratic_regulationism:0 "Democratic Regulationism"
+ democratic_regulationism_desc:0 "Democratic Regulationism"
+ democratic_capitalism:0 "Democratic Capitalism"
+ democratic_capitalism_desc:0 "Democratic Capitalism"
+ 
+ democratic_administration:0 "Liberal Bureaucracies"
+ 
+ regulative_bureaucracy:0 "Regulative Bureaucracies"
+ regulative_bureaucracy_desc:0 "Regulative Bureaucracies"
+ dem_small_bureaucracy_reform:0 "Small Bureaucracies"
+ dem_small_bureaucracy_reform_desc:0 "Small Bureaucracies"
+ dem_large_bureaucracy:0 "Expansive Bureaucracies"
+ dem_large_bureaucracy_desc:0 "Expansive Bureaucracies"
+ 
+ democratic_electorate:0 "Electorate"
+ 
+ provisional_electing_council:0 "Provisional Electoral Council"
+ provisional_electing_council_desc:0 "Provisional Electoral Council"
+ ruling_class_electorate:0 "Ruling-Class Electorate"
+ ruling_class_electorate_desc:0 "Ruling-Class Electorate"
+ egalitarian_electorate:0 "Electoral Egalitarianism"
+ egalitarian_electorate_desc:0 "Men, Women, White or Black, all are - by the ethics of the Enlightenment - granted the rights to elect their leaders. MPs, or the Head of State. This is only just for us to do."
+ 
+ press_culture:0 "Press Culture"
+ 
+ deregulated_press:0 "Press Deregulation"
+ deregulated_press_desc:0 "Press Deregulation"
+ regulated_press_culture:0 "Press Regulations"
+ regulated_press_culture_desc:0 "Press Regulations"
+ 
+ question_of_foreign_cultures:0 "Press Culture"
+ 
+ dem_intolerance_reform:0 "Intolerance of Foreign Culture"
+ dem_intolerance_reform_desc:0 "Intolerance of Foreign Culture"
+ dem_liberal_reform:0 "Cultural Liberalism"
+ dem_liberal_reform_desc:0 "Cultural Liberalism"
+ 
+ international_reputation:0 "Outward Reputations"
+ 
+ commercial_nation:0 "Commercial Nation"
+ commercial_nation_desc:0 "Commercial Nation"
+ vanguard_of_democracy:0 "Bastion of Liberalism"
+ vanguard_of_democracy_desc:0 "Bastion of Liberalism"
+ diplomatic_isolationism:0 "Diplomatic Isolationism"
+ diplomatic_isolationism_desc:0 "Diplomatic Isolationism"
+ 
+ 
+ 
+ 
+ 
+ auth_republic_reform:0 "Authoritarian Republicanism"
+ auth_republic_reform_desc:0 "Authoritarian Republicanism"
+ 
+ auth_monarchism:0 "Authoritarian Monarchism"
+ auth_monarchism_desc:0 "Authoritarian Monarchism"
+ 
+ auth_populism:0 "Populism"
+ auth_populism_desc:0 "Populism"
+ 
+ auth_chauvinism:0 "Chauvinism"
+ auth_chauvinism_desc:0 "Chauvinism"
+ 
+ auth_nationalism:0 "Nationalism"
+ auth_nationalism_desc:0 "Nationalism"
+ 
+ dictator:0 "Dictatorship"
+ dictator_desc:0 "Dictatorship"
+ 
+ republican_leader:0 "Republican Leadership"
+ republican_leader_desc:0 "Republican Leadership"
+ 
+ minister_monarchy:0 "Authoritarian Minister"
+ minister_monarchy_desc:0 "Authoritarian Minister"
+ 
+ auth_parliament:0 "Authoritarian Parliamentarism"
+ auth_parliament_desc:0 "Authoritarian Parliamentarism"
+ 
+ auth_socialism:0 "Authoritarian Collectivism"
+ auth_socialism_desc:0 "Authoritarian Collectivism"
+ 
+ auth_social_economy:0 "Social Economy"
+ auth_social_economy_desc:0 "Social Economy"
+ 
+ auth_regulationism:0 "Economic Regulationism"
+ auth_regulationism_desc:0 "Economic Regulationism"
+ 
+ auth_council_assembly_reform:0 "Council-Assembly"
+ auth_council_assembly_reform_desc:0 "Council-Assembly"
+ 
+ auth_popular_electorate:0 "Popular Elections"
+ auth_popular_electorate_desc:0 "Popular Elections"
+ 
+ auth_no_electorate:0 "No Electorate"
+ auth_no_electorate_desc:0 "No Electorate"
+ 
+ 
+ authoritarian_reform_republic:0 "Authoritarian Government"
+ authoritarian_government_desc:0 "Authoritarian Government"
+ 
+ 
+ authoritarian_mechanic:0 "Authoritarian Government"
+ democratic_mechanic:0 "Democratic Government"
+ socialist_mechanic:0 "Collectivist Government"
+ fascist_mechanic:0 "Reactionary Government"
+ futurist_mechanic:0 "Futurist Government"
+ 
+ 
+ 
+ 
+ fascist_doctrine:0 "Reactionary Doctrine"
+ 
+ fascist_ethics:0 "Reactionary Ethics"
+ 
+ fascist_populism:0 "Reactionary Populism"
+ fascist_chauvinist_supremacy:0 "Reactionary Chauvinist Supremacy"
+ fascist_chauvinist_supremacy_desc:0 "Reactionary Chauvinist Supremacy"
+ fascist_nationalism:0 "Reactionary Nationalism"
+ fascist_nationalism_desc:0 "Reactionary Nationalism"
+ 
+ fascist_foreign_policy:0 "Reactionary Foreign Policy"
+ 
+ isolationism_reform:0 "Isolationism"
+ expansionism_reform:0 "Expansionism"
+ protectionism_reform:0 "Protectionism"
+ 
+ fascist_head_of_state:0 "Reactionary Head of State"
+ 
+ fascist_dictator:0 "Reactionary Dictatorship"
+ fascist_republican_leader:0 "Reactionary Republicanism"
+ fascist_minister_monarchy:0 "Reactionary Ministerial Monarchism"
+ 
+ fascist_deliberative_assembly:0 "Reactionary Deliberative Assembly"
+ 
+ fascist_parliament:0 "Reactionary Parliamentarism"
+ dictatorial_dominance:0 "Dictatorial Dominance"
+ monarchist_autocracy:0 "Monarchist Autocracy"
+ bureaucratic_council:0 "Bureaucratic Council"
+ 
+ fascist_economy:0 "Reactionary Economics"
+ 
+ fascist_socialism:0 "Reactionary Socialism"
+ fascist_social_economy:0 "Reactionary Social Economy"
+ fascist_regulationism:0 "Reactionary Regulationism"
+ fascist_corporatism:0 "Reactionary Corporatism"
+ 
+ fascist_administration:0 "Reactionary Administrative Division"
+ 
+ expansionism_bureau_reform:0 "Expansionist Bureaucracies"
+ economic_bureaucracy_reform:0 "Economic Bureaucracies"
+ intermediary_reform:0 "Bureaucratic Intermediary"
+ large_bureaucracy:0 "Large Bureaucracies"
+ 
+ fascist_electorate:0 "Reactionary Electorate"
+ 
+ council_assembly_reform:0 "Council-Assembly"
+ popular_electorate:0 "Popular Electorate"
+ no_electorate:0 "No Electorate"
+ 
+ question_of_foreign_cultures:0 "Foreign Culture Policy"
+ 
+ purge_foreigners_reform:0 "Purge Foreign Cultures"
+ intolerance_reform:0 "Intolerance"
+ socialist_egalitarianism:0 "Socialist Egalitarianism"
+ 
+ political_propaganda:0 "Political Propaganda Focus"
+ war_propaganda:0 "War Propaganda Focus"
+ economic_propaganda:0 "Economic Propaganda Focus"
+ 
+ enforce_loyalty_reform:0 "Enforce Citizens' Loyalty"
+ counter_espionage_reform:0 "Counter-Espionage Policing"
+ policing_intermediary:0 "Policing Intermediary"
+ large_policing_bureaucracy:0 "Large Policing Divisions"
+ 
+ fascist_reform_monarchy:0 "Reactionary Monarchy"
+ 
+ socialist_doctrine:0 "Collectivist Doctrine"
+ 
+ socialist_ethics:0 "Collectivist Ethics"
+ 
+ socialist_world_revolution:0 "World Revolution"
+ socialism_in_one_nation:0 "Socialism in One Nation"
+ 
+ socialist_foreign_policy:0 "Collectivist Foreign Policy"
+ 
+ socialist_deliberative_assembly:0 "Collectivist Deliberative Assembly"
+ 
+ juche_autocracy:0 "Juche Autocratic Assembly"
+ politburo_assembly:0 "Politburo Assembly"
+ 
+ socialist_head_of_state:0 "Collectivist Head of State"
+ 
+ politburo_chairman:0 "Politburo Chairman"
+ sole_leader:0 "Totalitarian Leadership"
+ 
+ socialist_economy:0 "Collectivist Economics"
+ 
+ marxist_economy:0 "Marxist Economics"
+ socialist_economy_reform:0 "Socialist Economics"
+ 
+ socialist_administration:0 "Collectivist Administrative Division"
+ 
+ socialist_expansionist_bureaucracy:0 "Socialist-Expansionist Bureaucracies"
+ socialist_economic_bureau:0 "Socialist Economic Bureaucracies"
+ colossal_bureaucracy:0 "Socialist Colossal Bureaucracies"
+ 
+ socialist_electorate:0 "Collectivist Electorate"
+ 
+ politburo_assembly_elections:0 "Politburo-based Elections"
+ 
+ propaganda_campaigns:0 "Propaganda Campaigns"
+ 
+ socialist_political_propaganda:0 "Political Propaganda Focus"
+ socialist_war_propaganda:0 "War Propaganda Focus"
+ socialist_economic_propaganda:0 "Economic Propaganda Focus"
+ 
+ policing_campaigns:0 "Policing Campaigns"
+ 
+ socialist_enforce_loyalty_reform:0 "Enforce Citizens' Loyalty"
+ socialist_counter_espionage_reform:0 "Counter-Espionage Policing"
+ socialist_policing_intermediary:0 "Policing Intermediary"
+ socialist_large_policing_bureaucracy:0 "Large Policing Divisions"
+ 
+ socialist_government:0 "Collectivist Government"
+ fascist_government_name:0 "Reactionary Government"
+ authoritarian_government_name:0 "Authoritarian Government"
+ 
+ auth_doctrine:0 "Authoritarian Doctrine"
+ ethics:0 "Ethics"
+ foreign_policy:0 "Foreign Policy"
+ economy:0 "Economy"
+ administration:0 "Administration"
+ 
+ auth_corporatism:0 "Corporatism"
+ 
+ 
+ 
+
+ four_years_elections_reform:0 "Elections per Four Years"
+ four_years_elections_reform_desc:0 "Elections per Four Years"
+ 
+ addressing_enlightenment:0 "Address Enlightenment Values"
+ 
+ anti_enlightenment_reform:0 "Fraternité"
+ anti_enlightenment_reform_desc:0 "Fraternité"
+ pro_enlightenment_reform:0 "Liberté"
+ pro_enlightenment_reform_desc:0 "Liberté"
+ bgm_egalite_reform:0 "Egalité"
+ bgm_egalite_reform_desc:0 "Egalité"
+ revolutionary_embracement_reform:0 "Revolutionary Embracement"
+ revolutionary_embracement_reform_desc:0 "Revolutionary Embracement"
+ 
+ ruling_doctrine:0 "Ruling Doctrine/Ideology"
+ 
+ fascist_reform_republic:0 "Reactionary Government"
+ fascist_reform_republic_desc:0 "Reactionary Government, known more specifically to manifest as Fascism, is a government ideology designed in opposition to the liberalism of democracy. It has slowly manifested itself throughout history but only now has it achieved an orthodox form."
+ fascist_reform_monarchy_desc:0 "Reactionary Government, known more specifically to manifest as Fascism, is a government ideology designed in opposition to the liberalism of democracy. It has slowly manifested itself throughout history but only now has it achieved an orthodox form."
+ socialist_reform:0 "Collectivist Government"
+ socialist_reform_desc:0 "Collectivist Governance, more specifically known to manifest as Socialism, is a government ideology stressing the welfare of the working-class citizenry over the needs of the upper class elite."
+ authoritarian_reform:0 "Authoritarian Government"
+ authoritarian_reform_desc:0 "Authoritarian Government"
+ democratic_reform:0 "Liberal Government"
+ democratic_reform_desc:0 "Liberal Government"
+ 
+ modern_bureaucracies:0 "Modern Bureaucratic Apparatuses"
+ 
+ expansionist_bureaucracy_reform:0 "Expansionist Bureaucracy"
+ expansionist_bureaucracy_reform_desc:0 "Our governmental bureaucracy will be expanded based upon the needs of the imperial directives in our state. The integration of new territories is paramount to our nation's success, and to ensure success, we need to ensure proper administration."
+ small_bureaucracy_reform:0 "Small Bureaucracy"
+ small_bureaucracy_reform_desc:0 "Big Government has endangered the rights of the business leader classes and the common man. We will shrink our government to allow for more leniency."
+ economic_bureaucracy_reform:0 "Economic Bureaucracy"
+ economic_bureaucracy_reform_desc:0 "It is apparent that the economy cannot maintain an ethical basis without the guiding hand of the state. We will expand the national bureaucracy to regulate the economy where ever necessary."
+ 
+ branches_of_government:0 "Modern Branches of Government"
+ 
+ separated_branches_reform:0 "Separated Branches"
+ separated_branches_reform_desc:0 "The horrors of unconstitutional authoritarianism have plagued society for centuries. We will prove ourselves to be better than this by formalizing in our national constitution that no one branch of the state is more powerful than the rest, and that they will be given checks and balances to ensure no one area of the government is too powerful."
+ united_branches_reform:0 "United Branches"
+ united_branches_reform_desc:0 "The true and final authority in our nation rests entirely in the hands of one individual. We have elected for this because, for us, it is determined to be the best course of action for decisiveness and security for our people."
+ subservient_branches_reform:0 "Subservient Branches"
+ subservient_branches_reform_desc:0 "Our national government is indirectly united under one leader. This may be because of the national constitution permitting the final authority of the executive above everything else, or because the interests of the body politic are one and the same all throughout."
+ 
+ head_of_state:0 "Head of the State"
+ 
+ ceremonial_reform:0 "Ceremonial Head of State"
+ ceremonial_reform_desc:0 "Our ruler is not given true authority within our government, but exists as a celebrity and figurehead for the masses to rally behind."
+ functional_reform:0 "Functional Head of State"
+ functional_reform_desc:0 "Our ruler is not simply a celebrity, but also a role model for both the body politic and the masses. Their decisions will impact the decisions of the common men and this is simply one justification for our head of state being granted substantial authority."
+ 
+ populist_monarchy_reform:0 "Populist Monarchy"
+ populist_monarchy_reform_desc:0 "Our monarch has destroyed most of, if not all of the nobility. They are to be replaced with a military class in the society made of officers from the lowest peasant officers to the generals."
+ NEEDS_REGULAR_ELECTIONS:0 "Ruler must not rule for life."
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ futurist_government_reform:0 "Futurist Government"
+ futurist_empire:0 "Futurist Empire"
+ technocracy:0 "Technocracy"
+ 
+ futurism_reform:0 "Adopt Futurist State"
+ futurism_reform_desc:0 "Adopt Futurist State"
+ 
+ authoritarian_reform_republic_desc:0 "Adopt Authoritarian Regime"
+ 
+ futurist_doctrine:0 "Futurist Doctrine"
+ 
+ futurist_ethics:0 "Futurist Ethics"
+ 
+ futurist_populism:0 "Futurist Populism"
+ futurist_chauvinist_supremacy:0 "Futurist Chauvinist Supremacy"
+ futurist_chauvinist_supremacy_desc:0 "Futurist Chauvinist Supremacy"
+ futurist_nationalism:0 "Futurist Nationalism"
+ futurist_nationalism_desc:0 "Futurist Nationalism"
+ 
+ futurist_foreign_policy:0 "Futurist Foreign Policy"
+ 
+ futurist_radicalism_reform:0 "Futurist Radicalism"
+ protectionism_reform:0 "National Defense"
+ 
+ futurist_head_of_state:0 "Futurist Head of State"
+ 
+ futurist_dictator:0 "Futurist Dictatorship"
+ futurist_republican_leader:0 "Futurist Republicanism"
+ futurist_minister_monarchy:0 "Futurist Ministerial Monarchism"
+ 
+ futurist_deliberative_assembly:0 "Futurist Deliberative Assembly"
+ 
+ futurist_parliament:0 "Futurist Democracy"
+ dictatorial_dominance:0 "Dictatorial Dominance"
+ monarchist_autocracy:0 "Monarchist Autocracy"
+ bureaucratic_council:0 "Bureaucratic Council"
+ 
+ futurist_economy:0 "Futurist Economics"
+ 
+ futurist_syndicalism:0 "Futurist Syndicalism"
+ futurist_corporatism:0 "Futurist Corporatism"
+ 
+ futurist_administration:0 "Futurist Administrative Division"
+ 
+ expansionism_bureau_reform:0 "Expansionist Bureaucracies"
+ economic_bureaucracy_reform:0 "Economic Bureaucracies"
+ intermediary_reform:0 "Bureaucratic Intermediary"
+ large_bureaucracy:0 "Large Bureaucracies"
+ 
+ futurist_electorate:0 "Futurist Electorate"
+ 
+ abolish_secret_police:0 "Abolition of Secret Police | Military"
+ 
+ futurist_acceleration:0 "The Futurist Acceleration"
+ 
+ futurist_protectionism_reform:0 "Futurist National Defense"
+ futurist_dictatorial_dominance:0 "Dictatorial Dominance"
+ futurist_monarchist_autocracy:0 "Futurist Autocracy"
+ 
+ futurist_intolerance_reform:0 "Intolerance"
+ 
+ 
+ 
+ 
+ 
+

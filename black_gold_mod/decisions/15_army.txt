@@ -1,0 +1,26 @@
+country_decisions = {
+
+	expand_the_army = {
+		potential = {
+			NOT = { army_size_percentage = 0.5 }
+			NOT = { has_country_modifier = expanding_army }
+			NOT = { has_country_flag = has_expanded_national_army }
+			mil_tech = 16
+		}
+		allow = {
+			NOT = { army_size_percentage = 0.5 }
+			NOT = { has_country_modifier = expanding_army }
+			mil_tech = 16
+		}
+		effect = {
+			add_country_modifier = {
+				name = "expanding_army"
+				duration = 2920
+			}
+			set_country_flag = has_expanded_national_army
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

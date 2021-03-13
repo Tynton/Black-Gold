@@ -1,0 +1,315 @@
+﻿l_spanish:
+ DEMOCRATIC_REPUBLIC:0 "Democratic Republic"
+ PEOPLES_REPUBLIC:0 "People's Republic"
+ LIB_STATE:0 "Liberal State"
+ UNION:0 "Union"
+ CHAIRMAN:0 "Chairman"
+ CHAIRWOMAN:0 "Chairwoman"
+ LEADER:0 "Leader"
+ LEADER_fem:0 "Leader"
+ CHEF_DETAT:0 "Chef d'état"
+ CHEF_DETAT_fem:0 "Chef d'état"
+ CAUDILLO:0 "Caudillo"
+ CAUDILLA:0 "Caudilla"
+ DUCE:0 "Duce"
+ DUCE_fem:0 "Duce"
+ REPUBLIK:0 "Republik"
+ BUNDESREPUBLIK:0 "Bundesrepublik"
+ PRASIDENT:0 "Präsident"
+ PRASIDENTIN:0 "Präsidentin"
+ GENERALDIREKTOR:0 "Generaldirektor"
+ GENERALDIREKTOR_fem:0 "Generaldirektor"
+ FUHRER:0 "Führer"
+ FUHRER_fem:0 "Führer"
+ REICH:0 "Reich"
+ CHANCELLOR:0 "Chancellor"
+ CHANCELLOR_fem:0 "Chancellor"
+ 
+ 
+ REPUBLIQUE:0 "Republique"
+ REPUBLIQUEFEDERALE:0 "République Fédérale"
+ HOMMEPRESIDENT:0 "Président"
+ FEMMEPRESIDENT:0 "Présidente"
+ 
+ REPUBBLICA:0 "Repubblica"
+ REPUBBLICAFEDERALE:0 "Repubblica Federale"
+ UOMOPRESIDENTE:0 "Presidente"
+ DONNAPRESIDENTESSA:0 "Presidentessa"
+ 
+ REPUBLICAFEDERAL:0 "República Federal"
+ REPUBLICA:0 "República"
+ HOMBREPRESIDENTE:0 "Presidente"
+ MUJERPRESIDENTA:0 "Presidenta"
+ 
+ DOMINNION:0 "Dominion"
+ PRIME_MINISTER_LEADER:0 "Prime Minister"
+ PRIME_MINISTER_LEADER_fem:0 "Prime Minister"
+ 
+ DICTATORSHIP:0 "Dictatorship"
+ DICTATOR:0 "Dictator"
+ 
+ DUCHE:0 "Duché"
+ ROYAUME:0 "Royaume"
+ 
+ DUC:0 "Duc"
+ DUCHESSE:0 "Duchesse"
+ 
+ ROI:0 "Roi"
+ REINE:0 "Reine"
+ 
+ EMPEREUR:0 "Empereur"
+ IMPERATRICE:0 "Imperatrice"
+ 
+ DUC_CONSORT:0 "Duc-Consort"
+ ROI_CONSORT:0 "Roi-Consort"
+ EMPEREUR_CONSORT:0 "Empereur-Consort"
+ 
+ PRINCE:0 "Prince"
+ PRINCESSE:0 "Princesse"
+ 
+ HERZOGTUM:0 "Herzogtum"
+ KONIGREICH:0 "Königreich"
+ KAISERREICH:0 "Kaiserreich"
+ 
+ HERZOG:0 "Herzog"
+ HERZOG_ELECTOR:0 "Herzog-Elector"
+ HERZOGIN:0 "Herzogin"
+ HERZOGIN_ELECTOR:0 "Herzogin-Elector"
+ 
+ KONIG:0 "König"
+ KONIG_ELECTOR:0 "König-Elector"
+ KONIGIN:0 "Königin"
+ KONIGIN_ELECTOR:0 "Königin-Elector"
+ 
+ KAISER:0 "Kaiser"
+ KAISERIN:0 "Kaiserin"
+ 
+ HERZOG_CONSORT:0 "Herzog-Consort"
+ KONIG_CONSORT:0 "König-Consort"
+ KAISER_CONSORT:0 "Kaiser-Consort"
+ 
+ PRINZ:0 "Prinz"
+ PRINZESSIN:0 "Prinzessin"
+ 
+ HERTOGDOM:0 "Hertogdom"
+ KONINKRIJK:0 "Koninkrijk"
+ KEIZERRIJK:0 "Keizerrijk"
+ 
+ HERTOG:0 "Hertog"
+ HERTOG_ELECTOR:0 "Hertog-Elector"
+ HERTOGIN:0 "Hertogin"
+ HERTOGIN_ELECTOR:0 "Hertogin-Elector"
+ 
+ KONING:0 "Koning"
+ KONING_ELECTOR:0 "Koning-Elector"
+ KONINGIN:0 "Koningin"
+ KONINGIN_ELECTOR:0 "Koningin-Elector"
+ 
+ KEIZER:0 "Keizer"
+ KEIZERIN:0 "Keizerin"
+ 
+ HERTOG_CONSORT:0 "Hertog-Consort"
+ KONING_CONSORT:0 "Koning-Consort"
+ KEIZER_CONSORT:0 "Keizer-Consort"
+ 
+ PRINS:0 "Prins"
+ PRINSES:0 "Prinses"
+ 
+ DUCADO:0 "Ducado"
+ REINO:0 "Reino"
+ IMPERIO:0 "Imperio"
+ 
+ DUQUE:0 "Duque"
+ DUQUESA:0 "Duquesa"
+ 
+ REY:0 "Rey"
+ REINA:0 "Reina"
+ 
+ EMPERADOR:0 "Emperador"
+ EMPERATRIZ:0 "Emperatriz"
+ 
+ DUQUE_CONSORT:0 "Duque-Consort"
+ REY_CONSORT:0 "Rey-Consort"
+ EMPERADOR_CONSORT:0 "Emperador-Consort"
+ 
+ PRINCIPE:0 "Príncipe"
+ PRINCESA:0 "Princesa"
+ 
+ DUCATO:0 "Ducato"
+ REGNO:0 "Regno"
+ IMPERO:0 "Impero"
+ 
+ DUCA:0 "Duca"
+ DUCHESSA:0 "Duchessa"
+ 
+ RE:0 "Re"
+ REGINA:0 "Regina"
+ 
+ IMPERATORE:0 "Imperatore"
+ 
+ DUCA_CONSORT:0 "Duca-Consort"
+ RE_CONSORT:0 "Re-Consort"
+ IMPERATORE_CONSORT:0 "Imperatore-Consort"
+ 
+ ITAPRINCIPE:0 "Principe"
+ PRINCIPESSA:0 "Principessa"
+ 
+ ERSOCON:0 "Ersocon"
+ CONIGON:0 "Conigon"
+ CEISINON:0 "Ceisinon"
+ 
+ ERSOC:0 "Ersoc"
+ ERSOC_ELECTOR:0 "Ersoc-Elector"
+ ERSOCINA:0 "Ersocina"
+ ERSOCINA_ELECTOR:0 "Ersocina-Elector"
+ 
+ CONIG:0 "Conig"
+ CONIG_ELECTOR:0 "Conig-Elector"
+ CONIGINA:0 "Conigina"
+ CONIGINA_ELECTOR:0 "Conigina-Elector"
+ 
+ CEISER:0 "Ceiser"
+ CEISERINA:0 "Ceiserina"
+ 
+ ERSOC_CONSORT:0 "Ersoc Consort"
+ CONIG_CONSORT:0 "Conig Consort"
+ CEISER_CONSORT:0 "Ceiser Consort"
+ 
+ ERSOCON:0 "Ersocon"
+ CONIGON:0 "Conigon"
+ CEISINON:0 "Ceisinon"
+ 
+ ERSOC:0 "Ersoc"
+ ERSOC_ELECTOR:0 "Ersoc-Elector"
+ ERSOCINA:0 "Ersocina"
+ ERSOCINA_ELECTOR:0 "Ersocina-Elector"
+ 
+ CWEN:0 "Cwen"
+ CYNING:0 "Cyning"
+ EARLDORMAN:0 "Earldorman"
+ RICE:0 "Rice"
+ CONIGINA_ELECTOR:0 "Conigina-Elector"
+ 
+ CASERE:0 "Casere"
+ 
+ DUKE_CONSORT:0 "Duke Consort"
+ CWEN_CONSORT:0 "Cwen Consort"
+ 
+ 
+ 
+ VEVODSTVI:0 "Vévodství"
+ KRALOVSTVI:0 "Království"
+ CISARSTVI:0 "Císařství"
+ 
+ VEVODA:0 "Vévoda"
+ VEVODKYNE:0 "Vévodkyně"
+ 
+ KRAL:0 "Král"
+ KRALOVNA:0 "Královna"
+ 
+ CISAR:0 "Císař"
+ CISAROVNA:0 "Císařovna"
+ 
+ VEVODA_CONSORT:0 "Vévoda-Consort"
+ KRAL_CONSORT:0 "Král-Consort"
+ CISAR_CONSORT:0 "Císař-Consort"
+ 
+ PRINC:0 "Princ"
+ PRINCEZNA:0 "Princezna"
+ 
+ 
+ 
+ HERTUGDOMME:0 "Hertugdømme"
+ KONGERIGE:0 "Kongerige"
+ IMPERIUM:0 "Imperium"
+ 
+ HERTUGINDE:0 "Hertuginde"
+ 
+ KONGE:0 "Konge"
+ DRONNING:0 "Dronning"
+ 
+ KEJSER:0 "Kejser"
+ KEJSERINDE:0 "Kejserinde"
+ 
+ PRINSESSE:0 "Prinsesse"
+ 
+ 
+ 
+ 
+ 
+ 
+ REPUBLIKK:0 "Republikk"
+ KANSLER:0 "Kansler"
+ KANSLER_fem:0 "Kansler"
+ FODERAL_REPUBLIKK:0 "Føderal Republikk"
+ 
+ FEDERAL_REPUBLIK:0 "Federal Republik"
+ 
+ FORBUNDSREPUBLIK:0 "Forbundsrepublik"
+ FORMAND:0 "Præsident"
+ FORMAND_fem:0 "Præsident"
+ 
+ IMPERIO_PORTUGESE:0 "Império"
+ REI:0 "Rei"
+ IMPERADOR:0 "Imperador"
+ RAINHA:0 "Rainha"
+ IMPERATRIZ:0 "Imperatriz"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ HERTIGDOME:0 "Hertigdöme"
+ KUNGARIKE:0 "Kungarike"
+ 
+ HERTIG:0 "Hertig"
+ HERTIGINNA:0 "Hertiginna"
+ 
+ KUNG:0 "Kung"
+ DROTTNING:0 "Drottning"
+ 
+ KEJSARE:0 "Kejsare"
+ KEJSARINNA:0 "Kejsarinna"
+ 
+ PRINSESSA:0 "Prinsessa"
+ 
+ 
+ 
+ 
+ HERTUGDOMMET:0 "Hertugdømmet"
+ KONGEDOMME:0 "Kongedømme"
+ HERTUG:0 "Hertug"
+ KONGE:0 "Konge"
+ KEISER:0 "Keiser"
+ HERTUGINNE:0 "Hertuginne"
+ KEISERINNE:0 "Keiserinne"
+ 
+ 
+ 
+ 
+ RIJK:0 "Rijk"
+ LEIDER:0 "Leider"
+ LEIDER_fem:0 "Leider"
+ 
+ 
+ RIGE:0 "Rige"
+ LEDER:0 "Leder"
+ LEDER_fem:0 "Leder"
+ 
+ RIK:0 "Rik"
+ LEDARE:0 "Ledare"
+ LEDARE_fem:0 "Ledare"
+ 
+ RIK:0 "Rik"
+ LEDARE:0 "Ledare"
+ LEDARE_fem:0 "Ledare"
+ 

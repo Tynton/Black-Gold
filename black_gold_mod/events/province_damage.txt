@@ -1,0 +1,93 @@
+namespace = province_damage
+
+province_event = {
+	id = province_damage.1
+	title = "province_damage.n.1"
+	desc = "province_damage.d.1"
+	picture = ANGRY_MOB_eventPicture
+
+	hidden = yes
+	
+	trigger = {
+		devastation = 6
+		
+		base_manpower = 2
+		base_production = 2
+		base_tax = 2
+	}	
+
+	mean_time_to_happen = {
+		months = 54
+		
+		modifier = {
+			factor = 0.9
+			devastation = 20
+		}
+		
+		modifier = {
+			factor = 0.9
+			devastation = 30
+		}
+		
+		modifier = {
+			factor = 0.9
+			devastation = 40
+		}
+		
+		modifier = {
+			factor = 0.8
+			owner = {
+				is_at_war = yes
+			}
+		}
+		
+		modifier = {
+			factor = 0.9
+			devastation = 50
+		}
+		
+		
+		modifier = {
+			factor = 0.9
+			devastation = 20
+		}
+		modifier = {
+			factor = 0.85
+			devastation = 40
+		}
+		modifier = {
+			factor = 0.8
+			devastation = 60
+		}
+		modifier = {
+			factor = 0.75
+			devastation = 80
+		}
+		modifier = {
+			factor = 0.7
+			devastation = 100
+		}
+		
+		modifier = {
+			factor = 2.5
+			NOT = {
+				mil_tech = 15
+			}
+		}
+		
+		modifier = {
+			factor = 2.5
+			NOT = {
+				mil_tech = 30
+			}
+		}
+		
+	}
+	
+	option = {
+		name = "province_damage.1.a"
+		add_base_tax = -1
+		add_base_production = -1
+		add_base_manpower = -1
+	}
+}

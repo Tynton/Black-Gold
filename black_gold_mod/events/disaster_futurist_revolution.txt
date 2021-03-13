@@ -1,0 +1,202 @@
+namespace = futurist_revolution
+
+# Revolution
+country_event = {
+	id = futurist_revolution.1
+	title = "futurist_revolution.1.t"
+	desc = "futurist_revolution.1.d"
+	picture = FUTURIST_REV_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+
+	immediate = {
+		random_owned_province = { 
+			limit = {
+				development = 8
+			}
+			spawn_rebels = {
+				type = futurist_rebels
+				size = 3		
+				win = yes
+				unrest = 10
+			}
+			
+		}
+		add_stability = -4
+		
+		set_country_flag = had_futurist_revolution
+	}
+	
+	option = {
+		name = "futurist_revolution.1.a"			# Dire times are ahead of us
+		add_prestige = -10
+	}
+	
+	option = {
+		name = "futurist_revolution.1.b"			# Dire times are ahead of us
+		add_prestige = -50
+		
+		change_government = futurist_government
+		
+		
+		end_disaster = futurist_revolution
+		disband_rebels = futurist_rebels
+		disband_rebels = revolutionary_rebels
+		
+		add_stability = 3
+	}
+}
+
+# Industry leaders
+country_event = {
+	id = futurist_revolution.3
+	title = "futurist_revolution.3.t"
+	desc = "futurist_revolution.3.d"
+	picture = FUTURIST_REV_eventPicture
+	
+	trigger = {
+		NOT = { has_country_modifier = restrict_industry_leaders }
+	}
+	
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	#immediate = {
+	#	set_country_flag = industry_leaders
+	#}
+	
+	option = {
+		name = "futurist_revolution.3.a"			# Restrict industry_leaders
+		ai_chance = { factor = 30 }
+		if = {
+			limit = {
+				has_disaster = futurist_revolution
+			}
+			add_country_modifier = {
+				name = "restrict_industry_leaders"
+				duration = -1
+				desc = "END_OF_REVOLUTION"
+			}
+		}
+	}
+	option = {
+		name = "futurist_revolution.3.b"			# do so with force
+		ai_chance = { factor = 70 }
+		random_owned_province = { futurist_rebels = 1 }
+		add_stability_or_adm_power = yes
+		if = {
+			limit = {
+				has_disaster = futurist_revolution
+			}
+			add_country_modifier = {
+				name = "industry_leader_support"
+				duration = -1
+				desc = "END_OF_REVOLUTION"
+			}
+		}
+	}
+}
+
+#####Revolution Events######
+
+country_event = {
+	id = futurist_revolution.10
+	title = "futurist_revolution.10.t"
+	desc = "futurist_revolution.10.d"
+	picture = FUTURIST_REV_eventPicture
+	
+	major = yes
+	
+	trigger = {
+		capital_scope = {
+			controlled_by = REB
+		} 
+		num_of_cities = 10
+		NOT = { 
+			OR = {
+				has_reform = futurist_mechanic
+			}
+		}
+		OR = {
+			has_disaster = futurist_revolution
+			has_dlc = "Art of War"
+		}
+	}
+	
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "futurist_revolution.10.a"
+		disband_rebels = futurist_rebels
+		add_mercantilism = 5
+		#country_event = { id = futurist_revolution.20 }
+		add_stability_or_adm_power = yes
+		
+		change_government = futurist_government
+		
+		
+		end_disaster = futurist_revolution
+		
+		disband_rebels = socialist_rebels
+		disband_rebels = fascist_rebels
+		disband_rebels = futurist_rebels
+		
+		add_stability = 4
+		add_years_of_income = 2.0
+		add_adm_power = 100
+	}
+}
+
+country_event = {
+	id = futurist_revolution.15
+	title = futurist_revolution.15.t
+	desc = futurist_revolution.15.d
+	picture = FUTURIST_REV_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = futurist_revolution.15.a
+		
+	}
+}
+
+country_event = {
+	id = futurist_revolution.20
+	title = futurist_revolution.20.t
+	desc = futurist_revolution.20.d
+	picture = FUTURIST_REV_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = futurist_revolution.20.a
+		end_disaster = futurist_revolution
+
+
+		clr_country_flag = restrict_industry_leaders
+		remove_country_modifier = restrict_industry_leaders
+		remove_country_modifier = industry_leader_support
+		
+		disband_rebels = socialist_rebels
+		disband_rebels = fascist_rebels
+		disband_rebels = futurist_rebels
+		
+		add_stability = 4
+		add_years_of_income = 2.0
+		add_adm_power = 100
+	}
+}
+

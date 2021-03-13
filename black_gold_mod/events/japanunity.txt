@@ -1,0 +1,155 @@
+namespace = japanunity
+
+#cores
+
+country_event = {
+	id = japanunity.2
+	title = "japanunity.n.2"
+	desc = "japanunity.d.2"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		is_year = 1865
+		any_owned_province = {
+			culture_group = japanese_g
+		}
+		NOT = { exists = JAP }
+	}	
+
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "japanunity.2.a"
+		every_province = {
+			limit = {
+				culture_group = japanese_g
+			}
+			add_core = JAP
+		}
+	}
+}
+
+#province revolt
+
+province_event = {
+	id = japanunity.3
+	title = "japanunity.n.3"
+	desc = "japanunity.d.3"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		#has_institution = nationalism_institution
+		is_year = 1865
+		culture_group = japanese_g
+		#is_core = JAP
+		owner = {
+			NOT = {
+				culture_group = japanese_g
+			}
+		}
+		exists = JAP
+		continent = asia
+		
+		NOT = {
+			devastation = 5
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 18
+	}
+	
+	option = {
+		name = "japanunity.3.a"
+		spawn_rebels = {
+			type = nationalist_rebels
+			size = 5
+			friend = JAP
+		}
+		
+		add_devastation = 15
+		
+		ai_chance = { factor = 0 }
+	}
+	option = {
+		name = "japanunity.3.b"
+		cede_province = JAP
+		add_core = JAP
+		
+		ai_chance = { factor = 1 }
+	}
+}
+
+#nations join japan
+
+country_event = {
+	id = japanunity.4
+	title = "japanunity.n.4"
+	desc = "japanunity.d.4"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		exists = JAP
+		ai = yes 
+		culture_group = japanese_g
+		NOT = {
+			num_of_cities = 45
+		}
+		is_subject = no
+	}	
+
+	mean_time_to_happen = {
+		months = 9
+	}
+	
+	option = {
+		name = "japanunity.4.a"
+		JAP = {
+			inherit = ROOT
+			ROOT = {
+				every_owned_province = {
+					add_core = JAP
+				}
+			}
+		}
+	}
+}
+
+#becomes japan
+
+country_event = {
+	id = japanunity.5
+	title = "japanunity.n.5"
+	desc = "japanunity.d.5"
+	picture = ANGRY_MOB_eventPicture
+	
+	major = yes
+
+	trigger = {
+		has_institution = nationalism_institution
+		is_year = 1865
+		culture_group = japanese_g
+		NOT = {
+			exists = JAP
+		}
+		region = japan_region
+	}	
+
+	mean_time_to_happen = {
+		months = 18
+	}
+	
+	option = {
+		name = "japanunity.5.a"
+		change_tag = JAP
+		set_government_rank = 3
+		change_government = monarchy
+		add_government_reform = autocracy_reform
+	}
+}

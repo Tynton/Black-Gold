@@ -1,0 +1,43 @@
+country_decisions = {
+
+	annex_austria = {
+	
+		major = yes
+	
+		potential = {
+			tag = GER
+			adm_tech = 33
+			exists = HAB
+			
+			ROOT = {
+				OR = {
+					has_reform = futurist_mechanic
+					has_reform = fascist_mechanic
+					has_reform = socialist_mechanic
+				}
+			}
+		}
+		allow = {
+			military_strength = {
+				who = HAB
+				value = 5.0
+			}
+			HAB = {
+				NOT = {
+					total_development = 350
+				}
+			}
+			is_at_war = no
+		}
+		effect = {
+			HAB = {
+				country_event = {
+					id = germanyunity.7
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}

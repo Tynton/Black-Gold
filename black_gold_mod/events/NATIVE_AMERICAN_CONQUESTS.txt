@@ -1,0 +1,256 @@
+namespace = native_american_conquests_euro
+
+country_event = {
+	id = native_american_conquests_euro.1
+	title = "native_american_conquests_euro.n.1"
+	desc = "native_american_conquests_euro.d.1"
+	picture = NATIVES_eventPicture
+
+	trigger = {
+		NOT = {
+			OR = {
+				culture_group = maya
+				culture_group = central_american
+				culture_group = aridoamerican
+				culture_group = otomanguean
+				culture_group = andean_group
+				culture_group = eastern_algonquian
+				culture_group = iroquoian
+				culture_group = siouan
+				culture_group = caddoan
+				culture_group = muskogean
+				culture_group = sonoran
+				culture_group = apachean
+				culture_group = na_dene
+				culture_group = penutian
+				culture_group = je
+				culture_group = je_tupi
+				culture_group = maranon
+				culture_group = chibchan
+				culture_group = mataco
+				culture_group = araucanian
+				culture_group = carribean
+				culture_group = eskaleut
+				culture_group = central_algonquian
+				culture_group = plains_algonquian
+			}
+		}
+		any_owned_province = {
+			OR = {
+				culture_group = maya
+				culture_group = central_american
+				culture_group = aridoamerican
+				culture_group = otomanguean
+				culture_group = andean_group
+				culture_group = eastern_algonquian
+				culture_group = iroquoian
+				culture_group = siouan
+				culture_group = caddoan
+				culture_group = muskogean
+				culture_group = sonoran
+				culture_group = apachean
+				culture_group = na_dene
+				culture_group = penutian
+				culture_group = je
+				culture_group = je_tupi
+				culture_group = maranon
+				culture_group = chibchan
+				culture_group = mataco
+				culture_group = araucanian
+				culture_group = carribean
+				culture_group = eskaleut
+				culture_group = central_algonquian
+				culture_group = plains_algonquian
+			}
+			is_colony = no
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 20
+		
+		modifier = {
+			factor = 0.2
+			any_neighbor_province = { 
+				culture = ROOT
+			}
+		}
+	}
+	
+	option = {
+		name = "native_american_conquests_euro.1.a"
+		
+		custom_tooltip = native_conquests_bgm
+		
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					culture_group = maya
+				}
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			every_owned_province = {
+				limit = {
+					culture_group = central_american
+				}
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			every_owned_province = {
+				limit = {
+					culture_group = aridoamerican
+				}
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			every_owned_province = {
+				limit = {
+					culture_group = otomanguean
+				}
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			every_owned_province = {
+				limit = {
+					culture_group = andean_group
+				}
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			every_owned_province = {
+				limit = {
+					culture_group = eastern_algonquian
+				}
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			every_owned_province = {
+				limit = {
+					culture_group = iroquoian
+				}
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			every_owned_province = {
+				limit = {
+					culture_group = siouan
+				}
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			every_owned_province = {
+				limit = {
+					culture_group = caddoan
+				}
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			every_owned_province = {
+				limit = {
+					culture_group = muskogean
+				}
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			every_owned_province = {
+				limit = {
+					culture_group = sonoran
+				}
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			every_owned_province = {
+				limit = {
+					culture_group = apachean
+				}
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			every_owned_province = {
+				limit = {
+					culture_group = na_dene
+				}
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			every_owned_province = {
+				limit = {
+					culture_group = penutian
+				}
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			every_owned_province = {
+				limit = {
+					culture_group = je
+				}
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			every_owned_province = {
+				limit = {
+					culture_group = je_tupi
+				}
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			every_owned_province = {
+				limit = {
+					culture_group = maranon
+				}
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			every_owned_province = {
+				limit = {
+					culture_group = chibchan
+				}
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			every_owned_province = {
+				limit = {
+					culture_group = mataco
+				}
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			every_owned_province = {
+				limit = {
+					culture_group = araucanian
+				}
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			every_owned_province = {
+				limit = {
+					culture_group = carribean
+				}
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			every_owned_province = {
+				limit = {
+					culture_group = eskaleut
+				}
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			every_owned_province = {
+				limit = {
+					culture_group = central_algonquian
+				}
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			every_owned_province = {
+				limit = {
+					culture_group = plains_algonquian
+				}
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+		}
+	}
+}

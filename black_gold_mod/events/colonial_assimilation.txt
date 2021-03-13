@@ -1,0 +1,29 @@
+namespace = colonial_assimilation
+
+#event for subject
+
+province_event = {
+	id = colonial_assimilation.1
+	title = "colonial_assimilation.n.1"
+	desc = "colonial_assimilation.d.1"
+	picture = CONQUEST_eventPicture
+	
+	#hidden = yes
+
+	trigger = {
+		is_colonial_nation = yes
+		NOT = { 
+			primary_culture = FROM
+		}
+	}	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "colonial_assimilation.1.a"
+		change_primary_culture = FROM
+	}
+}
+

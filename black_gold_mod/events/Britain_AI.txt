@@ -1,0 +1,170 @@
+namespace = Britain_AI
+
+
+#MADRAS
+
+country_event = {
+	id = Britain_AI.1
+	title = "Britain_AI.n.1"
+	desc = "Britain_AI.d.1"
+	picture = BUREAU_eventPicture
+	
+	fire_only_once = yes
+	
+	#major = yes
+	
+	trigger = {
+		540 = {
+			owner = {
+				ai = yes
+				capital_scope = {
+					NOT = {
+						continent = europe
+					}
+				}
+			}
+		}
+		ai = yes 
+		OR = {
+			tag = ENG
+			tag = GBR
+			tag = UNK
+		}
+		current_age = age_of_absolutism
+		adm_tech = 17
+	}
+
+	mean_time_to_happen = {
+		months = 220
+	}
+	
+	#buy land
+	
+	option = {
+		name = "Britain_AI.1.a"
+		
+		owner = {
+			add_treasury = 1000
+		}
+		
+		540 = {
+			cede_province = ROOT
+			add_territorial_core = ROOT
+			change_province_name = "Madras"
+		}
+		
+		ROOT = {
+			add_treasury = -1000
+		}
+	}
+	
+	#no transaction
+	
+	option = {
+		name = "Britain_AI.1.b"
+		
+		ai_chance = { factor = 1 }
+	}
+}
+
+#BENGAL
+
+country_event = {
+	id = Britain_AI.2
+	title = "Britain_AI.n.2"
+	desc = "Britain_AI.d.2"
+	picture = BUREAU_eventPicture
+	
+	fire_only_once = yes
+	
+	#major = yes
+	
+	trigger = {
+		west_bengal_area = {
+			owner = {
+				ai = yes
+				capital_scope = {
+					NOT = {
+						continent = europe
+					}
+				}
+			}
+		}
+		east_bengal_area = {
+			owner = {
+				ai = yes
+				capital_scope = {
+					NOT = {
+						continent = europe
+					}
+				}
+			}
+		}
+		gaur_area = {
+			owner = {
+				ai = yes
+				capital_scope = {
+					NOT = {
+						continent = europe
+					}
+				}
+			}
+		}
+		north_bengal_area = {
+			owner = {
+				ai = yes
+				capital_scope = {
+					NOT = {
+						continent = europe
+					}
+				}
+			}
+		}
+		ai = yes 
+		OR = {
+			tag = ENG
+			tag = GBR
+			tag = UNK
+		}
+		has_institution = global_imperialism
+		adm_tech = 24
+	}
+
+	mean_time_to_happen = {
+		days = 20
+	}
+	
+	#seize territory
+	
+	option = {
+		name = "Britain_AI.2.a"
+		
+		west_bengal_area = {
+			cede_province = ROOT
+			add_territorial_core = ROOT
+		}
+		east_bengal_area = {
+			cede_province = ROOT
+			add_territorial_core = ROOT
+		}
+		gaur_area = {
+			cede_province = ROOT
+			add_territorial_core = ROOT
+		}
+		north_bengal_area = {
+			cede_province = ROOT
+			add_territorial_core = ROOT
+		}
+		
+		ai_chance = { factor = 15 }
+	}
+	
+	#no
+	
+	option = {
+		name = "Britain_AI.2.b"
+		set_country_flag = no_war_marriage
+		
+		ai_chance = { factor = 1 }
+	}
+}

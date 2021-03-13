@@ -1,0 +1,700 @@
+namespace = africa_colonization
+
+#INITIAL SCRAMBLE EVENT
+
+country_event = {
+	id = africa_colonization.1
+	title = "africa_colonization.n.1"
+	desc = "africa_colonization.d.1"
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	major = yes
+
+	trigger = {
+		is_institution_enabled = nationalism_institution
+		current_age = age_of_industrialization
+		
+		capital_scope = {
+			superregion = europe_superregion
+		}
+		OR = {
+			full_idea_group = expansion_ideas
+			full_idea_group = exploration_ideas
+		}
+		
+		NOT = {
+			has_country_flag = refrained_from_africa
+		}
+		NOT = {
+			current_age = age_of_great_wars
+		}
+		is_subject = no
+	}
+
+	mean_time_to_happen = {
+		days = 14
+		
+		modifier = {
+			factor = 5.0
+			NOT = {
+				government_rank = 2
+			}
+		}
+		
+		modifier = {
+			factor = 0.8
+			government_rank = 2
+		}
+		
+		modifier = {
+			factor = 0.8
+			development = 1000
+		}
+		
+		modifier = {
+			factor = 0.75
+			development = 1500
+		}
+		
+		modifier = {
+			factor = 0.7
+			development = 3000
+		}
+	}
+	
+	###################OPTIONS###################
+	
+	#refrain from colonization
+	option = {
+		name = "africa_colonization.1.a"
+		set_country_flag = refrained_from_africa
+		
+		ai_chance = { factor = 1 }
+	}
+	
+	#Egypt
+	option = {
+		name = "africa_colonization.1.b"
+		egypt_region = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		dongola_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		upper_nubia_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		sennar_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		kurdufan_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		sennar_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		
+		set_ai_personality = {
+			personality = ai_colonialist
+			locked = yes
+		}
+		
+		set_global_flag = egypt_selected
+		
+		add_dip_power = -60
+		
+		trigger = {
+			NOT = {
+				has_global_flag = egypt_selected
+			}
+		}
+		
+		ai_chance = { factor = 1000 }
+	}
+	
+	#somalia
+	option = {
+		name = "africa_colonization.1.c"
+		ajuuran_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		mogadishu_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		majarteen_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		
+		set_ai_personality = {
+			personality = ai_colonialist
+			locked = yes
+		}
+		
+		set_global_flag = somalia_selected
+		
+		add_dip_power = -60
+		
+		trigger = {
+			NOT = {
+				has_global_flag = somalia_selected
+			}
+		}
+		
+		ai_chance = { factor = 1000 }
+	}
+	
+	#somaliland
+	option = {
+		name = "africa_colonization.1.d"
+		somaliland_area = {
+			add_permanent_claim = ROOT
+		}
+		
+		set_global_flag = somaliland_selected
+		
+		add_dip_power = -60
+		
+		trigger = {
+			NOT = {
+				has_global_flag = somaliland_selected
+			}
+		}
+		
+		set_ai_personality = {
+			personality = ai_colonialist
+			locked = yes
+		}
+		
+		ai_chance = { factor = 1000 }
+	}
+	
+	#Kongo
+	option = {
+		name = "africa_colonization.1.e"
+		kongo_region = {
+			add_permanent_claim = ROOT
+		}
+		
+		set_global_flag = kongo_selected
+		
+		add_dip_power = -60
+		
+		trigger = {
+			has_global_flag = kongo_selected
+		}
+		
+		set_ai_personality = {
+			personality = ai_colonialist
+			locked = yes
+		}
+		
+		ai_chance = { factor = 1000 }
+	}
+	
+	#Madagascar
+	option = {
+		name = "africa_colonization.1.f"
+		sakalava_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		madagascar_highlands_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		southern_madagascar = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		betsimasaraka_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		
+		set_ai_personality = {
+			personality = ai_colonialist
+			locked = yes
+		}
+		
+		set_global_flag = madagascar_selected
+		
+		add_dip_power = -60
+		
+		trigger = {
+			NOT = {
+				has_global_flag = madagascar_selected
+			}
+		}
+		
+		ai_chance = { factor = 1000 }
+	}
+	
+	#Mozambique
+	option = {
+		name = "africa_colonization.1.g"
+		quelimane_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		zimbabwe_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		butua_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		mozambique_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		lower_zambezi_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		shire_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		uticulo_makuana_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		
+		set_ai_personality = {
+			personality = ai_colonialist
+			locked = yes
+		}
+		
+		set_global_flag = mozambique_selected
+		
+		add_dip_power = -60
+		
+		trigger = {
+			NOT = {
+				has_global_flag = mozambique_selected
+			}
+		}
+		
+		ai_chance = { factor = 1000 }
+	}
+	
+	#Kenya
+	option = {
+		name = "africa_colonization.1.h"
+		northern_swahili_coast_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		jubba_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		mombasa_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		kenya_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		
+		set_ai_personality = {
+			personality = ai_colonialist
+			locked = yes
+		}
+		
+		set_global_flag = kenya_selected
+		
+		add_dip_power = -60
+		
+		trigger = {
+			NOT = {
+				has_global_flag = kenya_selected
+			}
+		}
+		
+		ai_chance = { factor = 1000 }
+	}
+	
+	#Tanzania
+	option = {
+		name = "africa_colonization.1.i"
+		central_swahili_coast_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		ruvuma_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		tanzania_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		ngonde_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		
+		set_ai_personality = {
+			personality = ai_colonialist
+			locked = yes
+		}
+		
+		set_global_flag = tanzania_selected
+		
+		add_dip_power = -60
+		
+		trigger = {
+			NOT = {
+				has_global_flag = tanzania_selected
+			}
+		}
+		
+		ai_chance = { factor = 1000 }
+	}
+	
+	#Nigeria
+	option = {
+		name = "africa_colonization.1.j"
+		benin_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		lower_niger_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		adamawa_plateau_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		bornu_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		hausa_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		zazzau_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		katsina_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		
+		set_ai_personality = {
+			personality = ai_colonialist
+			locked = yes
+		}
+		
+		set_global_flag = nigeria_selected
+		
+		add_dip_power = -60
+		
+		trigger = {
+			NOT = {
+				has_global_flag = nigeria_selected
+			}
+		}
+		
+		ai_chance = { factor = 1000 }
+	}
+	
+	#Algeria
+	option = {
+		name = "africa_colonization.1.k"
+		algiers_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		hautes_plaines_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		ouled_nail_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		north_saharan_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		barbary_coast_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		kabylia_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		
+		set_ai_personality = {
+			personality = ai_colonialist
+			locked = yes
+		}
+		
+		set_global_flag = algeria_selected
+		
+		add_dip_power = -60
+		
+		trigger = {
+			NOT = {
+				has_global_flag = algeria_selected
+			}
+		}
+		
+		ai_chance = { factor = 1000 }
+	}
+	
+	#West Africa
+	option = {
+		name = "africa_colonization.1.l"
+		central_swahili_coast_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		futa_jallon_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		jolof_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		tekrur_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		baghena_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		manding_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		jenne_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		massina_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		kong_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		lower_volta_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		niger_bend_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		upper_volta_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		western_sahara_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		dendi_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		atacora_oueme_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		futa_jallon_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		
+		set_ai_personality = {
+			personality = ai_colonialist
+			locked = yes
+		}
+		
+		set_global_flag = west_africa_selected
+		
+		add_dip_power = -180
+		
+		trigger = {
+			NOT = {
+				OR = {
+					has_global_flag = west_africa_selected
+				}
+			}
+		}
+		
+		ai_chance = { factor = 1000 }
+	}
+	
+	#ethiopia/eritrea
+	option = {
+		name = "africa_colonization.1.m"
+		ifat_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		ogaden_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		shewa_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		hadiya_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		southern_ethiopia_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		damot_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		central_ethiopia_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		aussa_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		tigray_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		red_sea_coast_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		
+		set_ai_personality = {
+			personality = ai_colonialist
+			locked = yes
+		}
+		
+		set_global_flag = ethiopia_selected
+		
+		add_dip_power = -60
+		
+		trigger = {
+			NOT = {
+				has_global_flag = ethiopia_selected
+			}
+		}
+		
+		ai_chance = { factor = 1000 }
+	}
+	
+	#Morocco
+	option = {
+		name = "africa_colonization.1.n"
+		tafilalt_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		sus_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		marrekesh_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		western_morocco_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		marrekesh_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		northern_morocco_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		southern_morocco_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		
+		set_ai_personality = {
+			personality = ai_colonialist
+			locked = yes
+		}
+		
+		set_global_flag = morocco_selected
+		
+		add_dip_power = -60
+		
+		trigger = {
+			NOT = {
+				has_global_flag = morocco_selected
+			}
+		}
+		
+		ai_chance = { factor = 1000 }
+	}
+	
+	#Libya/Tunisia
+	option = {
+		name = "africa_colonization.1.o"
+		djerba_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		tunisia_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		tripolitania_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		fezzan_area = {
+			add_permanent_claim = ROOT
+			add_core = ROOT
+		}
+		
+		set_ai_personality = {
+			personality = ai_colonialist
+			locked = yes
+		}
+		
+		set_global_flag = libya_selected
+		
+		add_dip_power = -60
+		
+		trigger = {
+			NOT = {
+				has_global_flag = libya_selected
+			}
+		}
+		
+		ai_chance = { factor = 1000 }
+	}
+}

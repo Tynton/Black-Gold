@@ -1,0 +1,250 @@
+namespace = netherlandunity
+
+#initial dutch revolt
+
+country_event = {
+	id = netherlandunity.1
+	title = "netherlandunity.n.1"
+	desc = "netherlandunity.d.1"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			is_year = 1815
+			AND = {
+				has_disaster = dutch_revolt_disaster
+				low_countries_region = {
+					any_owned_province = {
+						devastation = 30
+					}
+				}
+			}
+		}
+		AND = {
+			any_owned_province = {
+				culture_group = benelux
+			}
+			capital_scope = {
+				continent = europe
+			}
+			NOT = {
+				exists = NED
+				tag = NED
+				stability = 1
+				culture_group = benelux
+			}
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 75
+		
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = 0
+			}
+		}
+		modifier = {
+			factor = 0.6
+			NOT = {
+				stability = -2
+			}
+		}
+	}
+	
+	option = {
+		name = "netherlandunity.1.a"
+		release = NED
+		NED = {
+			change_government = republic
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_independence_war
+			}
+		}
+	}
+	
+	option = {
+		name = "netherlandunity.1.b"
+		release = NED
+		NED = {
+			change_government = republic
+			create_alliance = ROOT
+		}
+	}
+}
+
+
+#cores
+
+country_event = {
+	id = netherlandunity.2
+	title = "netherlandunity.n.2"
+	desc = "netherlandunity.d.2"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		OR = {
+			is_year = 1810
+			has_disaster = dutch_revolt_disaster
+		}
+		any_core_province = {
+			culture_group = benelux
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "netherlandunity.2.a"
+		every_province = {
+			limit = {
+				region = low_countries_region
+			}
+			add_core = NED
+		}
+	}
+}
+
+#province revolt
+
+#province_event = {
+#	id = netherlandunity.3
+#	title = "netherlandunity.n.3"
+#	desc = "netherlandunity.d.3"
+#	picture = ANGRY_MOB_eventPicture
+#
+#	trigger = {
+#		NOT = {
+#			current_age = age_of_great_wars
+#		}
+#		NOT = {
+#			devastation = 1
+#		}
+#		culture_group = benelux
+#		is_core = NED
+#		owner = {
+#			NOT = {
+#				culture_group = benelux
+#			}
+#			NOT = {
+#				prestige = 65
+#			}
+#		}
+#		exists = NED
+#		continent = europe
+#		unrest = -2
+#	}	
+#
+#	mean_time_to_happen = {
+#		months = 12
+#	}
+#	
+#	option = {
+#		name = "netherlandunity.3.a"
+#		spawn_rebels = {
+#			type = nationalist_rebels
+#			size = 5
+#			friend = NED
+#		}
+#		add_devastation = 15
+#	}
+#	option = {
+#		name = "netherlandunity.3.b"
+#		cede_province = NED
+#		add_core = NED
+#	}
+#}
+
+#nations join netherlands
+
+country_event = {
+	id = netherlandunity.4
+	title = "netherlandunity.n.4"
+	desc = "netherlandunity.d.4"
+	picture = ANGRY_MOB_eventPicture
+	
+	#fire_only_once = yes
+
+	trigger = {
+		exists = NED
+		ai = yes 
+		culture_group = benelux
+		NOT = {
+			num_of_cities = 45
+		}
+		OR = {
+			is_subject = no
+			is_subject_of = NED
+		}
+		capital_scope = {
+			continent = europe
+		}
+		
+	}	
+
+	mean_time_to_happen = {
+		months = 9
+	}
+	
+	option = {
+		name = "netherlandunity.4.a"
+		NED = {
+			inherit = ROOT
+			ROOT = {
+				every_owned_province = {
+					add_core = NED
+				}
+			}
+		}
+	}
+}
+
+#nation becomes netherlands
+country_event = {
+	id = netherlandunity.5
+	title = "netherlandunity.n.5"
+	desc = "netherlandunity.d.5"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+
+	major = yes
+	
+	trigger = {
+		OR = {
+			every_country = {
+				is_part_of_hre = no
+			}
+			is_institution_enabled = nationalism_institution
+		}
+		culture_group = benelux
+		NOT = {
+			exists = NED
+			ai = no
+		}
+		num_of_cities = 15
+		total_development = 150
+	}	
+
+	mean_time_to_happen = {
+		months = 36
+	}
+	
+	option = {
+		name = "netherlandunity.5.a"
+		change_tag = NED
+		change_government = monarchy
+		add_government_reform = autocracy_reform
+		add_government_reform = parliamentary_reform
+	}
+}

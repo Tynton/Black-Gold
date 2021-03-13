@@ -1,0 +1,61 @@
+namespace = dutchenglandconquest
+
+province_event = {
+	id = dutchenglandconquest.1
+	title = "dutchenglandconquest.n.1"
+	desc = "dutchenglandconquest.d.1"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {
+			culture = english
+			owner = {
+				culture_group = benelux
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		owner = {
+			stability = 2
+			full_idea_group = expansion_ideas
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "dutchenglandconquest.1.a"
+		change_culture = engels
+	}
+}
+
+province_event = {
+	id = dutchenglandconquest.2
+	title = "dutchenglandconquest.n.2"
+	desc = "dutchenglandconquest.d.2"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		AND = {	
+			culture = scottish
+			owner = {
+				culture_group = benelux
+				#has_country_modifier = funding_cultural_assimilation
+			}
+		}
+		owner = {
+			stability = 2
+			full_idea_group = expansion_ideas
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "dutchenglandconquest.2.a"
+		change_culture = schots
+	}
+}

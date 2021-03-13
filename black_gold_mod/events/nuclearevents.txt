@@ -1,0 +1,234 @@
+namespace = nuclearevents
+
+province_event = {
+	id = nuclearevents.1
+	title = "nuclearevents.n.1"
+	desc = "nuclearevents.d.1"
+	picture = NUKE_eventPicture
+	
+	major = yes
+
+	trigger = {
+		owner = {
+			any_country = {
+				war_with = ROOT
+				OR = {
+					technology_group = modern_nuke
+					technology_group = modern_german_nuke
+					technology_group = modern_soviet_nuke
+				}
+			}
+			NOT = {
+				war_score = -10
+			}
+		}
+		NOT = {
+			devastation = 20
+		}
+		development = 12
+	}	
+
+	mean_time_to_happen = {
+		days = 20
+		
+		modifier = {
+			factor = 6
+			any_country = {
+				war_with = ROOT
+				OR = {
+					technology_group = modern_nuke
+					technology_group = modern_german_nuke
+					technology_group = modern_soviet_nuke
+				}
+				NOT = {
+					mil_tech = 45
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 3
+			any_country = {
+				war_with = ROOT
+				OR = {
+					technology_group = modern_nuke
+					technology_group = modern_german_nuke
+					technology_group = modern_soviet_nuke
+				}
+				NOT = {
+					mil_tech = 46
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			any_country = {
+				war_with = ROOT
+				OR = {
+					technology_group = modern_nuke
+					technology_group = modern_german_nuke
+					technology_group = modern_soviet_nuke
+				}
+				NOT = {
+					mil_tech = 47
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 0.5
+			any_country = {
+				war_with = ROOT
+				OR = {
+					technology_group = modern_nuke
+					technology_group = modern_german_nuke
+					technology_group = modern_soviet_nuke
+				}
+				war_score = 25
+			}
+		}
+		
+		modifier = {
+			factor = 0.25
+			any_country = {
+				war_with = ROOT
+				OR = {
+					technology_group = modern_nuke
+					technology_group = modern_german_nuke
+					technology_group = modern_soviet_nuke
+				}
+				war_score = 50
+			}
+		}
+		
+		modifier = {
+			factor = 0.125
+			any_country = {
+				war_with = ROOT
+				OR = {
+					technology_group = modern_nuke
+					technology_group = modern_german_nuke
+					technology_group = modern_soviet_nuke
+				}
+				war_score = 75
+			}
+		}
+		
+		modifier = {
+			factor = 30
+			NOT = {
+				development = 15
+			}
+		}
+		
+		modifier = {
+			factor = 5
+			NOT = {
+				development = 20
+			}
+		}
+		
+		#priority targets
+		
+		modifier = {
+			factor = 0.5
+			development = 35
+		}
+	}
+	
+	option = {
+		name = "nuclearevents.1.a"
+		add_devastation = 100
+		add_base_tax = -4
+		add_base_production = -4
+		add_base_manpower = -4
+		
+		owner = {
+			add_war_exhaustion = 5
+		}
+	}
+}
+
+#finish dev
+
+country_event = {
+	id = nuclearevents.2
+	title = "nuclearevents.n.2"
+	desc = "nuclearevents.d.2"
+	picture = NUKE_eventPicture
+	
+	major = yes
+
+	trigger = {
+		has_country_modifier = developing_nuke
+		mil_tech = 44
+	}	
+
+	mean_time_to_happen = {
+		months = 48
+		
+		modifier = {
+			factor = 0.9
+			total_development = 1250
+		}
+		
+		modifier = {
+			factor = 0.8
+			total_development = 1750
+		}
+		
+		modifier = {
+			factor = 0.75
+			total_development = 2500
+		}
+		
+		modifier = {
+			factor = 0.5
+			total_development = 3000
+		}
+		
+		modifier = {
+			factor = 0.00001
+			mil_tech = 45
+		}
+	}
+	
+	option = {
+		name = "nuclearevents.2.a"
+		change_technology_group = modern_nuke
+		remove_country_modifier = developing_nuke
+		add_prestige = 40
+		
+		trigger = {
+			NOT = {
+				OR = {
+					technology_group = modern_german
+					technology_group = modern_soviet
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "nuclearevents.2.b"
+		change_technology_group = modern_german_nuke
+		remove_country_modifier = developing_nuke
+		add_prestige = 40
+		
+		trigger = {
+			technology_group = modern_german
+		}
+	}
+	
+	option = {
+		name = "nuclearevents.2.c"
+		change_technology_group = modern_soviet_nuke
+		remove_country_modifier = developing_nuke
+		add_prestige = 40
+		
+		trigger = {
+			technology_group = modern_soviet
+		}
+	}
+}

@@ -1,0 +1,596 @@
+fascist_mechanic = {
+	basic_reform = yes
+	republican_name = yes
+	royal_marriage = no
+	republic = no
+	claim_states = yes
+	start_territory_to_estates = 0
+	basic_reform = yes # = invisible/does not take up a slot
+	valid_for_nation_designer = no
+	#revolutionary = yes
+	custom_attributes = {
+		enables_aristocratic_idea_group = yes
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		militarised_society = yes
+	}
+}
+
+fascist_government_reform = {
+	icon = "fascist_government"
+	monarchy = yes
+	queen = no
+	heir = no
+	royal_marriage = no
+	allow_normal_conversion = yes
+	legacy_equivalent = republican_dictatorship
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	potential = {
+		NOT = {
+			is_subject_of_type = personal_union
+		}
+	}
+	modifiers = {
+		land_forcelimit_modifier = 0.2
+		global_manpower_modifier = 0.05
+		governing_capacity = 200
+	}
+}
+
+fascist_monarchism = {
+	icon = "eagle_empire"
+	monarchy = yes
+	queen = yes
+	heir = yes
+	royal_marriage = yes
+	republican_name = no
+	allow_normal_conversion = yes
+	legacy_equivalent = republican_dictatorship
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		yearly_absolutism = 0.5
+	}
+}
+
+revolutionary_fascism = {
+	icon = "fascist_government_gold"
+	monarchy = yes
+	queen = no
+	heir = no
+	royal_marriage = no
+	potential = {
+		has_country_modifier = forced_fascism
+		NOT = {
+			is_subject_of_type = personal_union
+		}
+	}
+	allow_normal_conversion = yes
+	legacy_equivalent = republican_dictatorship
+	valid_for_nation_designer = no
+	modifiers = {
+		yearly_absolutism = 1.5
+		land_forcelimit_modifier = 1.0
+		global_manpower_modifier = 0.3
+	}
+}
+
+national_socialism = {
+	icon = "swastika"
+	monarchy = yes
+	queen = no
+	heir = no
+	royal_marriage = no
+	potential = {
+		OR = {
+			culture_group = germanic
+			culture_group = scandinavian
+		}
+		NOT = {
+			is_subject_of_type = personal_union
+		}
+	}
+	allow_normal_conversion = yes
+	legacy_equivalent = republican_dictatorship
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		land_forcelimit_modifier = 1.0
+		global_manpower_modifier = 0.2
+	}
+}
+
+strasserist_fascism = {
+	icon = "strasserism"
+	monarchy = yes
+	queen = no
+	heir = no
+	royal_marriage = no
+	potential = {
+		culture_group = germanic
+		NOT = {
+			is_subject_of_type = personal_union
+		}
+	}
+	allow_normal_conversion = yes
+	legacy_equivalent = republican_dictatorship
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		land_forcelimit_modifier = 0.4
+		global_manpower_modifier = 0.4
+		global_tax_modifier = 0.2
+	}
+}
+
+italian_fascism = {
+	icon = "fascist_government_italy"
+	monarchy = yes
+	queen = no
+	heir = no
+	royal_marriage = no
+	potential = {
+		culture_group = latin
+		NOT = {
+			is_subject_of_type = personal_union
+		}
+	}
+	allow_normal_conversion = yes
+	legacy_equivalent = republican_dictatorship
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		land_forcelimit_modifier = 0.3
+		global_manpower_modifier = 0.05
+		governing_capacity = 400
+	}
+}
+
+#####################################fascist_ethics#####################################
+
+fascist_populism = {
+	icon = "fist_in_air"
+	potential = {
+		NOT = { 
+			OR = {
+				has_reform = national_socialism
+				has_reform = fascist_monarchism
+			}
+		}
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		republican_tradition = 0.5
+	}
+}
+
+fascist_chauvinist_supremacy = {
+	icon = "black_market_consortium"
+	allow_normal_conversion = yes
+	modifiers = {
+		province_warscore_cost = -0.5
+	}
+}
+
+fascist_nationalism = {
+	icon = "paper_with_seal"
+	potential = {
+		NOT = {
+			OR = {
+				has_reform = national_socialism
+			}
+		}
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		global_unrest = -1
+		land_morale = 0.1
+	}
+}
+
+#####################################fascist_foreign_policy#####################################
+
+isolationism_reform = {
+	icon = "assembly_hall"
+	
+	potential = {
+		NOT = {
+			OR = {
+				has_reform = revolutionary_socialism
+				has_reform = revolutionary_fascism
+				has_reform = national_socialism
+				has_reform = italian_fascism
+			}
+		}
+	}
+	
+	trigger = {
+		NOT = {
+			OR = {
+				has_reform = national_socialism
+				has_reform = italian_fascism
+				has_reform = revolutionary_fascism
+			}
+		}
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		global_trade_power = 0.1
+		production_efficiency = 0.1
+		stability_cost_to_declare_war = 1
+	}
+}
+
+expansionism_reform = {
+	icon = "revolutionary_republic"
+	allow_normal_conversion = yes
+	modifiers = {
+		land_maintenance_modifier = -0.2
+		global_manpower_modifier = 0.15
+		ae_impact = 0.2
+	}
+}
+
+protectionism_reform = {
+	icon = "man_and_children"
+	allow_normal_conversion = yes
+	modifiers = {
+		defensiveness = 0.2
+		naval_morale = 0.1
+		land_morale = 0.1
+		global_manpower_modifier = 0.1
+	}
+}
+
+#####################################fascist_head_of_state#####################################
+
+fascist_dictator = {
+	icon = "man_on_podium"
+	trigger = {
+		NOT = {
+			has_reform = fascist_republican_leader
+			has_reform = fascist_monarchism
+			has_reform = auth_monarchism
+		}
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		yearly_absolutism = 0.5
+	}
+}
+
+fascist_republican_leader = {
+	icon = "ballot_box"
+	potential = {
+		OR = {
+			NOT = {
+				has_reform = national_socialism
+				has_reform = italian_fascism
+				has_reform = revolutionary_fascism
+				has_reform = fascist_monarchism
+				has_reform = auth_monarchism
+			}
+		}
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		republican_tradition = 0.5
+		global_unrest = -0.5
+	}
+	duration = 4
+	has_term_election = yes
+}
+
+fascist_minister_monarchy = {
+	icon = "king_2"
+	trigger = {
+		OR = {
+			has_reform = fascist_monarchism
+			has_reform = auth_monarchism
+		}
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		all_power_cost = -0.025
+		adm_tech_cost_modifier = -0.15
+		dip_tech_cost_modifier = -0.1
+	}
+}
+
+#####################################deliberative_assembly#####################################
+
+fascist_parliament = {
+	icon = "placeholder"
+	has_parliament = yes 
+	allow_normal_conversion = yes
+	modifiers = {
+		prestige = 0.5
+		max_absolutism = -10
+	}
+}
+
+dictatorial_dominance = {
+	icon = "man_on_podium"
+	trigger = {
+		NOT = { 
+			OR = {
+				has_reform = fascist_republican_leader
+				has_reform = fascist_monarchism
+				has_reform = auth_monarchism
+			}
+		}
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		max_absolutism = 10
+		global_missionary_strength = 0.01
+	}
+}
+
+monarchist_autocracy = {
+	icon = "king_2"
+	trigger = {
+		OR = {
+			has_reform = fascist_monarchism
+			has_reform = auth_monarchism
+		}
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		heir_chance = 0.25
+	}
+}
+
+bureaucratic_council = {
+	icon = "generic_people"
+	allow_normal_conversion = yes
+	modifiers = {
+		same_culture_advisor_cost = -0.25
+		advisor_cost = -0.1
+	}
+}
+
+#####################################fascist_economy#####################################
+
+fascist_socialism = {
+	icon = "rioting_burning"
+	potential = {
+		NOT = {
+			OR = {
+				has_reform = italian_fascism
+				has_reform = fascist_monarchism
+			}
+		}
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		global_tax_modifier = 0.2
+		global_trade_goods_size_modifier = 0.1
+		trade_efficiency = -0.3
+	}
+}
+
+fascist_social_economy = {
+	icon = "paper_with_seal"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_tax_modifier = 0.10
+		trade_efficiency = -0.1
+	}
+}
+
+fascist_regulationism = {
+	icon = "paper_with_seal_3"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_tax_modifier = 0.05
+	}
+}
+
+fascist_corporatism = {
+	icon = "paper_money_map"
+	allow_normal_conversion = yes
+	modifiers = {
+		trade_efficiency = 0.1
+	}
+}
+
+#####################################fascist_admin#####################################
+
+expansionism_bureau_reform = {
+	icon = "revolutionary_republic"
+	allow_normal_conversion = yes
+	modifiers = {
+		core_creation = -0.2
+		governing_capacity_modifier = 0.3
+	}
+}
+
+economic_bureaucracy_reform = {
+	icon = "assembly_hall"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_tax_modifier = 0.1
+		inflation_reduction = 0.1
+	}
+}
+
+intermediary_reform = {
+	icon = "revolutionary_republic"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_tax_modifier = 0.05
+		inflation_reduction = 0.05
+		core_creation = -0.1
+		governing_capacity_modifier = 0.15
+	}
+}
+
+large_bureaucracy = {
+	icon = "paper_with_seal"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_tax_modifier = -0.15
+		inflation_reduction = 0.1
+		core_creation = -0.2
+		governing_capacity_modifier = 0.3
+	}
+}
+
+#####################################electorate (really stupid but aight)#####################################
+
+council_assembly_reform = {
+	icon = "states_general"
+	allow_normal_conversion = yes
+	trigger = {
+		NOT = {
+			has_reform = fascist_monarchism
+		}
+	}
+	modifiers = {
+		advisor_pool = 2
+		advisor_cost = -0.1
+	}
+}
+
+popular_electorate = {
+	icon = "people_walking"
+	allow_normal_conversion = yes
+	trigger = {
+		has_reform = fascist_republican_leader
+	}
+	modifiers = {
+		global_unrest = -2
+		prestige_decay = 0.01
+	}
+}
+
+no_electorate = {
+	icon = "king"
+	trigger = {
+		NOT = { has_reform = fascist_republican_leader }
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		max_absolutism = 10
+		global_missionary_strength = 0.01
+	}
+}
+
+#####################################propaganda#####################################
+
+political_propaganda = {
+	icon = "fascist_government_gold"
+	allow_normal_conversion = yes
+	modifiers = {
+		yearly_absolutism = 5
+		tolerance_own = 1
+		global_missionary_strength = 0.03
+		stability_cost_modifier = -0.25
+	}
+}
+
+war_propaganda = {
+	icon = "soldiers_2"
+	allow_normal_conversion = yes
+	modifiers = {
+		land_morale = 0.1
+		defensiveness = 0.1
+		naval_morale = 0.1
+	}
+}
+
+#economic_propaganda = {
+#	icon = "paper_with_seal_3"
+#	allow_normal_conversion = yes
+#	modifiers = {
+#		num_accepted_cultures = 1
+#	}
+#}
+
+#####################################question_of_foreign_cultures#####################################
+
+purge_foreigners_reform = {
+	icon = "purge_foreign_culture"
+	potential = {
+		NOT = {
+			has_reform = revolutionary_socialism
+		}
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		culture_conversion_cost = -0.95
+		global_missionary_strength = 0.08
+		years_of_nationalism = -20
+	}
+}
+
+intolerance_reform = {
+	icon = "soldiers_2"
+	potential = {
+		NOT = {
+			has_reform = revolutionary_socialism
+		}
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		culture_conversion_cost = -0.1
+		years_of_nationalism = -5
+	}
+}
+
+national_civic_tolerance_reform = {
+	icon = "man_and_children"
+	allow_normal_conversion = yes
+	modifiers = {
+		num_accepted_cultures = 2
+	}
+}
+
+#####################################policing_campaigns#####################################
+
+enforce_loyalty_reform = {
+	icon = "revolutionary_republic"
+	allow_normal_conversion = yes
+	modifiers = {
+		liberty_desire_from_subject_development = -0.75
+		global_autonomy = -0.2
+	}
+}
+
+counter_espionage_reform = {
+	icon = "fascist_government_gold"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_spy_defence = 0.5
+		legitimacy = 2
+		republican_tradition = 2
+	}
+}
+
+policing_intermediary = {
+	icon = "states_general"
+	allow_normal_conversion = yes
+	modifiers = {
+		liberty_desire_from_subject_development = -0.25
+		global_autonomy = -0.05
+		global_spy_defence = 0.15
+		legitimacy = 0.25
+		republican_tradition = 0.25
+	}
+}
+
+large_policing_bureaucracy = {
+	icon = "fascist_government_white"
+	allow_normal_conversion = yes
+	modifiers = {
+		liberty_desire_from_subject_development = -0.5
+		global_autonomy = -0.2
+		global_spy_defence = 0.5
+		legitimacy = 2.0
+		republican_tradition = 2.0
+		global_tax_modifier = -0.25
+	}
+}

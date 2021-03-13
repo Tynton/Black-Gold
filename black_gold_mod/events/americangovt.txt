@@ -1,0 +1,391 @@
+namespace = americangovt
+
+#arbitrary USA picking
+country_event = {
+	id = americangovt.1
+	title = "americangovt.n.1"
+	desc = "americangovt.d.1"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		tag = USA
+		NOT = {
+			OR = {
+				has_reform = american_republic
+				has_reform = parliamentary_reform
+				has_reform = socialist_mechanic
+				has_reform = democratic_mechanic
+				has_reform = fascist_mechanic
+				has_reform = authoritarian_mechanic
+			}
+		}
+		ai = yes
+	}	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "americangovt.1.a"
+		change_government = republic
+		add_government_reform = american_republic
+		add_government_reform = parliamentary_reform
+	}
+}
+
+
+#manifest destiny
+country_event = {
+	id = americangovt.2
+	title = "americangovt.n.2"
+	desc = "americangovt.d.2"
+	picture = ANGRY_MOB_eventPicture
+	
+	major = yes
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		is_year = 1840
+		has_institution = nationalism_institution
+	}	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "americangovt.2.a"
+		
+		california_region = {
+			add_permanent_claim = USA
+		}
+		rio_grande_region = {
+			add_permanent_claim = USA
+		}
+		colonial_louisiana = {
+			add_permanent_claim = USA
+		}
+		great_plains_region = {
+			add_permanent_claim = USA
+		}
+		snake_river_area = {
+			add_permanent_claim = USA
+		}
+		oregon_area = {
+			add_permanent_claim = USA
+		}
+		columbia_river_area = {
+			add_permanent_claim = USA
+		}
+		salish_sea_area = {
+			add_permanent_claim = USA
+		}
+	}
+}
+
+
+#louisiana purchase (USA proposition)
+country_event = {
+	id = americangovt.3
+	title = "americangovt.n.3"
+	desc = "americangovt.d.3"
+	picture = ANGRY_MOB_eventPicture
+	
+	major = yes
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		is_year = 1800
+		
+		any_neighbor_country = {
+			capital_scope = {
+				colonial_region = colonial_louisiana
+			}
+		}
+		NOT = {
+			colonial_louisiana = {
+				controlled_by = USA
+			} 
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 56
+	}
+	
+	option = {
+		name = "americangovt.3.a"
+		every_neighbor_country = {
+			country_event = {
+				id = americangovt.4
+			}
+		}
+		ai_chance = { factor = 95 }
+	}
+	option = {
+		name = "americangovt.3.b"
+		ai_chance = { factor = 5 }
+		custom_tooltip = loupurch_deny
+	}
+}
+
+#########################   RESPONSES   #########################
+
+country_event = {
+	id = americangovt.4
+	title = "americangovt.n.4"
+	desc = "americangovt.d.4"
+	picture = ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes	
+	
+	
+	#yes, independent
+	
+	option = {
+		name = "americangovt.4.a"
+		
+		trigger = {
+			is_colonial_nation = no
+		}
+		
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_louisiana
+			}
+			add_core = USA
+			cede_province = USA
+			add_local_autonomy = 10
+		}
+		USA = {
+			add_treasury = -3200
+			add_prestige = 15
+		}
+		ROOT = {
+			add_treasury = 3200
+		}
+		custom_tooltip = louisiana_purchase_tooltip
+	}
+	
+	#no, independent
+	
+	option = {
+		name = "americangovt.4.b"
+		
+		trigger = {
+			is_colonial_nation = no
+		}
+	}
+	
+	#neighbors########################################
+	
+	option = {
+		name = "americangovt.4.c"
+		
+		trigger = {
+			NOT = {
+				any_owned_province = {
+					colonial_region = colonial_louisiana
+				}
+			}
+		}
+		
+		ai_chance = { 
+			factor = 1 
+			
+			modifier = {
+				factor = 0
+				development_in_provinces = {
+					value = 300
+					colonial_region = colonial_louisiana
+				}
+			}
+		}
+	}
+	
+	#forward to overlord########################################
+	
+	option = {
+		name = "americangovt.4.d"
+		
+		trigger = {
+			is_colonial_nation = yes
+		}
+		overlord = {
+			country_event = {
+				id = americangovt.5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = americangovt.5
+	title = "americangovt.n.5"
+	desc = "americangovt.d.5"
+	picture = ANGRY_MOB_eventPicture
+	
+	#major = yes
+
+	is_triggered_only = yes
+
+	
+	option = {
+		name = "americangovt.5.a"
+		FROM = {
+			country_event = {
+				id = americangovt.6
+			}
+		}
+	}
+	option = {
+		name = "americangovt.5.b"
+	}
+}
+
+country_event = {
+	id = americangovt.6
+	title = "americangovt.n.6"
+	desc = "americangovt.d.6"
+	picture = ANGRY_MOB_eventPicture
+	
+	major = yes
+
+	is_triggered_only = yes	
+
+	
+	option = {
+		name = "americangovt.6.a"
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_louisiana
+			}
+			add_core = USA
+			cede_province = USA
+			add_local_autonomy = 10
+		}
+		USA = {
+			add_treasury = -3200
+			add_prestige = 15
+		}
+		ROOT = {
+			add_treasury = 3200
+		}
+	}
+}
+
+################################################################################################################################################################
+#CONFEDERATE REBELLION EVENT CHAIN
+################################################################################################################################################################
+
+country_event = {
+	id = americangovt.7
+	title = "americangovt.n.7"
+	desc = "americangovt.d.7"
+	picture = MIL_ADVANCE_eventPicture
+	
+	major = yes
+	
+	trigger = {
+		tag = USA
+		current_age = age_of_industrialization
+		
+		NOT = {
+			has_global_flag = confed
+		}
+		
+		NOT = {
+			stability = 1
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "americangovt.7.a"
+		southeast_america_region = {
+			add_core = CSA
+		}
+		west_florida_area = {
+			add_core = CSA
+		}
+		alabama_area = {
+			add_core = CSA
+		}
+		mississippi_area = {
+			add_core = CSA
+		}
+		south_appalachia_area = {
+			add_core = CSA
+		}
+		choctaw_area = {
+			add_core = CSA
+		}
+		lower_louisiana_area = {
+			add_core = CSA
+		}
+		mississippi_plain_area = {
+			add_core = CSA
+		}
+		rio_grande_region = {
+			add_core = CSA
+		}
+		
+		set_global_flag = confed
+	}
+}
+
+country_event = {
+	id = americangovt.8
+	title = "americangovt.n.8"
+	desc = "americangovt.d.8"
+	picture = MIL_ADVANCE_eventPicture
+	
+	major = yes
+	
+	trigger = {
+		tag = USA
+		current_age = age_of_industrialization
+		
+		NOT = {
+			stability = 1
+		}
+		average_unrest = 0
+		
+		NOT = {
+			has_global_flag = confed_exist
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "americangovt.8.a"
+		every_owned_province = {
+			limit = {
+				is_core = CSA
+			}
+			cede_province = CSA
+		}
+		CSA = {
+			change_government = republic
+			add_government_reform = oligarchy_reform
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_annex
+			}
+		}
+		set_global_flag = confed_exist
+	}
+}

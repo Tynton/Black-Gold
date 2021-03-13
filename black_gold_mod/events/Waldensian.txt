@@ -1,0 +1,160 @@
+namespace = waldensian_religion
+
+# Conversion to Waldensian
+country_event = {
+	id = waldensian.1
+	title = waldensian.1.t
+	desc = waldensian.1.d
+	picture = PRAYING_eventPicture
+	
+	trigger = {
+		religion = catholic
+		OR = {
+			num_of_owned_provinces_with = {
+				value = 4
+				religion = waldensian
+			}
+			
+			dominant_religion = waldensian
+		}
+		
+		NOT = {
+			has_country_flag = no_waldensian
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+	}
+	
+	option = { # we will convert
+		name = "waldensian.1.a"
+		add_stability = -2
+		add_prestige = -50
+		change_religion = waldensian
+	}
+	option = { # we will not convert to a perverted faith
+		name = "waldensian.1.b"
+		add_stability = -1
+		add_prestige = 15
+		set_country_flag = no_waldensian
+	}
+}
+
+# Quest for Lyons
+country_event = {
+	id = waldensian.2
+	title = waldensian.2.t
+	desc = waldensian.2.d
+	picture = PRAYING_eventPicture
+	
+	trigger = {
+		religion = waldensian
+		
+		203 = {
+			NOT = {
+				religion = waldensian
+				owned_by = ROOT
+			}
+		}
+		
+		NOT = {
+			has_country_flag = no_lyons
+		}
+		
+		any_neighbor_province = {
+			province_id = 203
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = { # we will claim Waldo's homeland
+		name = "waldensian.2.a"
+		add_stability = 1
+		add_permanent_claim = 203
+	}
+	option = { # we will not
+		name = "waldensian.2.b"
+		add_stability = -1
+		set_country_flag = no_lyons
+	}
+}
+
+# Conquest of Lyons
+country_event = {
+	id = waldensian.3
+	title = waldensian.3.t
+	desc = waldensian.3.d
+	picture = PRAYING_eventPicture
+	
+	trigger = {
+		religion = waldensian
+		
+		203 = {
+			owned_by = ROOT
+		}
+		
+		NOT = {
+			has_country_flag = no_lyons
+		}
+	}
+	
+	option = { # Glory to Waldo!
+		name = "waldensian.3.a"
+		add_stability = 1
+		203 = {
+			change_religion = waldensian
+			add_reform_center = waldensian
+		}
+		
+		add_manpower = 5
+		add_treasury = 50
+	}
+}
+
+# Criticism of the Treasury
+country_event = {
+	id = waldensian.4
+	title = waldensian.4.t
+	desc = waldensian.4.d
+	picture = PRAYING_eventPicture
+	
+	trigger = {
+		religion = waldensian
+		
+		203 = {
+			owned_by = ROOT
+		}
+		
+		NOT = {
+			has_country_flag = no_lyons
+		}
+	}
+	
+	option = { # Glory to Waldo!
+		name = "waldensian.4.a"
+		add_stability = 1
+		203 = {
+			change_religion = waldensian
+			add_reform_center = waldensian
+		}
+		
+		add_manpower = 5
+		add_treasury = 50
+	}
+	
+	option = { # Glory to Waldo!
+		name = "waldensian.4.b"
+		add_stability = 1
+		203 = {
+			change_religion = waldensian
+			add_reform_center = waldensian
+		}
+		
+		add_manpower = 5
+		add_treasury = 50
+	}
+}

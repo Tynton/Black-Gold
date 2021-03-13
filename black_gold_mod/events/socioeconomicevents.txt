@@ -1,0 +1,60 @@
+namespace = socioeconomicevents
+
+#pensions
+
+country_event = {
+	id = socioeconomicevents.1
+	title = "socioeconomicevents.t.1"
+	desc = "socioeconomicevents.d.1"
+	picture = BUREAU_eventPicture
+	
+	trigger = {
+		AND = {
+			has_institution = industrialization
+			has_country_modifier = social_welfare_program
+		}
+		years_of_income = 0.05
+	}	
+
+	mean_time_to_happen = {
+		months = 180
+	}
+	
+	option = {
+		name = "socioeconomicevents.1.a"
+		add_years_of_income = -0.05
+		
+		add_adm_power = 20
+	}
+}
+
+#tax returns
+
+country_event = {
+	id = socioeconomicevents.2
+	title = "socioeconomicevents.t.2"
+	desc = "socioeconomicevents.d.2"
+	picture = BUREAU_eventPicture
+	
+	trigger = {
+		AND = {
+			has_institution = industrialization
+			has_country_modifier = social_welfare_program
+		}
+		years_of_income = 0.05
+		NOT = {
+			stability = 3
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 180
+	}
+	
+	option = {
+		name = "socioeconomicevents.2.a"
+		add_years_of_income = -0.05
+		
+		add_stability = 1
+	}
+}
