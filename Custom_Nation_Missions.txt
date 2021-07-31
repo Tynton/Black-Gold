@@ -1,0 +1,345 @@
+industrial_mission = {
+	slot = 1
+	generic = yes
+	potential = {
+		always = yes
+	}
+	#ai = no
+	#potential = {
+	#	is_dynamic_tag = yes 
+	#}
+	
+	promote_urbanization = {
+		icon = industrialized_rhineland
+		position = 6
+		required_missions = {  }
+		trigger = {
+			has_institution = industrialization
+			
+			OR = {
+				num_of_owned_provinces_with = {
+					value = 6
+					trade_goods = iron
+				}
+				num_of_owned_provinces_with = {
+					value = 6
+					trade_goods = cloth
+				}
+				num_of_owned_provinces_with = {
+					value = 2
+					trade_goods = steel
+				}
+			}
+			
+			OR = {
+				num_of_owned_provinces_with = {
+					value = 3
+					trade_goods = oil
+				}
+				num_of_owned_provinces_with = {
+					value = 3
+					trade_goods = coal
+				}
+				num_of_owned_provinces_with = {
+					value = 3
+					trade_goods = steel
+				}
+			}
+		}
+		effect = {
+			capital_scope = {
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 3
+				add_province_modifier = {
+					name = "commitment_urbanization"
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	create_industrial_area = {
+		icon = promote_urbanization
+		required_missions = { promote_urbanization }
+		position = 7
+		trigger = { 
+			OR = {
+				any_owned_province = {
+					trade_goods = coal
+					base_production = 10
+				}
+				any_owned_province = {
+					trade_goods = oil
+					base_production = 10
+				}
+			}
+		}
+		effect = {
+			random_owned_area = { 
+				area = {
+					limit = { owned_by = ROOT }
+					add_province_modifier = {
+						name = "industrial_area"
+						duration = -1
+					}
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}
+			} 
+		}
+	}
+	
+	industrial_economy = {
+		icon = mission_rb_build_furnaces
+		required_missions = { create_industrial_area }
+		position = 8
+		trigger = { 
+			capital_scope = { 
+				development = 50
+			} 
+			num_of_owned_provinces_with = {
+				value = 4
+				development = 30
+			}
+			current_age = age_of_industrialization
+		}
+		effect = {
+			add_prestige = 25
+			add_splendor = 200
+			
+			add_country_modifier = {
+				name = "industrialized_economy"
+				duration = -1
+			}
+		}
+	}
+	
+	industrial_universities = {
+		icon = Compulsory_Education
+		required_missions = { industrial_economy }
+		position = 9
+		trigger = { 
+			capital_scope = { 
+				has_building = university
+			} 
+			
+			num_of_owned_provinces_with = {
+				value = 3
+				development = 25
+			}
+		}
+		effect = {
+			capital_scope = {
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 3
+			}
+			add_country_modifier = {
+				name = "national_academia"
+				duration = -1
+			}
+			
+			add_prestige = 25
+			add_splendor = 200
+		}
+	}
+}
+
+industrial_naval_mission = {
+	slot = 2
+	generic = yes
+
+	potential = {
+		always = yes
+	}
+
+	#ai = no 
+	#potential = {
+	#	is_dynamic_tag = yes 
+	#}
+	
+	#missions
+	create_colonial_navies = {
+		icon = imperial_navy
+		required_missions = {  }
+		position = 6
+		trigger = {
+			has_institution = industrialization
+			
+			navy_size_percentage = 0.85
+			num_of_heavy_ship = 25
+		}
+		effect = {
+			add_country_modifier = {
+				name = "industrial_navy"
+				duration = -1
+			}
+		}
+	}
+
+	colonial_naval_infrastructure = {
+		icon = mission_rb_scottish_north_sea_trade
+		required_missions = { create_colonial_navies }
+		position = 7
+		trigger = { 
+			OR = {
+				drydock = 10
+				grand_shipyard = 10
+			}
+			num_of_strong_trade_companies = 1
+		}
+		effect = {
+			random_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			add_country_modifier = {
+				name = "ind_colonial_infrastructures"
+				duration = -1
+			}
+		}
+	}
+	
+	modern_diplomacy = {
+		icon = mission_early_modern_university
+		required_missions = { colonial_naval_infrastructure }
+		position = 8
+		trigger = { 
+			OR = {
+				num_of_allies = 4
+				num_of_subjects = 4
+			}
+			current_age = age_of_great_wars
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modern_diplomacy_mission"
+				duration = -1
+			}
+		}
+	}
+	
+	prepare_our_faction = {
+		icon = mission_invade_island
+		required_missions = { modern_diplomacy }
+		position = 9
+		trigger = { 
+		
+			is_great_power = yes 
+		
+			OR = {
+				num_of_allies = 4
+				num_of_subjects = 4
+			}
+			
+			current_age = age_of_great_wars
+		}
+		effect = {
+			add_country_modifier = {
+				name = "maintain_faction"
+				duration = -1
+			}
+		}
+	}
+}
+
+military_mission = {
+	slot = 3
+	generic = yes
+
+	potential = {
+		always = yes
+	}
+
+	#ai = no
+	#potential = {
+	#	is_dynamic_tag = yes 
+	#}
+	
+	develop_new_tactics = {
+		icon = mission_early_modern_university
+		position = 6
+		required_missions = {  }
+		trigger = {
+			has_institution = industrialization
+			
+			is_at_war = yes
+			
+			army_tradition = 40
+			
+			army_size_percentage = 0.8
+		}
+		effect = {
+			add_country_modifier = {
+				name = "new_tactics"
+				duration = -1
+			}
+		}
+	}
+	
+	defense_of_our_nation = {
+		icon = mission_early_game_buildings
+		required_missions = { develop_new_tactics }
+		position = 7
+		trigger = { 
+			army_size_percentage = 1.0
+		}
+		effect = {
+			add_country_modifier = {
+				name = "industrial_fortification"
+				duration = -1
+			}
+		}
+	}
+	
+	military_academies = {
+		icon = mission_rb_renovate_oxbridge
+		required_missions = { defense_of_our_nation }
+		position = 8
+		trigger = { 
+			capital_scope = { 
+				has_building = university
+			} 
+			army_tradition = 50
+			
+			current_age = age_of_great_wars
+		}
+		effect = {
+			add_prestige = 25
+			add_splendor = 200
+			
+			add_country_modifier = {
+				name = "military_academy"
+				duration = -1
+			}
+		}
+	}
+	
+	motorized_warfare = {
+		icon = mission_rb_build_furnaces
+		required_missions = { military_academies }
+		position = 9
+		trigger = { 
+			capital_scope = { 
+				has_building = university
+			} 
+			
+			num_of_owned_provinces_with = {
+				value = 3
+				development = 25
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "motorized_wars"
+				duration = -1
+			}
+		}
+	}
+}
